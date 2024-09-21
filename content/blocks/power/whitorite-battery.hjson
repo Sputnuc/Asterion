@@ -1,0 +1,18 @@
+type: Battery
+name: Whitorite battery
+description: Just battery 
+size: 2
+squareSprite: false
+consumes: {
+  powerBuffered: 10000
+}
+requirements: [
+  whitorite/45
+  irmenite/15
+  kiten/25
+]
+category: power
+baseExplosiveness: 2.5
+fullLightColor: eebcff
+research: whitorite-beam-node
+researchCostMultiplier: 0.35
