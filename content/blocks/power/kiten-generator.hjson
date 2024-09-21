@@ -28,4 +28,5 @@ research: {
      type: SectorComplete
      preset: shelter
     }
+   ]
   } 
