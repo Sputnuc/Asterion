@@ -42,7 +42,7 @@
       "shake": 5,
       "bullet": {
         "type": "ExplosionBulletType",
-        "splashDamage": 160,
+        "splashDamage": 270,
         "splashDamageRadius": 65,
         "buildingDamageMultiplier": 1,
         "hitShake": 12,
