@@ -63,4 +63,49 @@
   drawer: {
    type: DrawTurret
    basePrefix: ast-
+   parts: [
+    {
+     type: ShapePart
+     y: -10.5
+	 progress: warmup
+     hollow: true
+     circle: true
+     layer: 110
+     color: aaf3e7
+     stroke: 0
+     strokeTo: 1.3
+     radius: 7
     }
+	{
+     type: ShapePart
+     y: -10.5
+	 progress: warmup
+     hollow: true
+     circle: false
+     layer: 110
+     color: aaf3e7
+	 sides: 3
+     stroke: 0
+     strokeTo: 0.7
+	 rotateSpeed: 0.8
+     radius: 5
+    }
+	{
+      type: HaloPart
+	  progress: warmup
+      y: -10.5
+      radius: 4
+      tri: true
+      color: aaf3e7
+	  layer: 110
+      haloRotateSpeed: -0.5
+      haloRadius: 0
+      haloRadiusTo: 8
+      stroke: 0
+      strokeTo: 4
+      shapes: 4
+      triLengthTo: 4
+      triLength: 0
+    }
+   ]
+  }
