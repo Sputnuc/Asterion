@@ -2,6 +2,9 @@
   "type": "missile",
   "flying": true,
   "template": "MissileUnitType",
+  "playerControllable": false,
+  "logicControllable": false,
+  "hidden": false,
   "speed": 7,
   "lifetime": 100,
   "deathExplosionEffect": {
