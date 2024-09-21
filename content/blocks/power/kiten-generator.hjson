@@ -8,13 +8,13 @@ updateEffect: fuelburn
 itemCapacity: 10
 health: 350
 requirements: [
- {item: whitorite, amount: 85}
-   ],
+    whitorite/85
+  ]
 consumes: {
  items: [
    {item: kiten, amount: 1}
    ]
-    },
+    }
 outputsPower: true,
 powerProduction: 1.25
 research: {
@@ -23,4 +23,9 @@ research: {
 	requirements: [
 	  whitorite/200
 	]
+	objectives: [
+    {
+     type: SectorComplete
+     preset: shelter
+    }
   } 
