@@ -1,0 +1,21 @@
+{
+  "name": "Verdyne",
+  "description": "",
+  "color": "6e99f0",
+  "temperature": 0.64,
+  "flammability": 0,
+  "explosiveness": 0,
+  "gas": true,
+  "explosive": false,
+  "liquid": {
+    "cap": 3,
+    "explosive": false,
+    "flammable": false,
+    "viscosity": 0.05,
+    "color": "6e99f0"
+  }
+  "hiddenOnPlanets": [
+		"serpulo",
+		"erekir"
+	]
+}

@@ -1,0 +1,15 @@
+type: Unloader
+name: Unloader
+description: Unloader 
+size: 1
+category: effect
+research: irmenite-container
+requirements: [
+  irmenite/15
+  kiten/20
+]
+speed: 4
+solid: true
+squareSprite: false
+allowCoreUnload: true
+researchCostMultiplier: 0.5

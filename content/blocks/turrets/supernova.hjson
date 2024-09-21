@@ -1,0 +1,66 @@
+  type: PowerTurret
+  name: Supernova
+  description: a powerfull laser turret
+  researchCostMultiplier: 0.6
+  size: 4
+  health: 1280
+  shake: 7
+  shootCone: 9
+  shootY: 8
+  chargeSound: lasercharge2
+  reload: 600
+  range: 300
+  targetAir: false
+  moveWhileCharging: false
+  targetGround: true
+  recoilAmount: 1.8
+  restitution: 0.04
+  rotateSpeed: 1
+  shootSound: laserblast
+  shoot: {
+    firstShotDelay: 120
+   }
+  consumes: {
+    power: 10
+  }
+  powerUse: 8
+  hasPower: true
+  shootType: {
+    type: laserBulletType
+    absorbable: true
+    chargeEffect: [
+	 {
+	   type: WaveEffect
+	   sizeFrom: 48
+	   colorFrom: FFFFFF00
+	   colorTo: e0fffd
+	   followParent: true
+	   rotWithParent: true
+	   lifetime: 100
+	   sizeTo: 0
+	   strokeFrom: 0
+	   strokeTo: 4
+	   offsetY: -1
+	 }
+	]
+    lifetime: 90
+    damage: 350
+    length: 300
+    wigth: 50
+    hitEffect: hitLaser
+    pierce: true
+	pierceBuilding: false
+    colors: [b2e6e3, ceeeec, ffffff]
+  }
+  requirements: [
+    whitorite/100
+	irmenite/55
+	kiten/70
+	magnetite/70
+  ]
+  category: turret
+  research: spark
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+    }

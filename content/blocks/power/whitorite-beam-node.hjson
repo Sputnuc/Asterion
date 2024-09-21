@@ -1,0 +1,20 @@
+type: BeamNode
+name: Whitorite beam node
+description: Transfers energy on very long distances.
+squareSprite: false
+hasPower: true
+allowDiagonal: true
+drawDisabled: false
+underBullets: true
+size: 1
+health: 75
+range: 15
+laserColor1: d86bff
+laserColor2: 8054ba              
+category: power
+requirements: [
+    whitorite/12
+  ]
+category: power
+research: kiten-generator
+researchCostMultiplier: 0.25

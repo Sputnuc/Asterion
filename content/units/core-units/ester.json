@@ -1,0 +1,75 @@
+{
+	"type": "flying",
+	"name": "Ester",
+	"description": "Guard of the core: impact. He's shoots energy spears, that bomb out, and create small bullets.",
+	"flying": true,
+	"health": 570,
+	"hitSize": 12,
+	"buildSpeed": 1.4,
+	"mineSpeed": 6,
+	"mineTier": 2
+	"speed": 3.2,
+	"range": 120,
+	"accel": 0.2,
+	"targetGround": true,
+	"targetAir": true,
+	"rotateSpeed": 4,
+	"weapons": [
+		{
+			"name": "ester-weapon",
+			"x": 3.5,
+			"y": 1.8,
+			"recoil": 1,
+			"top": false,
+			"reload": 30,
+			"minWarmup": 0.9,
+			"mirror": true,
+			"alternate": false,
+			"shootSound": "lasershoot",
+			"continuous": false,
+			"parts": [
+				{
+					"suffix": "-part",
+					"x": -2,
+					"y": 2.5,
+					"mirror": false,
+					"progress": "warmup",
+					"moveX": 0,
+					"moveY": -1,
+					"moveRot": 0
+				}
+			]
+			"bullet": {
+				"type": "BasicBulletType",
+				"damage": 0,
+				"pierce": true,
+				"pierceFragCap": 1,
+				"lifetime": 30,
+				"speed": 4,
+				"width": 8,
+				"height": 16,
+				"shrinkX": 0.6,
+				"sprite": "as-spear"
+				"hitsize": 6,
+				"hitEffect": "unitControl",
+				"despawnEffect": "unitControl",
+				"buildingDamageMultiplier": 0.01
+				"fragBullets": 3,
+				"fragRandomSpread": 0,
+				"fragAngle": 0,
+				"fragBullet": {
+					"type": "BasicBulletType",
+					"damage": 15,
+					"lifetime": 15,
+					"speed": 6,
+					"buildingDamageMultiplier": 0.01
+					"sprite": "as-spear"
+					"width": 4,
+					"height": 8,
+					"hitsize": 4,
+					"hitEffect": "unitControl",
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,25 @@
+name: Rotary drill,
+description: The second drill of the mod,
+type: Drill,
+health: 500,
+category: production,
+size: 3,
+drillTime: 270,
+tier: 3,
+liquidBoostIntensity: 1
+consumes: {
+  power: 1
+  liquid: {
+  liquid: zion
+  amount: 0.2
+  booster: false
+ }
+}
+requirements: [
+  whitorite/50
+  irmenite/75
+  kiten/55
+  magnetite/20
+]
+research: whitorite-drill
+researchCostMultiplier: 0.5

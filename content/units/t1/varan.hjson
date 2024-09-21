@@ -1,0 +1,109 @@
+name: varan
+description: "Shoots light, fast projectiles. Mech type: [white]«Hunter»"
+type: mech
+speed: 0.55
+flying: false
+research: hunter-factory
+hitSize: 12
+itemCapacity: 10
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.8
+mechStepParticles: true
+stepShake: 1
+outlineRadius: 4
+drownTimeMultiplier: 8
+rotateSpeed: 2.6
+health: 250
+armor: 4
+range: 160
+
+weapons: [
+{ 
+name: varan-weapon
+    
+    parts: [
+    {
+        type: RegionPart
+        suffix: -heat
+        progress: warmup
+        blending: additive
+        color: 30fdf3
+        layerOffset: -0.1
+        outline: false
+    }
+    ]
+    
+    shootY: 4.25
+    shootX: 0
+    x: -6.25
+    y: 0
+    layerOffset: -0.01
+    mirror: true
+    rotate: true
+    rotationLimit: 22
+    recoil: 1.5
+    reload: 40
+    shootSound: malignShoot
+
+    bullet: {
+type: BasicBulletType
+damage: 13
+lifetime: 16
+width: 7
+height: 15
+speed: 10
+backColor: d0d8e8 
+frontColor: a1b1d0
+trailColor: a1b1d0 
+trailWidth: 2.333333
+trailLength: 6
+homingPower: 0.3
+weaveMag: 2
+weaveScale: 2
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+particles: 7
+cone: 12
+length: 12
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+
+despawnEffect: {
+type: WaveEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0
+} 
+}
+}
+]

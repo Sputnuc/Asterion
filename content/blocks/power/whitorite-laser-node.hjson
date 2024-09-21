@@ -1,0 +1,16 @@
+type: PowerNode
+name: "Whitorite laser node"
+description: "Distributes energy to buildings in a small radius."
+size: 1
+health: 70
+laserRange: 5
+laserColor1: d86bff
+laserColor2: 8054ba
+maxNodes": 20
+  requirements: [
+    whitorite/18
+	irmenite/8
+	]
+category: power
+research: whitorite-beam-node
+researchCostMultiplier: 0.25

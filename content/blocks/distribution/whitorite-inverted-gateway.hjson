@@ -1,0 +1,11 @@
+type: OverflowGate
+name: Whitorite inverted gateway
+description: Works like an whitorite gateway but inverted
+category: distribution
+invert: true
+research: whitorite-gateway
+requirements: [
+  whitorite/2
+  kiten/3
+]
+researchCostMultiplier: 0.5

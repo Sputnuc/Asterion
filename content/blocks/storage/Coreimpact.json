@@ -1,0 +1,19 @@
+{
+	"name": "Core-Impact",
+	"description": "Second interation of core on Oscilos. Not so special, to have a big description.",
+	"type": "CoreBlock",
+	"health": 3800,
+	"category": "effect",
+	"size": 4,
+	"itemCapacity": 5000,
+	"unitCapModifier": 16,
+	"unitType": "ester",
+	"outputsPower": true,
+	"isFirstTier": false,
+	"buildVisibility": "shown",
+	"research": "Coreforce",
+	"requirements": [
+	 "whitorite/1700"
+	 "irmenite/1250"
+	  ],
+}

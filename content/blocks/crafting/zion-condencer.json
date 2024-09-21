@@ -1,0 +1,38 @@
+{
+	"type": "GenericCrafter",
+	"name": "Zion condencer",
+	"description": "condenses heavy methane particles",
+	"category": "crafting",
+	"size": 3,
+	"hasLiquid": true,
+	"liquidCapacity": 120,
+	"requirements": [
+	 "whitorite/75",
+	 "irmenite/50",
+	 "kiten/45"
+    ],	
+    "outputLiquid": {"liquid": "zion", "amount": 0.05},
+    "craftTime": 60,
+	"consumes": {
+		"power": 1,
+		"liquid": "metan/0.05"
+	}
+	"research": "metan-extractor", 
+	"drawer": {
+      "type": "DrawMulti",
+      "drawers": [	  
+          {
+          "type": "DrawRegion",
+		  "suffix": "-bottom"
+          },
+		  {
+          "type": "DrawLiquidTile",
+          "drawLiquid": "zion"
+          },
+		  {
+		  "type": "DrawDefault"
+		  }
+      ]
+    }
+}
+	

@@ -1,0 +1,6 @@
+{
+	"type": "StaticWall",
+	"name": "Quartz sand wall",
+	"variants": 3,
+	"itemDrop": "quartz-sand"
+}

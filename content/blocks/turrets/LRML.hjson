@@ -1,0 +1,58 @@
+  type: ItemTurret
+  name: LRML
+  description: LRML-Long range missile launcher
+  targetAir: false
+  category: turret
+  requirements: [
+    whitorite/360
+    irmenite/200
+    magnetite/270
+	blacktite/120
+  ],
+  research: breakthrough
+  consumes: {
+   power: 5
+  }
+  predictTarget: false
+  recoil: 7
+  accurateDelay: false
+  shootY: -1
+  reload: 300
+  rotateSpeed: 1.1
+  unitSort: strongest
+  size: 4
+  range: 700
+  health: 540
+  shootSound: missileLaunch
+  ammoTypes: {
+    ashotite: {
+      ammoMultiplier: 1
+      instantDisappear: true
+      shootEffect: shootBig
+      smokeEffect: shootSmokeMissile
+      damage: 0
+      spawnUnit: LRML-missile
+    }
+  },
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      under: false
+      mirror: true
+      progress: warmup
+      moves: [
+      {
+      type: PartMove
+      rot: -6
+	  moveY: -1
+       }
+      ]
+	}
+   ]
+   }
+
+

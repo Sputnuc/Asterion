@@ -1,0 +1,25 @@
+{
+  "name": "Zion",
+  "description": "It is used in cooling factories/turrets, can heat up strongly under pressure, creating an item for the first bridge conveyors, unloaders, inverted locks and sorters. It is needed to produce magnetite",
+  "color": "dd5b73",
+  "research": "metan",
+  "temperature": 0.1,
+  "flammability": 0.15,
+  "explosiveness": 0.4,
+  "gas": true,
+  "explosive": false,
+  "effect": "burning",
+  "liquid": {
+    "cap": 4,
+    "heatCapacity": 0.5,
+    "explosive": false,
+    "flammable": true,
+    "viscosity": 0.3,
+    "temperature": 0,
+    "color": "dd5b73"
+  }
+  "hiddenOnPlanets": [
+		"serpulo",
+		"erekir"
+	]
+}

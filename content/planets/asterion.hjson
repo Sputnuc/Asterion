@@ -1,0 +1,104 @@
+localizedName: Asterion
+generator: SerpuloPlanetGenerator
+defaultCore: Coreforce
+
+hiddenItems: [
+    "copper"
+    "lead"
+    "scrap"
+    "graphite"
+    "coal"
+	"titanium"
+    "thorium"
+    "silicon"
+    "plastanium"
+    "phase-fabric"
+	"sand"
+    "surge-alloy"
+    "spore-pod"
+    "blast-compound"
+    "pyratite"
+    "metaglass"
+    "beryllium"
+    "oxide"
+    "tungsten"
+    "carbide"
+    "fissile-matter"
+    "dormant-cyst"
+]
+
+itemWhitelist: [
+whitorite,
+irmenite,
+ashotite,
+quartz-sand,
+magnetite,
+blacktite,
+kiten,
+zionitium
+]
+
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+
+allowWaveSimulation: true
+prebuildBase: true
+parent: sun
+solarSystem: sun
+radius: 0.9
+minZoom: 0.6
+sectorSize: 1.2
+startSector: 10
+atmosphereRadIn: 0.02
+atmosphereRadOut: 0.3
+atmosphereColor: 59857c       //Цвет атмосферы
+iconColor: 4f5357       //Цвет иконки
+icon: planet
+orbitRadius: 13       //Радиус орбиты
+orbitTime: 76
+bloom: false
+alwaysUnlocked: true
+accessible: true
+visible: true
+allowLaunchToNumbered: false      //Возможность приземляться на соседние сектора (true - как на Серпуло, false - как на Эрекире)
+
+ //Поверхность планеты
+mesh: [
+ {
+    type: NoiseMesh
+	bloom: true
+    seed: 1573
+    color1: ebb14d
+    color2: c79452
+    divisions: 5.7
+    radius: 0.84
+    octaves: 4.6
+    persistence: 0.43
+	coct: 1.5
+    cper: 2.1
+    scl: 0.54
+    mag: 1.2
+ }
+]
+
+
+bloom: false
+alwaysUnlocked: true
+
+//Отрисовка облаков
+cloudMesh: [
+  {
+bloom: true
+    type: HexSkyMesh
+	bloom: false
+    speed: 3.8
+    divisions: 7
+    radius: 0.19
+    color: dec5cd6b
+    octaves: 3
+    persistence: 0.7
+    scl: 1.2
+    thresh: 0.5
+  }
+]

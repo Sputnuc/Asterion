@@ -1,0 +1,25 @@
+{
+  "name": "Oxylene",
+  "description": "It is used for the production of ashotite",
+  "color": "c548d9",
+  "research": "Coreforce",
+  "barColor": "c548d9",
+  "gasColor": "a436bf3f",
+  "lightColor": "a436bf3f",
+  "temperature": 0.17,
+  "flammability": 0.12,
+  "explosiveness": 0.0,
+  "liquid": true,
+  "explosive": false,
+  "liquid": {
+    "cap": 4,
+    "explosive": false,
+    "flammable": true,
+    "viscosity": 0.13,
+	"heatCapacity": 0.1,
+  }
+  "hiddenOnPlanets": [
+		"serpulo",
+		"erekir"
+	]
+}

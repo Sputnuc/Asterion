@@ -1,0 +1,16 @@
+{
+	"name": "Whiteorite",
+	"description": "Basic ore on Asterion, can be used in electrical and drilling buildings",
+	"color": "#a5aeaf",
+	"research": "Coreforce",
+	"hardness": 1,
+	"charge": 0.15,
+	"explosiveness": 0,
+	"flammability": 0,
+	"radioactivity": 0,
+	"cost": 1.6,
+	"hiddenOnPlanets": [
+		"serpulo",
+		"erekir"
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"type": "AttributeCrafter",
+	"name": "Magnetite deep mine",
+	"description": "Bores magnetite from underground lakes",
+	"category": "production",
+	"attribute": "water",
+	"hasLiquids": true,
+	"liquidCapacity": 50,
+	"baseEfficiency": 0,
+	"boostScale": 0.63,
+	"maxBoost": 1.5,
+	"minEfficiency": 1,
+	"size": 4,
+	"hasPower": true,
+	"requirements": [
+        "whitorite/85",
+		"irmenite/120",
+		"kiten/65",
+		"blacktite/85"
+                    ],
+	"consumes": {
+         "power": 5,
+		 "liquids": {
+			 "liquids": [
+			   "metan/0.25",
+			   "zion/0.25"
+			 ]
+		 }
+	},
+    "outputItem": {"item": "magnetite","amount": 1}
+    "craftTime": 90,
+	"updateEffect": "mine",
+	"research": "whitorite-drill", 
+	"drawer": {
+      "type": "DrawMulti",
+      "drawers": [	 
+	   {
+		  "type": "DrawRegion",
+		  "suffix": "-bottom"
+	   },
+	   {
+		  "type": "DrawRegion",
+		  "suffix": "-rotator",
+		  "spinSprite": true,
+		  "rotateSpeed": 3
+	   },
+	   {
+		  "type": "DrawLiquidTile",
+		  "drawLiquid": "metan",
+		  "alpha": 0.8,
+	   },
+	   {
+		  "type": "DrawRegion",
+		  "suffix": "-zion-bottom"
+	   },
+	   {
+		  "type": "DrawLiquidRegion",
+		  "suffix": "-zion",
+		  "drawLiquid": "zion"
+	   },
+	   {
+		  "type": "DrawDefault"
+	   },
+	   {
+		   "type": "DrawRegion",
+		   "suffix": "-top"
+	   }
+      ]
+    },
+}
+	

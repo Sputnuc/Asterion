@@ -1,0 +1,14 @@
+type: Conduit
+name: Irmenite conduit
+description: Transports liquids forward.
+category: liquid
+research: Coreforce
+requirements: [
+  irmenite/1
+]
+health: 35
+leaks: true
+underBullets: true
+researchCostMultiplier: 0.5
+junctionReplacement: irmenite-junction
+bridgeReplacement: irmenite-bridge

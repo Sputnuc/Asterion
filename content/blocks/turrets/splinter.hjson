@@ -1,0 +1,92 @@
+  type: ItemTurret
+  name: Splinter
+  description: shoots piercing spears
+  health: 1250
+  shootSound: shootAlt
+  buildCostMultiplier: 0.5
+  reload: 100
+  recoil: 0.6
+  range: 200
+  size: 3
+  consumes: { 
+    coolant: { 
+       amount: 0.1 
+    } 
+  }
+  researchCostMultiplier: 0.4
+  inaccuracy: 1
+  targetAir: true
+  targetGround: true
+  ammoTypes: {
+    whitorite: {
+      speed: 10
+	  pierce: true
+	  pierceCap: 5
+      ammoMultiplier: 1
+	  sprite: as-spear
+      hitSize: 9
+	  width: 12
+	  height: 25
+      type: BasicBulletType
+      damage: 25
+      lifetime: 20
+	  trailWidth: 2
+      trailLength: 7
+	  trailColor: d0cbc0
+	  reloadMultiplier: 1.35
+    }
+    irmenite: {
+      type: BasicBulletType
+	  pierce: true
+	  pierceCap: 7
+	  sprite: as-spear
+      damage: 55
+	  width: 12
+	  height: 25
+      lifetime: 13.333333333333333333333333333333
+      speed: 15
+      hitSize: 8
+      ammoMultiplier: 2
+	  trailWidth: 2
+      trailLength: 9
+	  trailColor: abe0e5
+    }
+  }
+  requirements: [
+     whitorite/95
+   ]
+  research: {
+    planet: asterion
+	parent: Coreforce
+	requirements: [
+	  whitorite/60
+	]
+   }
+  category: turret 
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+     {
+      type: RegionPart
+      suffix: -side
+      under: true
+      mirror: true
+      progress: warmup
+      moves: [
+      {
+      type: PartMove
+      rot: 15
+	  moveY: 1
+       }
+      ]
+	 }
+	  {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      moveY: -1.5
+      }
+	 ]
+	}
+

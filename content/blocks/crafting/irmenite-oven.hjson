@@ -1,0 +1,44 @@
+type: GenericCrafter
+name: Irmenite oven
+description: Melts irmenite from sand with whitorite.
+size: 2
+category: crafting
+requirements: [
+ whitorite/85
+]
+consumes: {
+  power: 1
+  items: [
+  whitorite/3
+  kiten/2
+  quartz-sand/2
+  ]
+}
+craftTime: 120
+drawer: {
+  type: DrawMulti
+  drawers: [
+   {
+   type: DrawDefault
+   }
+   {
+    type: DrawFlame
+    flameRadius: 3.5         
+    flameRadiusIn: 1.5
+    flameRadiusScl: 3 
+    flameRadiusMag: 1
+    flameRadiusInMag: 0.7 
+	flameColor: f0feffe2
+   }
+  ]
+ }         
+craftEffect: smeltsmoke
+outputItem: irmenite/3
+research: {
+    planet: asterion
+	parent: Coreforce
+	requirements: [
+	  whitorite/200
+	  kiten/40
+	]
+}

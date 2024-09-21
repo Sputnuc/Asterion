@@ -1,0 +1,11 @@
+type: Wall
+name: Whitorite wall
+health: 650
+armor: 2
+size: 1
+requirements: [
+  whitorite/6
+ ]
+category: defense
+research: splinter
+researchCostMultiplier: 0.20

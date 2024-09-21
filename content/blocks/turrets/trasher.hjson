@@ -1,0 +1,33 @@
+name: Trasher
+type: ItemTurret
+size: 2
+range: 120
+reload: 120
+maxAmmo: 24
+inaccuracy: 3
+ammoPerShot: 3
+shootSound: shotgun
+ammoTypes: {
+  ashotite: {
+   type: ShrapnelBulletType
+   length: 125
+   width: 18
+   damage: 50
+   hitEffect: blastExplosion
+   toColor: f5cc9e
+   pierce: true
+   pierceBuilding: false
+   status: melting
+   statusDuration: 50
+  }
+}
+requirements: [
+  irmenite/55
+  whitorite/70
+]
+category: turret
+research: splinter
+drawer: {
+  type: DrawTurret
+  basePrefix: ast-
+}

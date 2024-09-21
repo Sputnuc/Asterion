@@ -1,0 +1,28 @@
+{
+  "type": "unitFactory",
+  "name": "Hunter factory",
+  "description": "Create units of the Hunters tree",
+  "size": 3,
+  "health": 760,
+  "consumes": {
+    "power": 2
+  },
+  "plans": [
+    {
+      "unit": "varan",
+      "requirements": [
+       "kiten/30",
+       "irmenite/25"
+           ],
+      "time": 900
+    },
+  ],
+  "requirements": [
+    "whitorite/128",
+    "kiten/90",
+    "irmenite/50"
+  ],
+  "category": "units",
+  "research": "Coreforce",
+  "researchCostMultiplier": 0.1
+}

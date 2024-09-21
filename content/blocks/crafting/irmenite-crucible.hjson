@@ -1,0 +1,41 @@
+type: GenericCrafter
+name: Irmenite crucible
+description: Melts irmenite from sand with whitorite.
+size: 3
+itemCapacity: 30
+category: crafting
+requirements: [
+ whitorite/100
+ kiten/40
+ irmenite/25
+ 
+]
+consumes: {
+  power: 1.35
+  items: [
+  whitorite/6
+  kiten/5
+  quartz-sand/4
+  ]
+}
+craftTime: 200
+drawer: {
+  type: DrawMulti
+  drawers: [
+   {
+   type: DrawDefault
+   }
+   {
+    type: DrawFlame
+    flameRadius: 4        
+    flameRadiusIn: 2
+    flameRadiusScl: 3.7
+    flameRadiusMag: 1.7
+    flameRadiusInMag: 1.5 
+	flameColor: f0feffe2
+   }
+  ]
+ }         
+craftEffect: smeltsmoke
+outputItem: irmenite/8
+research: irmenite-oven

@@ -1,0 +1,15 @@
+{  
+  "type": "Router",
+  "name": "Whitorite router",
+  "description": "Distributes objects in different directions.",
+  "category": "distribution",
+  "underBullets": true,
+  "health": 65,
+  "size": 1,
+  "capacity": 1,
+  "requirements": [
+      "whitorite/3"
+  ]
+  "research": "whitorite-duct",
+  "researchCostMultiplier": 0.25  
+}

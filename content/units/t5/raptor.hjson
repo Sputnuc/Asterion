@@ -1,0 +1,342 @@
+name: raptor
+description: "It fires proton plasma projectiles that explode into a multitude of small bullets in flight. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the hunters... (Or not). Mech type: [white]«Hunter»"
+type: mech
+speed: 0.40
+flying: false
+hitSize: 28
+itemCapacity: 130
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.8
+mechStepParticles: true
+stepShake: 1
+outlineRadius: 4
+drownTimeMultiplier: 8
+rotateSpeed: 2.6
+health: 23000
+armor: 13
+range: 240
+parts: [
+{
+      type: HaloPart
+      y: -7
+      radius: 5
+      tri: true
+      layerOffset: 1
+      color: a9c5ea
+      haloRotateSpeed: 2.1
+      haloRadius: 5
+      haloRadiusTo: 7
+      stroke: 4
+      strokeTo: 6
+      shapes: 3
+      triLengthTo: 3
+      triLength: 2
+}
+{
+      type: shapePart
+      y: -7
+      hollow: true
+      circle: true
+      layerOffset: 1.2
+      color: c7d9f0f
+      stroke: 1
+      strokeTo: 1.3
+      radiusTo: 7
+      radius: 5
+}
+]
+weapons: [
+{
+    name: raptor-weapon
+    
+    parts: [
+    {
+        type: RegionPart
+        suffix: -heat
+        progress: warmup
+        blending: additive
+        color: 30fdf3
+        layerOffset: -0.1
+        outline: false
+    }
+    ]
+    
+    shootY: 16
+    shootX: 0
+    x: -23
+    y: 0
+    layerOffset: -0.01
+    mirror: true
+    rotate: true
+    rotationLimit: 18
+    recoil: 2
+    reload: 100
+    shootSound: malignShoot
+
+    bullet: {
+type: BasicBulletType
+homingPower: 0.1
+homigRadius: 120
+damage: 60
+lifetime: 38
+width: 13
+height: 13
+speed: 7
+drag: 0.01
+backColor: d0d8e8 
+frontColor: a1b1d0
+trailColor: a1b1d0 
+trailWidth: 3.25
+trailLength: 30
+homingPower: 0.2
+weaveMag: 2
+weaveScale: 2
+intervalBullets: 1
+intervalAngle: 0
+intervalRandomSpread: 45
+intervalSpread: 5
+fragBullets: 3
+fragRandomSpread: 180
+fragVelocityMin: 1
+splashDamage: 25
+splashDamageRadius: 34
+pierce: true
+pierceCap: 5
+pierceBuilding: true 
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+particles: 16
+cone: 12
+length: 12
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+
+despawnEffect: {
+type: WaveEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0
+} 
+
+fragBullet: {
+type: BasicBulletType
+damage: 30
+lifetime: 120
+width: 13
+height: 13
+speed: 6
+drag: 0.05
+backColor: d0d8e8 
+frontColor: a1b1d0
+trailColor: a1b1d0 
+trailWidth: 3.25
+trailLength: 30
+fragBullets: 3
+fragRandomSpread: 180
+fragVelocityMin: 1
+pierce: true
+                pierceCap: 5
+                pierceBuilding: true 
+
+despawnEffect: {
+type: WaveEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0
+}
+
+fragBullet: {
+type: BasicBulletType
+homingPower: 0.2
+homigRadius: 120
+damage: 15
+lifetime: 30
+width: 10
+height: 10
+speed: 4
+accel: 0.6
+backColor: d0d8e8 
+frontColor: a1b1d0
+trailColor: a1b1d0 
+trailWidth: 2.25
+trailLength: 30
+pierce: true
+                pierceCap: 5
+                pierceBuilding: true 
+                intervalBullets: 1
+intervalAngle: 0
+intervalRandomSpread: 45
+intervalSpread: 5
+}
+intervalBullet: {
+
+                type: BasicBulletType
+                homingPower: 0.5
+                backColor: d0d8e8
+                frontColor: a1b1d0
+                trailColor: a1b1d0
+                trailLength: 8
+                trailWidth: 2.5
+                trailInterval: 46
+                homigRadius: 120
+                damage: 15
+                width: 10
+                height: 10
+                despawnEffect: none
+                hitEffect: none
+                speed: 5
+                drag: 0.02
+                lifetime: 80
+                pierce: true
+                pierceCap: 5
+                pierceBuilding: true 
+                weaveMag: 8
+                weaveScale: 4
+                }
+                }
+            }
+        }
+    {
+        display: false
+        x: 0
+        y: -9
+        mirror: false
+        recoil: 0
+        reload: 2000
+        shootSound: spark
+
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 1000
+            shots: 125
+            shotDelay: 1
+            shotSpread: 360
+        }
+
+        bullet: {
+            type: LightningBulletType
+            damage: 20
+            lifetime: 1
+            hitEffect: hitLancer
+            despawnEffect: none
+            hitEffect: none
+            shootEffect: none
+            lightningColor: ffffff
+            lightningLength: 16
+            inaccuracy: 360
+            lightningLengthRand: 0
+            keepVelocity: false
+
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 9
+                    cone: 360
+                    length: 25
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                    {
+                        type: ParticleEffect
+                        colorFrom: a1b1d0
+                        colorTo: 8798b9
+                        particles: 12
+                        cone: 360
+                        length: 30
+                        baseLength: 5
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0
+                        offset: 1
+                    }
+                    {
+                        type: ParticleEffect
+                        colorFrom: 8798b9
+                        colorTo: 8798b9
+                        particles: 9
+                        cone: 360
+                        length: 35
+                        baseLength: 5
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0
+                        offset: 1
+                    }
+                    {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 0
+                        sizeTo: 12
+                        lightScl: 4
+                        lightOpacity: 1
+                        rotation: 0
+                        strokeFrom: 4
+                        strokeTo: 0
+                    }
+                    ]
+                    }
+                    }
+                    }
+                    ]

@@ -1,0 +1,47 @@
+{
+	"type": "flying",
+	"name": "Graviton",
+	"description": "Guard of the core: force. Graviton shoots bombs.",
+	"flying": true,
+	"health": 355,
+	"hitSize": 12.5,
+	"buildSpeed": 1.05,
+	"mineTier": 1,
+    "mineSpeed": 8.0,
+    "buildRange": 150
+	"speed": 3,
+	"range": 240,
+	"accel": 0.2,
+	"targetGround": true,
+	"targetAir": true,
+	"rotateSpeed": 5.66,
+	"weapons": [
+		{
+			"name": "object-finder",
+			"x": 3,
+			"y": 2,
+			"recoil": -2,
+			"top": false,
+			"layer": 90,
+			"reload": 75,
+			"mirror": true,
+			"alternative": true,
+			"shootSound": "lasershoot",
+			"top": false,
+			"bullet": {
+				"type": "BombBulletType",
+				"pierce": true,
+				"speed": 4,
+				"lifetime": 60,
+				"buildingDamageMultiplier": 0.01
+				"splashDamage": 25,
+				"splashDamageRadius": 40,
+				"width": 8,
+				"height": 8,
+				"hitsize": 6,
+				"hitEffect": "none",
+				"despawnEffect": "railShoot",
+			}
+		}
+	]
+}

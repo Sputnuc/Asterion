@@ -1,0 +1,16 @@
+{
+  "type": "LiquidRouter",
+  "name": "Liquid container",
+  "description": "stores a small amount of liquid",
+  "category": "liquid",
+  "research": "irmenite-router",
+  "size": 2,
+  "solid": true,
+  "health": 350,
+  "liquidCapacity": 900,
+  "requirements": [
+    "irmenite/40",
+    "kiten/30"
+  ]
+}
+

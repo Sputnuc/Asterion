@@ -1,0 +1,23 @@
+{
+  "name": "Metan",
+  "description": "It is used for the production of ashotite",
+  "color": "828282",
+  "research": "Coreforce",
+  "temperature": 0,
+  "flammability": 0.6,
+  "explosiveness": 0.2,
+  "gas": true,
+  "explosive": true,
+  "liquid": {
+    "cap": 4,
+    "explosive": true,
+    "flammable": true,
+    "viscosity": 0.3,
+    "temperature": 0,
+    "color": "828282"
+  }
+  "hiddenOnPlanets": [
+		"serpulo",
+		"erekir"
+	]
+}

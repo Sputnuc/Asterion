@@ -1,0 +1,20 @@
+{
+	"type": "duct",
+	"name": "Whitorite duct",
+	"description": "transparent items forward",
+	"speed": 5,
+	"underBullets": true,
+	"itemCapacity": 2,
+	"armored": false,
+	"bridgeReplacement": "whitorite-duct-bridge",
+	"requirements": [
+	  "whitorite/1",				
+      ]
+	"research": {
+    "planet": "asterion",
+	"parent": "Coreforce",
+	"requirements": [
+	  "whitorite/20"
+	]
+  } 
+}
