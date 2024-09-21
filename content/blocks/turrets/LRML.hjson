@@ -38,6 +38,21 @@
    type: DrawTurret
    basePrefix: ast-
    parts: [
+   {
+  type: RegionPart
+  suffix: -missile
+  under: false
+  progress: {
+    type: reload
+    op: curve
+    interp: pow5In
+      }
+  moveY: 0
+  colorTo: 00000000
+  mixColorTo: ffffffff
+  mixColor: 00000000
+  color: ffffffff
+    }
     {
       type: RegionPart
       suffix: -side
