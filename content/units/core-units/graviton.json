@@ -1,5 +1,6 @@
 {
 	"type": "flying",
+	"outlineColor": "22262b",
 	"name": "Graviton",
 	"description": "Guard of the core: force. Graviton shoots bombs.",
 	"flying": true,
