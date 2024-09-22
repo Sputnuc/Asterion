@@ -1,6 +1,7 @@
 name: varan
 description: "Shoots light, fast projectiles. Mech type: [white]«Hunter»"
 type: mech
+outlineColor: 22262b
 speed: 0.55
 flying: false
 research: hunter-factory
