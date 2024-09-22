@@ -1,0 +1,19 @@
+type: Floor
+name: "Biolume"
+
+  //status: melting
+  //statusDuration: 75
+speedMultiplier: 0.68
+variants: 3
+cacheLayer: "water" //tar, mud, water
+isLiquid: true
+liquidDrop: biolume
+liquidMultiplier: 0.6
+albedo: 1.2
+shallow: true
+supportsOverlay: true
+placeableOn: true
+
+emitLight: true
+lightRadius: 115
+lightColor: "95a35a90" //c5cf577a
