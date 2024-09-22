@@ -5,7 +5,7 @@ name: "Biolume"
   //statusDuration: 75
 speedMultiplier: 0.68
 variants: 3
-cacheLayer: "water" //tar, mud, water
+cacheLayer: "arkycite" //tar, mud, water, arkycite
 isLiquid: true
 liquidDrop: biolume
 liquidMultiplier: 0.6
@@ -15,5 +15,5 @@ supportsOverlay: true
 placeableOn: true
 
 emitLight: true
-lightRadius: 115
-lightColor: "95a35a90" //c5cf577a
+lightRadius: 132
+lightColor: "e3fc7ec2" //c5cf577a
