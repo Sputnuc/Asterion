@@ -1,5 +1,6 @@
 {
 	"type": "flying",
+	"outlineColor": "22262b",
 	"name": "Ester",
 	"description": "Guard of the core: impact. He's shoots energy spears, that bomb out, and create small bullets.",
 	"flying": true,
