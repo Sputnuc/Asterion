@@ -1,4 +1,5 @@
   type: ItemTurret
+  outlineColor: 22262b
   name: Splinter
   description: shoots piercing spears
   health: 1250
