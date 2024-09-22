@@ -1,6 +1,7 @@
 name: vulture
 description: "Vulture or Voltrum discharges hypersonic projectiles at enemies. From time to time, the Vulture needs to release excess energy, emits weak impulses. Mech type: [white]«Hunter»"
 type: mech
+outlineColor: 22262b
 speed: 0.50
 flying: false
 hitSize: 15
