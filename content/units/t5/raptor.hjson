@@ -1,6 +1,7 @@
 name: raptor
 description: "It fires proton plasma projectiles that explode into a multitude of small bullets in flight. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the hunters... (Or not). Mech type: [white]«Hunter»"
 type: mech
+outlineColor: 22262b
 speed: 0.40
 flying: false
 hitSize: 28
