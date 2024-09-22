@@ -4,6 +4,9 @@ description: Transfers energy on very long distances.
 squareSprite: false
 hasPower: true
 allowDiagonal: true
+consumes: {
+  powerBuffered: 250
+}
 drawDisabled: false
 underBullets: true
 size: 1
