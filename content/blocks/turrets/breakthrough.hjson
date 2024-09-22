@@ -1,5 +1,6 @@
   name: breakthrough
   type: ItemTurret
+  outlineColor: 22262b
   size: 4
   health: 3450
   requirements: [
