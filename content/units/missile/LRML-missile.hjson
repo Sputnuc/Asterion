@@ -1,4 +1,5 @@
   "type": "missile",
+  outlineColor: 22262b
   "flying": true,
   "template": "MissileUnitType",
   "playerControllable": false,
