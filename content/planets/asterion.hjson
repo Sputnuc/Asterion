@@ -55,7 +55,7 @@ atmosphereRadOut: 0.3
 atmosphereColor: 59857c       //Цвет атмосферы
 iconColor: 4f5357       //Цвет иконки
 icon: planet
-orbitRadius: 26.7       //Радиус орбиты
+orbitRadius: 28.6       //Радиус орбиты
 orbitTime: 176
 bloom: false
 alwaysUnlocked: true
