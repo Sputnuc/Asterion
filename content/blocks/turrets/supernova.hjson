@@ -1,4 +1,5 @@
   type: PowerTurret
+  outlineColor: 22262b
   name: Supernova
   description: a powerfull laser turret
   researchCostMultiplier: 0.6
