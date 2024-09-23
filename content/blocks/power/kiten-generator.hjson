@@ -30,3 +30,19 @@ research: {
     }
    ]
   } 
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	type: DrawDefault
+	},
+	{
+	type: DrawWarmupRegion
+	},
+	{
+	type: DrawGlowRegion
+	color: 94ffdfbe
+	},
+  ]
+}
+
