@@ -37,3 +37,18 @@ consumes: {
 outputsPower: true
 powerProduction: 8
 research: kiten-generator
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	type: DrawDefault
+	},
+	{
+	type: DrawWarmupRegion
+	},
+	{
+	type: DrawGlowRegion
+	color: ffbb6ebe
+	},
+  ]
+}
