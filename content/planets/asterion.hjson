@@ -8,12 +8,12 @@ hiddenItems: [
     "scrap"
     "graphite"
     "coal"
-	"titanium"
+    "titanium"
     "thorium"
     "silicon"
     "plastanium"
     "phase-fabric"
-	"sand"
+    "sand"
     "surge-alloy"
     "spore-pod"
     "blast-compound"
@@ -28,13 +28,13 @@ hiddenItems: [
 ]
 
 itemWhitelist: [
-whitorite,
-irmenite,
-ashotite,
-quartz-sand,
-magnetite,
-blacktite,
-kiten,
+whitorite
+irmenite
+ashotite
+quartz-sand
+magnetite
+blacktite
+kiten
 zionitium
 ]
 
@@ -52,18 +52,17 @@ sectorSize: 1.2
 startSector: 10
 atmosphereRadIn: 0.02
 atmosphereRadOut: 0.3
-atmosphereColor: 59857c       //Цвет атмосферы
-iconColor: 4f5357       //Цвет иконки
+atmosphereColor: 59857c  
+iconColor: 4f5357     
 icon: planet
-orbitRadius: 29.7       //Радиус орбиты
+orbitRadius: 29.7    
 orbitTime: 176
 bloom: false
 alwaysUnlocked: true
 accessible: true
 visible: true
-allowLaunchToNumbered: false      //Возможность приземляться на соседние сектора (true - как на Серпуло, false - как на Эрекире)
+allowLaunchToNumbered: false    
 
- //Поверхность планеты
 mesh: [
  {
     type: NoiseMesh
@@ -82,11 +81,9 @@ mesh: [
  }
 ]
 
-
 bloom: false
 alwaysUnlocked: true
 
-//Отрисовка облаков
 cloudMesh: [
   {
 bloom: true
