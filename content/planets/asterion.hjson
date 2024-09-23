@@ -55,7 +55,7 @@ atmosphereRadOut: 0.3
 atmosphereColor: 59857c  
 iconColor: 4f5357     
 icon: planet
-orbitRadius: 29.7    
+orbitRadius: 26.7    
 orbitTime: 176
 bloom: false
 alwaysUnlocked: true
