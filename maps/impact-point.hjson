@@ -1,0 +1,8 @@
+name: Impact point
+description: "Looks like you had a rough landing, get your first resources and start exploring the planet."
+captureWave: 10
+research: Coreforce
+planet: asterion
+sector: 10
+difficulty: 1
+alwaysUnlocked: true
