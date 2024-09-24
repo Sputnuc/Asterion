@@ -54,7 +54,7 @@ requirements: [
   kiten/75
 ]
 category: turret
-research: a-1-01-splinter
+research: splinter
 drawer: {
   type: DrawTurret
   basePrefix: ast-
