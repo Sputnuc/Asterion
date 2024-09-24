@@ -7,5 +7,5 @@ requirements: [
   whitorite/6
  ]
 category: defense
-research: a-1-01-splinter
+research: splinter
 researchCostMultiplier: 0.20
