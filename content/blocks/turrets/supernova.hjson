@@ -60,7 +60,7 @@
 	magnetite/70
   ]
   category: turret
-  research: a-3-01-spark
+  research: spark
   drawer: {
    type: DrawTurret
    basePrefix: ast-
