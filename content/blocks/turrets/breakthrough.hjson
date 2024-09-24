@@ -9,7 +9,7 @@
     {item: kiten, amount: 140}
 	{item: blacktite, amount: 95}
   ]
-  research: a-2-01-trasher
+  research: trasher
   category: turret
   reload: 60
   range: 220
