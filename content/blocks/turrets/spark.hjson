@@ -50,7 +50,7 @@ requirements: [
  magnetite/50
  kiten/35
 ]
-research: a-1-01-splinter
+research: splinter
  drawer: {
   type: DrawTurret
   basePrefix: ast-
