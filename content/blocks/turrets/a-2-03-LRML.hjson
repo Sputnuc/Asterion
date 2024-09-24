@@ -10,7 +10,7 @@
     magnetite/270
 	blacktite/120
   ],
-  research: breakthrough
+  research: a-2-02-breakthrough
   consumes: {
    power: 5
   }
