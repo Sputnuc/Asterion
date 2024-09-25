@@ -4,14 +4,14 @@ type: Drill,
 health: 500,
 category: production,
 size: 3,
-drillTime: 270,
+drillTime: 250,
 tier: 3,
 liquidBoostIntensity: 1
 consumes: {
   power: 1
   liquid: {
   liquid: zion
-  amount: 0.2
+  amount: 0.01666666666666666666666666666667
   booster: false
  }
 }
