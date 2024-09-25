@@ -1,0 +1,57 @@
+{
+	"name": "Methane mine",
+	"description": "drilling methane in underground wells",
+    "type": "GenericCrafter",
+    "category": "production",
+    "requirements": [
+      "whitorite/120",
+      "irmenite/50",
+      "kiten/70"
+    ],
+    "outputLiquid": "methane/0.1",
+    "craftTime": 60,
+    "size": 3,
+    "liquidCapacity": 30,
+    "hasLiquids": true,
+    "hasPower": true,
+    "hasItems": true,
+    "craftEffect": "none",
+    "consumes": {
+      "power": 1,
+      "items": [
+      {"item": "quartz-sand", "amount": 1}
+      ]
+    },
+    "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+          {
+          "type": "DrawRegion",
+          "suffix": "-bottom"
+          },
+          {
+          "type": "DrawLiquidTile",
+          "drawLiquid": "methane"
+          },  	  
+          {
+          "type": "DrawDefault"
+          },
+		  {
+            "type": "DrawRegion",
+            "suffix": "-glass"
+          },
+          {
+            "type": "DrawRegion",
+            "suffix": "-rotator",
+            "rotateSpeed": 2,
+            "spinSprite": true
+          },
+		  {
+            "type": "DrawRegion",
+            "suffix": "-top"
+          }
+      ]
+    },
+	"research": "whitorite-drill",
+	"researchCostMultiplier": 0.75
+ }
