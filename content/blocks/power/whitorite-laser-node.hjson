@@ -3,10 +3,10 @@ name: "Whitorite laser node"
 description: "Distributes energy to buildings in a small radius."
 size: 1
 health: 70
-laserRange: 5
+laserRange: 10
 laserColor1: d86bff
 laserColor2: 8054ba
-maxNodes": 20
+maxNodes: 15
   requirements: [
     whitorite/18
 	irmenite/8
