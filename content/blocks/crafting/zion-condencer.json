@@ -15,9 +15,9 @@
     "craftTime": 60,
 	"consumes": {
 		"power": 1,
-		"liquid": "metan/0.05"
+		"liquid": "methane/0.05"
 	}
-	"research": "metan-extractor", 
+	"research": "methane-extractor", 
 	"drawer": {
       "type": "DrawMulti",
       "drawers": [	  

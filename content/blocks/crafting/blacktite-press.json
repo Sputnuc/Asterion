@@ -21,7 +21,7 @@
 		},
 		"liquids": {
 		     "liquids":[
-		       "metan/0.25"
+		       "methane/0.25"
 		    ]
 		}
 	  },	
@@ -34,7 +34,7 @@
 	},
 	{
 	"type": "DrawLiquidTile",
-	"drawLiquid": "metan"
+	"drawLiquid": "methane"
 	},
 	{
 	"type": "DrawRegion",

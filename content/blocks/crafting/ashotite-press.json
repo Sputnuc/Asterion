@@ -13,7 +13,7 @@
 		{"item": "irmenite", "amount": 50},
 		{"item": "kiten", "amount": 25}
 	 ],
-	"research": "metan-extractor",
+	"research": "methane-extractor",
 	"consumes": {
 		"power": 1.75,
 		"items": {
@@ -22,7 +22,7 @@
 			 ]
 		 },
 		"liquids": [
-		"metan/0.3"
+		"methane/0.3"
 		]
 	},	
 	"outputItem": "ashotite/4",
