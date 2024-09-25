@@ -14,7 +14,7 @@ consumes: {
   power: 1.35
   items: [
   whitorite/6
-  kiten/5
+  kiten/3
   quartz-sand/4
   ]
 }
