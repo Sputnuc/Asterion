@@ -17,7 +17,7 @@ craftTime: 30
 craftEffect: {
       type: ParticleEffect
       particles: 6
-      length: 
+      length: 20
       lifetime: 20
       cone: 360
       useRotation: false
