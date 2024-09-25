@@ -1,4 +1,4 @@
-Hello! Welcome to Asterio!
+Hello! Welcome to Asterion!
 This is collaboration mod.
 
 We have discrod!
