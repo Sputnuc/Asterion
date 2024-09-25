@@ -8,8 +8,8 @@
       "irmenite/50",
       "kiten/70"
     ],
-    "outputLiquid": "methane/0.1",
-    "craftTime": 60,
+    "outputLiquid": "methane/0.25",
+    "craftTime": 90,
     "size": 3,
     "liquidCapacity": 30,
     "hasLiquids": true,
