@@ -2,6 +2,7 @@ type: GenericCrafter
 name: Whitorite crusher
 description: crushes the whitorite into sand.
 size: 2
+planet: as-asterion
 category: crafting
 requirements: [
  whitorite/85
