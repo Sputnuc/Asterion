@@ -1,6 +1,7 @@
 type: Unloader
 name: Unloader
 description: Unloader 
+planet: as-asterion
 size: 1
 category: effect
 research: irmenite-container
