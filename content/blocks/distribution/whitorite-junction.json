@@ -2,6 +2,7 @@
 "type": "Junction",
 "name": "Whitorite junction",
 "description": "Allows for crossing two pipelines.", 
+"planet": "as-asterion",
 "underBullets": true,
 "health": 65,
 "size": 1,
