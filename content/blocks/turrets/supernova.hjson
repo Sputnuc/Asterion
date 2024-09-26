@@ -23,9 +23,8 @@
     firstShotDelay: 120
    }
   consumes: {
-    power: 10
+    power: 12
   }
-  powerUse: 8
   hasPower: true
   shootType: {
     type: laserBulletType
