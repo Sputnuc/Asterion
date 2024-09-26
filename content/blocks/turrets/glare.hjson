@@ -1,5 +1,6 @@
 type: ContinuousLiquidTurret
 outlineColor: 22262b
+planet: as-asterion
 cooldownTime: 120
 heatColor: f70a51
 name: Glare
