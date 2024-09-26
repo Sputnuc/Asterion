@@ -1,5 +1,6 @@
   type: ItemTurret
   outlineColor: 22262b
+  planet: as-asterion
   name: Splinter
   description: shoots piercing spears
   health: 1250
