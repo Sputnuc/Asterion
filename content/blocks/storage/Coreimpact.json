@@ -1,6 +1,7 @@
 {
 	"name": "Core-Impact",
 	"description": "Second interation of core on Oscilos. Not so special, to have a big description.",
+	"planet": "as-asterion",
 	"type": "CoreBlock",
 	"health": 3800,
 	"category": "effect",
