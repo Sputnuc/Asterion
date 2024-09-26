@@ -1,5 +1,6 @@
 type: PowerTurret
 outlineColor: 22262b
+planet: as-asterion
 name: Spark
 description: Shoots a ball lightning emitting lightning
 size: 4
