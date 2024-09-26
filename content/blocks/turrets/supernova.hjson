@@ -46,7 +46,7 @@
 	 }
 	]
     lifetime: 90
-    damage: 350
+    damage: 550
     length: 300
     wigth: 50
     hitEffect: hitLaser
