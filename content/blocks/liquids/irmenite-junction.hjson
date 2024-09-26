@@ -1,6 +1,7 @@
 type: LiquidJunction
 name: Irmenite Junction
 description: Used for crossing two conduits.
+planet: as-asterion
 solid: false
 category: liquid
 squareSprite: false
