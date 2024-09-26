@@ -3,7 +3,6 @@
   name: Supernova
   description: a powerfull laser turret
   researchCostMultiplier: 0.6
-  predictTarget: false
   size: 4
   health: 1280
   shake: 7
