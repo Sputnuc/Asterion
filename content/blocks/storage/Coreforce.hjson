@@ -1,6 +1,7 @@
 type: CoreBlock
 name: "Core Force"
 description: "The first core, small capacity of items, nothing special."
+planet: as-asterion
 
 squareSprite: false           //Квадратный спрайт? (Ставьте false)
 
