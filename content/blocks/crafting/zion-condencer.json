@@ -4,6 +4,7 @@
 	"description": "condenses heavy methane particles",
 	"category": "crafting",
 	"size": 3,
+	"planet": "as-asterion",
 	"hasLiquid": true,
 	"liquidCapacity": 120,
 	"requirements": [
