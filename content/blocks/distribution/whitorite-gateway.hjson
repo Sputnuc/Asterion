@@ -1,6 +1,7 @@
 type: OverflowGate
 name: Whitorite gateway
 description: Distributes items to the sides if the front passage is blocked
+planet: as-asterion
 category: distribution
 invert: false
 research: whitorite-router
