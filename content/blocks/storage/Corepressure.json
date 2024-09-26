@@ -1,6 +1,7 @@
 {
 	"name": "Core-Pressure",
 	"description": "Third interation of core on Oscilos. Not so special, to have a big description.",
+	"planet": "as-asterion",
 	"type": "CoreBlock",
 	"health": 5000,
 	"category": "effect",
