@@ -26,6 +26,6 @@ reload: 180
 baseColor: ef9ef5
 phaseColor: ef9ef5
 phaseRangeBoost: 32
-phaseBoost: 1
+phaseBoost: 1.75
 range: 96
-healPercent: 1
+healPercent: 3.5
