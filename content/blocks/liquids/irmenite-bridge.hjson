@@ -1,6 +1,7 @@
 type: LiquidBridge
 name: Irmenite Bridge
 description: Used for crossing multiple distribution lines or terrain to conduits.
+planet: as-asterion
 fadeIn: false
 moveArrows: false
 arrowSpacing: 6
