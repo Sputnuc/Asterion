@@ -1,5 +1,6 @@
 type: Wall
 name: Whitorite wall
+planet: as-asterion
 health: 650
 armor: 2
 size: 1
