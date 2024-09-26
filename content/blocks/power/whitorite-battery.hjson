@@ -1,6 +1,7 @@
 type: Battery
 name: Whitorite battery
 description: Just battery 
+planet: as-asterion
 size: 2
 squareSprite: false
 consumes: {
