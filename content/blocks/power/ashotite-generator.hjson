@@ -3,6 +3,7 @@ size: 3
 category: power
 name: Ashotite generator
 description: burns ashotite to generate energy
+planet: as-asterion
 itemDuration: 60
 generateEffect:{
       type: RadialEffect
