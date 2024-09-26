@@ -1,6 +1,7 @@
 type: MendProjector
 name: Mend projector
 description: heals the nearest buildings
+planet: as-asterion
 health: 550
 requirements: [
    whitorite/75
