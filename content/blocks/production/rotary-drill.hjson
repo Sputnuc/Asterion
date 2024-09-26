@@ -1,5 +1,6 @@
 name: Rotary drill,
 description: The second drill of the mod,
+planet: as-asterion
 type: Drill,
 health: 500,
 category: production,
