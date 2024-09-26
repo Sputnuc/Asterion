@@ -5,6 +5,7 @@
 "health": 50,
 "underBullets": true,
 "size": 1,
+"planet": "as-asterion",
 "requirements": [
   "whitorite/4",
   "irmenite/2"
