@@ -3,6 +3,7 @@
 	"name": "Blacktite press",
 	"buildCostMultiplier": 0.75,
 	"size": 3,
+	"planet": "as-asterion",
 	"hasPower": true,
 	"hasItems": true,
 	"itemCapacity": 30,
