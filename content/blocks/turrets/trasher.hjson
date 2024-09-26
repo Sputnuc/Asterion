@@ -1,6 +1,7 @@
 name: Trasher
 type: ItemTurret
 outlineColor: 22262b
+planet: as-asterion
 size: 2
 range: 120
 reload: 120
