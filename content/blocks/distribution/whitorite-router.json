@@ -2,6 +2,7 @@
   "type": "Router",
   "name": "Whitorite router",
   "description": "Distributes objects in different directions.",
+  "planet": "as-asterion",
   "category": "distribution",
   "underBullets": true,
   "health": 65,
