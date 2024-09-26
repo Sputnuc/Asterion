@@ -1,6 +1,7 @@
 {
 	"name": "Methane mine",
 	"description": "drilling methane in underground wells",
+	"planet": "as-asterion",
     "type": "GenericCrafter",
     "category": "production",
     "requirements": [
