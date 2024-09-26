@@ -1,6 +1,7 @@
 type: OverflowGate
 name: Whitorite inverted gateway
 description: Works like an whitorite gateway but inverted
+planet: as-asterion
 category: distribution
 invert: true
 research: whitorite-gateway
