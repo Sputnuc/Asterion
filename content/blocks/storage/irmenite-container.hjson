@@ -1,5 +1,6 @@
 type: StorageBlock
 size: 2
+planet: as-asterion
 health: 550
 name: Container
 description: Stores items in larger quantities. Fragile.
