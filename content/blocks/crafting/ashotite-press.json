@@ -3,6 +3,7 @@
 	"name": "Ashotite press",
 	"description": "Compresses metan and sand along with pieces of ash in the atmosphere",
 	"size": 3,
+	"planet": "as-asterion",
 	"hasPower": true,
 	"hasItems": true,
 	"hasLiquids": true,
