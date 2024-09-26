@@ -2,6 +2,7 @@ type: GenericCrafter
 name: Irmenite crucible
 description: Melts irmenite from sand with whitorite.
 size: 3
+planet: as-asterion
 itemCapacity: 30
 category: crafting
 requirements: [
