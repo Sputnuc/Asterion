@@ -2,6 +2,7 @@ type: GenericCrafter
 name: Irmenite oven
 description: Melts irmenite from sand with whitorite.
 size: 2
+planet: as-asterion
 category: crafting
 requirements: [
  whitorite/85
