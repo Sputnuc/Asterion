@@ -1,6 +1,7 @@
   name: breakthrough
   type: ItemTurret
   outlineColor: 22262b
+  planet: as-asterion
   size: 4
   health: 3450
   requirements: [
