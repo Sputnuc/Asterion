@@ -2,6 +2,7 @@
 	"type": "AttributeCrafter",
 	"name": "Magnetite deep mine",
 	"description": "Bores magnetite from underground lakes",
+	"planet": "as-asterion",
 	"category": "production",
 	"attribute": "water",
 	"hasLiquids": true,
