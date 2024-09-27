@@ -5,7 +5,7 @@ name: "Biolume"
   //statusDuration: 75
 speedMultiplier: 0.68
 variants: 3
-cacheLayer: "arkycite" //tar, mud, water, arkycite
+cacheLayer: "mud" //tar, mud, water, arkycite
 isLiquid: true
 liquidDrop: biolume
 liquidMultiplier: 0.6
