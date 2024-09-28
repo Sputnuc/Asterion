@@ -1,0 +1,97 @@
+  name: Storm
+  type: ItemTurret
+  outlineColor: 22262b
+  planet: as-asterion
+  size: 5
+  health: 3700
+  requirements: [
+    irmenite/130
+    whitorite/100
+	blacktite/75
+	magnetite/20
+  ]
+  research: breakthrough
+  category: turret
+  reload: 30
+  range: 280
+  ammoTypes: {
+    blacktite: {
+      type: BasicBulletType
+	  shootEffect: 
+	    {
+          type: ParticleEffect
+          particles: 14
+          sizeFrom: 6
+          sizeTo: 4
+          length: 10
+          lifetime: 20
+          interp: circleOut
+          colorFrom: 6385ca
+          colorTo: 6385ca00
+          cone: 30
+        }
+	  smokeEffect: shootBigSmoke
+	  ammoMultiplier: 5
+      damage: 35
+      speed: 16
+	  width: 8
+      height: 8
+      pierce: true
+      pierceCap: 4
+	  splashDamage: 70
+	  splashDamageRadius: 40
+      trailLength: 9
+	  trailWidth: 8
+	  trailColor: 6385ca
+      lifetime: 17.5
+      despawnEffect: [
+	   {
+	   type: ParticleEffect
+	   particles: 10
+	   sizeFrom: 3
+	   sizeTo: 7
+	   lifetime: 60
+	   length: 40
+	   cone: 360
+	   colorFrom: c9d7f3
+	   colorTo: 9da5b400
+	   }
+	   {
+	   type: WaveEffect
+	   colorTo: ffffffff00
+	   sizeTo: 50
+	   strokeFrom: 4
+	   lifetime: 20
+	   }
+	  ]
+	  hitEffect: {
+	  type: ParticleEffect
+	  particles: 5
+	  sizeFrom: 3
+	  sizeTo: 0
+	  colorFrom: c9d7f3
+	  colorTo: c9d7f300
+	  line: true
+	  lenTo: 0
+	  lenFrom: 6
+	  strokeFrom: 2
+	  strokeTo: 0
+	  length: 30
+	  lifetime: 20
+	  cone: -90
+	  }
+    }
+  }
+  cooldownTime: 60
+  inaccuracy: 0
+  shootSound: shootBig
+  consumes: {
+    power: 3
+	coolant: { 
+       amount: 0.2
+     }
+  }
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+    }

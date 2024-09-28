@@ -34,6 +34,8 @@
 	  smokeEffect: shootBigSmoke
       damage: 85
       speed: 15
+	  width: 8
+      height: 8
       pierce: true
       pierceCap: 9
       trailLength: 16
@@ -61,6 +63,8 @@
 		  ]  
 	  smokeEffect: shootBigSmoke
 	  reloadMultiplier: 0.6
+	  width: 8
+      height: 8
       damage: 120
 	  status: melting
 	  statusDuration: 180
