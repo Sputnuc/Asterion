@@ -32,7 +32,7 @@
         }
 	  smokeEffect: shootBigSmoke
 	  ammoMultiplier: 5
-      damage: 35
+      damage: 50
       speed: 16
 	  width: 8
       height: 8
