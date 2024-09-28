@@ -4,7 +4,7 @@ name: "Biolume"
   //status: melting
   //statusDuration: 75
 speedMultiplier: 0.68
-variants: 3
+variants: 0
 cacheLayer: "mud" //tar, mud, water, arkycite
 drownTime: 150
 isLiquid: true
