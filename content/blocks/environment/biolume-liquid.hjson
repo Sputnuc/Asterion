@@ -6,6 +6,7 @@ name: "Biolume"
 speedMultiplier: 0.68
 variants: 3
 cacheLayer: "mud" //tar, mud, water, arkycite
+drownTime: 300
 isLiquid: true
 liquidDrop: biolume
 liquidMultiplier: 0.6
