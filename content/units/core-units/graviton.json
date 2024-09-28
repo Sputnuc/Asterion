@@ -1,6 +1,6 @@
 {
 	"type": "flying",
-	"outlineColor": "22262b",
+	"outlineColor": "1f1f26",
 	"name": "Graviton",
 	"description": "Guard of the core: force. Graviton shoots bombs.",
 	"flying": true,
@@ -9,7 +9,7 @@
 	"buildSpeed": 1.05,
 	"mineTier": 1,
     "mineSpeed": 8.0,
-    "buildRange": 150
+    "buildRange": 150,
 	"speed": 3,
 	"range": 240,
 	"accel": 0.2,
@@ -20,7 +20,7 @@
 		{
 			"name": "object-finder",
 			"x": 3,
-			"y": 2,
+			"y": 1,
 			"recoil": -2,
 			"top": false,
 			"layer": 90,
@@ -28,20 +28,19 @@
 			"mirror": true,
 			"alternative": true,
 			"shootSound": "lasershoot",
-			"top": false,
 			"bullet": {
 				"type": "BombBulletType",
 				"pierce": true,
 				"speed": 4,
 				"lifetime": 60,
-				"buildingDamageMultiplier": 0.01
+				"buildingDamageMultiplier": 0.01,
 				"splashDamage": 25,
 				"splashDamageRadius": 40,
 				"width": 8,
 				"height": 8,
 				"hitsize": 6,
 				"hitEffect": "none",
-				"despawnEffect": "railShoot",
+				"despawnEffect": "railShoot"
 			}
 		}
 	]
