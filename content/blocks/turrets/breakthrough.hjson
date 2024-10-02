@@ -1,7 +1,6 @@
   name: breakthrough
   type: ItemTurret
   outlineColor: 22262b
-  planet: as-asterion
   size: 4
   health: 3450
   requirements: [
@@ -10,7 +9,10 @@
     {item: kiten, amount: 140}
 	{item: blacktite, amount: 95}
   ]
-  research: trasher
+  research: {
+	parent: trasher
+	planet: as-asterion
+  }
   category: turret
   reload: 60
   range: 220
