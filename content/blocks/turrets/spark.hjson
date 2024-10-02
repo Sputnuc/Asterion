@@ -1,6 +1,5 @@
 type: PowerTurret
 outlineColor: 22262b
-planet: as-asterion
 name: Spark
 description: Shoots a ball lightning emitting lightning
 size: 4
@@ -51,7 +50,10 @@ requirements: [
  magnetite/50
  kiten/35
 ]
-research: splinter
+research: {
+ parent: splinter
+ planet: as-asterion
+}
  drawer: {
   type: DrawTurret
   basePrefix: ast-
