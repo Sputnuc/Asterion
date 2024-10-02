@@ -1,0 +1,19 @@
+type: Wall
+name: Magnetite wall
+health: 750
+absorbLasers: false
+lightningChance: 0.05
+lightningDamage: 10
+lightningColor: e9ecf0
+size: 1
+requirements: [
+  magnetite/4
+  kiten/3
+  whitorite/2
+ ]
+category: defense
+research: {
+  parent: irmenite-wall-large
+  planet: as-asterion
+}
+researchCostMultiplier: 0.20
