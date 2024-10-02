@@ -3,7 +3,6 @@
 	description: mix oxylene
 	category: crafting
 	size: 3
-	planet: as-asterion
 	hasLiquid: true
 	liquidCapacity: 120
 	requirements: [
@@ -23,7 +22,10 @@
 		]
 	   }
 	  }
-	research: blacktite-press
+	research: {
+	parent: blacktite-press
+	planet: as-asterion
+	}
 	drawer: {
       type: DrawMulti
       drawers: [	  
