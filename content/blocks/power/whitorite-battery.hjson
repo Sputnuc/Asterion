@@ -1,7 +1,6 @@
 type: Battery
 name: Whitorite battery
 description: Just battery 
-planet: as-asterion
 size: 2
 squareSprite: false
 consumes: {
@@ -15,5 +14,8 @@ requirements: [
 category: power
 baseExplosiveness: 2.5
 fullLightColor: eebcff
-research: whitorite-beam-node
+research: {
+parent: whitorite-beam-node
+planet: as-asterion
+}
 researchCostMultiplier: 0.35
