@@ -19,7 +19,7 @@
   "consumes": {
     "power": 5,
     "liquid": {
-      "liquid": "zion",
+      "liquid": "oxylene",
       "amount": 0.4
     },
     "items": {
