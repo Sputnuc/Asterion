@@ -3,13 +3,13 @@ name: Irmenite crucible
 description: Melts irmenite from sand with whitorite.
 size: 3
 planet: as-asterion
-itemCapacity: 30
+itemCapacity: 50
 category: crafting
 requirements: [
  whitorite/100
  kiten/40
  irmenite/25
- 
+ magnetite/10
 ]
 consumes: {
   power: 1.35
@@ -38,5 +38,5 @@ drawer: {
   ]
  }         
 craftEffect: smeltsmoke
-outputItem: irmenite/8
+outputItem: irmenite/13
 research: irmenite-oven

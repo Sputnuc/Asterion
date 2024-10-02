@@ -1,7 +1,7 @@
 {
 	"type": "duct",
 	"name": "Whitorite duct",
-	"description": "transparent items forward",
+	"description": "moves items forward",
 	"planet": "as-asterion",
 	"speed": 5,
 	"underBullets": true,
