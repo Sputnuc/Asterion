@@ -1,7 +1,6 @@
 type: BeamNode
 name: Whitorite beam node
 description: Transfers energy on very long distances.
-planet: as-asterion
 squareSprite: false
 hasPower: true
 allowDiagonal: true
