@@ -20,6 +20,7 @@
 	"research": {
 		"parent": "methane-extractor",
 		"planet": "as-asterion",
+	}
 	"drawer": {
       "type": "DrawMulti",
       "drawers": [	  
