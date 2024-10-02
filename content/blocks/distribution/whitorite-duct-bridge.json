@@ -5,13 +5,15 @@
 "health": 50,
 "underBullets": true,
 "size": 1,
-"planet": "as-asterion",
 "requirements": [
   "whitorite/4",
   "irmenite/2"
 ] 
 "category": "distribution",
-"research": "whitorite-router",
+"research": {
+  "parent": "whitorite-router",
+  "planet": "as-asterion",
+}
 "squareSprite": false,
 "transportTime": 0.05,
 "range": 6,
