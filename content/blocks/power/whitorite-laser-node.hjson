@@ -1,7 +1,6 @@
 type: PowerNode
 name: "Whitorite laser node"
 description: "Distributes energy to buildings in a small radius."
-planet: as-asterion
 size: 1
 health: 70
 laserRange: 10
@@ -13,5 +12,8 @@ maxNodes: 15
 	irmenite/8
 	]
 category: power
-research: whitorite-beam-node
+research: {
+parent: whitorite-beam-node
+planet: as-asterion
+}
 researchCostMultiplier: 0.25
