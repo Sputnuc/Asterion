@@ -1,0 +1,17 @@
+type: Pump
+name: Irmenite pump
+description: pump liquid
+pumpAmount: 0.2
+size: 2
+health: 160
+requirements: [
+  irmenite/45
+  whitorite/30
+  ]
+consumes: {
+ power: 1.5
+} 
+squareSprite: false
+category: liquid
+research: Coreforce
+researchCostMultiplier: 0.25

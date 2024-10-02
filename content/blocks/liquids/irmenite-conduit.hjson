@@ -3,7 +3,7 @@ name: Irmenite conduit
 description: Transports liquids forward.
 planet: as-asterion
 category: liquid
-research: Coreforce
+research: irmenite-pump
 requirements: [
   irmenite/1
 ]
