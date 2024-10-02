@@ -3,6 +3,9 @@
   outlineColor: 22262b
   planet: as-asterion
   size: 5
+  recoil: 2
+  shake: 6
+  rotateSpeed: 1.4
   health: 3700
   requirements: [
     irmenite/130
@@ -12,7 +15,11 @@
   ]
   research: breakthrough
   category: turret
-  reload: 30
+  reload: 120
+  shoot: {
+   shots: 10
+   shotDelay: 2
+  }
   range: 280
   ammoTypes: {
     blacktite: {
@@ -31,13 +38,11 @@
           cone: 30
         }
 	  smokeEffect: shootBigSmoke
-	  ammoMultiplier: 5
+	  ammoMultiplier: 1
       damage: 50
       speed: 16
-	  width: 8
-      height: 8
-      pierce: true
-      pierceCap: 4
+	  width: 12
+      height: 12
 	  splashDamage: 70
 	  splashDamageRadius: 40
       trailLength: 9
@@ -64,26 +69,30 @@
 	   lifetime: 20
 	   }
 	  ]
-	  hitEffect: {
-	  type: ParticleEffect
-	  particles: 5
-	  sizeFrom: 3
-	  sizeTo: 0
-	  colorFrom: c9d7f3
-	  colorTo: c9d7f300
-	  line: true
-	  lenTo: 0
-	  lenFrom: 6
-	  strokeFrom: 2
-	  strokeTo: 0
-	  length: 30
-	  lifetime: 20
-	  cone: -90
-	  }
+	  hitEffect: [
+	   {
+	   type: ParticleEffect
+	   particles: 10
+	   sizeFrom: 3
+	   sizeTo: 7
+	   lifetime: 60
+	   length: 40
+	   cone: 360
+	   colorFrom: c9d7f3
+	   colorTo: 9da5b400
+	   }
+	   {
+	   type: WaveEffect
+	   colorTo: ffffffff00
+	   sizeTo: 50
+	   strokeFrom: 4
+	   lifetime: 20
+	   }
+	  ]
     }
   }
   cooldownTime: 60
-  inaccuracy: 0
+  inaccuracy: 7
   shootSound: shootBig
   consumes: {
     power: 3
