@@ -3,7 +3,6 @@ size: 2
 category: power
 name: Kiten generator
 description: uses kiten to produce electricity
-planet: as-asterion
 itemDuration: 120
 updateEffect: fuelburn 
 itemCapacity: 10
@@ -19,7 +18,7 @@ consumes: {
 outputsPower: true,
 powerProduction: 1.25
 research: {
-    planet: asterion,
+    planet: as-asterion,
 	parent: Coreforce
 	requirements: [
 	  whitorite/200
