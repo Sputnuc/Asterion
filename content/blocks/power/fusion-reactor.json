@@ -35,5 +35,8 @@
 	"magnetite/150"
   ],
   "category": "power",
-  "research": "ashotite-generator"
+  "research": {
+"parent": "ashotite-generator",
+"planet": "as-asterion",
+  }
 }
