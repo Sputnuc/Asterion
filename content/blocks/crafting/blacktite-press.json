@@ -12,6 +12,7 @@
 		"irmenite/75",
 		"kiten/75",
       ],
+    "category": "crafting",  
     "consumes": {
 		"power": 1.5,
 		"items": {
