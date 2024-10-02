@@ -1,6 +1,5 @@
 name: Whitorite drill,
 description: Small, slow, and basic at all drill.,
-planet: as-asterion
 type: Drill,
 health: 200,
 category: production,
@@ -22,6 +21,7 @@ requirements: [
 research: {
     planet: asterion
 	parent: Coreforce
+	planet: as-asterion
 	requirements: [
 	  whitorite/20
 	]
