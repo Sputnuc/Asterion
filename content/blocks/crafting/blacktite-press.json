@@ -53,7 +53,9 @@
 	"updateEffect": "smeltsmoke",
 	"craftEffect": "plasticExplosion",
 	"idleSoundVolume": 1.2,
-	"category": "crafting",
-	"research": "irmenite-oven"
+	"research": {
+          "parent": "irmenite-oven"
+          "planet": "as-asterion"
+         }
 }
 	
