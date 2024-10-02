@@ -1,6 +1,5 @@
   type: PowerTurret
   outlineColor: 22262b
-  planet: as-asterion
   name: Supernova
   description: a powerfull laser turret
   researchCostMultiplier: 0.6
@@ -89,7 +88,10 @@
 	magnetite/70
   ]
   category: turret
-  research: spark
+  research: {
+	parent: spark
+	planet: as-asterion
+  }
   drawer: {
    type: DrawTurret
    basePrefix: ast-
