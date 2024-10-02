@@ -37,7 +37,10 @@ consumes: {
     }
 outputsPower: true
 powerProduction: 8
-research: kiten-generator
+research: {
+parent: kiten-generator
+planet: as-asterion
+}
 drawer: {
   type: DrawMulti
   drawers: [
