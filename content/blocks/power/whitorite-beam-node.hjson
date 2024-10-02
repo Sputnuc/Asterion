@@ -22,5 +22,8 @@ requirements: [
     whitorite/12
   ]
 category: power
-research: kiten-generator
+research: {
+parent: kiten-generator
+planet: as-asterion
+}
 researchCostMultiplier: 0.25
