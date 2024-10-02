@@ -1,7 +1,6 @@
 {
 	"name": "Core-Pressure",
 	"description": "Third interation of core on Oscilos. Not so special, to have a big description.",
-	"planet": "as-asterion",
 	"type": "CoreBlock",
 	"health": 5000,
 	"category": "effect",
@@ -12,7 +11,10 @@
 	"outputsPower": true,
 	"isFirstTier": false,
 	"buildVisibility": "shown",
-	"research": "Coreimpact",
+	"research": {
+		"parent": "Coreimpact",
+		"planet": "as-asterion",
+	}
 	"requirements": [
 	 "whitorite/3000"
 	 "magnetite/1250"
