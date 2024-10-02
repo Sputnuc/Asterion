@@ -1,7 +1,6 @@
 {
 	"name": "Core-Impact",
 	"description": "Second interation of core on Oscilos. Not so special, to have a big description.",
-	"planet": "as-asterion",
 	"type": "CoreBlock",
 	"health": 3800,
 	"category": "effect",
@@ -12,7 +11,10 @@
 	"outputsPower": true,
 	"isFirstTier": false,
 	"buildVisibility": "shown",
-	"research": "Coreforce",
+	"research": {
+		"parent": "Coreforce",
+		"planet": "as-asterion",
+	}
 	"requirements": [
 	 "whitorite/1700"
 	 "irmenite/1250"
