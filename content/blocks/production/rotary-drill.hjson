@@ -1,6 +1,5 @@
 name: Rotary drill,
 description: The second drill of the mod,
-planet: as-asterion
 type: Drill,
 health: 500,
 category: production,
@@ -22,5 +21,8 @@ requirements: [
   kiten/55
   magnetite/20
 ]
-research: whitorite-drill
+research: {
+parent: whitorite-drill
+planet: as-asterion
+}
 researchCostMultiplier: 0.5
