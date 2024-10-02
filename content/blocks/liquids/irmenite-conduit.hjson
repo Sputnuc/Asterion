@@ -1,9 +1,11 @@
 type: Conduit
 name: Irmenite conduit
 description: Transports liquids forward.
-planet: as-asterion
 category: liquid
-research: irmenite-pump
+research: {
+  parent: irmenite-pump
+  planet: as-asterion
+}
 requirements: [
   irmenite/1
 ]
