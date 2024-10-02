@@ -12,13 +12,13 @@
 		"irmenite/75",
 		"kiten/75",
       ],
-    "category": "crafting",  
+	"category": "crafting",  
     "consumes": {
 		"power": 1.5,
 		"items": {
 			"items": [
                "whitorite/2",
-			   "quartz-sand/4"
+			   "kiten/4"
 			]
 		},
 		"liquids": {
@@ -48,7 +48,7 @@
     }
         ]
        },
-    "outputItem": {"item": "blacktite", "amount": 2},	
+    "outputItem": {"item": "blacktite", "amount": 4},	
 	"craftTime": 120,
 	"idleSound": "respawning",
 	"updateEffect": "smeltsmoke",
