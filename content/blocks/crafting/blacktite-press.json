@@ -3,6 +3,7 @@
 	"name": "Blacktite press",
 	"buildCostMultiplier": 0.75,
 	"size": 3,
+	"planet": "as-asterion",
 	"hasPower": true,
 	"hasItems": true,
 	"itemCapacity": 30,
@@ -37,22 +38,15 @@
 	"drawLiquid": "methane"
 	},
 	{
-	"type": "DrawRegion",
-	"suffix": "-glass",
+	"type": "DrawArcSmelt"
+	"circleStroke": 1,
+	"particleLen": 1.8
 	},
     {
     "type": "DrawDefault"
-    },
-   {
-    "type": "DrawFlame",
-    "flameRadius": 6,         
-    "flameRadiusIn": 3.5,
-    "flameRadiusScl": 4.5,  
-    "flameRadiusMag": 2.5,    
-    "flameRadiusInMag": 1.7
-   }
-               ]
-          },
+    }
+        ]
+       },
     "outputItem": {"item": "blacktite", "amount": 2},	
 	"craftTime": 120,
 	"idleSound": "respawning",
@@ -60,9 +54,6 @@
 	"craftEffect": "plasticExplosion",
 	"idleSoundVolume": 1.2,
 	"category": "crafting",
-	"research": {
-		"parent": "irmenite-oven",
-		"planet": "as-asterion",
-	}
+	"research": "irmenite-oven"
 }
 	
