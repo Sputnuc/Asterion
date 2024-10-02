@@ -1,0 +1,15 @@
+type: Wall
+name: Irmenite wall
+health: 750
+absorbLasers: true
+size: 1
+requirements: [
+  irmenite/4
+  kiten/2
+ ]
+category: defense
+research: {
+  parent: whitorite-large-wall
+  planet: as-asterion
+}
+researchCostMultiplier: 0.20
