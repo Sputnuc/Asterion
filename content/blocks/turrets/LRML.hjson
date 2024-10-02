@@ -1,6 +1,5 @@
   type: ItemTurret
   outlineColor: 22262b
-  planet: as-asterion
   name: LRML
   description: LRML-Long range missile launcher
   targetAir: false
@@ -11,7 +10,10 @@
     magnetite/270
 	blacktite/120
   ],
-  research: breakthrough
+  research: {
+	parent: breakthrough
+	planet: as-asterion
+  }
   consumes: {
    power: 5
   }
