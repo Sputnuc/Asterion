@@ -9,7 +9,7 @@ requirements: [
  ]
 category: defense
 research: {
-  parent: whitorite-large-wall
+  parent: whitorite-wall-large
   planet: as-asterion
 }
 researchCostMultiplier: 0.20
