@@ -1,7 +1,6 @@
   name: Storm
   type: ItemTurret
   outlineColor: 22262b
-  planet: as-asterion
   size: 5
   recoil: 2
   shake: 6
@@ -13,7 +12,10 @@
 	blacktite/75
 	magnetite/20
   ]
-  research: breakthrough
+  research: {
+	parent: breakthrough
+	planet: as-asterion
+  }
   category: turret
   reload: 120
   shoot: {
