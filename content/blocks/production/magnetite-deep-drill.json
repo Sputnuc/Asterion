@@ -2,7 +2,6 @@
 	"type": "AttributeCrafter",
 	"name": "Magnetite deep mine",
 	"description": "Bores magnetite from underground lakes",
-	"planet": "as-asterion",
 	"category": "production",
 	"attribute": "water",
 	"hasLiquids": true,
@@ -31,7 +30,10 @@
     "outputItem": {"item": "magnetite","amount": 1}
     "craftTime": 90,
 	"updateEffect": "mine",
-	"research": "whitorite-drill", 
+	"research": {
+		"parent": "whitorite-drill",
+		"planet": "as-asterion",
+	}
 	"drawer": {
       "type": "DrawMulti",
       "drawers": [	 
