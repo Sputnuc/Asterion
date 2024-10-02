@@ -1,6 +1,5 @@
 type: Wall
 name: Whitorite wall
-planet: as-asterion
 health: 650
 armor: 2
 size: 1
@@ -8,5 +7,8 @@ requirements: [
   whitorite/6
  ]
 category: defense
-research: splinter
+research: {
+  parent: splinter
+  planet: as-asterion
+}
 researchCostMultiplier: 0.20
