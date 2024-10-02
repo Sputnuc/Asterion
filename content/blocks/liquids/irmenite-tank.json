@@ -2,9 +2,11 @@
   "type": "LiquidRouter",
   "name": "Liquid container",
   "description": "stores a small amount of liquid",
-  "planet": "as-asterion",
   "category": "liquid",
-  "research": "irmenite-router",
+  "research": {
+    "parent": "irmenite-router",
+    "planet": "as-asterion",
+  }
   "size": 2,
   "solid": true,
   "health": 350,
