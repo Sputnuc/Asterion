@@ -1,6 +1,6 @@
 {
   "name": "Zion",
-  "description": "It is used in cooling factories/turrets, can heat up strongly under pressure, creating an item for the first bridge conveyors, unloaders, inverted locks and sorters. It is needed to produce magnetite",
+  "description": "it is used to accelerate drills and in some turrets, it can get very hot under pressure",
   "color": "dd5b73",
   "research": "metan",
   "temperature": 0.1,
