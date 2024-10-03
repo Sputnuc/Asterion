@@ -1,0 +1,57 @@
+type: tank
+hitSize: 11
+flying: false
+omniMovement: false
+health: 420
+armor: 6
+speed: 0.38
+rotateSpeed: 1.45
+itemCapacity: 0
+outlineColor: 17191f
+outlineRadius: 4
+treadRects: [
+  {
+  x: -18
+  y: -21
+  width: 19
+  height: 46
+  }
+]
+template: TankUnitType
+treadPullOffset: 4
+research: hunter-factory
+weapons: [
+ {
+    name: mist-weapon
+    rotate: true
+    x: 0
+    y: -1.25
+    mirror: false
+    shootSound: pew
+    reload: 40
+    recoil: 1.5
+    shoot: {
+type: ShootSpread
+shots: 3
+spread: 5
+}
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      damage: 10
+      speed: 6.5
+      lifetime: 20
+      width: 6
+      height: 8
+      backColor: e98878 
+      frontColor: e98878
+      trailColor: e98878 
+      trailWidth: 1.6
+      trailLength: 3
+      homingPower: 0.3
+      homingDelay: 10
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
