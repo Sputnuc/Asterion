@@ -16,8 +16,8 @@ opacityMultiplier: 0.72
 baseSpeed: 4
 sound: windhowl
 //sound: "as-ash-wind"
-soundVol: 1.84
-soundVolMin: 0.27
+soundVol: 0.74
+soundVolMin: 0.17
 force: 1.87
 noisePath: "fog"
 noiseScale: 1756
