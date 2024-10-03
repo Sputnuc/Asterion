@@ -1,7 +1,7 @@
 {
 	"type": "AttributeCrafter",
 	"name": "Magnetite deep mine",
-	"description": "Bores magnetite from underground lakes",
+	"description": "uses the energy of methane and zion explosion on soft rock to access underground wells containing magnetite",
 	"category": "production",
 	"attribute": "water",
 	"hasLiquids": true,
