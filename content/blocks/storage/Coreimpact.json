@@ -1,6 +1,6 @@
 {
 	"name": "Core-Impact",
-	"description": "Second interation of core on Oscilos. Not so special, to have a big description.",
+	"description": "Second interation of core on Asterion. Not so special, to have a big description.",
 	"type": "CoreBlock",
 	"health": 3800,
 	"category": "effect",
