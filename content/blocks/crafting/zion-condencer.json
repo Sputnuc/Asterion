@@ -1,7 +1,7 @@
 {
 	"type": "GenericCrafter",
 	"name": "Zion condencer",
-	"description": "condenses heavy methane particles",
+	"description": "condenses heavy methane particles to zion",
 	"category": "crafting",
 	"size": 3,
 	"hasLiquid": true,
