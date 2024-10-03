@@ -1,7 +1,6 @@
 {
 	"name": "Methane mine",
 	"description": "drilling methane in underground wells",
-	"planet": "as-asterion",
     "type": "GenericCrafter",
     "category": "production",
     "requirements": [
@@ -53,6 +52,9 @@
           }
       ]
     },
-	"research": "whitorite-drill",
+	"research": {
+		"parent": "whitorite-drill",
+		"planet": "as-asterion",
+	}
 	"researchCostMultiplier": 0.75
  }

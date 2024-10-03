@@ -1,7 +1,6 @@
 type: MendProjector
 name: Mend projector
 description: heals the nearest buildings
-planet: as-asterion
 health: 550
 requirements: [
    whitorite/75
@@ -10,7 +9,10 @@ requirements: [
    blacktite/75
  ]
 size: 2
-research: Coreforce
+research: {
+parent: Coreforce
+planet: as-asterion
+}
 category: effect
 consumes: { 
  power: 1.5

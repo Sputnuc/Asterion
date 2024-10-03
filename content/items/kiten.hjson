@@ -1,6 +1,6 @@
 {
 	"name": "Kiten",
-	"description": "Basic ore on Asterion, can be used in electrical and drilling buildings",
+	"description": "It is the second resource on the planet, massively used in electronics",
 	"color": "16c96a",
 	"research": "Coreforce",
 	"hardness": 1,

@@ -12,12 +12,13 @@
 		"irmenite/75",
 		"kiten/75",
       ],
+	"category": "crafting",  
     "consumes": {
 		"power": 1.5,
 		"items": {
 			"items": [
                "whitorite/2",
-			   "quartz-sand/4"
+			   "kiten/4"
 			]
 		},
 		"liquids": {
@@ -38,29 +39,24 @@
 	"drawLiquid": "methane"
 	},
 	{
-	"type": "DrawRegion",
-	"suffix": "-glass",
+	"type": "DrawArcSmelt"
+	"circleStroke": 1,
+	"particleLen": 1.8
 	},
     {
     "type": "DrawDefault"
-    },
-   {
-    "type": "DrawFlame",
-    "flameRadius": 6,         
-    "flameRadiusIn": 3.5,
-    "flameRadiusScl": 4.5,  
-    "flameRadiusMag": 2.5,    
-    "flameRadiusInMag": 1.7
-   }
-               ]
-          },
-    "outputItem": {"item": "blacktite", "amount": 2},	
+    }
+        ]
+       },
+    "outputItem": {"item": "blacktite", "amount": 4},	
 	"craftTime": 120,
 	"idleSound": "respawning",
 	"updateEffect": "smeltsmoke",
 	"craftEffect": "plasticExplosion",
 	"idleSoundVolume": 1.2,
-	"category": "crafting",
-	"research": "irmenite-oven"
+	"research": {
+          "parent": "irmenite-oven"
+          "planet": "as-asterion"
+         }
 }
 	

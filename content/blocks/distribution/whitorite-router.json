@@ -2,7 +2,6 @@
   "type": "Router",
   "name": "Whitorite router",
   "description": "Distributes objects in different directions.",
-  "planet": "as-asterion",
   "category": "distribution",
   "underBullets": true,
   "health": 65,
@@ -11,6 +10,9 @@
   "requirements": [
       "whitorite/3"
   ]
-  "research": "whitorite-duct",
+  "research": {
+    "parent": "whitorite-duct",
+    "planet": "as-asterion",
+  }
   "researchCostMultiplier": 0.25  
 }

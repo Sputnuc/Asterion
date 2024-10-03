@@ -19,7 +19,7 @@
   "consumes": {
     "power": 5,
     "liquid": {
-      "liquid": "zion",
+      "liquid": "oxylene",
       "amount": 0.4
     },
     "items": {
@@ -35,5 +35,8 @@
 	"magnetite/150"
   ],
   "category": "power",
-  "research": "ashotite-generator"
+  "research": {
+"parent": "ashotite-generator",
+"planet": "as-asterion",
+  }
 }

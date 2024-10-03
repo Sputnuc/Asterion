@@ -1,7 +1,6 @@
 type: BeamNode
 name: Whitorite beam node
 description: Transfers energy on very long distances.
-planet: as-asterion
 squareSprite: false
 hasPower: true
 allowDiagonal: true
@@ -22,5 +21,8 @@ requirements: [
     whitorite/12
   ]
 category: power
-research: kiten-generator
+research: {
+parent: kiten-generator
+planet: as-asterion
+}
 researchCostMultiplier: 0.25

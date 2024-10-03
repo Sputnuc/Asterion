@@ -3,7 +3,6 @@ size: 3
 category: power
 name: Ashotite generator
 description: burns ashotite to generate energy
-planet: as-asterion
 itemDuration: 60
 generateEffect:{
       type: RadialEffect
@@ -37,7 +36,10 @@ consumes: {
     }
 outputsPower: true
 powerProduction: 8
-research: kiten-generator
+research: {
+parent: kiten-generator
+planet: as-asterion
+}
 drawer: {
   type: DrawMulti
   drawers: [

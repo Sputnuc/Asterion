@@ -3,7 +3,6 @@
 	"name": "Ashotite press",
 	"description": "Compresses metan and sand along with pieces of ash in the atmosphere",
 	"size": 3,
-	"planet": "as-asterion",
 	"hasPower": true,
 	"hasItems": true,
 	"hasLiquids": true,
@@ -14,7 +13,10 @@
 		{"item": "irmenite", "amount": 50},
 		{"item": "kiten", "amount": 25}
 	 ],
-	"research": "methane-extractor",
+	"research": {
+		"parent": "methane-extractor",
+		"planet": "as-asterion",
+	}
 	"consumes": {
 		"power": 1.75,
 		"items": {

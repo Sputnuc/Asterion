@@ -1,17 +1,16 @@
   type: PowerTurret
   outlineColor: 22262b
-  planet: as-asterion
   name: Supernova
   description: a powerfull laser turret
   researchCostMultiplier: 0.6
   size: 4
-  health: 1280
-  shake: 7
+  health: 2280
+  shake: 10
   shootCone: 9
-  shootY: 8
+  shootY: 10
   chargeSound: lasercharge2
   reload: 600
-  range: 300
+  range: 450
   targetAir: false
   moveWhileCharging: false
   targetGround: true
@@ -20,10 +19,13 @@
   rotateSpeed: 1
   shootSound: laserblast
   shoot: {
-    firstShotDelay: 120
+    firstShotDelay: 180
    }
   consumes: {
-    power: 12
+    power: 14
+	coolant: { 
+       amount: 0.5
+     }
   }
   hasPower: true
   shootType: {
@@ -43,11 +45,37 @@
 	   strokeTo: 4
 	   offsetY: -1
 	 }
+	 {
+	   type: WaveEffect
+	   sizeFrom: 70
+	   colorFrom: FFFFFF00
+	   colorTo: e0fffd
+	   followParent: true
+	   rotWithParent: true
+	   lifetime: 130
+	   sizeTo: 0
+	   strokeFrom: 1
+	   strokeTo: 3
+	   offsetY: -1
+	 }
+	 {
+	   type: WaveEffect
+	   sizeFrom: 90
+	   colorFrom: FFFFFF00
+	   colorTo: e0fffd
+	   followParent: true
+	   rotWithParent: true
+	   lifetime: 140
+	   sizeTo: 0
+	   strokeFrom: 1
+	   strokeTo: 2
+	   offsetY: -1
+	 }
 	]
     lifetime: 90
-    damage: 550
-    length: 300
-    wigth: 50
+    damage: 750
+    length: 450
+    width: 30
     hitEffect: hitLaser
     pierce: true
 	pierceBuilding: false
@@ -60,7 +88,10 @@
 	magnetite/70
   ]
   category: turret
-  research: spark
+  research: {
+	parent: spark
+	planet: as-asterion
+  }
   drawer: {
    type: DrawTurret
    basePrefix: ast-

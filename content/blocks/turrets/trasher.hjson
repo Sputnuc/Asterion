@@ -1,7 +1,6 @@
 name: Trasher
 type: ItemTurret
 outlineColor: 22262b
-planet: as-asterion
 size: 2
 range: 120
 reload: 120
@@ -28,7 +27,10 @@ requirements: [
   whitorite/70
 ]
 category: turret
-research: splinter
+research: {
+  parent: splinter
+  planet: as-asterion
+}
 drawer: {
   type: DrawTurret
   basePrefix: ast-

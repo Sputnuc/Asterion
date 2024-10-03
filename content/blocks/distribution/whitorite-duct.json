@@ -1,8 +1,7 @@
 {
 	"type": "duct",
 	"name": "Whitorite duct",
-	"description": "transparent items forward",
-	"planet": "as-asterion",
+	"description": "moves items forward",
 	"speed": 5,
 	"underBullets": true,
 	"itemCapacity": 2,
@@ -12,7 +11,7 @@
 	  "whitorite/1",				
       ]
 	"research": {
-    "planet": "asterion",
+    "planet": "as-asterion",
 	"parent": "Coreforce",
 	"requirements": [
 	  "whitorite/20"

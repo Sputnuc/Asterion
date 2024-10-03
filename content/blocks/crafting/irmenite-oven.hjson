@@ -2,7 +2,6 @@ type: GenericCrafter
 name: Irmenite oven
 description: Melts irmenite from sand with whitorite.
 size: 2
-planet: as-asterion
 category: crafting
 requirements: [
  whitorite/85
@@ -35,7 +34,7 @@ drawer: {
 craftEffect: smeltsmoke
 outputItem: irmenite/3
 research: {
-    planet: asterion
+    planet: as-asterion
 	parent: Coreforce
 	requirements: [
 	  whitorite/200

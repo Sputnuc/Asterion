@@ -1,6 +1,5 @@
 type: ContinuousLiquidTurret
 outlineColor: 22262b
-planet: as-asterion
 cooldownTime: 120
 heatColor: f70a51
 name: Glare
@@ -57,7 +56,10 @@ requirements: [
   blacktite/35
 ]
 category: turret
-research: splinter
+research: {
+  parent: splinter
+  planet: as-asterion
+}
 drawer: {
   type: DrawTurret
   basePrefix: ast-

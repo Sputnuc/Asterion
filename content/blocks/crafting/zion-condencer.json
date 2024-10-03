@@ -4,7 +4,6 @@
 	"description": "condenses heavy methane particles",
 	"category": "crafting",
 	"size": 3,
-	"planet": "as-asterion",
 	"hasLiquid": true,
 	"liquidCapacity": 120,
 	"requirements": [
@@ -18,7 +17,10 @@
 		"power": 1,
 		"liquid": "methane/0.1"
 	}
-	"research": "methane-extractor", 
+	"research": {
+		"parent": "methane-extractor",
+		"planet": "as-asterion",
+	}
 	"drawer": {
       "type": "DrawMulti",
       "drawers": [	  

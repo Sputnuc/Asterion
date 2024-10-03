@@ -2,7 +2,6 @@
 "type": "Junction",
 "name": "Whitorite junction",
 "description": "Allows for crossing two pipelines.", 
-"planet": "as-asterion",
 "underBullets": true,
 "health": 65,
 "size": 1,
@@ -12,6 +11,9 @@
 ]
 "squareSprite": false,
 "category": "distribution",
-"research": "whitorite-router",
+"research": {
+  "parent": "whitorite-router",
+  "planet": "as-asterion",
+}
 "researchCostMultiplier": 0.25
 }
