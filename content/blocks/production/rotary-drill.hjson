@@ -1,5 +1,5 @@
 name: Rotary drill,
-description: The second drill of the mod,
+description: an improved version of a small drill,
 type: Drill,
 health: 500,
 category: production,
