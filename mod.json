@@ -1,10 +1,8 @@
 {
 "name": "as",
 "displayName": "Asterion",
-"description": "This is collaboration mod. We have discrod server!
-Asterion mod server: https://discord.gg/PcTnJ96mwf",
+"description": "This is collaboration mod",
 "author": "|Asterion Team|",
-"version": "0.3.7.1
-  beta",
+"version": "0.3.7.1 beta",
 "minGameVersion": 146
 }
