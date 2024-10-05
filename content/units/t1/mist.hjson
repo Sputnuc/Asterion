@@ -1,4 +1,5 @@
 type: tank
+name: Mist
 hitSize: 11
 flying: false
 omniMovement: false
