@@ -22,3 +22,10 @@ raptor.constructor = () => extend(MechUnit, {});
 
 const glava = extend(UnitType, "glava", {});
 glava.constructor = () => extend(MechUnit, {});
+
+// units
+const mist = extend(UnitType, "varan", {});
+mist.constructor = () => extend(TankUnit, {});
+
+const twilight = extend(UnitType, "twilight", {});
+twilight.constructor = () => extend(TankUnit, {});
