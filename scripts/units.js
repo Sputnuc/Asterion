@@ -4,6 +4,7 @@ graviton.constructor = () => extend(UnitEntity, {});
 
 const ester = extend(UnitType, "ester", {});
 ester.constructor = () => extend(UnitEntity, {});
+
 //Orion (Hunter) units
 const varan = extend(UnitType, "varan", {});
 varan.constructor = () => extend(MechUnit, {});
