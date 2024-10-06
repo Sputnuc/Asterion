@@ -23,7 +23,7 @@ raptor.constructor = () => extend(MechUnit, {});
 const glava = extend(UnitType, "glava", {});
 glava.constructor = () => extend(MechUnit, {});
 
-// units
+// Extinct units
 const mist = extend(UnitType, "varan", {});
 mist.constructor = () => extend(TankUnit, {});
 
