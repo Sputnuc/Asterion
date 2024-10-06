@@ -56,14 +56,14 @@ weapons: [
         intervalBullet: {
         type: BasicBulletType
         sprite: missile-large
-        damage: 8
+        damage: 15
         speed: 7
         lifetime: 15
         width: 7
         height: 11
-        backColor: e98878 
+        backColor: bc5451 
         frontColor: e98878
-        trailColor: e98878 
+        trailColor: bc5451 
         trailWidth: 2
         trailLength: 4
         homingPower: 0.4
@@ -76,7 +76,7 @@ weapons: [
             type: LaserBulletType
             length: 105
             colors: ["bc5451", "e98878", "FFFFFF"]
-            damage: 15
+            damage: 30
             lifetime: 25
             }
         ]

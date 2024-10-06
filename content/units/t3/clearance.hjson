@@ -1,0 +1,93 @@
+type: tank
+hitSize: 22
+flying: false
+omniMovement: false
+targetAir: false
+health: 3100
+armor: 10
+speed: 0.19
+rotateSpeed: 0.85
+itemCapacity: 0
+outlineColor: 17191f
+outlineRadius: 4
+treadRects: [
+  {
+  x: -33
+  y: -41
+  width: 24
+  height: 36
+  }
+  {
+  x: -32
+  y: 7
+  width: 24
+  height: 36
+  }
+]
+template: TankUnitType
+treadPullOffset: 4
+research: twilight
+weapons: [
+{
+    name: clearance-weapon
+    rotate: true
+    x: 0
+    y: 0
+    mirror: false
+    shootSound: laser
+    reload: 90
+    recoil: 2
+    shoot: {
+    shots: 6
+    shotDelay: 3
+    }
+    bullet: {
+        type: ArtilleryBulletType
+        splashDamage: 28
+        splashDamageRadius: 18
+        speed: 8
+        lifetime: 22
+        width: 9
+        height: 9
+        backColor: bc5451 
+        frontColor: e98878
+        trailColor: bc5451 
+        trailWidth: 2
+        trailLength: 6
+        shootEffect: none
+        smokeEffect: none
+        hitEffect: none
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+            {
+                type: ParticleEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                particles: 6
+                length: 20
+                baseLength: 6
+                lightScl: 3
+                lightOpacity: 2
+                spin: 0
+                sizeFrom: 3
+                sizeTo: 0
+                offset: 1
+            }
+            {
+                type: WaveEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                sizeFrom: 0
+                sizeTo: 18
+                lightScl: 3
+                lightOpacity: 1
+                sides: 8
+                rotation: 0
+                strokeFrom: 3
+                strokeTo: 0
+            }
+        ]}
+    }
+}
+]
