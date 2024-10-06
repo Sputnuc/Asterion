@@ -1,5 +1,5 @@
 name: Monarch
-description: "It fires armor-piercing cluster bullets and lasers. The Head, like the Predator, needs to release extra energy, but this time the impulses are much stronger. fraction: [white]«Hunter»"
+description: "It fires armor-piercing cluster bullets and lasers. The Head, like the Predator, needs to release extra energy, but this time the impulses are much stronger. faction: [white]«Hunter»"
 type: mech
 outlineColor: 22262b
 speed: 0.30
