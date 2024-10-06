@@ -25,7 +25,7 @@ glava.constructor = () => extend(MechUnit, {});
 
 // Extinct units
 const mist = extend(UnitType, "mist", {});
-mist.constructor = () => extend(TankUnit, {});
+// mist.constructor = () => extend(TankUnit, {});
 
 const twilight = extend(UnitType, "twilight", {});
-twilight.constructor = () => extend(TankUnit, {});
+// twilight.constructor = () => extend(TankUnit, {});
