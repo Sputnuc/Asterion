@@ -1,3 +1,4 @@
+//НЕ ПОНИМАЕШЬ. НЕ ТРОШЬ БЛЯТЬ - R.O.T.
 //Core units
 const graviton = extend(UnitType, "graviton", {});
 graviton.constructor = () => extend(UnitEntity, {});
@@ -30,3 +31,6 @@ mist.constructor = () => extend(TankUnit, {});
 
 const twilight = extend(UnitType, "twilight", {});
 twilight.constructor = () => extend(TankUnit, {});
+
+const clearance = extend(UnitType, "clearance", {});
+clearance.constructor = () => extend(TankUnit, {});
