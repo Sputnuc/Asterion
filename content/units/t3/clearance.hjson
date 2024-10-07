@@ -5,7 +5,7 @@ omniMovement: false
 targetAir: false
 health: 3100
 armor: 10
-speed: 0.19
+speed: 0.51
 rotateSpeed: 0.85
 itemCapacity: 0
 outlineColor: 17191f
@@ -54,6 +54,7 @@ weapons: [
         trailColor: bc5451 
         trailWidth: 2
         trailLength: 6
+		inaccuracy: 4
         shootEffect: none
         smokeEffect: none
         hitEffect: none
