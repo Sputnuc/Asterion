@@ -56,7 +56,7 @@ weapons: [
         intervalBullet: {
         type: BasicBulletType
         sprite: missile-large
-        damage: 15
+        damage: 20
         speed: 7
         lifetime: 15
         width: 7
