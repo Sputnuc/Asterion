@@ -5,7 +5,7 @@ omniMovement: false
 targetAir: false
 health: 3100
 armor: 10
-speed: 0.51
+speed: 0.35
 rotateSpeed: 0.85
 itemCapacity: 0
 outlineColor: 17191f
