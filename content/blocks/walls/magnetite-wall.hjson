@@ -1,6 +1,6 @@
 type: Wall
 name: Magnetite wall
-health: 750
+health: 900
 absorbLasers: false
 lightningChance: 0.05
 lightningDamage: 10
