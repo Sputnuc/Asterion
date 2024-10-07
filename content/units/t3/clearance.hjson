@@ -43,7 +43,7 @@ weapons: [
     }
     bullet: {
         type: ArtilleryBulletType
-        splashDamage: 28
+        splashDamage: 36
         splashDamageRadius: 18
         speed: 8
         lifetime: 22
