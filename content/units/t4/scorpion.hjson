@@ -221,7 +221,7 @@ despawnEffect: {
     layerOffset: -0.01
     mirror: false
     recoil: 1
-    reload: 8
+    reload: 120
     baseRotation: 180
     shootSound: shootAlt
     rotate: true
@@ -234,8 +234,8 @@ despawnEffect: {
 
     shoot: {
 type: ShootAlternate
-shots: 1
-shotDelay: 0
+shots: 40
+shotDelay: 3
 barrels: 2
 }
 
