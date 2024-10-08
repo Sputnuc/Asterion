@@ -50,9 +50,9 @@ weapons: [
 
     bullet: {
 type: BasicBulletType
-homingPower: 0.1
+homingPower: 0.15
 homigRadius: 120
-damage: 60
+damage: 70
 lifetime: 7.6
 width: 7
 height: 15
@@ -242,13 +242,13 @@ barrels: 2
 bullet: {
 type: BasicBulletType
 homingRange: 300
-homingPower: 0.05
-homingDelay: 10
-damage: 25
+homingPower: 0.15
+homingDelay: 20
+damage: 40
 lifetime: 220
 width: 7
 height: 7
-speed: 3.5
+speed: 4.5
 backColor: d0d8e8 
 frontColor: a1b1d0
 trailColor: a1b1d0 
