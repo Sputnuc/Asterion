@@ -1,0 +1,22 @@
+speedMultiplier : 0.75
+damage: 0.5
+color : f65959
+name : Discharge
+
+effect : {
+    
+    type : MultiEffect
+    
+    effects : [
+        {
+            particles : 3
+            colorFrom : f65959
+            sizeFrom : 2
+            lifetime : 25
+            colorTo : be323c
+            sizeTo : 0
+            length : 8
+            type : ParticleEffect
+            cone : 360
+        }]
+}

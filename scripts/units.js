@@ -34,3 +34,6 @@ twilight.constructor = () => extend(TankUnit, {});
 
 const clearance = extend(UnitType, "clearance", {});
 clearance.constructor = () => extend(TankUnit, {});
+
+const sunrise = extend(UnitType, "sunrise", {});
+sunrise.constructor = () => extend(TankUnit, {});
