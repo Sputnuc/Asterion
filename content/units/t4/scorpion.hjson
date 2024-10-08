@@ -234,8 +234,8 @@ despawnEffect: {
 
     shoot: {
 type: ShootAlternate
-shots: 40
-shotDelay: 3
+shots: 30
+shotDelay: 2
 barrels: 2
 }
 
@@ -243,8 +243,8 @@ bullet: {
 type: BasicBulletType
 homingRange: 300
 homingPower: 0.15
-homingDelay: 20
-damage: 40
+homingDelay: 10
+damage: 35
 lifetime: 220
 width: 7
 height: 7
