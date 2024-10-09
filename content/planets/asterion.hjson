@@ -48,12 +48,12 @@ parent: sun
 solarSystem: sun
 radius: 0.9
 minZoom: 0.6
-sectorSize: 1.2
+sectorSize: 1.8
 startSector: 10
 atmosphereRadIn: 0.02
-atmosphereRadOut: 0.3
-atmosphereColor: 59857c  
-iconColor: 4f5357     
+atmosphereRadOut: 0.4
+atmosphereColor: 69453095  
+iconColor: 9c7057     
 icon: planet
 orbitRadius: 26.7    
 orbitTime: 176
@@ -65,14 +65,15 @@ allowLaunchToNumbered: false
 
 mesh: [
  {
+ //pinky gray
     type: NoiseMesh
 	bloom: true
-    seed: 1573
-    color1: ebb14d
-    color2: c79452
-    divisions: 5.7
-    radius: 0.84
-    octaves: 4.6
+    seed: 573
+    color1: c2b4b6
+    color2: ab9599
+    divisions: 5.4
+    radius: 0.815
+    octaves: 7.8
     persistence: 0.43
 	coct: 1.5
     cper: 2.1
@@ -80,37 +81,97 @@ mesh: [
     mag: 1.2
  }
  {
+ //brown
     type: NoiseMesh
 	bloom: false
     seed: 163
-    color1: 73665d
-    color2: 59534c
-    divisions: 4.3
+    color1: 827465
+    color2: 7a6a61
+    divisions: 5.7
     radius: 0.83
-    octaves: 5.1
+    octaves: 7.3
     persistence: 0.62
-	coct: 1.7
+	coct: 1.8
     cper: 2.2
     scl: 0.49
     mag: 1.1
+ }
+ {
+ //blue
+    type: NoiseMesh
+	bloom: true
+    seed: 821
+    color1: 7275c4
+    color2: 8c72c4
+    divisions: 5.6
+    radius: 0.80
+    octaves: 8.4
+    persistence: 0.85
+	coct: 2.3
+    cper: 2.6
+    scl: 0.83
+    mag: 1.6
+ }
+ {
+ //red
+    type: NoiseMesh
+	bloom: true
+    seed: 374
+    color1: ab5e46
+    color2: 9c6343
+    divisions: 6.1
+    radius: 0.78
+    octaves: 9.3
+    persistence: 0.85
+	coct: 3.2
+    cper: 2.6
+    scl: 0.83
+    mag: 1.8
  }
 ]
 
 bloom: false
 alwaysUnlocked: true
 
+
 cloudMesh: [
   {
 bloom: true
     type: HexSkyMesh
-	bloom: false
+    bloom: false
     speed: 3.8
-    divisions: 7
-    radius: 0.19
+    divisions: 6.2
+    radius: 0.18
     color: dec5cd6b
     octaves: 3
     persistence: 0.7
-    scl: 1.2
+    scl: 1.1
+    thresh: 0.6
+  }
+  {
+bloom: true
+    type: HexSkyMesh
+    bloom: false
+    speed: 3.4
+    divisions: 4.6
+    radius: 0.25
+    color: 9e876a79
+    octaves: 3.8
+    persistence: 0.82
+    scl: 0.8
     thresh: 0.5
+  }
+  {
+bloom: true
+    type: HexSkyMesh
+    bloom: false
+    speed: 4.1
+    divisions: 5.3
+    radius: 0.29
+    color: 7670827f
+    octaves: 4.1
+    persistence: 0.58
+    scl: 0.6
+    thresh: 0.3
   }
 ]
