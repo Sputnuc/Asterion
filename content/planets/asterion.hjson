@@ -79,6 +79,21 @@ mesh: [
     scl: 0.54
     mag: 1.2
  }
+ {
+    type: NoiseMesh
+	bloom: false
+    seed: 163
+    color1: 73665d
+    color2: 59534c
+    divisions: 4.3
+    radius: 0.83
+    octaves: 5.1
+    persistence: 0.62
+	coct: 1.7
+    cper: 2.2
+    scl: 0.49
+    mag: 1.1
+ }
 ]
 
 bloom: false
