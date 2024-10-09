@@ -130,15 +130,14 @@ mesh: [
  }
 ]
 
-bloom: false
+//bloom: false
 alwaysUnlocked: true
 
 
 cloudMesh: [
   {
-bloom: true
     type: HexSkyMesh
-    bloom: false
+    bloom: true
     speed: 3.8
     divisions: 6.2
     radius: 0.18
@@ -149,9 +148,8 @@ bloom: true
     thresh: 0.6
   }
   {
-bloom: true
     type: HexSkyMesh
-    bloom: false
+    bloom: true
     speed: 3.4
     divisions: 4.6
     radius: 0.25
@@ -162,9 +160,8 @@ bloom: true
     thresh: 0.5
   }
   {
-bloom: true
     type: HexSkyMesh
-    bloom: false
+    bloom: true
     speed: 4.1
     divisions: 5.3
     radius: 0.29
