@@ -4,7 +4,7 @@ color: a8a7a5
 noiseColor: 3d3131f2
 particleColor: 4a3c3c99
 particleRegion: as-ash-wind-ash
-status: spore-slowed
+status: as-in-ash
 statusDuration: 314
 sizeMax: 68
 sizeMin: 1
