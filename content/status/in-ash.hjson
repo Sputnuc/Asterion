@@ -1,0 +1,25 @@
+speedMultiplier : 0.65
+reloadMultiplier : 0.7
+damageMultiplier : 0.9
+damage: 0.0
+color : 705d48
+name : "In the ashes"
+description: "Units are slowed down due to dust accumulation on them."
+
+effect : {
+    
+    type : MultiEffect
+    
+    effects : [
+        {
+            particles : 2
+            colorFrom : 705d48
+            sizeFrom : 5
+            lifetime : 32
+            colorTo : 544134
+            sizeTo : 0
+            length : 11
+            type : ParticleEffect
+            cone : 360
+        }]
+}
