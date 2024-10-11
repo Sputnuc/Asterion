@@ -95,8 +95,37 @@
   drawer: {
    type: DrawTurret
    basePrefix: ast-
+   heatProgress: recoil
    parts: [
     {
+      type: RegionPart
+      suffix: -side
+      under: true
+      mirror: true
+      heatProgress: recoil
+      progress: warmup
+	  moveX: 6.5
+      children: [
+            {
+            type: RegionPart
+            color: 5cc47aa0
+            suffix: -side-glow
+            colorTo: 96ffd3a1
+            progress: warmup
+            outline: false
+			under: true
+            }
+            ]
+      }
+	  {
+      type: RegionPart
+      suffix: -middle
+      progress: recoil
+      moveY: -0.5
+      heatProgress: recoil
+	  heatColor: 96ffd3a1
+      }
+	{	
      type: ShapePart
      y: -10.5
 	 progress: warmup
