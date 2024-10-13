@@ -48,7 +48,7 @@ parent: sun
 solarSystem: sun
 radius: 0.9
 minZoom: 0.6
-sectorSize: 1.8
+sectorSize: 2.3
 startSector: 10
 atmosphereRadIn: 0.02
 atmosphereRadOut: 0.4
