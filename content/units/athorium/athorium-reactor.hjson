@@ -5,6 +5,7 @@ type: legs
 legCount: 8
 legLength: 120
 legSpeed: 0.5
+hidden: true
 legForwardScl: 1.44
 legMoveSpace: 2.73
 
@@ -146,6 +147,21 @@ strokeTo: 0
 	splashDamage: 7500
 	hittable: false
 	instantDisappear: true
+	  }
+	}
+	{
+	x: 0
+	y: 0
+	reload: 9999999
+	shoot: {
+	firstShotDelay: 9999999
+	}
+	shootOnDeath: true
+	shootSound: none
+	mirror: false
+	bullet: {
+	   spawnUnit: as-athorium-reactor-ph2
+	   killShooter: true
 	  }
 	}
 ]
