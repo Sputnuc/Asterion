@@ -1,0 +1,23 @@
+type: SteamVent
+name: "Column vent (Alt ver)"
+parent: column-floor
+blendGroup: column-floor
+variants: 3
+effect: {
+particles: 6
+length: 250
+lifetime: 492
+cone: 50
+baseRotation: 30
+sizeFrom: 3
+sizeTo: 25
+colorFrom: 52392f90
+colorTo: 2e282210
+sizeInterp: pow3Out
+interp: pow3Out
+} 
+effectColor: 7a7266c6
+attributes: {
+   steam: 0.56696
+   heat: 0.4534
+}
