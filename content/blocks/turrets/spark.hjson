@@ -11,9 +11,37 @@ consumes: {
 }
 reload: 120
 hasPower: true
+shoot: {
+    firstShotDelay: 60 
+  }
 shootType: {
  type: BasicBulletType
  sprite: circle-bullet
+ chargeEffect: [
+   {
+   type: ParticleEffect
+   particles: 12
+   offset: 60
+   sizeFrom: 2
+   sizeTo: 5
+   length: 30
+   baseLength: -30
+   interp: pow3In
+   sizeInterp: pow5Out
+   lifetime: 40
+   colorFrom: e5fdff
+   colorTo: 76a9e3
+   }
+   {
+   type: WaveEffect
+   sizeFrom: 40
+   sizeTo: 0
+   strokeFrom: 4
+   strokeTo: 5
+   colorTo: ffffff3b
+   interp: pow3In
+   }
+  ]
  backSprite: circle-bullet-back
  damage: 0
  collidesAir: false
