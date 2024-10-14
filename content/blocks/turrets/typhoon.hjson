@@ -12,7 +12,10 @@
   innacuracy: 3
   velocityRnd: 0.4
   shoot: {
-    shots: 3
+    type: ShootAlternate
+    shots: 2
+    spread: 18
+    barrels: 2
   }
   consumes: { 
     coolant: { 
@@ -31,11 +34,11 @@
     frontColor: ffffff
     backColor: bf7622
     hitColor: bf7622
-	  sprite: as-armoured-shell
+	  sprite: as-armored-shell
     damage: 120
 	  width: 12
 	  height: 25
-    lifetime: 10
+    lifetime: 15
     speed: 10
     drag: -0.1
     hitSize: 8
@@ -52,7 +55,7 @@
       frontColor: ffffff
       backColor: bf7622
       hitColor: bf7622
-  	  sprite: as-armoured-shell
+  	  sprite: as-armored-shell
       damage: 120
 	    width: 12
 	    height: 25
@@ -68,20 +71,11 @@
   }
   requirements: [
  	  whitorite/330
-	  ashotite/200
+	  blacktite/200
 	  kiten/170
 	  magnetite/200
    ]
-  research: {
-    planet: as-asterion
-	parent: splinter
-	requirements: [
-	  whitorite/330
-	  ashotite/200
-	  kiten/170
-	  magnetite/200
-	]
-   }
+  research: storm
   category: turret 
   drawer: {
    type: DrawTurret
