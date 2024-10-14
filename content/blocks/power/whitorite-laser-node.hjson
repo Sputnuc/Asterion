@@ -9,6 +9,7 @@ laserColor2: 8054ba
 maxNodes: 15
   requirements: [
     whitorite/18
+	kiten/8
 	irmenite/8
 	]
 category: power

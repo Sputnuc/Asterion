@@ -19,6 +19,7 @@ laserColor2: 8054ba
 category: power
 requirements: [
     whitorite/12
+	kiten/4
   ]
 category: power
 research: {
