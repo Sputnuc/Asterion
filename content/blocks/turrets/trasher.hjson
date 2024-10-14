@@ -13,7 +13,7 @@ ammoTypes: {
    type: ShrapnelBulletType
    length: 125
    width: 18
-   damage: 50
+   damage: 75
    hitEffect: blastExplosion
    toColor: f5cc9e
    pierce: true
