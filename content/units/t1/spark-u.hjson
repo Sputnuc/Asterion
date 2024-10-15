@@ -1,0 +1,87 @@
+name: Spark
+description: "Explodes itself and incends ground"
+type: mech
+outlineColor: 2b2828
+speed: 0.8
+flying: false
+research: hunter-factory
+hitSize: 10
+itemCapacity: 0
+targetAir: true
+targetGround: true
+mechLegColor: 2b2828
+mechFrontSway: 0.6
+mechStepParticles: true
+stepShake: 1
+outlineRadius: 4
+drownTimeMultiplier: 8
+rotateSpeed: 2.6
+health: 370
+armor: 5
+deathExplosionEffect: none
+immunities: [
+    burning
+]
+
+weapons: [
+{ 
+name: spark-bomb
+    
+    shootY: 0
+    shootX: 0
+    x: 0
+    y: 0
+    layerOffset: -0.01
+    mirror: false
+    rotate: false
+    shootCone: 180
+    rotationLimit: 0
+    recoil: 0
+    reload: 60
+    shootSound: explosion
+    shootOnDeath: true
+
+    bullet: {
+type: ExplosionBulletType
+splashDamage: 70
+splashDamageRadius: 28
+incendChance: 1
+incendSpread: 10
+incendAmount: 5
+
+shootEffect: {
+    type: MultiEffect
+    effects: [{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        particles: 9
+        cone: 360
+        length: 0
+        baseLength: 22
+        lightScl: 3
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2.5
+        sizeTo: 0 
+        offset: 1
+        }
+        {
+        type: WaveEffect
+        colorFrom: ff9548
+        colorTo: c75432
+        sizeFrom: 28
+        sizeTo: 28
+        lightScl: 3
+        lightOpacity: 1
+        sides: 0
+        lifetime: 40
+        rotation: 0
+        strokeFrom: 5
+        strokeTo: 0
+        }
+]
+}
+}
+}
+]
