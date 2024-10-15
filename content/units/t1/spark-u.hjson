@@ -1,6 +1,6 @@
 name: Spark
 description: "Explodes itself and incends ground"
-type: d
+type: mech
 outlineColor: 2b2828
 speed: 0.8
 flying: false
