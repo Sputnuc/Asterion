@@ -5,6 +5,7 @@ outlineColor: 2b2828
 speed: 0.75
 flying: false
 research: orion-factory
+hovering: true
 hitSize: 16
 itemCapacity: 0
 targetAir: true
