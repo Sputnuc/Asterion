@@ -1,8 +1,12 @@
 {
-	"type": "GenericCrafter",
+	"type": "AttributeCrafter",
 	"name": "Zion condencer",
 	"description": "condenses heavy methane particles to zion",
 	"category": "crafting",
+	"attribute": "steam",
+	"boostScale": 0.111111111111,
+    "baseEfficiency": 0,
+	"minEfficiency": 8.98,
 	"size": 3,
 	"hasLiquid": true,
 	"liquidCapacity": 120,
@@ -11,11 +15,10 @@
 	 "irmenite/50",
 	 "kiten/45"
     ],	
-    "outputLiquid": {"liquid": "zion", "amount": 0.1},
+    "outputLiquid": {"liquid": "zion", "amount": 0.25},
     "craftTime": 60,
 	"consumes": {
-		"power": 1,
-		"liquid": "methane/0.1"
+		"power": 0.25
 	}
 	"research": {
 		"parent": "methane-extractor",

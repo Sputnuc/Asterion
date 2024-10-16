@@ -1,0 +1,42 @@
+name: Vent generator
+description: burns the resulting methane from the vent thereby obtaining energy
+type: ThermalGenerator
+attribute: steam
+size: 3
+health: 450
+requirements: [
+   whitorite/95
+   kiten/85
+   irmenite/60
+  ]
+displayEfficiencyScale: 0.111111111111
+minEfficiency: 8.98
+hasLiquids: true
+outputLiquid: methane/0.0025
+displayEfficiency: false
+category: power
+hasLiquids: false
+research: kiten-generator
+powerProduction: 0.5555555555555556
+generateEffect: turbinegenerate
+effectChance: 0.2
+drawer: {
+      type: DrawMulti
+      drawers: [
+        {
+          type: drawRegion
+          suffix: -bottom    
+          }  
+       {
+          type: DrawLiquidTile
+          drawLiquid: methane
+        }
+        {
+          type: DrawDefault
+        }
+		{
+		  type: drawRegion
+		  suffix: -top
+		}
+      ]
+    }
