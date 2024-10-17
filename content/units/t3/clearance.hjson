@@ -37,6 +37,8 @@ weapons: [
     shootSound: laser
     reload: 90
     recoil: 2
+    shootStatus: fading-t1
+    shootStatusDuration: 90
     shoot: {
     shots: 6
     shotDelay: 3

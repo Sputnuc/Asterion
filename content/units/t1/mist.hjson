@@ -31,6 +31,8 @@ weapons: [
     shootSound: pew
     reload: 40
     recoil: 1.5
+    shootStatus: fading-t1
+    shootStatusDuration: 40
     shoot: {
 type: ShootSpread
 shots: 3

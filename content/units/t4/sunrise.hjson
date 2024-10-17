@@ -38,7 +38,7 @@ weapons: [
     reload: 120
     recoil: 3
     rotateSpeed: 4
-    shootStatus: as-discharge
+    shootStatus: fading-t2
     shootStatusDuration: 120
     bullet: {
         type: BasicBulletType
@@ -54,6 +54,8 @@ weapons: [
         trailColor: bc5451 
         trailWidth: 2.5
         trailLength: 9
+        status: discharge
+        statusDuration: 155
         shootEffect: none
         smokeEffect: none
         hitEffect: none

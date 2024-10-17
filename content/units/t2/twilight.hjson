@@ -38,6 +38,8 @@ weapons: [
     reload: 55
     recoil: 1.5
     predictTarget: false
+    shootStatus: fading-t1
+    shootStatusDuration: 55
     bullet: {
         type: BasicBulletType
         shootEffect: none
