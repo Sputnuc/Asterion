@@ -1,0 +1,118 @@
+"type": "ItemTurret",
+"name": "Intermediary",
+"description": "",
+"buildVisibility": shown,
+"continuous": true,
+"rotateSpeed": 4,
+"targetGround": true,
+"targetAir": true,
+"range": 450,
+"reload": 120,
+"recoil": 4,
+"size": 5,
+"spread": 20,
+"health": 35000,
+"shootSound": pew,
+"shootShake": 1,
+"shootY": 3,
+"minWarmup": 0.9,
+"itemCapacity": 30,
+"liquidCapacity": 50,
+"ammoPerShot": 10,
+"shoot": {
+	"type": ShootMulti,
+	"source": {
+		"type": ShootAlternate
+		"shots": 1,
+		"spread": 0,
+	}
+	"dest": [
+		{
+			"type": ShootBarrel,
+			"shotDelay": 0,
+			"shots": 2,
+			"barrels": [
+				11, 5, -5,
+				-11, 5, 5
+			],
+		}
+	]
+},
+"consumes": {
+	"power": 4,
+	"liquid": {
+		"liquid": "zion",
+		"amount": 0.3,
+	}
+},
+"ammoTypes": {
+    "zionitium": {
+		"type": "BasicBulletType",
+		"collides": false,
+		"lifetime": 60,
+		"speed": 5,
+		"width": 1,
+		"height": 1,
+		"shrinkX": 0,
+		"shrinkY": 0,
+		"hitsize": 0,
+		"sprite": "as-pompey-rock",
+		"hittable": false,
+		"reflectable": false,
+		"absorbable": false,
+		"makeFire": true,
+		"despawnEffect": titanSmoke,
+		"layer": 2
+		"bulletInterval": 0,
+		"intervalBullets": 2,
+		"intervalRandomSpread": 7,
+		"intervalAngle": 0,
+		"intervalSpread": 180,
+		"intervalBullet": {
+			"type": "LaserBulletType",
+			"damage": 150,
+			"length": 60
+		}
+	}
+},
+drawer: {
+	type: DrawTurret
+	basePrefix: ast-
+	parts: [
+		{
+			suffix: "-weapon-r"
+			mirror: false
+			progress: recoil
+			moveRot: 0
+			moveY: -4
+			moveX: 0
+			x: 0
+			y: 0
+		},
+		{
+			suffix: "-weapon-l"
+			mirror: false
+			progress: recoil
+			moveRot: 0
+			moveY: -4
+			moveX: 0
+			x: 0
+			y: 0
+		}
+	]
+},
+"requirements": [
+	whitorite/120,
+	magnetite/85,
+	blacktite/120,
+	kiten/160,
+	irmenite/200
+],
+"category": "turret",
+"research": {
+    "planet": "asterion",
+	"parent": "Coreforce",
+	"requirements": [
+		whitorite/60
+	]
+}

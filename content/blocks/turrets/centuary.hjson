@@ -1,0 +1,69 @@
+type: ItemTurret
+name: Centuary
+description: Centuary sprays 5 stars at air enemies, that explode, and create 4 mini stars.
+reload: 90
+rotateSpeed: 2
+targetGround: false
+targetAir: true
+range: 175
+recoil: 1.5
+size: 4
+inaccuraty: 0
+health: 350
+AmmoPerShot: 5
+shootSound: pew
+shootShake: 1
+shootY: 3
+shoot: {
+	type: shootSpread
+	shots: 5
+	spread: 22.5
+	shotDelay: 0
+}
+ammoTypes: {
+	magnetite: {
+		"type": "BombBulletType",
+		"speed": 4,
+		"lifetime": 80,
+		"sprite": "as-star-bullet",
+		"buildingDamageMultiplier": 0.1
+		"shrinkX": 0,
+		"shrinkY": 0,
+		"width": 16,
+		"height": 16,
+		"hitsize": 6,
+		"fragBullets": 4,
+		"fragRandomSpread": 0,
+		"fragAngle": 45,
+		"fragSpread": 90,
+		"fragVelocityMin": 1,
+		"fragVelocityMax": 1,
+		"fragOffsetMax": 1,
+		"fragBullet": {
+			"type": "BasicBulletType",
+			"pierce": true,
+			"speed": 4,
+			"lifetime": 25,
+			"sprite": "as-star-bullet",
+			"buildingDamageMultiplier": 0.1
+			"shrinkX": 0,
+			"shrinkY": 0,
+			"width": 8,
+			"height": 8,
+			"hitsize": 6,
+			"damage": 40,
+			"homingRange": 120,
+			"homingPower": 0.3
+		}
+    }
+}
+"drawer": {
+	"type": "DrawTurret",
+	"basePrefix": "ast-"
+},
+"requirements": [
+	whitorite/125,
+	quartz-sand/50
+],
+"category": "turret",
+"research": "pompey"
