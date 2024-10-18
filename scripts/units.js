@@ -37,3 +37,16 @@ clearance.constructor = () => extend(TankUnit, {});
 
 const sunrise = extend(UnitType, "sunrise", {});
 sunrise.constructor = () => extend(TankUnit, {});
+
+//Pyro units
+const spark = extend(UnitType, "spark-u", {});
+spark.constructor = () => extend(LegsUnit, {});
+
+const explosion = extend(UnitType, "explosion", {});
+explosion.constructor = () => extend(LegsUnit, {});
+
+const fault = extend(UnitType, "fault", {});
+fault.constructor = () => extend(LegsUnit, {});
+
+const explosionV1 = extend(UnitType, "explosion-v1", {});
+explosionV1.constructor = () => extend(LegsUnit, {});
