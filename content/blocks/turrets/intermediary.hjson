@@ -1,4 +1,5 @@
 type: ItemTurret
+outlineColor: 22262b
 name: "Intermediary"
 description: ""
 rotateSpeed: 4
