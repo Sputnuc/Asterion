@@ -40,7 +40,7 @@ sunrise.constructor = () => extend(TankUnit, {});
 
 //Pyro units
 const spark = extend(UnitType, "spark-u", {});
-spark.constructor = () => extend(LegsUnit, {});
+spark.constructor = () => extend(MechUnit, {});
 
 const explosion = extend(UnitType, "explosion", {});
 explosion.constructor = () => extend(LegsUnit, {});
