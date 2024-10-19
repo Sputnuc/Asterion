@@ -13,7 +13,7 @@ targetGround: true
 legLength: 16
 legCount: 4
 lockLegBase: true
-legExtension: -1
+legExtension: -2.5
 stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
