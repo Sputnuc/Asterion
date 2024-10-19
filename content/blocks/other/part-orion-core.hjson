@@ -1,0 +1,13 @@
+type: Wall
+name: "Orion's core"
+health: 5000
+absorbLasers: true
+size: 2
+requirements: [
+  whitorite/50
+  kiten/30
+  irmenite/150
+ ]
+category: defense
+buildVisibility: "hidden" //editorOnly
+researchCostMultiplier: 0.20
