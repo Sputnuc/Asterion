@@ -47,7 +47,8 @@ consumes: {
 ammoTypes: {
     zionitium: {
 		type: BasicBulletType
-		collides: false
+                collidesGround: false
+                collidesAir: false
 		lifetime: 80
 		speed: 5
 		width: 1
