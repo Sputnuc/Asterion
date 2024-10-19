@@ -1,0 +1,23 @@
+{
+  "name": "Endomine",
+  "description": "organic mass used in lubrication",
+  "color": "cc9d19",
+  "barColor": "c69d2a",
+  "gasColor": "cc9d19",
+  "lightColor": "e3c573",
+  "temperature": 0.6,
+  "flammability": 0.1,
+  "explosiveness": 0,
+  "liquid": true,
+  "explosive": false,
+  "liquid": {
+    "cap": 3,
+    "explosive": false,
+    "flammable": true,
+    "viscosity": 0.07,
+  }
+  "hiddenOnPlanets": [
+		"serpulo",
+		"erekir"
+	]
+}
