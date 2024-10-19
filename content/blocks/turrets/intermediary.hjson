@@ -72,7 +72,7 @@ ammoTypes: {
 			colors: ["bc5451", "e98878", "FFFFFF"]
 			lifetime: 10
 			pierceCap: 2
-			damage: 90
+			damage: 50
 			length: 60
 		}
 	}
