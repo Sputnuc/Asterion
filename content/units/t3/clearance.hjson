@@ -3,7 +3,7 @@ hitSize: 22
 flying: false
 omniMovement: false
 targetAir: false
-health: 3100
+health: 3600
 armor: 10
 speed: 0.35
 rotateSpeed: 0.85

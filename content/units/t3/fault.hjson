@@ -16,7 +16,7 @@ stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 1.85
-health: 890
+health: 1950
 armor: 8
 immunities: [
     burning

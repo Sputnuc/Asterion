@@ -3,7 +3,7 @@ name: Mist
 hitSize: 11
 flying: false
 omniMovement: false
-health: 420
+health: 510
 armor: 6
 speed: 0.42
 rotateSpeed: 1.45

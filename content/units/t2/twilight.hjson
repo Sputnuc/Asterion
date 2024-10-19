@@ -3,7 +3,7 @@ name: Twilight
 hitSize: 14
 flying: false
 omniMovement: false
-health: 1060
+health: 1260
 armor: 7
 speed: 0.37
 rotateSpeed: 1.1
