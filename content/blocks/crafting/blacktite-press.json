@@ -18,7 +18,8 @@
 		"items": {
 			"items": [
                "whitorite/2",
-			   "kiten/4"
+			   "kiten/4",
+			   "zincum/2"
 			]
 		},
 		"liquids": {
@@ -57,6 +58,12 @@
 	"research": {
           "parent": "irmenite-oven"
           "planet": "as-asterion"
-         }
+		  "objectives": [
+          {
+           "type": "SectorComplete",
+           "preset": "point-occupation"
+          }
+         ]
+       }
 }
 	

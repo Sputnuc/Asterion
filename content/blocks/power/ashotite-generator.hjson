@@ -28,6 +28,7 @@ requirements: [
   whitorite/130
   kiten/50
   irmenite/75
+  zincum/50
    ]
 consumes: {
  items: [

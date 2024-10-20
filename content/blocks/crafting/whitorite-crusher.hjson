@@ -32,4 +32,10 @@ outputItem: quartz-sand/2
 research: {
 parent: irmenite-oven
 planet: as-asterion
-}
+objectives: [
+    {
+     type: SectorComplete
+     preset: point-occupation
+    }
+   ]
+  }

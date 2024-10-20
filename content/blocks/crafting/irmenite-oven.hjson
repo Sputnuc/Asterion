@@ -37,7 +37,7 @@ research: {
     planet: as-asterion
 	parent: Coreforce
 	requirements: [
-	  whitorite/200
+	  whitorite/150
 	  kiten/40
 	]
 }

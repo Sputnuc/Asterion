@@ -9,6 +9,7 @@ requirements: [
  kiten/40
  irmenite/25
  magnetite/10
+ zincum/50
 ]
 consumes: {
   power: 1.35

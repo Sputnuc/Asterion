@@ -18,6 +18,6 @@ interp: pow3Out
 } 
 effectColor: 7a7266c6
 attributes: {
-   steam: 0.35696
+   steam: 1
    heat: 0.2434
 }

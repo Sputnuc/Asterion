@@ -16,7 +16,7 @@ consumes: {
  }
 }
 requirements: [
-  whitorite/5
+  whitorite/10
 ]
 research: {
     planet: asterion

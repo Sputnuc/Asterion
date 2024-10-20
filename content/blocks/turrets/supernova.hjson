@@ -2,7 +2,7 @@
   outlineColor: 22262b
   name: Supernova
   description: a powerfull laser turret
-  researchCostMultiplier: 0.6
+  researchCostMultiplier: 0.5
   size: 4
   health: 2280
   shake: 10
@@ -12,14 +12,14 @@
   reload: 600
   range: 450
   targetAir: false
-  moveWhileCharging: false
+  moveWhileCharging: true
   targetGround: true
   recoilAmount: 1.8
   restitution: 0.04
   rotateSpeed: 1
   shootSound: laserblast
   shoot: {
-    firstShotDelay: 180
+    firstShotDelay: 150
    }
   consumes: {
     power: 14
@@ -39,7 +39,7 @@
 	   colorTo: e0fffd
 	   followParent: true
 	   rotWithParent: true
-	   lifetime: 100
+	   lifetime: 90
 	   sizeTo: 0
 	   strokeFrom: 0
 	   strokeTo: 4
@@ -52,7 +52,7 @@
 	   colorTo: e0fffd
 	   followParent: true
 	   rotWithParent: true
-	   lifetime: 130
+	   lifetime: 120
 	   sizeTo: 0
 	   strokeFrom: 1
 	   strokeTo: 3
@@ -65,7 +65,7 @@
 	   colorTo: e0fffd
 	   followParent: true
 	   rotWithParent: true
-	   lifetime: 140
+	   lifetime: 130
 	   sizeTo: 0
 	   strokeFrom: 1
 	   strokeTo: 2
@@ -73,7 +73,7 @@
 	 }
 	]
     lifetime: 90
-    damage: 750
+    damage: 850
     length: 450
     width: 30
     hitEffect: hitLaser
@@ -86,6 +86,7 @@
 	irmenite/55
 	kiten/70
 	magnetite/70
+	graphene/60
   ]
   category: turret
   research: {
