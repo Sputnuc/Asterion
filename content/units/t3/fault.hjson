@@ -19,7 +19,7 @@ outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 1.85
 health: 1950
-armor: 8
+armor: 6
 immunities: [
     burning
 ]

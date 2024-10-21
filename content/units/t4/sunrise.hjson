@@ -42,7 +42,7 @@ weapons: [
     shootStatusDuration: 120
     bullet: {
         type: BasicBulletType
-        damage: 170
+        damage: 240
         splashDamage: 70
         splashDamageRadius: 30
         speed: 6
@@ -119,7 +119,7 @@ weapons: [
     bullet: {
       type: BasicBulletType
       sprite: missile-large
-      damage: 60
+      damage: 80
       speed: 7
       lifetime: 20
       width: 6
