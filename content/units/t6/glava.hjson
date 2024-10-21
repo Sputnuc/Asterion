@@ -402,3 +402,31 @@ offset: 1
 }
 }
 ]
+abilities: [
+	{
+      type: mindustry.entities.abilities.ShieldArcAbility
+	  region: as-glava-shield-l
+      radius: 45
+      angle: 120
+	  angleOffset: 345
+      regen: 2.4
+      cooldown: 190
+	  max: 2200
+	  y: -15
+	  width: 8
+	  whenShooting: true
+    }
+	{
+      type: mindustry.entities.abilities.ShieldArcAbility
+	  region: as-glava-shield-r
+      radius: 45
+      angle: 120
+	  angleOffset: 15
+      regen: 2.4
+      cooldown: 190
+	  max: 2200
+	  y: -15
+	  width: 8
+	  whenShooting: true
+    }
+]
