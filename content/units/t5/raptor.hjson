@@ -66,7 +66,14 @@ weapons: [
     ]
     
     shootY: 16
+	shake: 6
     shootX: 0
+	shoot: {
+	type: ShootSpread
+	shots: 3
+	shotDelay: 3
+	spread: 1
+	}
     x: -23
     y: 0
     layerOffset: -0.01
@@ -74,38 +81,30 @@ weapons: [
     rotate: true
     rotationLimit: 18
     recoil: 2
-    reload: 100
+    reload: 30
     shootSound: malignShoot
 
     bullet: {
 type: BasicBulletType
+despawnShake: 3
 homingPower: 0.1
 homigRadius: 120
-damage: 60
+damage: 95
 lifetime: 38
 width: 13
 height: 13
-speed: 7
+speed: 9
 drag: 0.01
 backColor: d0d8e8 
 frontColor: a1b1d0
 trailColor: a1b1d0 
-trailWidth: 3.25
-trailLength: 30
-homingPower: 0.2
-weaveMag: 2
-weaveScale: 2
-intervalBullets: 1
-intervalAngle: 0
-intervalRandomSpread: 45
-intervalSpread: 5
-fragBullets: 3
-fragRandomSpread: 180
-fragVelocityMin: 1
-splashDamage: 25
-splashDamageRadius: 34
+trailWidth: 5.25
+trailLength: 37
+homingPower: 0.05
+splashDamage: 75
+splashDamageRadius: 32
 pierce: true
-pierceCap: 5
+pierceCap: 2
 pierceBuilding: true 
 
 shootEffect: {
@@ -123,127 +122,47 @@ sizeFrom: 2
 sizeTo: 0 
 offset: 1
 }
-
-despawnEffect: {
+despawnEffect: [
+{
 type: WaveEffect 
 colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
+colorTo: a1b1d000
+sizeFrom: 8 
+sizeTo: 32
+lifetime: 15
 lightScl: 4 
 lightOpacity: 1
 rotation: 0 
 strokeFrom: 4
-strokeTo: 0 
+strokeTo: 2 
 }
+{
+type: ParticleEffect
+colorFrom: d0d8e8
+particles: 25
+colorTo: a1b1d0
+sizeFrom: 2
+sizeTo: 0
+length: 12
+cone: 75
+lifetime: 25
+baseLength: 24
+}
+]
 hitEffect: {
 type: WaveEffect 
 colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
+colorTo: a1b1d000
+sizeFrom: 8 
+sizeTo: 32
+lifetime: 20
 lightScl: 4 
 lightOpacity: 1
 rotation: 0 
 strokeFrom: 4
-strokeTo: 0
+strokeTo: 2 
 } 
-
-fragBullet: {
-type: BasicBulletType
-damage: 30
-lifetime: 120
-width: 13
-height: 13
-speed: 6
-drag: 0.05
-backColor: d0d8e8 
-frontColor: a1b1d0
-trailColor: a1b1d0 
-trailWidth: 3.25
-trailLength: 30
-fragBullets: 3
-fragRandomSpread: 180
-fragVelocityMin: 1
-pierce: true
-                pierceCap: 5
-                pierceBuilding: true 
-
-despawnEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 0 
-}
-hitEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 0
-}
-
-fragBullet: {
-type: BasicBulletType
-homingPower: 0.2
-homigRadius: 120
-damage: 15
-lifetime: 30
-width: 10
-height: 10
-speed: 4
-accel: 0.6
-backColor: d0d8e8 
-frontColor: a1b1d0
-trailColor: a1b1d0 
-trailWidth: 2.25
-trailLength: 30
-pierce: true
-                pierceCap: 5
-                pierceBuilding: true 
-                intervalBullets: 1
-intervalAngle: 0
-intervalRandomSpread: 45
-intervalSpread: 5
-}
-intervalBullet: {
-
-                type: BasicBulletType
-                homingPower: 0.5
-                backColor: d0d8e8
-                frontColor: a1b1d0
-                trailColor: a1b1d0
-                trailLength: 8
-                trailWidth: 2.5
-                trailInterval: 46
-                homigRadius: 120
-                damage: 15
-                width: 10
-                height: 10
-                despawnEffect: none
-                hitEffect: none
-                speed: 5
-                drag: 0.02
-                lifetime: 80
-                pierce: true
-                pierceCap: 5
-                pierceBuilding: true 
-                weaveMag: 8
-                weaveScale: 4
-                }
-                }
-            }
+    }
         }
     {
         display: false
