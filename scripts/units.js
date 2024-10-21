@@ -1,4 +1,5 @@
 //НЕ ПОНИМАЕШЬ. НЕ ТРОШЬ БЛЯТЬ - R.O.T.
+//не крычы на ​​мяне :( - AnDashik
 //Core units
 const graviton = extend(UnitType, "graviton", {});
 graviton.constructor = () => extend(UnitEntity, {});
