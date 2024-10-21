@@ -45,14 +45,14 @@ weapons: [
     rotate: true
     rotationLimit: 28
     recoil: 3
-    reload: 75
+    reload: 30
     shootSound: malignShoot
 
     bullet: {
 type: BasicBulletType
 homingPower: 0.15
 homigRadius: 120
-damage: 70
+damage: 120
 lifetime: 7.6
 width: 7
 height: 15
@@ -68,7 +68,7 @@ weaveScale: 2
 splashDamage: 40
 splashDamageRadius: 34
 pierce: true
-pierceCap: 10
+pierceCap: 2
 pierceBuilding: true 
 pierceArmor: true
 
@@ -244,7 +244,7 @@ type: BasicBulletType
 homingRange: 300
 homingPower: 0.15
 homingDelay: 10
-damage: 15
+damage: 20
 lifetime: 220
 width: 7
 height: 7
