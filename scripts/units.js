@@ -49,5 +49,8 @@ explosion.constructor = () => extend(LegsUnit, {});
 const fault = extend(UnitType, "fault", {});
 fault.constructor = () => extend(LegsUnit, {});
 
+const rumble = extend(UnitType, "rumble", {});
+rumble.constructor = () => extend(LegsUnit, {});
+
 const explosionV1 = extend(UnitType, "explosion-v1", {});
 explosionV1.constructor = () => extend(LegsUnit, {});
