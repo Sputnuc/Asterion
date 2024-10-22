@@ -10,6 +10,8 @@ const whitoriteSorter = extend(Sorter, "whitorite-sorter", {});
 
 const whitoriteInvertedSorter = extend(Sorter, "whitorite-inverted-sorter", {});
 
+const whitoriteGateway = extend(OverflowGate, "whitorite-gateway", {});
+
 const whitoriteInvertedGateway = extend(OverflowGate, "whitorite-inverted-gateway", {});
 
 
