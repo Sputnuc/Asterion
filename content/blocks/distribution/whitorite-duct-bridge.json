@@ -1,5 +1,4 @@
 {
-"type": "DuctBridge",
 "name": "Whitorite duct bridge",
 "description": "Acts as a bridge for crossing pipelines or terrain.",
 "health": 50,

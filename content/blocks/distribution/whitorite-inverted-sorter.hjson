@@ -1,4 +1,4 @@
-type: Sorter
+
 name: Inverted sorter
 description: Sorts items. The selected item is brought forward
 category: distribution

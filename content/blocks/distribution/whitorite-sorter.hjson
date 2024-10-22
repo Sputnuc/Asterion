@@ -1,4 +1,4 @@
-type: Sorter
+
 name: "Sorter"
 description: "Sorts items. The selected item is brought forward."
 category: distribution

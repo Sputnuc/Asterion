@@ -1,5 +1,4 @@
 {  
-  "type": "Router",
   "name": "Whitorite router",
   "description": "Distributes objects in different directions.",
   "category": "distribution",

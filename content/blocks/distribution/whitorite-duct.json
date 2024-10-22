@@ -1,5 +1,4 @@
 {
-	"type": "duct",
 	"name": "Whitorite duct",
 	"description": "moves items forward",
 	"speed": 5,
