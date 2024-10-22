@@ -20,7 +20,6 @@ requirements: [
   whitorite/50
   irmenite/75
   kiten/55
-  magnetite/20
 ]
 research: {
 parent: whitorite-drill
