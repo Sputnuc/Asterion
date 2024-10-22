@@ -1,0 +1,15 @@
+type: Sorter
+name: Inverted sorter
+description: Sorts items. The selected item is brought forward
+category: distribution
+size: 1
+health: 60
+invert: true
+
+requirements: [
+  whitorite/6
+  kiten/9
+] 
+
+researchCostMultiplier: 0.2
+research: whitorite-router
