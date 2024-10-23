@@ -1,0 +1,12 @@
+{
+  "type": "Floor",
+  "name": "Endomine magma",
+  "emitLight": true,
+  "lightRadius": 80,
+  "lightColor": "ffc17a",
+  "attributes": {
+    "heat": 0.5,
+
+  },
+  "variants": 2
+}
