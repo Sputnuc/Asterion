@@ -15,8 +15,8 @@ mechStepParticles: true
 stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
-rotateSpeed: 2.6
-health: 36000
+rotateSpeed: 1.2
+health: 70000
 armor: 40
 range: 240
 parts: [
@@ -113,10 +113,10 @@ weapons: [
     height: 60
     width: 35
     splashDamageRadius: 32
-    splashDamage: 195
+    splashDamage: 235
     lifetime: 22
     pierceCap: 3
-    damage: 295
+    damage: 350
     speed: 21
 	intervalBullets: 2
     intervalAngle: 0
@@ -252,7 +252,7 @@ weapons: [
                 trailWidth: 2.5
                 trailInterval: 46
                 homigRadius: 120
-                damage: 75
+                damage: 85
                 width: 10
                 height: 10
                 despawnEffect: none
