@@ -1,9 +1,9 @@
 {
 "name": "as",
 "displayName": "Asterion",
-"description": "This is collaboration mod. Updated: [(Storm rework, Added Sorter/Inverted sorter, Logistics blocks are distributed in order)]",
+"description": "This is collaboration mod. Updated: [(rework > Monarch/Raptor/Magnetite-mine)]",
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.4.4.4 beta",
+"version": "0.4.5",
 "minGameVersion": 146,
-"subtitle": "0.4.4.4 beta (Fix)"
+"subtitle": "0.4.5 beta)"
 }
