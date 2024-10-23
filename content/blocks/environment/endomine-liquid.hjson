@@ -17,5 +17,5 @@ placeableOn: true
 
 emitLight: true
 lightRadius: 200
-lightColor: "ffebb3" //e3c573
+lightColor: "ffc17a" //f39560
 
