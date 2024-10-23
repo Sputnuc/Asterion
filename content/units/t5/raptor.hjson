@@ -68,12 +68,7 @@ weapons: [
     shootY: 16
 	shake: 6
     shootX: 0
-	shoot: {
-	type: ShootSpread
-	shots: 3
-	shotDelay: 3
-	spread: 1
-	}
+	alternate: false
     x: -23
     y: 0
     layerOffset: -0.01
@@ -81,96 +76,35 @@ weapons: [
     rotate: true
     rotationLimit: 18
     recoil: 2
-    reload: 30
-    shootSound: malignShoot
-
+    reload: 300
+	continuous: true
+    shootSound: beam
     bullet: {
-type: BasicBulletType
-despawnShake: 3
-homingPower: 0.1
-homigRadius: 120
-damage: 95
-lifetime: 38
-width: 13
-height: 13
-speed: 9
-drag: 0.01
-backColor: d0d8e8 
-frontColor: a1b1d0
-trailColor: a1b1d0 
-trailWidth: 5.25
-trailLength: 37
-homingPower: 0.05
-splashDamage: 75
-splashDamageRadius: 32
-pierce: true
-pierceCap: 2
-pierceBuilding: true 
-
-shootEffect: {
-type: ParticleEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-particles: 16
-cone: 12
-length: 12
-baseLength: 5
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 2
-sizeTo: 0 
-offset: 1
-}
-despawnEffect: [
-{
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d000
-sizeFrom: 8 
-sizeTo: 32
-lifetime: 15
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 2 
-}
-{
-type: ParticleEffect
-colorFrom: d0d8e8
-particles: 25
-colorTo: a1b1d0
-sizeFrom: 2
-sizeTo: 0
-length: 12
-cone: 75
-lifetime: 25
-baseLength: 24
-}
-]
-hitEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d000
-sizeFrom: 8 
-sizeTo: 32
-lifetime: 20
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 2 
-} 
-    }
-        }
+	 type: ContinuousLaserBulletType
+	 damage: 40
+	 length: 280
+	 shake: 1
+	 lifetime: 300
+	 colors: [5288ba,99c6f0,99c6f0,]
+	 shootEffect: {
+	  type: ParticleEffect
+	  particles: 3
+	  cone: 45
+	  length: 40
+	  sizeFrom: 3
+	  sizeTo: 1
+	  colorFrom: c7d9f0f
+	  colorTo: 5b84ab4c	
+	 }
+	} 
+   }
     {
         display: false
         x: 0
         y: -9
         mirror: false
         recoil: 0
-        reload: 2000
+        reload: 3000
         shootSound: spark
 
         shoot: {
