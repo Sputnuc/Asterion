@@ -65,7 +65,7 @@ weapons: [
     }
     ]
     
-    shootY: 18.75
+    shootY: 29.5
 	shake: 15
 	rotationSpeed: 0.8
 	cone: 10
