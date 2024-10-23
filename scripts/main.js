@@ -1,8 +1,8 @@
 require("blocks/small-craters");
 require("attributes");
 require("units");
-require("blocks/distribution");
-require("blocks/crafting");
+require("distribution");
+require("block/crafting");
 require("blocks/production");
 require("blocks/turret");
 require("blocks/wall");
