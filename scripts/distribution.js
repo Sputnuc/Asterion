@@ -1,17 +1,17 @@
-const whitoriteDuct = extend(Duct, "whitorite-duct", {});
+extend(Duct, "whitorite-duct", {});
 
-const whitoriteDuctBridge = extend(DuctBridge, "whitorite-duct-bridge", {});
+extend(DuctBridge, "whitorite-duct-bridge", {});
 
-const whitoriteJunction = extend(Junction, "whitorite-junction", {});
+extend(Junction, "whitorite-junction", {});
 
-const whitoriteRouter = extend(Router, "whitorite-router", {});
+extend(Router, "whitorite-router", {});
 
-const whitoriteSorter = extend(Sorter, "whitorite-sorter", {});
+extend(Sorter, "whitorite-sorter", {});
 
-const whitoriteInvertedSorter = extend(Sorter, "whitorite-inverted-sorter", {});
+extend(Sorter, "whitorite-inverted-sorter", {});
 
-const whitoriteGateway = extend(OverflowGate, "whitorite-gateway", {});
+extend(OverflowGate, "whitorite-gateway", {});
 
-const whitoriteInvertedGateway = extend(OverflowGate, "whitorite-inverted-gateway", {});
+extend(OverflowGate, "whitorite-inverted-gateway", {});
 
 
