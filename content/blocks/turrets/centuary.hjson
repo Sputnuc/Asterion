@@ -1,6 +1,6 @@
 type: ItemTurret
 name: Centuary
-description: Centuary sprays 5 stars at air enemies, that explode, and create 4 mini stars.
+description: Centuary sprays 7 stars at air enemies, that explode, and create 7 mini stars.
 reload: 90
 rotateSpeed: 2
 targetGround: false
