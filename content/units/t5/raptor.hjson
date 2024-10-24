@@ -13,7 +13,7 @@ mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
 stepShake: 1
-outlineRadius: 4
+outlineRadius: 5
 drownTimeMultiplier: 8
 rotateSpeed: 2.6
 health: 23000
