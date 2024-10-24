@@ -1,7 +1,6 @@
 name: Monarch
 description: "It fires armor-piercing cluster bullets and lasers. The Head, like the Predator, needs to release extra energy, but this time the impulses are much stronger. faction: [white]«Hunter»"
 type: mech
-outlineColor: 22262b
 speed: 0.30
 flying: false
 hitSize: 38
@@ -13,7 +12,7 @@ mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
 stepShake: 1
-outlineRadius: 4
+outlineRadius: 6
 drownTimeMultiplier: 8
 rotateSpeed: 1.2
 health: 70000
@@ -65,13 +64,13 @@ weapons: [
     }
     ]
     
-    shootY: 12.5
+    shootY: 22.5
 	shake: 15
 	rotationSpeed: 0.6
 	cone: 10
     shootX: 0
-    x: 32.75
-    y: 0
+    x: 35.25
+    y: 4.5
     layerOffset: -0.01
     mirror: true
     rotate: true
