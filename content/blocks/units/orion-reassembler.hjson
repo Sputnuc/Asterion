@@ -1,4 +1,4 @@
-localizedName: "Orion reassembler"
+name: Orion reassembler
 description: "Builds Tier 5-6 units of Orion faction."
 type: UnitAssembler
 size: 7
