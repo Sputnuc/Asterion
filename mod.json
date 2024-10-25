@@ -1,7 +1,11 @@
 {
 "name": "as",
 "displayName": "Asterion",
-"description": "This is collaboration mod. Updated: [(rework > Monarch/Raptor/Magnetite-mine)]",
+"description": "
+This is collaboration mod.
+Updated: [(rework > Monarch/Raptor/Magnetite-mine)]
+Mod server: https://discord.gg/PcTnJ96mwf
+",
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
 "version": "0.4.6",
 "minGameVersion": 146,
