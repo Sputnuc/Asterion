@@ -2,6 +2,7 @@
   "name": "Biolume",
   "description": "organic mass used in lubrication",
   "color": "e8f595",
+  "research": "zion",
   "barColor": "e8f595",
   "gasColor": "f5ff8592",
   "lightColor": "f5ff8592",
