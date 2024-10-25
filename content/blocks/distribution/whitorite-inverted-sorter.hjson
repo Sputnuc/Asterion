@@ -1,6 +1,6 @@
 
 name: Inverted sorter
-description: Sorts items. The selected item is brought forward
+description: The selected item comes out from the side
 category: distribution
 size: 1
 health: 60
