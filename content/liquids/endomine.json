@@ -2,6 +2,7 @@
   "name": "Endomine",
   "description": "lava with a large concentration of metals in it",
   "color": "f39560",
+  "research": "zion",
   "barColor": "f39560",
   "gasColor": "f39560",
   "lightColor": "ffc17a",
