@@ -15,4 +15,4 @@ speed: 4
 solid: true
 squareSprite: false
 allowCoreUnload: true
-researchCostMultiplier: 0.5
+researchCostMultiplier: 0.05
