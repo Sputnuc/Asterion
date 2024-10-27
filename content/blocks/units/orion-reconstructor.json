@@ -1,6 +1,6 @@
 {
     "type": "Reconstructor",
-	"name": "Hunter reconstructor",
+	"name": "Orion reconstructor",
     "health": 800,
     "size": 3,
     "constructTime": 900,
