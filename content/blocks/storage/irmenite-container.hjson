@@ -14,4 +14,4 @@ requirements: [
   kiten/95
 ]
 squareSprite: false
-researchCostMultiplier: 0.5
+researchCostMultiplier: 0.10
