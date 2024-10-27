@@ -11,7 +11,7 @@ requirements: [
 displayEfficiencyScale: 0.111111111111
 minEfficiency: 8.98
 hasLiquids: true
-outputLiquid: methane/0.0025
+outputLiquid: methane/0.0333333333333333
 displayEfficiency: false
 category: power
 hasLiquids: false
