@@ -4,11 +4,11 @@
 "description":
   '''
 This is collaboration mod.
-Updated: [(rework > Monarch/Raptor/Magnetite-mine)]
+Updated: [(rework > The point of occupation/Tech tree)]
 Mod server: https://discord.gg/PcTnJ96mwf
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.4.6.1",
+"version": "0.4.6.5",
 "minGameVersion": 146,
-"subtitle": "0.4.6.1 beta"
+"subtitle": "0.4.6.5 beta"
 }
