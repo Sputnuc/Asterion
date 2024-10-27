@@ -11,7 +11,6 @@ legMoveSpace: 2.73
 
 outlineColor: 3d3d3a
 drownTimeMultiplier: 9999
-shake: 15
 drag: 0.5
 fogRadius: 14
 speed: 14
@@ -26,7 +25,7 @@ weapons: [
  y: 0
  reload: 60
  mirror: true
- shake: 6
+ shake: 15
  rotate: false
  baseRotation: 270
  shootSound: laser
@@ -83,7 +82,7 @@ weapons: [
  y: 0
  reload: 5
  mirror: true
- shake: 6
+ shake: 9
  rotate: false
  baseRotation: 180
  shootSound: malignShoot
@@ -171,5 +170,54 @@ weapons: [
            ]
       }
     }
+	{
+	x: 0
+	y: 0
+	reload: 900
+	ignoreRotation: true
+	shootOnDeath: true
+	shake: 70
+	rotate: true
+	mirror: false
+	rotateSpeed: 999
+	inaccuracy: 0
+	bullet: {
+	type: BasicBulletType
+	height: 0
+	width: 0
+	collidesTiles: false
+    collides: false
+	despawnEffect: reactorExplosion
+	hitEffect: reactorExplosion
+	splashDamageRadius: 300
+	splashDamage: 7500
+	hittable: false
+	instantDisappear: true
+	  }
+	}
+	{
+x: 0
+y: 0
+reload: 30
+shootSound: laser
+shoot: {
+shots: 15
+shotDelay: 1
+}
+rotate: true
+rotateSpeed: 999
+inaccuracy: 15
+top: true
+shootCone: 30
+  bullet: {
+    type: LaserBulletType
+    damage: 190
+	length: 620
+	width: 12
+	lifetime: 30
+  }
+}
 	
 ]
+loopSound: stanied-brutal-calamity-2
+loopSoundVolume: 3.0

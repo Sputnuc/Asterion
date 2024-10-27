@@ -152,6 +152,7 @@ strokeTo: 0
 	{
 	x: 0
 	y: 0
+	shootCone: 360
 	reload: 9999999
 	shoot: {
 	firstShotDelay: 9999999
@@ -165,3 +166,5 @@ strokeTo: 0
 	  }
 	}
 ]
+loopSound: stanied-brutal-calamity
+loopSoundVolume: 3.5
