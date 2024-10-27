@@ -4,7 +4,7 @@ type: mech
 outlineColor: 22262b
 speed: 0.55
 flying: false
-research: hunter-factory
+research: orion-factory
 hitSize: 12
 itemCapacity: 10
 outlineColor: 1f1f26
