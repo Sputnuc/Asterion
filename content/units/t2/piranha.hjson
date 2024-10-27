@@ -2,6 +2,7 @@ name: piranha
 description: "Slows down enemies with a laser. Capable of taking off. Mech type: [white]«Hunter»"
 type: mech
 outlineColor: 22262b
+research: orion-reconstructor
 speed: 0.50
 flying: false
 hitSize: 12
