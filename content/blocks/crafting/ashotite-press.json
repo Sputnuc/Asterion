@@ -8,6 +8,7 @@
 	"hasItems": true,
 	"hasLiquids": true,
 	"liquidCapacity": 30,
+	"researchCostMultiplier": 0.25,
 	"itemCapacity": 20,
 	"requirements": [
 		{"item": "whitorite", "amount": 95},
@@ -15,7 +16,7 @@
 		{"item": "kiten", "amount": 25}
 	 ],
 	"research": {
-		"parent": "methane-extractor",
+		"parent": "irmenite-oven",
 		"planet": "as-asterion",
 	}
 	"consumes": {
