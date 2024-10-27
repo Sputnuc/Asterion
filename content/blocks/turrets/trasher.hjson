@@ -5,6 +5,7 @@ size: 2
 range: 120
 reload: 120
 maxAmmo: 24
+researchCostMultiplier: 0.25
 inaccuracy: 3
 ammoPerShot: 3
 shootSound: shotgun
