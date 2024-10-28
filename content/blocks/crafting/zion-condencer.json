@@ -15,7 +15,7 @@
 	 "irmenite/50",
 	 "kiten/45"
     ],	
-    "outputLiquid": {"liquid": "zion", "amount": 0.25},
+    "outputLiquid": {"liquid": "zion", "amount": 0.35},
     "craftTime": 60,
 	"consumes": {
 		"power": 0.25
