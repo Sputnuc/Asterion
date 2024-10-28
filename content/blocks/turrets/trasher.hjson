@@ -14,13 +14,13 @@ ammoTypes: {
    type: ShrapnelBulletType
    length: 125
    width: 18
-   damage: 75
+   damage: 85
    hitEffect: blastExplosion
    toColor: f5cc9e
    pierce: true
    pierceBuilding: false
    status: melting
-   statusDuration: 50
+   statusDuration: 180
   }
 }
 requirements: [
