@@ -19,7 +19,6 @@
 		"items": {
 			"items": [
                "whitorite/2",
-			   "kiten/4",
 			   "zincum/2"
 			]
 		},
@@ -51,7 +50,7 @@
         ]
        },
     "outputItem": {"item": "blacktite", "amount": 4},	
-	"craftTime": 120,
+	"craftTime": 90,
 	"idleSound": "respawning",
 	"updateEffect": "smeltsmoke",
 	"craftEffect": "plasticExplosion",
