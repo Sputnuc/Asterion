@@ -22,10 +22,11 @@
 			"y": 1.8,
 			"recoil": 1,
 			"top": false,
-			"reload": 30,
+			"reload": 15,
 			"minWarmup": 0.9,
+			"inaccuracy": 10,
 			"mirror": true,
-			"alternate": false,
+			"alternate": true,
 			"shootSound": "lasershoot",
 			"continuous": false,
 			"parts": [
@@ -42,34 +43,21 @@
 			]
 			"bullet": {
 				"type": "BasicBulletType",
-				"damage": 0,
+				"damage": 15,
 				"pierce": true,
-				"pierceFragCap": 1,
-				"lifetime": 30,
-				"speed": 4,
+				"pierceCap": 3,
+				"homingPower": 0.2,
+				"homingDelay": 15,
+				"homingRange": 64,
+				"lifetime": 60,
+				"speed": 6,
 				"width": 8,
 				"height": 16,
-				"shrinkX": 0.6,
 				"sprite": "as-spear"
 				"hitsize": 6,
-				"hitEffect": "unitControl",
-				"despawnEffect": "unitControl",
-				"buildingDamageMultiplier": 0.01
-				"fragBullets": 3,
-				"fragRandomSpread": 0,
-				"fragAngle": 0,
-				"fragBullet": {
-					"type": "BasicBulletType",
-					"damage": 15,
-					"lifetime": 15,
-					"speed": 6,
-					"buildingDamageMultiplier": 0.01
-					"sprite": "as-spear"
-					"width": 4,
-					"height": 8,
-					"hitsize": 4,
-					"hitEffect": "unitControl",
-				}
+				"hitEffect": "moveCommand",
+				"despawnEffect": "moveCommand",
+				"buildingDamageMultiplier": 0.01,
 			}
 		}
 	]
