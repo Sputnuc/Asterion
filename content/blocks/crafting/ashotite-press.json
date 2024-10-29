@@ -30,9 +30,9 @@
 		"methane/0.3"
 		]
 	},	
-	"outputItem": "ashotite/4",
+	"outputItem": "ashotite/2",
 	"outputLiquid": "zion/0.01666666666666666666666666666667",
-	"craftTime": 60,
+	"craftTime": 120,
 	"idleSound": "respawning",
 	"updateEffect": "smeltsmoke", 
 	"category": "crafting", 
