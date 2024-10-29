@@ -4,11 +4,11 @@
 "description":
   '''
 This is collaboration mod.
-Updated: [(rework > The point of occupation/Tech tree/Recolor zincum ore)]
+Updated: [(rework > Resprite liquid logistic, small balancing)]
 Mod server: https://discord.gg/PcTnJ96mwf
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.4.6.7.2",
+"version": "0.4.6.8",
 "minGameVersion": 146,
-"subtitle": "0.4.6.7.2 beta"
+"subtitle": "0.4.6.8 beta"
 }
