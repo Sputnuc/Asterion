@@ -4,11 +4,11 @@
 "description":
   '''
 This is collaboration mod.
-Updated: [(rework > Resprite liquid logistic, small balancing)]
+Updated: [(rework > Resprite liquid logistic, small balancing, Graphene synthesizer)]
 Mod server: https://discord.gg/PcTnJ96mwf
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.4.6.8",
+"version": "0.4.7",
 "minGameVersion": 146,
-"subtitle": "0.4.6.8 beta"
+"subtitle": "0.4.7 beta"
 }
