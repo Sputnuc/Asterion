@@ -1,6 +1,6 @@
 {
 	"type": "GenericCrafter",
-	"name": "Blacktite press",
+	"name": "Blacktite forge",
 	"description": "Compresses whitorite and kiten under the influence of methane at high temperatures",
 	"buildCostMultiplier": 0.75,
 	"size": 3,
