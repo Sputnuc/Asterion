@@ -32,7 +32,7 @@
 	},	
 	"outputItem": "ashotite/2",
 	"outputLiquid": "zion/0.01666666666666666666666666666667",
-	"craftTime": 90,
+	"craftTime": 75,
 	"idleSound": "respawning",
 	"updateEffect": "smeltsmoke", 
 	"category": "crafting", 
