@@ -1,7 +1,7 @@
 {
 	"type": "GenericCrafter",
 	"name": "Blacktite forge",
-	"description": "Compresses whitorite and kiten under the influence of methane at high temperatures",
+	"description": "Compresses whitorite and zincum under the influence of methane at high temperatures",
 	"buildCostMultiplier": 0.75,
 	"size": 3,
 	"planet": "as-asterion",
