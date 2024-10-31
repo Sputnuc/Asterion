@@ -1,0 +1,15 @@
+//localizedName: Zinc mining outpost
+planet: asterion
+sector: 14
+difficulty: 3
+alwaysUnlocked: false
+research: {
+parent: point-occupation
+requiresUnlock: false
+objectives: [
+{
+type: SectorComplete
+preset: point-occupation
+  }
+ ]
+}
