@@ -83,7 +83,7 @@ weapons: [
 	 damage: 40
 	 length: 280
 	 shake: 1
-         weight: 4
+         width: 4
 	 lifetime: 300
 	 colors: [5288ba,99c6f0,99c6f0,]
 	 shootEffect: {
