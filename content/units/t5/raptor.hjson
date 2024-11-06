@@ -51,7 +51,7 @@ parts: [
 weapons: [
 {
     name: raptor-weapon
-    
+    cone: 45
     parts: [
     {
         type: RegionPart
