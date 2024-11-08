@@ -14,13 +14,13 @@ size: 4
 force: 100
 scaledForce: 40
 range: 345
-damage: 18
+damage: 15
 scaledHealth: 350
 rotateSpeed: 2.5
 status: virus
 statusDuration: 160
 consumes: {
- power: 5
+ power: 20
 }
 requirements: [
 magnetite/150
@@ -47,5 +47,5 @@ parent: glare
 
 drawer: {
   type: DrawTurret
-  basePrefix: ast-
+  basePrefix: infection-base
 }
