@@ -22,25 +22,23 @@ parts: [
 {
       type: HaloPart
       y: -7
-      radius: 5
+      radius: 4
       tri: true
-      layerOffset: 1
+      layer: 110
       color: a9c5ea
       haloRotateSpeed: 2.1
       haloRadius: 5
       haloRadiusTo: 7
-      stroke: 4
-      strokeTo: 6
       shapes: 3
-      triLengthTo: 3
-      triLength: 2
+      triLengthTo: 5
+      triLength: 4
 }
 {
       type: shapePart
       y: -7
       hollow: true
       circle: true
-      layerOffset: 1.2
+      layer: 110
       color: c7d9f0f
       stroke: 1
       strokeTo: 1.3
@@ -65,9 +63,8 @@ weapons: [
     ]
     
     shootY: 16
-	shake: 6
+	shake: 3
     shootX: 0
-	alternate: false
     x: -23
     y: 0
     layerOffset: -0.01
@@ -75,16 +72,21 @@ weapons: [
     rotate: true
     rotationLimit: 18
     recoil: 2
-    reload: 300
-	continuous: true
-    shootSound: beam
+    reload: 90
+    shootSound: laser
+    shoot: {
+    type: ShootSpread
+    shots: 3
+    shotDelay: 5
+    spread: 4
+    }
     bullet: {
-	 type: ContinuousLaserBulletType
-	 damage: 40
+	 type: LaserBulletType
+	 damage: 80
 	 length: 280
 	 shake: 1
          width: 4
-	 lifetime: 300
+	 lifetime: 50
 	 colors: [5288ba,99c6f0,99c6f0,]
 	 shootEffect: {
 	  type: ParticleEffect
