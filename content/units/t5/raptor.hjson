@@ -45,6 +45,16 @@ parts: [
       radiusTo: 7
       radius: 5
 }
+{
+      type: shapePart
+      y: -7
+      hollow: false
+      circle: true
+      layer: 110
+      color: c7d9f0f
+      radiusTo: 3
+      radius: 2
+}
 ]
 weapons: [
 {
@@ -67,25 +77,25 @@ weapons: [
     shootX: 0
     x: -23
     y: 0
+	cone: 50
     layerOffset: -0.01
     mirror: true
     rotate: true
-    rotationLimit: 18
+    rotationLimit: 20
     recoil: 2
-    reload: 90
+    reload: 60
     shootSound: laser
-    shoot: {
-    type: ShootSpread
-    shots: 3
-    shotDelay: 5
-    spread: 4
-    }
+	shoot: {
+	shots: 3
+	shotDelay: 10
+	}
     bullet: {
 	 type: LaserBulletType
-	 damage: 80
+	 damage: 210
+	 recoil: 0.35
 	 length: 280
 	 shake: 1
-         width: 16
+     width: 20
 	 lifetime: 50
 	 colors: [5288ba,99c6f0,99c6f0,]
 	 shootEffect: {
