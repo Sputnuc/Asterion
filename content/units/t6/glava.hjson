@@ -21,10 +21,10 @@ range: 240
 parts: [
 {
       type: HaloPart
-      y: -15
-      radius: 8
+      y: -15.25
+      radius: 3
       tri: true
-      layerOffset: 1
+	  layer: 110
       color: a9c5ea
       haloRotateSpeed: 1.15
       haloRadius: 7
@@ -32,20 +32,45 @@ parts: [
       stroke: 7
       strokeTo: 8
       shapes: 4
-      triLengthTo: 4
+      triLengthTo: 4.5
       triLength: 3
 }
 {
+      type: HaloPart
+      y: -15.25
+      radius: 4
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: -0.70
+      haloRadius: 10
+      haloRadiusTo: 15
+      shapes: 4
+      triLengthTo: 7
+      triLength: 0
+}
+
+{
       type: shapePart
-      y: -15
+      y: -15.25
+	  layer: 110
       hollow: true
       circle: true
-      layerOffset: 1.2
       color: c7d9f0f
       stroke: 1.5
       strokeTo: 2
       radiusTo: 10
       radius: 7
+}
+{
+      type: shapePart
+      y: -15.25
+	  layer: 110
+      hollow: false
+      circle: true
+      color: c7d9f0f
+      radiusTo: 4
+      radius: 2
 }
 ]
 weapons: [
@@ -82,6 +107,9 @@ weapons: [
     bullet: {
 	type: BasicBulletType
 	backColor: 8798b9
+	trailLength: 16
+	trailWidth: 4
+	trailColor: a1b1d0
 	frontColor: a1b1d0
     pierceBuilding: true
 	trailInterval: 1
@@ -90,10 +118,12 @@ weapons: [
 	type: ParticleEffect
 	colorFrom: a1b1d0
 	colorTo: 8798b900
-	particles: 1
-	length: 1
+	particles: 4
+	length: 12
+	baseLength: 7
 	sizeFrom: 3
 	sizeTo: 1
+	lifetime: 30
 	}
 	{
 	type: WaveEffect
@@ -129,8 +159,8 @@ weapons: [
            colorTo: a1b1d0
            particles: 9
            cone: 50
-           length: 30
-           baseLength: 5
+           length: 20
+           baseLength: 30
            lightScl: 3
            lightOpacity: 2
            spin: 0
@@ -144,8 +174,8 @@ weapons: [
            colorTo: 8798b9
            particles: 12
            cone: 60
-           length: 40
-           baseLength: 5
+           length: 30
+           baseLength: 30
            lightScl: 3
            lightOpacity: 2
            spin: 0
@@ -158,9 +188,9 @@ weapons: [
            colorFrom: 8798b9
            colorTo: 8798b9
            particles: 9
-           cone: 90
-           length: 50
-           baseLength: 5
+           cone: 30
+           length: 35
+           baseLength: 30
            lightScl: 3
            lightOpacity: 2
            spin: 0
@@ -247,8 +277,8 @@ weapons: [
                 backColor: d0d8e8
                 frontColor: a1b1d0
                 trailColor: a1b1d0
-                trailLength: 8
-                trailWidth: 2.5
+                trailLength: 10
+                trailWidth: 3
                 trailInterval: 46
                 homigRadius: 120
                 damage: 85
