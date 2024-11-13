@@ -33,7 +33,7 @@ shootSound: minebeam
 shootLength: 10
 laserColor: 9388d7
 laserWidth: 1
-targetGround: true
+targetGround: false
 targetAir: true
 
 status: virus
