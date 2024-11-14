@@ -84,6 +84,7 @@ weapons: [
     rotationLimit: 20
     recoil: 2
     reload: 170
+    chargeSoung: lasercharge
     shootSound: laser
 	shoot: {
 	shots: 8
@@ -98,6 +99,13 @@ weapons: [
      width: 20
 	 lifetime: 50
 	 colors: [5288ba,99c6f0,99c6f0,]
+         chargeEffect: {
+         type: WaveEffect
+         sizeFrom: 32
+         sizeTo: 0
+         strokeTo: 0
+         lifetime: 80
+	 }
 	 shootEffect: {
 	  type: ParticleEffect
 	  particles: 8
