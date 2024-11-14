@@ -83,18 +83,18 @@ weapons: [
     rotate: true
     rotationLimit: 20
     recoil: 2
-    reload: 60
+    reload: 170
     shootSound: laser
 	shoot: {
-	shots: 3
-	shotDelay: 10
+	shots: 8
+	shotDelay: 102
 	}
     bullet: {
 	 type: LaserBulletType
-	 damage: 210
-	 recoil: 0.35
+	 damage: 145
+	 recoil: 0.4
 	 length: 280
-	 shake: 1
+	 shake: 3
      width: 20
 	 lifetime: 50
 	 colors: [5288ba,99c6f0,99c6f0,]
