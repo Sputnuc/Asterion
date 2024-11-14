@@ -41,8 +41,7 @@ shoot: {
     width: 12
     height: 12
     lifetime: 15
-    speed: 3
-    drag: -0.1
+    speed: 4.5
     hitSize: 8
     ammoMultiplier: 2
     trailWidth: 2
