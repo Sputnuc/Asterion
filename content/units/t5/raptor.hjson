@@ -100,11 +100,12 @@ weapons: [
 	 colors: [5288ba,99c6f0,99c6f0,]
 	 shootEffect: {
 	  type: ParticleEffect
-	  particles: 3
+	  particles: 8
 	  cone: 45
-	  length: 40
+	  length: 80
+          baseLength: 40
 	  sizeFrom: 3
-	  sizeTo: 1
+	  sizeTo: 1.5
 	  colorFrom: c7d9f0f
 	  colorTo: 5b84ab4c	
 	 }
