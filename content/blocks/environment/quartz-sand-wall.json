@@ -3,5 +3,7 @@
 	"name": "Quartz sand wall",
 	"variants": 3,
 	"itemDrop": "quartz-sand",
-	"attribute": "quartzSand/1"
+	"attributes": {
+	  "quartzSand": 1
+	}
 }
