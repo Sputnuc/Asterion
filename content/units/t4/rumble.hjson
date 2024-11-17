@@ -4,7 +4,7 @@ type: legs
 outlineColor: 2b2828
 speed: 0.48
 flying: false
-research: orion-factory
+research: fault
 hovering: true
 hitSize: 30
 itemCapacity: 0

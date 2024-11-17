@@ -20,7 +20,7 @@ treadRects: [
 ]
 template: TankUnitType
 treadPullOffset: 4
-research: hunter-factory
+research: orion-factory
 weapons: [
  {
     name: mist-weapon
