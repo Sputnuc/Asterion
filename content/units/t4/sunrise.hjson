@@ -11,6 +11,7 @@ rotateSpeed: 0.7
 itemCapacity: 0
 outlineColor: 17191f
 outlineRadius: 4
+crushDamage: 1
 treadRects: [
   {
   x: -37
@@ -114,29 +115,15 @@ weapons: [
     x: 13
     y: -8.5
     mirror: true
-    shootSound: pew
-    reload: 45
+    shootSound: laser
+    reload: 32
     recoil: 1
     bullet: {
-      type: BasicBulletType
-      sprite: missile-large
-      damage: 80
-      speed: 7
-      lifetime: 20
-      width: 6
-      height: 8
-      pierceCap: 3
-      pierceBuildings: true
-      pierceArmor: true
-      backColor: bc5451 
-      frontColor: e98878
-      trailColor: bc5451 
-      trailWidth: 1.6
-      trailLength: 3
-      homingPower: 0.3
-      homingDelay: 10
-      shootEffect: none
-      smokeEffect: none
+        type: LaserBulletType
+        length: 140
+        colors: ["bc5451", "e98878", "FFFFFF"]
+        damage: 20
+        lifetime: 10
     }
 }
 ]
