@@ -13,20 +13,23 @@ consumes: {
 	power: 9.166666666666667
 	items: {
 		items: [
-			irmenite/50
+			magnetite/50
+			irmenite/25
 		]
 	}
-	liquid: {
-		liquid: verdyne
-		amount: 1
-	}
+	liquids: [
+      verdyne/1
+	  oxylene/0.5
+	]
 }
 plans: [
 	{
 	unit: "raptor" //Tier 1 assembler
 	requirements: [
-		flare/1
-		copper-wall-large/1
+	    as-varan/3
+		as-piranha/5
+		as-irmenite-wall-large/5
+		as-whitorite-wall-large/10
 		as-part-orion-core/1
 	]
 	time: 1260
@@ -34,11 +37,12 @@ plans: [
 	{
 	unit: "glava" //Tier 2 assembler
 	requirements: [
-		flare/2
-		copper-wall-large/2
+		as-vulture/10
+		as-magnetite-wall-large/10
+		as-irmenite-wall-large/25
 		as-part-orion-core/1
 	]
-	time: 1260
+	time: 3500
 	}
 ]
 requirements: [
