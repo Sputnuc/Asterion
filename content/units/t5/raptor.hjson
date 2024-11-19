@@ -1,5 +1,5 @@
 name: raptor
-description: "It fires proton laser. From time to time, the Predator needs to release excess energy in order not to explode. Mech faction: [white] Orion"
+description: "It fires proton plasma projectiles that explode into a multitude of small bullets in flight. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the hunters... (Or not). Mech type: [white]«Hunter»"
 type: mech
 speed: 0.40
 flying: false
@@ -72,8 +72,8 @@ weapons: [
     }
     ]
     
-    shootY: 16
-	shake: 3
+    shootY: 17.5
+	shake: 8
     shootX: 0
     x: -23
     y: 0
@@ -82,32 +82,70 @@ weapons: [
     mirror: true
     rotate: true
     rotationLimit: 20
+    cooldownTime: 230
+	parentizeEffects: true
     recoil: 2
-    reload: 120
-    shootSound: laser
+    reload: 200
+    chargeSound: laser-charge
+    shootSound: laser-large-shot-1
 	shoot: {
-	shots: 5
+	shots: 12
 	shotDelay: 2
+	firstShotDelay: 120
 	}
     bullet: {
 	 type: LaserBulletType
-	 damage: 210
-	 recoil: 0.4
-	 length: 280
-	 shake: 1
-     width: 20
-	 lifetime: 50
+	 damage: 115
+	 recoil: 0.50
+	 length: 340
+	 shake: 3
+     width: 35
+	 lifetime: 60
 	 colors: [5288ba,99c6f0,99c6f0,]
-	 shootEffect: {
+	 chargeEffect: [
+	 {
+	  type: WaveEffect
+	  sizeFrom: 48
+	  sizeTo: 0
+	  colorFrom: ffffff00
+	  lifetime: 110
+	  rotWithParent: true
+      followParent: true
+	 }
+	 {
 	  type: ParticleEffect
-	  particles: 7
+	  length: 35
+	  baseLength: -35
+	  sizeFrom: 0
+	  sizeTo: 2
+	  colorFrom: ffffff00
+	  particles: 9
+	  lifetime: 110
+	  rotWithParent: true
+      followParent: true
+	 }
+	 ]
+	 shootEffect: [
+	 {
+	  type: ParticleEffect
+	  particles: 3
 	  cone: 45
-	  length: 60
+	  length: 40
 	  sizeFrom: 3
 	  sizeTo: 1
 	  colorFrom: c7d9f0f
 	  colorTo: 5b84ab4c	
 	 }
+	 {
+	  type: WaveEffect
+	  sizeFrom: 8
+	  sizeTo: 32
+	  colorTo: ffffff00
+	  lifetime: 30
+	  rotWithParent: true
+      followParent: true
+	 }
+	 ]
 	} 
    }
     {
