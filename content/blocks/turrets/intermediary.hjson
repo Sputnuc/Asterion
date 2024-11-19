@@ -47,20 +47,18 @@ consumes: {
 ammoTypes: {
     zionitium: {
 		type: BasicBulletType
-                collidesGround: false
-                collidesAir: false
+        pierce: true
 		lifetime: 80
+		damage: 30
 		speed: 5
 		width: 1
 		height: 1
 		shrinkX: 0
 		shrinkY: 0
-		hitsize: 0
+		hitsize: 1
 		sprite: as-none
 		backSprite: as-none
-		hittable: false
 		reflectable: false
-		absorbable: false
 		despawnEffect: none
 		bulletInterval: 1
 		intervalBullets: 2

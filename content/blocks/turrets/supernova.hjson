@@ -5,6 +5,7 @@
   researchCostMultiplier: 0.5
   size: 4
   health: 2280
+  parentizeEffects: true
   shake: 10
   shootCone: 9
   shootY: 10
@@ -32,44 +33,46 @@
     type: laserBulletType
     absorbable: true
     chargeEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    offsetX: 1.25
+
+    lifetime: 120
+    sizeFrom: 32
+    sizeTo: 0
+
+    colorFrom: FFFFFF00
+    colorTo: e0fffd
+    }
 	 {
-	   type: WaveEffect
-	   sizeFrom: 48
-	   colorFrom: FFFFFF00
-	   colorTo: e0fffd
-	   followParent: true
 	   rotWithParent: true
-	   lifetime: 90
-	   sizeTo: 0
-	   strokeFrom: 0
-	   strokeTo: 4
-	   offsetY: -1
-	 }
-	 {
 	   type: WaveEffect
 	   sizeFrom: 70
 	   colorFrom: FFFFFF00
 	   colorTo: e0fffd
-	   followParent: true
-	   rotWithParent: true
+       followParent: true
 	   lifetime: 120
 	   sizeTo: 0
 	   strokeFrom: 1
 	   strokeTo: 3
-	   offsetY: -1
+	   offsetY: 0.1
+	   offsetX: 1
 	 }
 	 {
 	   type: WaveEffect
 	   sizeFrom: 90
 	   colorFrom: FFFFFF00
 	   colorTo: e0fffd
-	   followParent: true
 	   rotWithParent: true
+       followParent: true
 	   lifetime: 130
 	   sizeTo: 0
 	   strokeFrom: 1
 	   strokeTo: 2
-	   offsetY: -1
+	   offsetY: 0.1
+	   offsetX: 1
 	 }
 	]
     lifetime: 90
@@ -128,6 +131,17 @@
       }
 	{	
      type: ShapePart
+     y: 10.5
+	 progress: charge
+     hollow: false
+     circle: true
+     layer: 110
+     color: aaf3e7
+     radiusTo: 5
+	 radius: 0 
+    }
+	{	
+     type: ShapePart
      y: -10.5
 	 progress: warmup
      hollow: true
@@ -161,12 +175,25 @@
       color: aaf3e7
 	  layer: 110
       haloRotateSpeed: -0.5
-      haloRadius: 0
-      haloRadiusTo: 8
-      stroke: 0
-      strokeTo: 4
+      haloRadius: 6.5
+      haloRadiusTo: 6.5
       shapes: 4
-      triLengthTo: 4
+      triLengthTo: 3
+      triLength: 0
+    }
+	{
+      type: HaloPart
+	  progress: warmup
+      y: -10.5
+      radius: 5
+      tri: true
+      color: aaf3e7
+	  layer: 110
+      haloRotateSpeed: 0.5
+      haloRadius: 6.5
+      haloRadiusTo: 12
+      shapes: 4
+      triLengthTo: 7
       triLength: 0
     }
    ]

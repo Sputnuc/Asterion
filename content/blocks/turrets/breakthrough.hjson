@@ -14,7 +14,12 @@
 	planet: as-asterion
   }
   category: turret
-  reload: 60
+  reload: 120
+  rotateSpeed: 1.5
+  shoot: {
+  shots: 3
+  shotDelay: 3
+  }
   range: 220
   powerUse: 100
   ammoTypes: {
@@ -34,7 +39,7 @@
           cone: 15
         }]  
 	  smokeEffect: shootBigSmoke
-      damage: 85
+      damage: 60
       speed: 15
 	  width: 8
       height: 8
@@ -64,12 +69,12 @@
 		   }
 		  ]  
 	  smokeEffect: shootBigSmoke
-	  reloadMultiplier: 0.6
+	  reloadMultiplier: 0.5
 	  width: 8
       height: 8
-      damage: 120
+      damage: 95
 	  status: melting
-	  statusDuration: 180
+	  statusDuration: 300
       speed: 15
       pierce: true
       pierceCap: 9

@@ -7,15 +7,16 @@
   buildCostMultiplier: 1.2
   reload: 50
   recoil: 0.6
-  range: 200
+  range: 300
   size: 5
   innacuracy: 3
   velocityRnd: 0.4
   shoot: {
     type: ShootAlternate
-    shots: 2
+    shots: 4
     spread: 18
     barrels: 2
+	shotDelay: 3
   }
   consumes: { 
     coolant: { 
@@ -29,23 +30,22 @@
   ammoTypes: {
     ashotite: {
     type: BasicBulletType
-	  pierce: true
-	  pierceCap: 2
+	pierce: true
+	pierceCap: 2
     frontColor: ffffff
     backColor: bf7622
     hitColor: bf7622
-	  sprite: as-armored-shell
+	sprite: as-armored-shell
     damage: 120
-	  width: 12
-	  height: 25
-    lifetime: 15
+	width: 12
+	height: 25
+    lifetime: 30
     speed: 10
-    drag: -0.1
     hitSize: 8
     ammoMultiplier: 2
-	  trailWidth: 2
+	trailWidth: 2
     trailLength: 9
-	  trailColor: bf7622
+	trailColor: bf7622
     fragBullets: 2
     fragSpreadRandom: 32
     fragBullet: {

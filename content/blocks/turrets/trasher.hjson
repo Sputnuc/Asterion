@@ -2,8 +2,8 @@ name: Trasher
 type: ItemTurret
 outlineColor: 22262b
 size: 2
-range: 120
-reload: 120
+range: 100
+reload: 90
 maxAmmo: 24
 researchCostMultiplier: 0.25
 inaccuracy: 3
@@ -12,15 +12,15 @@ shootSound: shotgun
 ammoTypes: {
   ashotite: {
    type: ShrapnelBulletType
-   length: 125
+   length: 100
    width: 18
-   damage: 85
+   damage: 100
    hitEffect: blastExplosion
    toColor: f5cc9e
    pierce: true
    pierceBuilding: false
    status: melting
-   statusDuration: 180
+   statusDuration: 300
   }
 }
 requirements: [

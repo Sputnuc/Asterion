@@ -34,16 +34,15 @@
 	  trailWidth: 2
       trailLength: 7
 	  trailColor: d0cbc0
-	  reloadMultiplier: 1.35
     }
     irmenite: {
       type: BasicBulletType
 	  pierce: true
 	  pierceCap: 7
 	  sprite: as-spear
-      damage: 55
+      damage: 50
 	  width: 12
-	  height: 25
+	  height: 30
       lifetime: 13.333333333333333333333333333333
       speed: 15
       hitSize: 8
@@ -51,6 +50,7 @@
 	  trailWidth: 2
       trailLength: 9
 	  trailColor: abe0e5
+	  reloadMultiplier: 0.80
     }
   }
   requirements: [
