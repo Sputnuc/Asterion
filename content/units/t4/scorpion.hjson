@@ -227,10 +227,10 @@ despawnEffect: {
     rotate: true
     rotationLimit: 5
     rotateSpeed: 0.5
-    shootCone: 360
-    inaccuracy: 4
+    shootCone: 180
+    inaccuracy: 6
     velocityRnd: 0.4
-    ignoreRotation:true
+    ignoreRotation: true
 
     shoot: {
 type: ShootAlternate
@@ -241,11 +241,8 @@ barrels: 2
 
 bullet: {
 type: BasicBulletType
-homingRange: 300
-homingPower: 0.15
-homingDelay: 10
 damage: 20
-lifetime: 220
+lifetime: 30
 width: 7
 height: 7
 speed: 4.5
@@ -276,12 +273,12 @@ despawnEffect: {
 type: WaveEffect 
 colorFrom: d0d8e8
 colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
-lightScl: 4 
-lightOpacity: 1
+sizeFrom: 2 
+sizeTo: 0
+lightScl: 2
+lightOpacity: 0.3
 rotation: 0 
-strokeFrom: 4
+strokeFrom: 2
 strokeTo: 0 
 }
 hitEffect: {
@@ -295,7 +292,67 @@ lightOpacity: 1
 rotation: 0 
 strokeFrom: 4
 strokeTo: 0
-} 
+}
+fragAngle: 180
+fragBullets: 1
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragOffsetMax: 1
+fragRandomSpread: 5
+fragBullet: {
+   damage: 10
+   homigRadius: 60
+   homingPower: 0.11
+   lifetime: 60
+   width: 7
+   height: 7
+   speed: 7.5
+   backColor: d0d8e8 
+   frontColor: a1b1d0
+   trailColor: a1b1d0 
+   trailWidth: 2.33333
+   trailLength: 6
+   pierceArmor: true
+   shootEffect: {
+    type: ParticleEffect 
+	colorFrom: d0d8e8
+	colorTo: a1b1d0
+	particles: 16
+	cone: 12
+	length: 12
+	baseLength: 5
+	lightScl: 3
+	lightOpacity: 2
+	spin: 0
+	sizeFrom: 2
+	sizeTo: 0 
+	offset: 1
+    }
+   despawnEffect: {
+    type: WaveEffect 
+	colorFrom: d0d8e8
+	colorTo: a1b1d0
+	sizeFrom: 0 
+	sizeTo: 6
+	lightScl: 4 
+	lightOpacity: 1
+	rotation: 0 
+	strokeFrom: 4
+	strokeTo: 0 
+   }
+   hitEffect: {
+    type: WaveEffect 
+	colorFrom: d0d8e8
+	colorTo: a1b1d0
+	sizeFrom: 0 
+	sizeTo: 6
+	lightScl: 4 
+	lightOpacity: 1
+	rotation: 0 
+	strokeFrom: 4
+	strokeTo: 0
+  }
+ }
 }
 }
 ]
