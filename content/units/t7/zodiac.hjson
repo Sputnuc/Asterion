@@ -1,0 +1,292 @@
+name: Zodiac
+description: Orion's monstrous weapon capable of disabling the entire sector. Faction: «Orion». It releases a monstrous projectile which forms a small black hole as a result of the rupture
+type: mech
+speed: 0.15
+flying: false
+hitSize: 60
+itemCapacity: 300
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.8
+mechStepParticles: true
+stepShake: 3
+outlineRadius: 8
+drownTimeMultiplier: 999
+rotateSpeed: 0.7
+health: 213000
+armor: 120
+range: 240
+parts: [
+// Halo on ring
+{
+      type: HaloPart
+      y: -16.5
+      radius: 3
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: 1.15
+      haloRadius: 8
+      haloRadiusTo: 14
+      stroke: 7
+      strokeTo: 8
+      shapes: 4
+      triLengthTo: 5.5
+      triLength: 4
+}
+{
+      type: HaloPart
+      y: -16.5
+      radius: 5
+      tri: true
+	  layer: 110
+      color: a9c5ea
+	  rotation: 180
+      haloRotateSpeed: 0.9
+      haloRadius: 8
+      haloRadiusTo: 14
+      shapes: 3
+      triLengthTo: 6
+      triLength: 0
+}
+{
+     type: ShapePart
+     y: -16.5
+	 progress: warmup
+     hollow: true
+     circle: false
+     layer: 110
+     color: a9c5ea
+	 sides: 3
+     stroke: 0
+     strokeTo: 1.5
+	 rotateSpeed: 0.8
+     radius: 8
+	 radiusTo: 12
+    }
+//addition tri
+{
+      type: HaloPart
+      y: -16.5
+      radius: 8
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: -0.70
+      haloRadius: 14
+      haloRadiusTo: 18
+      shapes: 4
+      triLengthTo: 10
+      triLength: 0
+}
+{
+      type: shapePart
+      y: -16.5
+	  layer: 110
+      hollow: true
+      circle: true
+      color: c7d9f0f
+      stroke: 1.5
+      strokeTo: 2
+      radiusTo: 14
+      radius: 8
+}
+{
+      type: shapePart
+      y: -16.5
+	  layer: 110
+      hollow: false
+      circle: true
+      color: c7d9f0f
+      radiusTo: 5
+      radius: 4
+}
+]
+weapons: [
+{
+    name: zodiac-weapon
+    
+    parts: [
+    {
+        type: RegionPart
+        suffix: -heat
+        progress: warmup
+        blending: additive
+        color: 30fdf3
+        layerOffset: -0.1
+        outline: false
+    }
+    ]
+	shake: 15
+	rotateSpeed: 1.1
+	cone: 30
+    shootX: 0
+	shootY: 25
+    x: -55.875
+    y: 4.5
+    layerOffset: -0.01
+	cooldownTime: 250
+    mirror: true
+    rotate: true
+    rotationLimit: 18
+    recoil: 8
+    reload: 300
+    shootSound: mechshoot
+
+    bullet: {
+	type: ArtilleryBulletType
+	backColor: 8798b9
+	trailLength: 24
+	drag: 0.005
+	trailWidth: 8
+	scaleLife: true
+	trailColor: a1b1d0
+	frontColor: a1b1d0
+    despawnShake: 40
+    hitShake: 5
+    height: 70
+    width: 35
+    splashDamageRadius: 96
+    splashDamage: 10000
+	despawnEffect: [
+	{
+	type: WaveEffect
+	sizeFrom: 0
+	sizeTo: 300
+	lifetime: 30
+	strokeFrom: 0
+	strokeTo: 16
+	colorTo: ffffff00
+	}
+	{
+	type: ParticleEffect
+	length: 60
+	baseLength: 80
+	sizeFrom: 12
+	sizeTo: 1
+	colorTo: ffffff00
+	particles: 20
+	lifetime: 30
+	}
+	]
+    lifetime: 100
+    damage: 1200
+    speed: 8
+	fragBullets: 1
+	fragVelocityMin: 0 
+	fragVelocityMax: 0
+	fragOffsetMax: 0
+	fragOffsetMin: 0
+	fragRandomSpread: 0
+	fragBullet: {
+	type: BlackHoleBulletType
+	force: 40
+	scaledForce: 3200
+	lifetime: 130
+	damage: 150
+	edge: 4
+	swirlEffects: 6
+	swirlInterval: 1
+	suctionRadius: 95
+	damageRadius: 40
+	color: a1b1d0
+	}
+	 }
+    }
+	{
+	name: zodiac-automatic-weapon
+	shake: 2
+    rotateSpeed: 1.7
+	parentizeEffects: true
+	alternate: false
+	cone: 30
+    shootX: 0
+	shootY: 8
+    x: -29.5
+    y: 2
+    layerOffset: 0.01
+	inaccuracy: 3
+    mirror: true
+	shoot: {
+	shots: 150
+	shotDelay: 3
+	firstShotDelay: 110
+	}
+    rotate: true
+    recoil: 1
+    reload: 530
+    chargeSound: minigun-heavy-charge
+    shootSound: minigun-heavy-shot
+    bullet: {
+	chargeEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    offsetX: 1.25
+
+    lifetime: 100
+    sizeFrom: 16
+    sizeTo: 0
+
+    colorFrom: FFFFFF00
+    colorTo: e0fffd
+    }
+	type: BasicBulletType
+	backColor: 8798b9
+	trailLength: 6
+	trailWidth: 2
+	scaleLife: true
+	trailColor: a1b1d0
+	frontColor: a1b1d0
+	despawnShake: 2
+	interp: expIn
+    hitShake: 5
+    height: 12
+    width: 8
+    lifetime: 120
+    damage: 95
+    speed: 6
+	despawnEffect: {
+     type: WaveEffect 
+     colorFrom: d0d8e8
+     colorTo: a1b1d0
+     sizeFrom: 0 
+     sizeTo: 6
+     lightScl: 4 
+     lightOpacity: 1
+	 rotation: 0 
+	 strokeFrom: 4
+	 strokeTo: 0 
+}
+    hitEffect: {
+	type: WaveEffect 
+	colorFrom: d0d8e8
+	colorTo: a1b1d0
+	sizeFrom: 0 
+	sizeTo: 6
+	lightScl: 4 
+	lightOpacity: 1
+	rotation: 0 
+	strokeFrom: 4
+	strokeTo: 0
+}      
+	 }
+    }
+]
+immunities: [
+    burning
+    wet
+    slow
+    sapped
+    shocked
+    freezing
+    spore-slowed
+    blasted
+    electrified
+    melting
+	as-virus
+	as-discharge
+	as-in-ash
+  ]

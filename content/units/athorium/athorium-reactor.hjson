@@ -5,7 +5,6 @@ type: legs
 legCount: 8
 legLength: 120
 legSpeed: 0.5
-hidden: true
 legForwardScl: 1.44
 legMoveSpace: 2.73
 

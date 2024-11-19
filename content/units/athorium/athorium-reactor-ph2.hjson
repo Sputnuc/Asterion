@@ -3,7 +3,6 @@ description: End Comming!!!!
 
 type: legs
 legCount: 12
-hidden: true
 legLength: 150
 legSpeed: 0.7
 legForwardScl: 1.44
