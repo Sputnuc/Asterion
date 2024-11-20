@@ -44,8 +44,8 @@
       damage: 480
       width: 12
       height: 25
-      lifetime: 15
-      speed: 15
+      lifetime: 20
+      speed: 25
       hitSize: 8
       ammoMultiplier: 2
       trailWidth: 6
