@@ -11,5 +11,5 @@ Mod server: https://discord.gg/PcTnJ96mwf
 "version": "0.6",
 "minGameVersion": 146,
 "subtitle": "0.6",
-"dependencies": ["black-hole-renderer"],
+"dependencies": ["black-hole-renderer"]
 }
