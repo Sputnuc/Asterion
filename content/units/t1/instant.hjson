@@ -26,12 +26,26 @@ parts: [
         color: 79eef2
     }
 ]
-abilities : [
+abilities: [
         {
-        teamColor : true
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        }
         type : MoveEffectAbility
         minVelocity: 0
-        interval: 0.5
+        interval: 0.01
         y : -3
         x : 0
     }
@@ -51,16 +65,16 @@ weapons: [{
     x: 0
     shoot: {
         type: ShootSpread
-        shots: 8
-        spread: 0.5
+        shots: 10
+        spread: 1
     }
     
     bullet : {
-        lifetime: 20
-        damage: 5
+        lifetime: 10
+        damage: 4
         height: 4
         speed: 5
-        width: 6
+        width: 9
         type: BasicBulletType
         frontColor: 79eef2
         backColor: 74c1e8
