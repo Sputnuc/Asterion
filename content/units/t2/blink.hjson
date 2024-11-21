@@ -1,27 +1,27 @@
 useEngineElevation : false
-shadowElevation : 0.2
+shadowElevation : 0.3
 engineOffset : -1.75
 itemCapacity : 0
 rotateSpeed : 4
 engineSize : 0
 hovering : true
-hitSize : 11
-health : 230
-speed : 1.2
+hitSize : 18
+health : 670
+speed : 1.05
 accel : 0.1
-armor : 5
-name : Instant
+armor : 8
+name : Blink
 type : hover
-drag : 0.07
+drag : 0.1
 outlineColor: 28282d
 outlineRadius: 4
 
 parts: [
     {
         type: HoverPart
-        radius: 10
-        stroke: 2
-        phase: 85
+        radius: 16
+        stroke: 3
+        phase: 70
         layerOffset: -0.001
         color: 79eef2
     }
@@ -36,47 +36,57 @@ abilities: [
         cone: 360
         length: 0
         baseLength: 0
-        lightScl: 2
+        lightScl: 2.5
         lightOpacity: 2
         spin: 0
-        sizeFrom: 2
+        sizeFrom: 2.5
         sizeTo: 0 
         offset: 0
         }
         type : MoveEffectAbility
         minVelocity: 0
         interval: 0.00000001
-        y : -3
+        y : -0
         x : 0
     }
 ]
 
-research: orion-factory
+research: instant
 
 weapons: [{
     
     baseRotation: 0
-    shootCone: 70
+    shootCone: 360
     mirror: false
-    reload: 75
-    name: instant-weapon
+    reload: 140
+    inaccuracy: 360
+    name: blink-weapon
     top: true
-    y: 5.5
+    y: -2
     x: 0
     shoot: {
-        type: ShootSpread
-        shots: 10
-        spread: 1
+        shots: 3
     }
     
     bullet : {
-        lifetime: 10
-        damage: 4
-        height: 4
-        speed: 5
+        hitEffect: blastExplosion
+        keepVelocity: false
+        lifetime: 100
+        drag: -0.015
+        splashDamage: 60
+        splashDamageRadius: 35
+        damage: 20
+        height: 9
+        speed: 1
         width: 9
+        sprite: "mine-bullet"
         type: BasicBulletType
+        homingPower: 0.08
+        homingDelay: 15
         frontColor: 79eef2
         backColor: 74c1e8
+        trailColor: 74c1e8
+        trailWidth: 3.25
+        trailLength: 10
     }
 }]
