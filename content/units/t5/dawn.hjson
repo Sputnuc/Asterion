@@ -10,7 +10,7 @@ rotateSpeed: 0.5
 itemCapacity: 0
 outlineColor: 17191f
 outlineRadius: 4
-crushDamage: 1
+crushDamage: 2.5
 treadRects: [
   {
   x: -80
@@ -39,7 +39,7 @@ weapons: [
     shootSound: largeCannon
     reload: 230
     recoil: 3
-    rotateSpeed: 4
+    rotateSpeed: 1
     shootStatus: fading-t2
     shootStatusDuration: 230
     bullet: {
