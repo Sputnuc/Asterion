@@ -1,62 +1,79 @@
-Name: Sunrise
+Name: Dawn
 type: tank
-hitSize: 28
+hitSize: 42
 flying: false
 omniMovement: false
-health: 11400
-armor: 16
-speed: 0.32
-rotateSpeed: 0.7
+health: 34700
+armor: 26
+speed: 0.25
+rotateSpeed: 0.5
 itemCapacity: 0
 outlineColor: 17191f
 outlineRadius: 4
 crushDamage: 1
 treadRects: [
   {
-  x: -37
-  y: -46
-  width: 30
-  height: 40
+  x: -80
+  y: -84
+  width: 79
+  height: 192
   }
   {
-  x: -55
-  y: 10
-  width: 56
-  height: 50
+  x: -87
+  y: -75
+  width: 88
+  height: 183
   }
 ]
 template: TankUnitType
 treadPullOffset: 4
-research: clearance
+research: sunrise
 weapons: [
 {
-    name: sunrise-weapon-glav
+    name: dawn-weapon
     rotate: true
     x: 0
-    y: 0.5
+    y: 0
+    shootY: -3
     mirror: false
-    shootSound: shockBlast
-    reload: 120
+    shootSound: largeCannon
+    reload: 230
     recoil: 3
     rotateSpeed: 4
     shootStatus: fading-t2
-    shootStatusDuration: 120
+    shootStatusDuration: 230
     bullet: {
         type: BasicBulletType
-        damage: 240
-        splashDamage: 70
-        splashDamageRadius: 30
-        speed: 6
-        lifetime: 25
-        width: 10
-        height: 14
+        damage: 500
+        splashDamage: 150
+        splashDamageRadius: 50
+        pierceCap: 5
+        pierceBuilding: true
+        speed: 7
+        lifetime: 150
+        drag: 0.018
+        width: 16
+        height: 16
+        shrinkX: 1
+        shrinkY: 1
         backColor: bc5451 
         frontColor: e98878
         trailColor: bc5451 
-        trailWidth: 2.5
+        trailWidth: 4
         trailLength: 9
-        status: discharge
-        statusDuration: 155
+        bulletInterval: 5
+		intervalBullets: 4
+		intervalRandomSpread: 0
+		intervalAngle: 0
+		intervalSpread: 90
+		intervalBullet: {
+			type: LaserBulletType
+			colors: ["bc5451", "e98878", "FFFFFF"]
+			lifetime: 10
+			pierceCap: 4
+			damage: 100
+			length: 45
+		}
         shootEffect: none
         smokeEffect: none
         hitEffect: none
@@ -68,13 +85,13 @@ weapons: [
                 type: ParticleEffect
                 colorFrom: e98878
                 colorTo: bc5451
-                particles: 5
-                length: 24
+                particles: 16
+                length: 46
                 baseLength: 6
                 lightScl: 3
                 lightOpacity: 2
                 spin: 0
-                sizeFrom: 4
+                sizeFrom: 7
                 sizeTo: 0
                 offset: 0
             }
@@ -82,13 +99,13 @@ weapons: [
                 type: ParticleEffect
                 colorFrom: bc5451
                 colorTo: bc5451
-                particles: 8
-                length: 30
+                particles: 20
+                length: 50
                 lifetime: 20
                 lightScl: 3
                 lightOpacity: 2
                 spin: 0
-                sizeFrom: 3
+                sizeFrom: 5
                 sizeTo: 0
                 offset: 0
             }
@@ -97,32 +114,16 @@ weapons: [
                 colorFrom: e98878
                 colorTo: bc5451
                 sizeFrom: 0
-                sizeTo: 30
+                sizeTo: 50
+                lifetime: 20
                 lightScl: 3
                 lightOpacity: 1
                 sides: 0
                 rotation: 0
-                strokeFrom: 5
+                strokeFrom: 6
                 strokeTo: 0
             }
         ]}
-    }
-}
-{
-    name: sunrise-weapon
-    rotate: true
-    x: 13
-    y: -8.5
-    mirror: true
-    shootSound: laser
-    reload: 32
-    recoil: 1
-    bullet: {
-        type: LaserBulletType
-        length: 140
-        colors: ["bc5451", "e98878", "FFFFFF"]
-        damage: 20
-        lifetime: 10
     }
 }
 ]
