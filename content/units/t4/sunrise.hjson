@@ -61,6 +61,23 @@ weapons: [
         smokeEffect: none
         hitEffect: none
         despawnHit: true
+        parts: [
+         {
+         type: HaloPart
+         radius: 6
+         tri: true
+	       layer: 110
+         color: bc5451 
+         haloRotateSpeed: 0.15
+         haloRadius: 3
+         haloRadiusTo: 3
+         stroke: 7
+         strokeTo: 8
+         shapes: 3
+         triLengthTo: 4
+         triLength: 4
+}
+        ]
         despawnEffect: {
             type: MultiEffect
             effects: [
