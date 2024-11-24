@@ -70,10 +70,10 @@ weapons: [{
     }
     
     bullet : {
-        lifetime: 10
+        lifetime: 30
         damage: 4
         height: 4
-        speed: 5
+        speed: 6
         width: 9
         type: BasicBulletType
         frontColor: 79eef2
