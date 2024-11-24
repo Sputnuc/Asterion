@@ -46,15 +46,15 @@ weapons: [
         damage: 240
         splashDamage: 70
         splashDamageRadius: 30
-        speed: 6
-        lifetime: 25
+        speed: 7
+        lifetime: 40
         width: 10
         height: 14
         backColor: bc5451 
         frontColor: e98878
         trailColor: bc5451 
-        trailWidth: 2.5
-        trailLength: 9
+        trailWidth: 3.5
+        trailLength: 10
         status: discharge
         statusDuration: 155
         shootEffect: none
