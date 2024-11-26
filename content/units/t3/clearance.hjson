@@ -46,8 +46,8 @@ weapons: [
     }
     bullet: {
         type: ArtilleryBulletType
-        splashDamage: 36
-        splashDamageRadius: 18
+        splashDamage: 50
+        splashDamageRadius: 25
         speed: 8
         lifetime: 22
         width: 9

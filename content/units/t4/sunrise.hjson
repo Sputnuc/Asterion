@@ -138,7 +138,7 @@ weapons: [
         type: LaserBulletType
         length: 140
         colors: ["bc5451", "e98878", "FFFFFF"]
-        damage: 20
+        damage: 80
         lifetime: 10
     }
 }
