@@ -1,0 +1,25 @@
+speedMultiplier : 0.75
+reloadMultiplier : 0.75
+color : 79eef2
+name : Underclock
+
+effect : {
+    
+    type : MultiEffect
+    
+    effects : [
+        {
+            particles : 3
+            line: true
+            lenFrom: 4
+            strokeFrom: 2.5
+            colorFrom : 79eef2
+            sizeFrom : 2
+            lifetime : 25
+            colorTo : 6a96d9
+            sizeTo : 0
+            length : 8
+            type : ParticleEffect
+            cone : 360
+        }]
+}
