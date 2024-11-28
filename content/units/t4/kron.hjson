@@ -6,7 +6,7 @@ rotateSpeed : 3
 engineSize : 0
 flying : true
 hitSize : 28
-health : 5680
+health : 7280
 speed : 1.05
 accel : 0.1
 armor : 14
@@ -111,7 +111,7 @@ weapons: [{
         type: ShootSpread
         shots: 360
         spread: 1
-        shotDelay: 1
+        shotDelay: 0.3
     }
     
     bullet : {
@@ -124,7 +124,7 @@ weapons: [{
         width: 9
         type: BasicBulletType
         status: underclock
-        statusDuration: 155
+        statusDuration: 250
         frontColor: 79eef2
         backColor: 74c1e8
     }
@@ -134,7 +134,7 @@ weapons: [{
     shootCone: 360
     mirror: false
     inaccuracy: 360
-    reload: 190
+    reload: 170
     name: kron-weapon
     rotate: false
     top: true
@@ -149,7 +149,7 @@ weapons: [{
         hitEffect: blastExplosion
         keepVelocity: false
         lifetime: 60
-        damage: 30
+        damage: 45
         height: 9
         speed: 3
         width: 5
