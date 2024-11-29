@@ -111,7 +111,6 @@ weapons: [{
         type: ShootSpread
         shots: 360
         spread: 1
-        shotDelay: 0.3
     }
     
     bullet : {
@@ -121,10 +120,12 @@ weapons: [{
         pierce: true
         height: 4
         speed: 4
-        width: 9
+        width: 24
         type: BasicBulletType
         status: underclock
         statusDuration: 250
+        hitEffect: none
+        despawnEffect: none
         frontColor: 79eef2
         backColor: 74c1e8
     }
