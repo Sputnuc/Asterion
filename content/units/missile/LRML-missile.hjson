@@ -15,7 +15,7 @@
           "type": "ParticleEffect",
           "particles": 22,
           "sizeFrom": 8,
-          "sizeTo": 0,
+          "sizeTo": 12,
           "length": 75,
           "lifetime": 55,
           "interp": "circleOut",
