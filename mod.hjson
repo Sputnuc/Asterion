@@ -4,12 +4,11 @@
 "description":
   '''
 This is collaboration mod.
-A big rework-rebalance units/turrets
 Mod server: https://discord.gg/PcTnJ96mwf
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.6",
+"version": "0.6.1",
 "minGameVersion": 146,
-"subtitle": "0.6",
+"subtitle": "0.6.1",
 "dependencies": ["black-hole-renderer"]
 }
