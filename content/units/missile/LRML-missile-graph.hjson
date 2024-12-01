@@ -4,10 +4,11 @@
   "template": "MissileUnitType",
   "playerControllable": false,
   "logicControllable": false,
-  "missileAccelTime": 60,
+  "missileAccelTime": 30,
   "hidden": false,
-  "speed": 7,
-  "lifetime": 160,
+  "speed": 14,
+  "lifetime": 80,
+  "rotateSpeed": 6,
   "deathExplosionEffect": {
 	  "type": "MultiEffect",
 	  "effects": [
@@ -19,8 +20,8 @@
           "length": 75,
           "lifetime": 55,
           "interp": "circleOut",
-          "colorFrom": "d2a65b",
-          "colorTo": "b1a99a00",
+          "colorFrom": "414369",
+          "colorTo": "20234d",
           "cone": 360,
     },
 	{
@@ -30,12 +31,12 @@
 		"sizeTo": 140,
 		"strokeFrom": 32,
 		"strokeTo": 0,
-		"color": "d7b56a"
+		"color": "414369"
 	}
    ]
   },
-  "trailColor": "d7b56a",
-  "trailLength": 9,
+  "trailColor": "414369",
+  "trailLength": 4,
   "deathSound": "none",
   "weapons": [
     {
@@ -47,8 +48,8 @@
       "shake": 5,
       "bullet": {
         "type": "ExplosionBulletType",
-        "splashDamage": 270,
-        "splashDamageRadius": 65,
+        "splashDamage": 470,
+        "splashDamageRadius": 25,
         "buildingDamageMultiplier": 1,
         "hitShake": 12,
         "reflectable": false,
@@ -70,7 +71,7 @@ parts: [
 		circles: 2
 		minStroke: 0.5
 		layer: 122
-		color: ffa31a
+		color: 414369
 	}
 	{
 		type: HoverPart
@@ -84,6 +85,6 @@ parts: [
 		circles: 1
 		minStroke: 0.5
 		layer: 122
-		color: ffa31a
+		color: 414369
 	}
 ]
