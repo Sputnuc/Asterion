@@ -17,8 +17,8 @@
     spread: 5
     barrels: 4
     ShootHelix: {
-      weaveScale: 3
-      weaveMag: 5
+      scl: 3
+      mag: 5
  }
   }
   consumes: { 
