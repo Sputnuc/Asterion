@@ -24,16 +24,16 @@
 		power: 7.5
 		items: {
 			items: [
-               blacktite/1
+               blacktite/3
 			 ]
 		 }
 		liquids: [
-		methane/0.5333333333333333
+		methane/0.5
 		]
 	}	
 	outputItem: graphene/1
 	outputLiquid: zion/0.2
-	craftTime: 240
+	craftTime: 360
 	idleSound: respawning
 	updateEffect: smeltsmoke 
 	category: crafting 
