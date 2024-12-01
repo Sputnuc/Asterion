@@ -5,7 +5,7 @@
   health: 1250
   shootSound: mediumCannon
   buildCostMultiplier: 1.2
-  reload: 45
+  reload: 25
   recoil: 0.6
   range: 300
   size: 5
@@ -13,7 +13,6 @@
   velocityRnd: 0.4
   shoot: {
     type: ShootAlternate
-    shots: 2
     spread: 18
     barrels: 2
   }
