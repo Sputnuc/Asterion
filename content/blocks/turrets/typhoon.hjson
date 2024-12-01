@@ -5,7 +5,7 @@
   health: 1250
   shootSound: mediumCannon
   buildCostMultiplier: 1.2
-  reload: 50
+  reload: 45
   recoil: 0.6
   range: 300
   size: 5
@@ -13,10 +13,9 @@
   velocityRnd: 0.4
   shoot: {
     type: ShootAlternate
-    shots: 4
+    shots: 2
     spread: 18
     barrels: 2
-	shotDelay: 3
   }
   consumes: { 
     coolant: { 
@@ -70,11 +69,12 @@
     }
   }
   requirements: [
- 	  whitorite/330
+ 	 whitorite/330
 	  blacktite/200
 	  kiten/170
 	  magnetite/200
 	  graphene/140
+	  cobalt/70
    ]
   research: storm
   category: turret 

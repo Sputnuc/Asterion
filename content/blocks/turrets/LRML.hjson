@@ -9,6 +9,7 @@
     irmenite/200
     magnetite/270
 	blacktite/120
+	cobalt/80
   ],
   research: {
 	parent: breakthrough
@@ -36,6 +37,14 @@
       smokeEffect: shootSmokeMissile
       damage: 0
       spawnUnit: LRML-missile
+    }
+     graphene: {
+      ammoMultiplier: 1
+      instantDisappear: true
+      shootEffect: shootBig
+      smokeEffect: shootSmokeMissile
+      damage: 0
+      spawnUnit: LRML-missile-graph
     }
   },
   drawer: {

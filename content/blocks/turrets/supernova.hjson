@@ -7,13 +7,13 @@
   health: 2280
   parentizeEffects: true
   shake: 10
-  shootCone: 9
+  shootCone: 1
   shootY: 10
   chargeSound: lasercharge2
   reload: 600
   range: 450
   targetAir: false
-  moveWhileCharging: true
+  moveWhileCharging: false
   targetGround: true
   recoilAmount: 1.8
   restitution: 0.04
@@ -140,17 +140,46 @@
      radiusTo: 5
 	 radius: 0 
     }
+    	{	
+     type: ShapePart
+     y: 10.5
+	 progress: charge
+     hollow: true
+     circle: true
+     layer: 110
+     color: aaf3e7
+     stroke: 0
+     stromeTo: 2
+     radiusTo: 7
+	 radius: 2 
+    }
 	{	
      type: ShapePart
-     y: -10.5
-	 progress: warmup
+     y: 10.5
+	 progress: charge
      hollow: true
      circle: true
      layer: 110
      color: aaf3e7
      stroke: 0
      strokeTo: 1.3
-     radius: 7
+     radiusTo: 9
+     radius: 0  
+    }
+    {
+      type: HaloPart
+	  progress: charge
+      y: 10.5
+      radius: 5
+      tri: true
+      color: aaf3e7
+	  layer: 110
+      haloRotateSpeed: -0.5
+      haloRadius: 0
+      haloRadiusTo: 10
+      shapes: 2
+      triLengthTo: 3
+      triLength: 0
     }
 	{
      type: ShapePart
