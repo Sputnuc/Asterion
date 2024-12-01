@@ -13,12 +13,12 @@
   innacuracy: 3
   shoot: {
     type: ShootAlternate
-    shots: 4
+    shots: 2
     spread: 5
     barrels: 4
     ShootHelix: {
       scl: 3
-      mag: 5
+      mag: 4
  }
   }
   consumes: { 
