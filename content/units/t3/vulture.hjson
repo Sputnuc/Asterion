@@ -34,11 +34,37 @@ weapons: [
         layerOffset: -0.1
         outline: false
     }
+	{
+        type: RegionPart
+        suffix: -blade
+        mirror: false
+        under: false
+        outline: true
+		//outlineLayerOffset: 0.001
+        progress: recoil
+        heatProgress: warmup
+        moveX: 1.25
+        moveY: -0.5
+        moveRot: 18
+      }
+	  {
+        type: RegionPart
+        suffix: -blade-d
+        mirror: false
+        under: false
+        outline: true
+		//outlineLayerOffset: 0.001
+        progress: recoil
+        heatProgress: warmup
+        moveX: -1.25
+        moveY: -0.5
+        moveRot: -18
+      }
     ]
     
     shootY: 5.5
     shootX: 0
-    x: -11.25
+    x: -13
     y: 0
     layerOffset: -0.01
     mirror: true

@@ -39,8 +39,8 @@ name: varan-weapon
     
     shootY: 4.25
     shootX: 0
-    x: -6.25
-    y: 0
+    x: -7
+    y: -0.5
     layerOffset: -0.01
     mirror: true
     rotate: true

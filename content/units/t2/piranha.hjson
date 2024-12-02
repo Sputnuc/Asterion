@@ -38,7 +38,7 @@ weapons: [
     ]
     
     name: piranha-weapon
-    x: -7.75
+    x: -8.5
     y: 0
     reload: 18
     mirror: true

@@ -21,7 +21,7 @@ range: 240
 parts: [
 {
       type: HaloPart
-      y: -7
+      y: -12
       radius: 4
       tri: true
       layer: 110
@@ -34,10 +34,25 @@ parts: [
       triLength: 4
 }
 {
+      type: HaloPart
+      y: -12
+      radius: 2
+      tri: true
+      layer: 110
+      color: a9c5ea
+      haloRotateSpeed: 1.8
+      haloRadius: 0
+      haloRadiusTo: 7
+      shapes: 2
+      triLengthTo: 2.5
+      triLength: 0
+}
+{
       type: shapePart
-      y: -7
+      y: -12
       hollow: true
-      circle: true
+      circle: false
+	  sides: 60
       layer: 110
       color: c7d9f0f
       stroke: 1
@@ -47,9 +62,10 @@ parts: [
 }
 {
       type: shapePart
-      y: -7
+      y: -12
       hollow: false
-      circle: true
+      circle: false
+	  sides: 60
       layer: 110
       color: c7d9f0f
       radiusTo: 3
@@ -75,7 +91,7 @@ weapons: [
     shootY: 17.5
 	shake: 8
     shootX: 0
-    x: -23
+    x: -24.5
     y: 0
 	cone: 50
     layerOffset: -0.01

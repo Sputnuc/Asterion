@@ -55,7 +55,8 @@ parts: [
       y: -15.25
 	  layer: 110
       hollow: true
-      circle: true
+      circle: false
+	  sides: 60
       color: c7d9f0f
       stroke: 1.5
       strokeTo: 2
@@ -67,7 +68,8 @@ parts: [
       y: -15.25
 	  layer: 110
       hollow: false
-      circle: true
+      circle: false
+	  sides: 60
       color: c7d9f0f
       radiusTo: 4
       radius: 2

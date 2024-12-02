@@ -12,7 +12,7 @@ mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
 stepShake: 3
-outlineRadius: 8
+outlineRadius: 5
 drownTimeMultiplier: 999
 rotateSpeed: 0.7
 health: 213000
@@ -22,7 +22,7 @@ parts: [
 // Halo on ring
 {
       type: HaloPart
-      y: -16.5
+      y: -20.5
       radius: 3
       tri: true
 	  layer: 110
@@ -38,7 +38,7 @@ parts: [
 }
 {
       type: HaloPart
-      y: -16.5
+      y: -20.5
       radius: 5
       tri: true
 	  layer: 110
@@ -53,7 +53,7 @@ parts: [
 }
 {
      type: ShapePart
-     y: -16.5
+     y: -20.5
 	 progress: warmup
      hollow: true
      circle: false
@@ -61,15 +61,30 @@ parts: [
      color: a9c5ea
 	 sides: 3
      stroke: 0
-     strokeTo: 1.5
+     strokeTo: 1.2
 	 rotateSpeed: 0.8
      radius: 8
 	 radiusTo: 12
-    }
+}
+{
+     type: ShapePart
+     y: -20.5
+	 progress: warmup
+     hollow: true
+     circle: false
+     layer: 110
+     color: a9c5ea
+	 sides: 3
+     stroke: 0
+     strokeTo: 1.2
+	 rotateSpeed: -1.1
+     radius: 8
+	 radiusTo: 12
+}
 //addition tri
 {
       type: HaloPart
-      y: -16.5
+      y: -20.5
       radius: 8
       tri: true
 	  layer: 110
@@ -82,11 +97,27 @@ parts: [
       triLength: 0
 }
 {
+      type: HaloPart
+      y: -20.5
+      radius: 4
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: -0.9
+      haloRadius: 14
+      haloRadiusTo: 18
+      shapes: 3
+      triLengthTo: 5
+      triLength: 0
+}
+//circles?
+{
       type: shapePart
-      y: -16.5
+      y: -20.5
 	  layer: 110
       hollow: true
-      circle: true
+      circle: false
+	  sides: 60
       color: c7d9f0f
       stroke: 1.5
       strokeTo: 2
@@ -95,10 +126,11 @@ parts: [
 }
 {
       type: shapePart
-      y: -16.5
+      y: -20.5
 	  layer: 110
       hollow: false
-      circle: true
+      circle: false
+	  sides: 60
       color: c7d9f0f
       radiusTo: 5
       radius: 4
@@ -124,13 +156,13 @@ weapons: [
 	cone: 30
     shootX: 0
 	shootY: 25
-    x: -55.875
-    y: 4.5
+    x: -62.95
+    y: 0
     layerOffset: -0.01
 	cooldownTime: 250
     mirror: true
     rotate: true
-    rotationLimit: 18
+    rotationLimit: 28
     recoil: 8
     reload: 300
     shootSound: mechshoot
@@ -148,8 +180,8 @@ weapons: [
     hitShake: 5
     height: 70
     width: 35
-    splashDamageRadius: 96
-    splashDamage: 10000
+    splashDamageRadius: 128
+    splashDamage: 10525
 	despawnEffect: [
 	{
 	type: WaveEffect
@@ -168,11 +200,11 @@ weapons: [
 	sizeTo: 1
 	colorTo: ffffff00
 	particles: 20
-	lifetime: 30
+	lifetime: 45
 	}
 	]
-    lifetime: 100
-    damage: 1200
+    lifetime: 115
+    damage: 1280
     speed: 8
 	fragBullets: 1
 	fragVelocityMin: 0 
@@ -182,10 +214,10 @@ weapons: [
 	fragRandomSpread: 0
 	fragBullet: {
 	type: BlackHoleBulletType
-	force: 40
-	scaledForce: 3200
-	lifetime: 130
-	damage: 150
+	force: 50
+	scaledForce: 3270
+	lifetime: 145
+	damage: 180
 	edge: 4
 	swirlEffects: 6
 	swirlInterval: 1
@@ -193,19 +225,20 @@ weapons: [
 	damageRadius: 40
 	color: a1b1d0
 	}
-	 }
+	}
     }
 	{
-	name: zodiac-automatic-weapon
+	name: zodiac-bullet-hell
+	outlineRadius: 
 	shake: 2
     rotateSpeed: 1.7
 	parentizeEffects: true
 	alternate: false
 	cone: 30
     shootX: 0
-	shootY: 8
-    x: -29.5
-    y: 2
+	shootY: 5
+    x: -39.75
+    y: 8.75
     layerOffset: 0.01
 	inaccuracy: 3
     mirror: true
@@ -226,7 +259,7 @@ weapons: [
     followParent: true
     offsetX: 1.25
 
-    lifetime: 100
+    lifetime: 120
     sizeFrom: 16
     sizeTo: 0
 
@@ -245,8 +278,8 @@ weapons: [
     hitShake: 5
     height: 12
     width: 8
-    lifetime: 120
-    damage: 95
+    lifetime: 140
+    damage: 115
     speed: 6
 	despawnEffect: {
      type: WaveEffect 
@@ -258,22 +291,118 @@ weapons: [
      lightOpacity: 1
 	 rotation: 0 
 	 strokeFrom: 4
-	 strokeTo: 0 
-}
+	 strokeTo: 0
+	}
     hitEffect: {
-	type: WaveEffect 
-	colorFrom: d0d8e8
-	colorTo: a1b1d0
-	sizeFrom: 0 
-	sizeTo: 6
-	lightScl: 4 
-	lightOpacity: 1
-	rotation: 0 
-	strokeFrom: 4
-	strokeTo: 0
-}      
-	 }
+	 type: WaveEffect 
+	 colorFrom: d0d8e8
+	 colorTo: a1b1d0
+	 sizeFrom: 0 
+	 sizeTo: 6
+	 lightScl: 4 
+	 lightOpacity: 1
+	 rotation: 0 
+	 strokeFrom: 4
+	 strokeTo: 0
+	}      
+	}
     }
+{
+        //core attack
+		display: false
+        x: 0
+        y: -20.5
+        mirror: false
+        recoil: 0
+        reload: 4650
+        shootSound: spark
+
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 1000
+            shots: 125
+            shotDelay: 1.5
+            shotSpread: 360
+        }
+
+        bullet: {
+            type: LightningBulletType
+            damage: 50
+            lifetime: 2.7
+            hitEffect: hitLancer
+            despawnEffect: none
+            hitEffect: none
+            shootEffect: none
+            lightningColor: ffffff
+            lightningLength: 27
+            inaccuracy: 360
+            lightningLengthRand: 0
+            keepVelocity: false
+
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 10
+                    cone: 360
+                    length: 40
+                    baseLength: 13
+                    lightScl: 4
+                    lightOpacity: 4
+                    spin: 0
+                    sizeFrom: 4
+                    sizeTo: 0
+                    offset: 1
+                }
+                    {
+                        type: ParticleEffect
+                        colorFrom: a1b1d0
+                        colorTo: 8798b9
+                        particles: 15
+                        cone: 360
+                        length: 50
+                        baseLength: 6
+                        lightScl: 5
+                        lightOpacity: 4
+                        spin: 0
+                        sizeFrom: 4
+                        sizeTo: 0
+                        offset: 1.5
+                    }
+                    {
+                        type: ParticleEffect
+                        colorFrom: 8798b9
+                        colorTo: 8798b9
+                        particles: 11
+                        cone: 360
+                        length: 35
+                        baseLength: 8
+                        lightScl: 5
+                        lightOpacity: 4
+                        spin: 0
+                        sizeFrom: 4
+                        sizeTo: 0
+                        offset: 1.5
+                    }
+                    {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 0
+                        sizeTo: 17
+                        lightScl: 6
+                        lightOpacity: 3
+                        rotation: 0
+                        strokeFrom: 6
+                        strokeTo: 0
+                    }
+                    ]
+                    }
+                    }
+                    }
 ]
 immunities: [
     burning
@@ -290,3 +419,29 @@ immunities: [
 	as-discharge
 	as-in-ash
   ]
+
+abilities: [
+    {
+      type: MoveLightningAbility
+      minSpeed: -1
+      maxSpeed: 0
+      damage: 0
+      chance: 1
+      length: 1
+      color: 00000000
+      shootSound: none
+      shootEffect: {
+        type: ParticleEffect
+        particles: 1
+        sizeFrom: 82
+        sizeTo: 82
+        length: 0.01
+        lifetime: 12
+        region: as-zodiac-glow
+        colorFrom: 90afd1cc
+        colorTo: 7d89a8aa
+        lightOpacity: 0.25
+        layer: 105
+      }
+    }
+]
