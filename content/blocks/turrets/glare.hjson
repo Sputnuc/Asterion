@@ -1,5 +1,5 @@
 type: ContinuousLiquidTurret
-outlineColor: 22262b
+outlineColor: 131214
 cooldownTime: 120
 heatColor: f70a51
 name: Glare
