@@ -1,5 +1,7 @@
 type: ContinuousLiquidTurret
 outlineColor: 131214
+//outline came from grandma
+outlineRadius: 6
 cooldownTime: 120
 heatColor: f70a51
 name: Glare
