@@ -1,6 +1,6 @@
 name: Trasher
 type: ItemTurret
-outlineColor: 22262b
+outlineColor: 131214
 size: 2
 range: 100
 reload: 90
