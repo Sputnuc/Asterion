@@ -1,6 +1,8 @@
   name: breakthrough
   type: ItemTurret
   outlineColor: 131214
+  //жирно не будет?
+  outlineRadius: 6
   size: 4
   health: 3450
   requirements: [
