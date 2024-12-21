@@ -26,6 +26,9 @@ raptor.constructor = () => extend(MechUnit, {});
 const glava = extend(UnitType, "glava", {});
 glava.constructor = () => extend(MechUnit, {});
 
+const zodiac = extend(UnitType, "zodiac", {});
+zodiac.constructor = () => extend(MechUnit, {});
+
 // Extinct units
 const mist = extend(UnitType, "mist", {});
 mist.constructor = () => extend(TankUnit, {});
@@ -38,6 +41,9 @@ clearance.constructor = () => extend(TankUnit, {});
 
 const sunrise = extend(UnitType, "sunrise", {});
 sunrise.constructor = () => extend(TankUnit, {});
+
+const dawn = extend(UnitType, "dawn", {});
+dawn.constructor = () => extend(TankUnit, {});
 
 //Pyro units
 const spark = extend(UnitType, "spark-u", {});
@@ -57,3 +63,16 @@ baby.constructor = () => extend(LegsUnit, {});
 
 const explosionV1 = extend(UnitType, "explosion-v1", {});
 explosionV1.constructor = () => extend(LegsUnit, {});
+
+//Techo units
+const instant = extend(UnitType, "instant", {});
+instant.constructor = () => extend(ElevationMoveUnit, {});
+
+const blink = extend(UnitType, "blink", {});
+blink.constructor = () => extend(ElevationMoveUnit, {});
+
+const moment = extend(UnitType, "moment", {});
+moment.constructor = () => extend(ElevationMoveUnit, {});
+
+const kron = extend(UnitType, "kron", {});
+kron.constructor = () => extend(UnitEntity, {});
