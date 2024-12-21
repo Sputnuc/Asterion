@@ -11,7 +11,7 @@
   range: 400
   rotateSpeed: 1.1
   size: 6
-  outlineColor: 22262b
+  outlineColor: 1c1d1f
   innacuracy: 3
   velocityRnd: 0.4
   researchCostMultiplier: 0.4

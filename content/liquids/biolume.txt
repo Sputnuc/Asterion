@@ -1,3 +1,5 @@
+//Removed from mod
+
 {
   "name": "Biolume",
   "description": "organic mass used in lubrication",

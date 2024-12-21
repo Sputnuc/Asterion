@@ -1,5 +1,5 @@
 type: PowerTurret
-outlineColor: 22262b
+outlineColor: 1c1d1f
 name: Spark
 description: Shoots a ball lightning emitting lightning
 size: 4

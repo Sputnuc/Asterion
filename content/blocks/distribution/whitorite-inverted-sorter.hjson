@@ -1,6 +1,6 @@
-
 name: Inverted sorter
 description: The selected item comes out from the side
+squareSprite: false
 category: distribution
 size: 1
 health: 60

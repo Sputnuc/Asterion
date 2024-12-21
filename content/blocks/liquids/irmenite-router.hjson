@@ -1,6 +1,7 @@
 type: LiquidRouter
 name: Irmenite Router
 description: Distributes inputted liquids to three outputs equally.
+squareSprite: false
 size: 1
 solid: false
 underBullets: true

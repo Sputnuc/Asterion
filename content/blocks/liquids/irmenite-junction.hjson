@@ -1,6 +1,7 @@
 type: LiquidJunction
 name: Irmenite Junction
 description: Used for crossing two conduits.
+squareSprite: false
 solid: false
 category: liquid
 squareSprite: false

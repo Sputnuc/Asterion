@@ -1,5 +1,5 @@
   type: ItemTurret
-  outlineColor: 22262b
+  outlineColor: 1c1d1f
   name: Typhoon
   description: Fires Cascades of armor piercing shells at enemies
   health: 1250

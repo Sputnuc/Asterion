@@ -1,6 +1,6 @@
   name: Storm
   type: ItemTurret
-  outlineColor: 22262b
+  outlineColor: 1c1d1f
   size: 5
   recoil: 2
   shake: 6

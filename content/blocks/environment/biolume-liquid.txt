@@ -1,0 +1,22 @@
+//Removed from mod
+
+type: Floor
+name: "Biolume"
+
+  //status: melting
+  //statusDuration: 75
+speedMultiplier: 0.68
+variants: 0
+cacheLayer: "mud" //tar, mud, water, arkycite
+drownTime: 150
+isLiquid: true
+liquidDrop: biolume
+liquidMultiplier: 0.6
+albedo: 1.2
+shallow: true
+supportsOverlay: true
+placeableOn: true
+
+emitLight: true
+lightRadius: 132
+lightColor: "e3fc7ec2" //c5cf577a
