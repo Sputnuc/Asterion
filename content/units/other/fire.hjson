@@ -10,12 +10,109 @@ speed: 4.5
 range: 180
 accel: 0.04
 drag: 0.02
+engineOffset: 7
+engineSize: 4
+trailLength: 10
 circleTarget: true
 targetGround: true
 targetAir: false
 faceTarget: false
 drawCell: false
 rotateSpeed: 8
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -6.75
+        x : 8.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -6.75
+        x : -8.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -8
+        x : -8.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -8
+        x : 8.25
+    }
+]
 weapons: [
     {
         name: flame-bomber
@@ -26,10 +123,10 @@ weapons: [
         layer: 0
         inaccuracy: 0
         reload: 40
-        mirror: true
+        mirror: false
         shootCone: 180
-        alternative: true
-        shootSound: lasershoot
+        ingnoreRotation: true
+        shootSound: none
         shoot: {
             shots: 4
             shotDelay: 5
