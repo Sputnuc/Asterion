@@ -4,7 +4,7 @@ type: Drill,
 health: 200,
 category: production,
 size: 2,
-drillTime: 660,
+drillTime: 600,
 tier: 1,
 liquidBoostIntensity: 1.5,
 consumes: {

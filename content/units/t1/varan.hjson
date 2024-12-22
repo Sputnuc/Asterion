@@ -1,8 +1,8 @@
-name: varan
+name: Varan
 description: "Shoots light, fast projectiles. Mech type: [white]«Hunter»"
 type: mech
 outlineColor: 22262b
-speed: 0.55
+speed: 0.5
 flying: false
 research: orion-factory
 hitSize: 12
@@ -13,20 +13,19 @@ targetGround: true
 mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
-stepShake: 1
+//TODO need step shake?
+//stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 2.6
-health: 250
-armor: 4
+health: 160
+armor: 3
 range: 160
-
 weapons: [
-{ 
-name: varan-weapon
-    
+  { 
+    name: varan-weapon   
     parts: [
-    {
+      {
         type: RegionPart
         suffix: -heat
         progress: warmup
@@ -34,9 +33,8 @@ name: varan-weapon
         color: 30fdf3
         layerOffset: -0.1
         outline: false
-    }
+      }
     ]
-    
     shootY: 4.25
     shootX: 0
     x: -7
@@ -48,63 +46,63 @@ name: varan-weapon
     recoil: 1.5
     reload: 40
     shootSound: malignShoot
-
     bullet: {
-type: BasicBulletType
-damage: 13
-lifetime: 16
-width: 7
-height: 15
-speed: 10
-backColor: d0d8e8 
-frontColor: a1b1d0
-trailColor: a1b1d0 
-trailWidth: 2.333333
-trailLength: 6
-homingPower: 0.3
-weaveMag: 2
-weaveScale: 2
-
-shootEffect: {
-type: ParticleEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-particles: 7
-cone: 12
-length: 12
-baseLength: 5
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 2
-sizeTo: 0 
-offset: 1
-}
-
-despawnEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 0 
-}
-hitEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 0
-} 
-}
-}
+      type: BasicBulletType
+      damage: 16
+      lifetime: 20
+      width: 7
+      height: 15
+      speed: 8
+      backColor: d0d8e8 
+      frontColor: a1b1d0
+      trailColor: a1b1d0 
+      trailWidth: 2.333333
+      trailLength: 6
+      homingPower: 0.3
+      weaveMag: 2
+      weaveScale: 2
+      shootEffect: {
+        type: ParticleEffect 
+        colorFrom: d0d8e8
+        colorTo: a1b1d0
+        particles: 7
+        cone: 12
+        length: 12
+        baseLength: 5
+        lightScl: 3
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 1
+        lifetime: 20
+      }
+      despawnEffect: {
+        type: WaveEffect 
+        colorFrom: d0d8e8
+        colorTo: a1b1d0
+        sizeFrom: 0 
+        sizeTo: 6
+        lightScl: 4 
+        lightOpacity: 1
+        rotation: 0 
+        strokeFrom: 4
+        strokeTo: 0 
+        lifetime: 15
+      }
+      hitEffect: {
+        type: WaveEffect 
+        colorFrom: d0d8e8
+        colorTo: a1b1d0
+        sizeFrom: 0 
+        sizeTo: 6
+        lightScl: 4 
+        lightOpacity: 1
+        rotation: 0 
+        strokeFrom: 4
+        strokeTo: 0
+        lifetime: 20
+      } 
+    }
+  }
 ]

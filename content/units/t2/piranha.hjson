@@ -13,91 +13,90 @@ targetGround: true
 mechLegColor: 1f1f26 
 mechFrontSway: 0.8
 mechStepParticles: true
-stepShake: 1
+//TODO need step shake?
+//stepShake: 1
 outlineRadius: 4
 canBoost: true
 boostMultiplayer: 1.3
 drownTimeMultiplier: 8
 rotateSpeed: 2.6
-health: 950
-armor: 1
-range: 160
-
+health: 650
+armor: 2
+range: 80
 weapons: [
+  {
+  parts: [
     {
-    parts: [
-    {
-        type: RegionPart
-        suffix: -heat
-        progress: warmup
-        blending: additive
-        color: 30fdf3
-        layerOffset: -0.1
-        outline: false
+      type: RegionPart
+      suffix: -heat
+      progress: warmup
+      blending: additive
+      color: 30fdf3
+      layerOffset: -0.1
+      outline: false
     }
-    ]
-    
-    name: piranha-weapon
-    x: -8.5
-    y: 0
-    reload: 18
-    mirror: true
-    recoil: 2
-    layerOffset: -0.01
-    shootSound: sap
-
-    bullet: {
-        type: SapBulletType
-        sapStrength: 0.3
-        length: 140
-        width: 0.45
-        lifetime: 15
-        damage: 19
-        hitColor: d0d8e8 
-        color: a1b1d0
-        status: slow
-        statusDuration: 20
-
-shootEffect: {
-type: ParticleEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-particles: 5
-cone: 4
-length: 12
-baseLength: 5
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 1.5
-sizeTo: 0 
-offset: 1
-}
-
-despawnEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 4
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 2
-strokeTo: 0 
-}
-hitEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 4
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 2
-strokeTo: 0 
-}
-}
-}
+  ]  
+  name: piranha-weapon
+  x: -8.5
+  y: 0
+  reload: 30
+  mirror: true
+  recoil: 2
+  layerOffset: -0.01
+  shootSound: sap
+  bullet: {
+    type: SapBulletType
+    sapStrength: 0.4
+    length: 75
+    width: 0.45
+    lifetime: 15
+    damage: 24
+    hitColor: d0d8e8 
+    color: a1b1d0
+    status: slow
+    statusDuration: 20
+    shootEffect: {
+      type: ParticleEffect 
+      colorFrom: d0d8e8
+      colorTo: a1b1d0
+      particles: 5
+      cone: 4
+      length: 12
+      baseLength: 5
+      lightScl: 3
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.5
+      sizeTo: 0 
+      offset: 1
+      lifetime: 20
+    }
+    despawnEffect: {
+      type: WaveEffect 
+       colorFrom: d0d8e8
+       colorTo: a1b1d0
+       sizeFrom: 0 
+       sizeTo: 4
+       lightScl: 4 
+       lightOpacity: 1
+       rotation: 0 
+       strokeFrom: 2
+       strokeTo: 0 
+       lifetime: 15
+     }
+     hitEffect: {
+       type: WaveEffect 
+       colorFrom: d0d8e8
+       colorTo: a1b1d0
+       sizeFrom: 0 
+       sizeTo: 4
+       lightScl: 4 
+       lightOpacity: 1
+       rotation: 0 
+       strokeFrom: 2
+       strokeTo: 0 
+       lifetime: 20
+     }
+   }
+ }
 ]
