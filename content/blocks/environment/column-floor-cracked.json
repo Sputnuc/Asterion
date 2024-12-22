@@ -1,6 +1,7 @@
 {
   "type": "Floor",
-  "name": "Cracked column floor",
+  "name": "Cracked Column Floor",
+  "blendGroup": "column-floor"
   "attributes": {
 	"water": -0.85
 	"heat": 0.05
