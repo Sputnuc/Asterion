@@ -3,10 +3,10 @@ type: ItemTurret
 outlineColor: 1c1d1f
 name: Splinter
 description: Shoots piercing spears.
-health: 1250
+health: 720
 shootSound: shootAlt
 buildCostMultiplier: 0.5
-reload: 70
+reload: 45
 recoil: 0.6
 range: 200
 size: 3
@@ -30,7 +30,7 @@ ammoTypes: {
     width: 12
     height: 25
     type: BasicBulletType
-    damage: 45
+    damage: 22
     lifetime: 20
     trailWidth: 2
     trailLength: 7
@@ -41,21 +41,21 @@ ammoTypes: {
     pierce: true
     pierceCap: 5
     sprite: as-spear
-    damage: 75
+    damage: 50
     width: 12
     height: 30
-    lifetime: 13.333333333333333333333333333333
-    speed: 15
+    lifetime: 16
+    speed: 12.5
     hitSize: 8
     ammoMultiplier: 2
     trailWidth: 2
     trailLength: 9
     trailColor: abe0e5
-    reloadMultiplier: 0.80
+    reloadMultiplier: 0.85
   }
 }
 requirements: [
-  whitorite/85
+  whitorite/45
 ]
 research: {
   planet: as-asterion
