@@ -1,0 +1,52 @@
+type: flying
+outlineColor: 1f1f26
+name: Fire
+description: Fires flameable bombs on ground buildings and units.
+flying: true
+health: 8000
+armor: 4
+hitSize: 28
+speed: 4.5
+range: 180
+accel: 0.04
+drag: 0.02
+circleTarget: true
+targetGround: true
+targetAir: false
+faceTarget: false
+drawCell: false
+rotateSpeed: 8
+weapons: [
+    {
+        name: flame-bomber
+        minShootVelocity: 0.7
+        x: 0
+        y: 0
+        top: false
+        layer: 0
+        inaccuracy: 0
+        reload: 40
+        mirror: true
+        shootCone: 180
+        alternative: true
+        shootSound: lasershoot
+        shoot: {
+            shots: 4
+            shotDelay: 5
+        }
+        bullet: {
+            type: BombBulletType
+            lifetime: 60
+            splashDamage: 100
+            splashDamageRadius: 35
+            incendChance: 1
+            incendSpread: 35
+            incendAmount: 7
+            collidesTiles: false
+            backColor: c75432 
+            frontColor: ff9548
+            width: 14
+            height: 14
+        }
+    }
+]
