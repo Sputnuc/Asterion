@@ -1,13 +1,14 @@
 type: PowerTurret
-outlineColor: 1c1d1f
+outlineColor: 22262b
 name: Spark
 description: Shoots a ball lightning emitting lightning
 size: 4
 shootSound: spark
 range: 180
+moveWhileCharging: false
 health: 1650
 consumes: {
- power: 7.5
+ power: 3.1666666666666666
 }
 reload: 120
 hasPower: true
@@ -50,7 +51,8 @@ shootType: {
  splashDamageRadius: 16
  width: 16
  height: 16
- speed: 2
+ speed: 4
+ drag: 0.02
  lifetime: 90
  shrinkY: 0
  frontColor: e5fdff
@@ -62,13 +64,14 @@ shootType: {
  lightning: 10
  lightningCone: 360
  bulletInterval: 5
- intervalBullets: 5
+ intervalBullets: 7
  intervalAngle: 180
  intervalBullet: {
   type: LightningBulletType
   buildingDamageMultiplier: 0.1
   lightningLength: 9
-  damage: 7
+  damage: 11.5
+  pierceArmor: true
   }
  }
 category: turret

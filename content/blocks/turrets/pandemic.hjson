@@ -1,18 +1,18 @@
   type: ItemTurret
-  outlineColor: 1c1d1f
+  outlineColor: 22262b
   name: Pandemic
   description: bombards enemies with viral projectiles that split into others
-  health: 400
+  health: 1700
   shootSound: shootBig
   buildCostMultiplier: 1.2
   reload: 120
   recoil: 0.6
   range: 340
   size: 3
-  innacuracy: 3
-  velocityRnd: 0.4
+  innacuracy: 4
+  velocityRnd: 0.05
 shoot: {
-    shots: 2
+    shots: 4
     type: ShootBarrel
    barrels: [
       4, -7, 0,
@@ -37,7 +37,7 @@ shoot: {
     backColor: bf7622
     hitColor: bf7622
     sprite: as-pandemic-bullet
-    damage: 180
+    damage: 100
     width: 12
     height: 12
     lifetime: 15

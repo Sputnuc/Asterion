@@ -1,31 +1,36 @@
   type: ItemTurret
-  outlineColor: 1c1d1f
+  outlineColor: 22262b
   name: Transition
   description: Fires Cascades of armor piercing shells at enemies
   health: 1250
   shootSound: shootSmite
   buildCostMultiplier: 1.2
   reload: 80
-  recoil: 0.6
+  recoil: 1.2
   range: 300
   rotateSpeed: 1.3
   size: 5
   innacuracy: 3
   shoot: {
+    type: ShootMulti
+    source: {
     type: ShootAlternate
     shots: 2
-    spread: 5
-    barrels: 4
-    ShootHelix: {
+    spread: 8
+    }
+    dest: [
+    {
+      type: ShootHelix
       scl: 3
-      mag: 4
- }
-  }
+      mag: 5
+    }
+    ]
+   }
   consumes: { 
     coolant: { 
        amount: 0.2
     } 
-   power: 15
+   power: 10
 	liquid: {
 		liquid: methane
 		amount: 0.15
@@ -53,8 +58,6 @@
     trailWidth: 2
     trailLength: 15
     trailColor: bb6e7b
-    weaveMag: 5
-    weaveScale: 3
     hitEffect: { 
             type: MultiEffect 
             effects: [ 

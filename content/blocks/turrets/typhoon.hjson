@@ -1,17 +1,17 @@
   type: ItemTurret
-  outlineColor: 1c1d1f
+  outlineColor: 22262b
   name: Typhoon
   description: Fires Cascades of armor piercing shells at enemies
   health: 1250
   shootSound: mediumCannon
   buildCostMultiplier: 1.2
-  reload: 25
+  reload: 60
   recoil: 0.6
   range: 300
   size: 5
   innacuracy: 3
-  velocityRnd: 0.4
   shoot: {
+    shots: 2
     type: ShootAlternate
     spread: 18
     barrels: 2
@@ -31,39 +31,68 @@
 	pierce: true
 	pierceCap: 2
     frontColor: ffffff
-    backColor: bf7622
-    hitColor: bf7622
+    backColor: ed9679
+    hitColor: ed9679
 	sprite: as-armored-shell
-    damage: 120
+    damage: 80
 	width: 12
 	height: 25
     lifetime: 30
     speed: 10
     hitSize: 8
     ammoMultiplier: 2
-	trailWidth: 2
-    trailLength: 9
-	trailColor: bf7622
-    fragBullets: 2
-    fragSpreadRandom: 32
+	trailWidth: 6
+    trailLength: 17
+	trailColor: ed9679
+    fragBullets: 4
+    fragSpreadRandom: 8
+    despawnEffect: [
+    {
+    type: ParticleEffect
+    particles: 6
+    length: 16
+    baseLength: 8
+    sizeFrom: 5
+    sizeTo: 0
+    colorFrom: ed9679
+    colorTo: ed967900
+    }
+    {
+    type: ParticleEffect
+    particles: 4
+    length: 12
+    baseLength: 17
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: ed9679
+    colorTo: 97979700
+    }
+    {
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 30
+    colorFrom: EBC6AB
+    colorTo: ffffff00
+    }
+]
     fragBullet: {
       type: BasicBulletType
 	    pierce: true
 	    pierceCap: 2
       frontColor: ffffff
-      backColor: bf7622
-      hitColor: bf7622
+      backColor: ed9679
+      hitColor: ed9679
   	  sprite: as-armored-shell
-      damage: 120
-	    width: 12
-	    height: 25
+      damage: 32
+	    width: 8
+	    height: 13
       lifetime: 10
       speed: 5
-      drag: -0.1
+      drag: -0.2
       hitSize: 8
 	    trailWidth: 2
       trailLength: 9
-	    trailColor: bf7622
+	    trailColor: ed9679
       }
     }
   }
