@@ -1,0 +1,24 @@
+speedMultiplier : 0
+damage: 0.5
+color : 6a96d9
+name : Webbed
+
+effect : {
+    
+    type : MultiEffect
+    
+    effects : [{
+            particles : 1
+            line: true
+            lenFrom: 3
+            strokeFrom: 3
+            colorFrom : 79eef2
+            sizeFrom : 2
+            lifetime : 40
+            colorTo : 6a96d9
+            sizeTo : 0
+            length : 0
+            type : ParticleEffect
+            cone : 360
+        }]
+}

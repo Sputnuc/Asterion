@@ -64,6 +64,9 @@ baby.constructor = () => extend(LegsUnit, {});
 const explosionV1 = extend(UnitType, "explosion-v1", {});
 explosionV1.constructor = () => extend(LegsUnit, {});
 
+const fire = extend(UnitType, "fire", {});
+fire.constructor = () => extend(UnitEntity, {});
+
 //Techo units
 const instant = extend(UnitType, "instant", {});
 instant.constructor = () => extend(ElevationMoveUnit, {});
@@ -76,3 +79,6 @@ moment.constructor = () => extend(ElevationMoveUnit, {});
 
 const kron = extend(UnitType, "kron", {});
 kron.constructor = () => extend(UnitEntity, {});
+
+const period = extend(UnitType, "period", {});
+period.constructor = () => extend(UnitEntity, {});

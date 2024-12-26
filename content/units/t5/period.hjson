@@ -1,0 +1,173 @@
+useEngineElevation : false
+shadowElevation : 0.4
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 3
+engineSize : 0
+flying : true
+hitSize : 42
+health : 19700
+speed : 0.86
+accel : 0.1
+armor : 32
+name : Period
+type : flying
+drag : 0.1
+outlineColor: 28282d
+outlineRadius: 4
+
+abilities: [
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : 7.5
+        x : 8.75
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : 7.5
+        x : -8.75
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 4
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 4
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -8.75
+        x : 10.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 4
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 4
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -8.75
+        x : -10.25
+    }
+    {
+        type: SuppressionFieldAbility
+        range: 170
+        orbRadius: 0
+        particles: 0
+        orbMidScl: 0
+        orbSinScl: 0
+        orbSinMag: 0
+    }
+]
+
+research: moment
+
+weapons: [{
+    
+    baseRotation: 0
+    shootCone: 60
+    mirror: false
+    inaccuracy: 0
+    reload: 160
+    name: period-weapon
+    rotate: false
+    top: true
+    y: 18
+    x: 0
+    
+    bullet : {
+        keepVelocity: false
+        lifetime: 60
+        damage: 00000000.1
+        splashDamage: 180
+        splashDamageRadius: 26
+        width: 26
+        height: 26
+        speed: 3
+        hitSize: 10
+        type: BasicBulletType
+        sprite: as-web
+        backSprite: none
+        frontColor: 74c1e8
+        backColor: 6a96d9
+        trailColor: 6a96d9
+        trailWidth: 2
+        trailLength: 10
+        status: webbed
+        statusDuration: 130
+        scaleLife: true
+        hitEffect: {
+                type: ParticleEffect
+                colorFrom: 74c1e8
+                colorTo: 00000000
+                region: as-web-shape
+                particles: 1
+                length: 0
+                baseLength: 0
+                lightScl: 2
+                lightOpacity: 2
+                lifetime: 130
+                spin: 0
+                sizeFrom: 26
+                sizeTo: 0
+                offset: 0
+        }
+        despawnEffect: none
+    }
+}]
