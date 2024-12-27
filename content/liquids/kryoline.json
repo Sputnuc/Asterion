@@ -6,13 +6,15 @@
   "barColor": "6cc3ff",
   "gasColor": "87d9ff92",
   "lightColor": "87d9ff92",
-  "temperature": 0.15,
-  "flammability": 0.25,
-  "explosiveness": 0.4,
+  "temperature": -0.05,
+  "flammability": 0,
+  "explosiveness": 0.3,
   "liquid": true,
   "explosive": false,
+  "coolant": true,
   "liquid": {
     "cap": 4,
+    "heatCalacity": 0.3,
     "explosive": true,
     "flammable": false,
     "viscosity": 0.1
