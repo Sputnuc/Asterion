@@ -14,7 +14,7 @@
   "coolant": true,
   "liquid": {
     "cap": 4,
-    "heatCalacity": 0.3,
+    "heatCapacity": 0.3,
     "explosive": true,
     "flammable": false,
     "viscosity": 0.1
