@@ -1,7 +1,7 @@
 name: Baby
 description: "//TODO"
 type: legs
-outlineColor: 2b2828
+outlineColor: 1c1a1a
 speed: 0.4
 flying: false
 research: rumble
@@ -26,8 +26,8 @@ immunities: [
 weapons: [
     {
     name: baby-weapon
-    x: 9.5
-    y: -3.25
+    x: 14.5
+    y: -5.5
     mirror: true
     recoil: 3
     reload: 65
@@ -55,8 +55,8 @@ weapons: [
 
     {
     name: baby-weapon-2
-    x: 18
-    y: -8.5
+    x: 16.5
+    y: -9
     layerOffset: -0.001
     mirror: true
     recoil: 1
