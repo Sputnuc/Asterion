@@ -121,6 +121,7 @@ weapons: [{
         height: 4
         speed: 4
         width: 24
+        shrinkY: 1
         type: BasicBulletType
         status: underclock
         statusDuration: 250
