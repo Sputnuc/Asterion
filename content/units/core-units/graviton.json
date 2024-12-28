@@ -1,7 +1,7 @@
 {
 	"type": "flying",
 	"outlineColor": "1f1f26",
-	"name": "Graviton",
+	"name": "Attraction",
 	"description": "Guard of the core: force. Graviton shoots bombs.",
 	"flying": true,
 	"health": 355,
@@ -16,12 +16,14 @@
 	"targetGround": true,
 	"targetAir": true,
 	"rotateSpeed": 5.66,
+	"outlineRadius": 0,
 	"weapons": [
 		{
 			"name": "object-finder",
-			"x": 3,
-			"y": 1,
-			"recoil": -2,
+			"x": 0,
+			"y": 0,
+			"layerOffset": -0.0001,
+			"recoil": 1,
 			"top": false,
 			"layer": 90,
 			"inaccuracy": 20,
