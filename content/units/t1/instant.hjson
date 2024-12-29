@@ -70,8 +70,8 @@ weapons: [{
     }
     
     bullet : {
-        lifetime: 30
-        damage: 4
+        lifetime: 15
+        damage: 6
         height: 4
         speed: 6
         width: 9

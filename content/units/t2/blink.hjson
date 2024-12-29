@@ -71,7 +71,7 @@ weapons: [{
     bullet : {
         hitEffect: blastExplosion
         keepVelocity: false
-        lifetime: 100
+        lifetime: 65
         drag: -0.015
         splashDamage: 60
         splashDamageRadius: 35

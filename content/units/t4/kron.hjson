@@ -115,7 +115,7 @@ weapons: [{
     
     bullet : {
         keepVelocity: false
-        lifetime: 50
+        lifetime: 35
         damage: 2
         pierce: true
         height: 4
@@ -150,7 +150,7 @@ weapons: [{
     bullet : {
         hitEffect: blastExplosion
         keepVelocity: false
-        lifetime: 60
+        lifetime: 40
         damage: 45
         height: 9
         speed: 3

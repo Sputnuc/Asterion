@@ -133,7 +133,7 @@ weapons: [{
     
     bullet : {
         keepVelocity: false
-        lifetime: 60
+        lifetime: 55
         damage: 00000000.1
         splashDamage: 180
         splashDamageRadius: 26

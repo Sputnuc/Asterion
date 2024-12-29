@@ -72,7 +72,7 @@ weapons: [{
     bullet : {
         hitEffect: blastExplosion
         keepVelocity: false
-        lifetime: 55
+        lifetime: 35
         drag: -0.02
         damage: 55
         height: 11
