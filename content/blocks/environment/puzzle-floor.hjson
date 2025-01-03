@@ -9,4 +9,6 @@
 	"light": 2
   },
   "variants": 5
+  "wall": "puzzle-wall"
+  "decoration": "puzzle-boulder"
 }

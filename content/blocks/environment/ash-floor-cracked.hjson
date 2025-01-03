@@ -7,4 +7,6 @@
 	"steam": 0.15
   },
   "variants": 4
+  "wall": "ash-wall"
+  "decoration": "ash-boulder"
 }

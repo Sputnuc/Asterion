@@ -1,0 +1,5 @@
+name: Half dead ghetron floor
+variants: 0
+type: Floor
+//wall: 
+decoration: egg-small-decor-dead

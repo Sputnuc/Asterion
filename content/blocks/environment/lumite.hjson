@@ -1,2 +1,4 @@
 type: Floor
 name: "Lumite floor"
+wall: lumite-wall
+//decoration: 
