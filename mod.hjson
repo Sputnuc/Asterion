@@ -5,10 +5,24 @@
   '''
 This is collaboration mod.
 Mod server: https://discord.gg/PcTnJ96mwf
+
+
+[white] [purple]|Asterion [yellow]Team|[white] 
+Developers/Helpers:
+  sputnuc - Creator
+  bloody_ocean1846_66553
+  sundered8134
+  routeroftime
+  andashik
+  scrap1020spawn/ace1020spawn
+  los_sasikos
+  gg_word
+  itz.craft_
+  lehanchic25
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.6.5",
+"version": "0.6.6",
 "minGameVersion": 146,
-"subtitle": "0.6.5",
+"subtitle": "0.6.6|Ghetron invasion",
 "dependencies": ["black-hole-renderer"]
 }
