@@ -7,8 +7,8 @@ This is collaboration mod.
 Mod server: https://discord.gg/PcTnJ96mwf
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.6.4",
+"version": "0.6.5",
 "minGameVersion": 146,
-"subtitle": "0.6.4",
+"subtitle": "0.6.5",
 "dependencies": ["black-hole-renderer"]
 }

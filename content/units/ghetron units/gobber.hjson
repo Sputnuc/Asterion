@@ -1,0 +1,218 @@
+name: Gobber
+type: legs
+hitSize: 12
+speed: 1
+rotateSpeed: 4
+hovering: true
+targetGround: true
+targetAir: true
+deathSound: spider-death
+faceTarget: true
+outlineColor: 24232e
+outlineRadius: 0
+outlineLegRadius: 0
+drawCell: false
+hovering: true
+lockLegBase: true
+legCount: 4
+legBaseOffset: 1
+legGroupSize: 2
+legMoveSpace: 2
+legForwardScl: 1
+legLength: 14
+legExtension: -4
+legMinLength: 1
+legMaxLength: 2
+legLengthScl: 1.5
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+shadowElevation: 0.5
+health: 350
+armor: 2
+range: 152
+
+weapons: [
+{
+parts: [
+	{
+        type: RegionPart
+        suffix: -blade-d
+        mirror: false
+        under: true
+        outline: false
+		//outlineLayerOffset: 0.001
+        progress: recoil
+        heatProgress: warmup
+        moveX: 0
+        moveY: -0.2
+        moveRot: 16
+      }
+	  {
+        type: RegionPart
+        suffix: -blade
+        mirror: false
+        under: true
+        outline: false
+		//outlineLayerOffset: 0.001
+        progress: recoil
+        heatProgress: warmup
+        moveX: 0
+        moveY: -0.2
+        moveRot: -16
+      }
+    ]
+
+name: Gobber-wea
+x: 0 
+y: 0
+shootX: 0
+shootY: 2.75
+mirror: false
+minWarmup: 0
+shootWarmupSpeed: 0.1
+layerOffset: -0.01
+reload: 75
+recoil: 1
+shootSound: spider-shoot
+ 
+bullet: {
+type: BasicBulletType
+width: 13
+height: 13
+speed: 3
+collidesGround: true 
+lifetime: 50.6
+damage: 24
+backColor: bf92f9 
+frontColor: bf92f9 
+intervalBullets: 2
+bulletInterval: 2
+intervalSpread: 180
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: 665c9f
+particles: 6
+cone: 4
+drag: 0.3
+length: 16
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 3
+sizeTo: 0 
+offset: 1
+}
+hitEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.7
+particles: 7
+cone: 5
+length: 8
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.7
+particles: 7
+cone: 5
+length: 9
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+
+intervalBullet: {
+type: BasicBulletType
+width: 1
+height: 1
+speed: 1
+collidesGround: true 
+lifetime: 1
+damage: 1
+backColor: bf92f9 
+frontColor: bf92f9 
+
+hitEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.4
+particles: 2
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.7
+particles: 2
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+}
+}
+}
+{
+
+    minShootVelocity: 0.01
+
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+    reload: 240
+    shootSound: spider-walk
+bullet: {
+    type: BasicBulletType
+    maxRange: 152
+    height: 0
+    width: 0
+
+    lifetime: 10
+    damage: 0
+    speed: 1
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+}
+}
+]
