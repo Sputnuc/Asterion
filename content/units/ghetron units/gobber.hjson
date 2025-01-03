@@ -63,7 +63,7 @@ parts: [
       }
     ]
 
-name: Gobber-wea
+name: gobber-wea
 x: 0 
 y: 0
 shootX: 0
