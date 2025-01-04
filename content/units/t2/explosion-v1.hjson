@@ -4,7 +4,6 @@ type: legs
 outlineColor: 2b2828
 speed: 0.75
 flying: false
-research: explosion
 hovering: true
 hitSize: 16
 itemCapacity: 0
