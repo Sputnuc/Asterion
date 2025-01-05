@@ -1,0 +1,171 @@
+name: uterus
+type: legs
+hitSize: 20
+speed: 0.4
+rotateSpeed: 2
+hovering: true
+targetGround: true
+targetAir: 
+deathSound: spider-death
+faceTarget: true
+outlineColor: 24232e
+outlineRadius: 0
+outlineLegRadius: 0
+drawCell: false
+hovering: true
+lockLegBase: true
+legCount: 4
+legBaseOffset: 6
+legGroupSize: 2
+legMoveSpace: 2
+legForwardScl: 1
+legLength: 18
+legExtension: -4
+legMinLength: 1
+legMaxLength: 2
+legLengthScl: 1.5
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+shadowElevation: 0.5
+health: 890
+armor: 17
+range: 40
+
+deathExplosionEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: 8a73c6
+particles: 6
+clip: 70
+cone: 360
+lifetime: 300
+length: 5
+baseLength: 5
+lightScl: 0
+lifetime: 180
+lightOpacity: 0
+spin: 0
+sizeFrom: 3
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: bf92f9
+colorTo: bf92f9
+particles: 12
+cone: 360
+length: 6
+clip: 70
+lifetime: 300
+baseLength: 5
+lightScl: 0
+lightOpacity: 0
+spin: 0
+sizeFrom: 5
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: bf92f9
+colorTo: 665c9f
+lifetime: 300
+particles: 12
+clip: 70
+cone: 360
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+]
+}
+
+weapons: [
+    {
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    reload: 210
+    recoil: 0.8
+x: 0
+y: -14
+mirror: false
+shootSound: imperfect-shoot
+
+bullet: {
+damage: 0
+lifetime: 1
+width: 0
+height: 0
+speed: 0
+backColor: ff6e6e 
+frontColor: ff6e6e 
+spawnUnit: tumarannik
+
+shootEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: bf92f9
+colorTo: bf92f9
+particles: 4
+cone: 360
+length: 15
+baseLength: 1
+lightScl: 3
+lifetime: 180
+lightOpacity: 2
+spin: 0
+sizeFrom: 5
+sizeTo: 0 
+offset: 1
+}
+{
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: 8a73c6
+particles: 3
+cone: 360
+length: 10
+lifetime: 180
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 5
+sizeTo: 0 
+offset: 1
+}
+{
+type: ParticleEffect 
+colorFrom: 665c9f
+colorTo: 665c9f
+lifetime: 180
+particles: 6
+cone: 360
+length: 8
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+]
+}
+}
+}
+]

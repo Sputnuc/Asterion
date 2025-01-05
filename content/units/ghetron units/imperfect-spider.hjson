@@ -1,8 +1,8 @@
-name: Gobber
+name: imperfect-spider
 type: legs
 hitSize: 12
-speed: 1
-rotateSpeed: 4
+speed: 0.9
+rotateSpeed: 2
 hovering: true
 targetGround: true
 targetAir: true
@@ -14,12 +14,12 @@ outlineLegRadius: 0
 drawCell: false
 hovering: true
 lockLegBase: true
-legCount: 4
-legBaseOffset: 1
+legCount: 3
+legBaseOffset: 2
 legGroupSize: 2
 legMoveSpace: 2
 legForwardScl: 1
-legLength: 14
+legLength: 8
 legExtension: -4
 legMinLength: 1
 legMaxLength: 2
@@ -28,8 +28,8 @@ rippleScale: 0.24
 allowLegStep: true
 groundLayer: 75
 shadowElevation: 0.5
-health: 350
-armor: 2
+health: 150
+armor: 0
 range: 152
 
 deathExplosionEffect:{
@@ -92,75 +92,53 @@ offset: 1
 
 weapons: [
 {
-parts: [
-	{
-        type: RegionPart
-        suffix: -blade-d
-        mirror: false
-        under: true
-        outline: false
-		//outlineLayerOffset: 0.001
-        progress: recoil
-        heatProgress: warmup
-        moveX: 0
-        moveY: -0.2
-        moveRot: 16
-      }
-	  {
-        type: RegionPart
-        suffix: -blade
-        mirror: false
-        under: true
-        outline: false
-		//outlineLayerOffset: 0.001
-        progress: recoil
-        heatProgress: warmup
-        moveX: 0
-        moveY: -0.2
-        moveRot: -16
-      }
-    ]
 
-name: gobber-wea
+display: false
 x: 0 
 y: 0
-shootX: 0
-shootY: 2.75
+shootX: 1
+shootY: 3
 mirror: false
-minWarmup: 0
-shootWarmupSpeed: 0.1
 layerOffset: -0.01
-reload: 75
+baseRotation: 3
+shootCone: 360
+inaccuracy: 1
+velocityRnd: 0.2
+ignoreRotation: true
+reload: 55
 recoil: 1
-shootSound: spider-shoot
- 
+shootSound: imperfect-shoot
+
 bullet: {
 type: BasicBulletType
-width: 13
-height: 13
+width: 8
+height: 8
+homingRange: 300
+homingPower: 0.5
+homingDelay: 13.5
 speed: 3
 collidesGround: true 
 lifetime: 50.6
-damage: 24
+damage: 6
 backColor: bf92f9 
 frontColor: bf92f9 
 intervalBullets: 2
-bulletInterval: 2
+bulletInterval: 1
 intervalSpread: 180
 
 shootEffect: {
 type: ParticleEffect 
 colorFrom: 8a73c6
 colorTo: 665c9f
-particles: 6
+particles: 4
 cone: 4
 drag: 0.3
-length: 16
+length: 8
 baseLength: 5
 lightScl: 3
 lightOpacity: 2
 spin: 0
-sizeFrom: 3
+sizeFrom: 2
 sizeTo: 0 
 offset: 1
 }
@@ -213,14 +191,14 @@ type: ParticleEffect
 colorFrom: 8a73c6 
 colorTo: 665c9f
 drag: 0.4
-particles: 2
+particles: 1
 cone: 360
 length: 6
 baseLength: 1
 lightScl: 3
 lightOpacity: 2
 spin: 0
-sizeFrom: 2
+sizeFrom: 1
 sizeTo: 0 
 offset: 1
 }
@@ -229,14 +207,144 @@ type: ParticleEffect
 colorFrom: 8a73c6 
 colorTo: 665c9f
 drag: 0.7
-particles: 2
+particles: 1
 cone: 360
 length: 6
 baseLength: 1
 lightScl: 3
 lightOpacity: 2
 spin: 0
+sizeFrom: 1
+sizeTo: 0 
+offset: 1
+}
+}
+}
+}
+{
+
+display: false
+x: 0 
+y: 0
+shootX: -3
+shootY: 1.25
+mirror: false
+baseRotation: 42
+shootCone: 360
+inaccuracy: 1
+velocityRnd: 0.2
+ignoreRotation: true
+layerOffset: -0.01
+reload: 35
+recoil: 1
+shootSound: imperfect-shoot
+
+bullet: {
+type: BasicBulletType
+width: 5
+height: 5
+homingRange: 300
+homingPower: 0.5
+homingDelay: 13.5
+speed: 3
+collidesGround: true 
+lifetime: 50.6
+damage: 4
+backColor: bf92f9 
+frontColor: bf92f9 
+intervalBullets: 1
+bulletInterval: 1
+intervalSpread: 180
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: 665c9f
+particles: 4
+cone: 4
+drag: 0.3
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
 sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+hitEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.7
+particles: 7
+cone: 5
+length: 8
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.7
+particles: 7
+cone: 5
+length: 9
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+
+intervalBullet: {
+type: BasicBulletType
+width: 1
+height: 1
+speed: 1
+collidesGround: true 
+lifetime: 1
+damage: 1
+backColor: bf92f9 
+frontColor: bf92f9 
+
+hitEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.4
+particles: 1
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6 
+colorTo: 665c9f
+drag: 0.7
+particles: 1
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1
 sizeTo: 0 
 offset: 1
 }
