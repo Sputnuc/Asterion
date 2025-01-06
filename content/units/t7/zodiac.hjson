@@ -1,5 +1,5 @@
 name: Zodiac
-description: Orion's monstrous weapon capable of disabling the entire sector. Faction: «Orion». It releases a monstrous projectile which forms a small black hole as a result of the rupture
+description: "Orion's monstrous weapon capable of disabling the entire sector. Faction: «Orion». It releases a monstrous projectile which forms a small black hole as a result of the rupture. \n[white]Faction: [#d0d8e8]Orion[]."
 type: mech
 speed: 0.15
 flying: false

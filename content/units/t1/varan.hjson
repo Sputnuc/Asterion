@@ -1,5 +1,5 @@
 name: Varan
-description: "Shoots light, fast projectiles. Mech type: [white]«Hunter»"
+description: "Shoots light, fast projectiles. \n[white]Faction: [#d0d8e8]Orion[]."
 type: mech
 outlineColor: 22262b
 speed: 0.5

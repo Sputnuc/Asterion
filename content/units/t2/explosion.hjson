@@ -1,5 +1,5 @@
 name: Explosion
-description: "Shoots from back flammable bullets"
+description: "Shoots from back flammable bullets. \n[white]Faction: [#c75432]Pyro[]."
 type: legs
 outlineColor: 2b2828
 speed: 0.7

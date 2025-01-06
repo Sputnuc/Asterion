@@ -1,5 +1,6 @@
 type: tank
 name: Mist
+description: "//TODO T7 \n[white]Faction: [#d26e64][Extinguished]."
 hitSize: 11
 flying: false
 omniMovement: false
