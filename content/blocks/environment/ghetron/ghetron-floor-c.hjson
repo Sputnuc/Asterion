@@ -1,4 +1,5 @@
 name: Ghetron Floor (Dead)
-variants: 0
-type: floor
+variants: 4
+type: Floor
+//make sense
 decoration: egg-small-decor-dead
