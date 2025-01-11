@@ -11,4 +11,6 @@ requirements: [
 ]
 category: units
 buildVisibility: sandboxOnly
+placeablePlayer: false
+customShadow: true
 researchCostMultiplier: 0.20

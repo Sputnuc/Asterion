@@ -1,0 +1,170 @@
+name: creator
+type: legs
+hitSize: 20
+speed: 0.3
+rotateSpeed: 1
+targetGround: true
+targetAir: false
+deathSound: spider-death
+faceTarget: true
+outlineColor: 24232e
+outlineRadius: 0
+outlineLegRadius: 0
+drawCell: false
+hovering: true
+lockLegBase: true
+legCount: 6
+legBaseOffset: 10
+legGroupSize: 2
+legMoveSpace: 2
+legForwardScl: 1
+legLength: 18
+legExtension: -4
+legMinLength: 1
+legMaxLength: 2
+legLengthScl: 1.5
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+shadowElevation: 0.5
+health: 890
+armor: 17
+range: 40
+
+deathExplosionEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: d88464
+particles: 6
+clip: 70
+cone: 360
+lifetime: 300
+length: 5
+baseLength: 5
+lightScl: 0
+lifetime: 180
+lightOpacity: 0
+spin: 0
+sizeFrom: 3
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: d88464
+particles: 12
+cone: 360
+length: 6
+clip: 70
+lifetime: 300
+baseLength: 5
+lightScl: 0
+lightOpacity: 0
+spin: 0
+sizeFrom: 5
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: af6052
+lifetime: 300
+particles: 12
+clip: 70
+cone: 360
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+]
+}
+
+weapons: [
+    {
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    reload: 540
+    recoil: 0.8
+x: 0
+y: -18
+mirror: false
+shootSound: imperfect-shoot
+
+bullet: {
+damage: 0
+lifetime: 1
+width: 0
+height: 0
+speed: 0
+backColor: ff6e6e 
+frontColor: ff6e6e 
+spawnUnit: viper
+
+shootEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: d88464
+particles: 4
+cone: 360
+length: 15
+baseLength: 1
+lightScl: 3
+lifetime: 180
+lightOpacity: 2
+spin: 0
+sizeFrom: 5
+sizeTo: 0 
+offset: 1
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: d88464
+particles: 3
+cone: 360
+length: 10
+lifetime: 180
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 5
+sizeTo: 0 
+offset: 1
+}
+{
+type: ParticleEffect 
+colorFrom: af6052
+colorTo: af6052
+lifetime: 180
+particles: 6
+cone: 360
+length: 8
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+]
+}
+}
+}
+]
