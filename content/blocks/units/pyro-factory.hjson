@@ -1,0 +1,30 @@
+  type: unitFactory
+  name: Pyro factory
+  description: "Create main units of the [#c75432]Pyro[] faction"
+  size: 2
+  health: 540
+  consumes: {
+    power: 1.5
+    liquid: {
+    liquid: endomine
+    amount: 0.4
+    }
+  }
+  plans: [
+    {
+      unit: spark-u
+      requirements: [
+       ashotite/5
+       irmenite/20
+           ]
+      time: 460
+    }
+  ]
+  requirements: [
+    whitorite/100
+    ashotite/75
+    irmenite/50
+  ]
+  category: units
+  research: orion-factory
+  researchCostMultiplier: 0.1

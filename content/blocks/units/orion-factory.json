@@ -1,7 +1,7 @@
 {
   "type": "unitFactory",
   "name": "Orion factory",
-  "description": "Create units of the Hunters tree",
+  "description": "Create units of the Orion tree",
   "size": 3,
   "health": 760,
   "consumes": {
