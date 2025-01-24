@@ -24,7 +24,7 @@ requirements: [
   blacktite/100
   irmenite/75
   magnetite/55
-  kiter/50
+  kiten/50
 ]
 research: {
 parent: rotary-drill
