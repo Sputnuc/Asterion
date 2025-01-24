@@ -1,0 +1,33 @@
+name: Geocorrosive drill,
+description: an improved version of a rotaty drill,
+type: Drill,
+health: 750,
+category: production,
+size: 4,
+drillTime: 300,
+tier: 4,
+liquidBoostIntensity: 1.3
+consumes: {
+  power: 5
+  liquid: {
+  liquid: endomine
+  amount: 0.02
+  booster: true
+  optional: true
+  liquid: oxylene
+  amount: 0.025
+  booster: true
+  optional: true
+ }
+}
+requirements: [
+  blacktite/100
+  irmenite/75
+  magnetite/55
+  kiter/50
+]
+research: {
+parent: rotary-drill
+planet: as-asterion
+}
+researchCostMultiplier: 0.25
