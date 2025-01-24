@@ -172,12 +172,14 @@ weapons: [
         recoil: 0
         reload: 3000
         shootSound: spark
-
+        shootStatus: high_energy_output
+        shootStatusDuration: 450
+        alwaysShooting: true
         shoot: {
+            firstShotDelay: 100
             type: ShootSpread
-            firstShotDelay: 1000
-            shots: 125
-            shotDelay: 1
+            shots: 30
+            shotDelay: 15
             shotSpread: 360
         }
 
@@ -190,11 +192,23 @@ weapons: [
             hitEffect: none
             shootEffect: none
             lightningColor: ffffff
-            lightningLength: 16
+            lightningLength: 20
             inaccuracy: 360
             lightningLengthRand: 0
             keepVelocity: false
-
+            chargeEffect: {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 45
+                        sizeTo: 0
+                        lightScl: 4
+                        lightOpacity: 1
+                        rotation: 0
+                        strokeFrom: 0
+                        strokeTo: 3
+                        lifetime: 90
+                    }
             shootEffect: {
                 type: MultiEffect
                 effects: [

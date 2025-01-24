@@ -101,7 +101,7 @@ weapons: [
     layerOffset: -0.01
     mirror: true
     rotate: true
-    rotationLimit: 18
+    rotationLimit: 28
     recoil: 3
     reload: 45
     shootSound: mechshoot
@@ -305,21 +305,23 @@ weapons: [
         y: -15
         mirror: false
         recoil: 0
-        reload: 3000
+        reload: 4000
         shootSound: spark
-
+        shootStatus: high_energy_output
+        shootStatusDuration: 300
+        alwaysShooting: true
         shoot: {
+            firstShotDelay: 150
             type: ShootSpread
-            firstShotDelay: 2000
-            shots: 330
+            shots: 39
             shotDelay: 1
             shotSpread: 360
         }
 
         bullet: {
             type: LightningBulletType
-            damage: 60
-            lifetime: 1
+            damage: 80
+            lifetime: 4
             hitEffect: hitLancer
             despawnEffect: none
             hitEffect: none
@@ -329,7 +331,19 @@ weapons: [
             inaccuracy: 360
             lightningLengthRand: 0
             keepVelocity: false
-
+            chargeEffect: {
+              type: WaveEffect
+              colorFrom: d0d8e8
+              colorTo: a1b1d0
+              sizeFrom: 90
+              sizeTo: 0
+              lightScl: 4
+              lightOpacity: 1
+              rotation: 0
+              strokeFrom: 0
+              strokeTo: 4
+              lifetime: 150
+                    }
             shootEffect: {
                 type: MultiEffect
                 effects: [
@@ -337,7 +351,7 @@ weapons: [
                     type: ParticleEffect
                     colorFrom: ffffff
                     colorTo: a1b1d0
-                    particles: 9
+                    particles: 1
                     cone: 360
                     length: 30
                     baseLength: 5
@@ -352,7 +366,7 @@ weapons: [
                         type: ParticleEffect
                         colorFrom: a1b1d0
                         colorTo: 8798b9
-                        particles: 12
+                        particles: 2
                         cone: 360
                         length: 40
                         baseLength: 5
@@ -367,7 +381,7 @@ weapons: [
                         type: ParticleEffect
                         colorFrom: 8798b9
                         colorTo: 8798b9
-                        particles: 9
+                        particles: 2
                         cone: 360
                         length: 50
                         baseLength: 5
@@ -377,18 +391,6 @@ weapons: [
                         sizeFrom: 3
                         sizeTo: 0
                         offset: 1
-                    }
-                    {
-                        type: WaveEffect
-                        colorFrom: d0d8e8
-                        colorTo: a1b1d0
-                        sizeFrom: 0
-                        sizeTo: 25
-                        lightScl: 4
-                        lightOpacity: 1
-                        rotation: 0
-                        strokeFrom: 4
-                        strokeTo: 0
                     }
                     ]
                     }

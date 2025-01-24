@@ -244,14 +244,16 @@ despawnEffect: {
         y: -4
         mirror: false
         recoil: 0
-        reload: 700
+        reload: 1000
         shootSound: spark
-
+        shootStatus: high_energy_output
+        shootStatusDuration: 450
+        alwaysShooting: true
         shoot: {
+            firstShotDelay: 60
             type: ShootSpread
-            firstShotDelay: 500
-            shots: 25
-            shotDelay: 2
+            shots: 15
+            shotDelay: 30
             shotSpread: 360
         }
 
@@ -264,11 +266,23 @@ despawnEffect: {
             hitEffect: none
             shootEffect: none
             lightningColor: ffffff
-            lightningLength: 6
+            lightningLength: 15
             inaccuracy: 360
             lightningLengthRand: 0
             keepVelocity: false
-
+            chargeEffect: {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 25
+                        sizeTo: 0
+                        lightScl: 4
+                        lightOpacity: 1
+                        rotation: 0
+                        strokeFrom: 0
+                        strokeTo: 2
+                        lifetime: 50
+                    }
             shootEffect: {
                 type: MultiEffect
                 effects: [
