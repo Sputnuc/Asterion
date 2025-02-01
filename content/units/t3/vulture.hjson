@@ -2,7 +2,7 @@ name: vulture
 description: "Vulture or Voltrum discharges hypersonic projectiles at enemies. From time to time, the Vulture needs to release excess energy, emits weak impulses. \n[white]Faction: [#d0d8e8]Orion[]."
 type: mech
 outlineColor: 22262b
-speed: 0.50
+speed: 0.4
 flying: false
 hitSize: 15
 itemCapacity: 190
@@ -16,7 +16,7 @@ stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 2.6
-health: 2650
+health: 1280
 armor: 4
 range: 190
 
@@ -71,16 +71,16 @@ weapons: [
     rotate: true
     rotationLimit: 18
     recoil: 3
-    reload: 40
+    reload: 60
     shootSound: malignShoot
 
     bullet: {
 type: BasicBulletType
-damage: 35
-lifetime: 7
+damage: 40
+lifetime: 20
 width: 7
 height: 15
-speed: 25
+speed: 9.5
 backColor: d0d8e8 
 frontColor: a1b1d0
 trailColor: a1b1d0 
