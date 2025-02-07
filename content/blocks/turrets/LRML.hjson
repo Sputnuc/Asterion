@@ -53,7 +53,8 @@
    parts: [
    {
   type: RegionPart
-  suffix: -missile
+  suffix: -missiledraw
+  outline: false
   under: false
   progress: {
     type: reload
