@@ -22,12 +22,14 @@ researchCostMultiplier: 0.25
 drawer: {
     type: DrawMulti
     drawers: [ 
-    {
+    /*
+	{
     type: DrawPistons
     sinMag: 4
     sinScl: 7
     sides: 4
     },
+	*/
     {
     type: DrawDefault
     }
