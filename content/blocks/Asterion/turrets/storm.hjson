@@ -40,18 +40,33 @@
 	  smokeEffect: shootBigSmoke
 	  ammoMultiplier: 3
       damage: 50
-      speed: 24
-	  width: 15
-	  frontColor: d8ffff
-	  backColor: 9da5b4
-	  drag: 0.06
+      speed: 13
+	  width: 14
+	  frontColor: c9d7f3
+	  backColor: 91A8D7
       height: 15
+      status: discharge
+      statusDuration: 180
 	  splashDamage: 80
 	  splashDamageRadius: 40
-      trailLength: 9
+      lifetime: 30
+      trailLength: 5
 	  trailWidth: 3
-	  trailColor: 6385ca
-      lifetime: 60
+	  trailColor: 91A8D7
+      trailInterval: 1
+      trailEffect: [
+       {
+         type: ParticleEffect
+         particles: 3
+         sizeFrom: 3
+         sizeTo: 0
+         colorFrom: c9d7f3
+         colorTo: 90A7D200
+         lifetime: 25
+         length: 4
+         baseLength: 5
+       }
+      ]
       despawnEffect: [
 	   {
 	   type: ParticleEffect
@@ -114,6 +129,7 @@
 	  ammoMultiplier: 3
       damage: 120
       speed: 22
+      knockback: 0.3
 	  width: 15
 	  pierce: true
 	  pierceCap: 3

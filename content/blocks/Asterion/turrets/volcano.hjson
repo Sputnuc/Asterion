@@ -1,13 +1,12 @@
-    type: ItemTurret
-
+  type: ItemTurret
   name: Volcano
   description: Shoots a large projectile, which in flight scatters on other smaller ones that explode, when the main projectile hits a unit, it scatters on others that also explode.
-
   health: 1250
   shootSound: mediumCannon
   buildCostMultiplier: 1.2
   reload: 360
-  recoil: 0.6
+  recoil: 1.4
+  shake: 10
   range: 400
   rotateSpeed: 1.1
   size: 6
@@ -19,16 +18,9 @@
   targetAir: true
   targetGround: true
 
-  shoot: {
-    type: ShootAlternate
-    shots: 1
-    spread: 18
-    barrels: 1
-  }
-
   consumes: { 
     coolant: { 
-       amount: 0.3 
+       amount: 0.5
     } 
     power: 30 
   }
@@ -41,7 +33,7 @@
       backColor: bf7622
       hitColor: bf7622
       sprite: as-volcano-stone
-      damage: 480
+      damage: 280
       width: 12
       height: 25
       lifetime: 20
@@ -51,7 +43,19 @@
       trailWidth: 6
       trailLength: 9
       trailColor: ff754f
-      bulletInterval: 3
+      trailRotation: true
+      trailEffect: {
+       type: ParticleEffect
+       particles: 5
+       colorFrom: FFD8C6  
+       colorTo: FF7C4700
+       sizeFrom: 9
+       sizeTo: 3
+       cone: 45
+       length: -10
+       lifetime: 45
+      }
+      bulletInterval: 5
       intervalRandomSpread: 0
       intervalBullets: 2
       intervalAngle: 180
@@ -78,7 +82,6 @@
             effects: [ 
               { 
                 type: WaveEffect 
-                sides: 0 
                 sizeFrom: 0 
                 sizeTo: 35
                 strokeFrom: 4 
@@ -93,7 +96,7 @@
             type: MultiEffect
               effects: [ 
                 { 
-                  type: WaveEffect"
+                  type: WaveEffect
                   sides: 0 
                   sizeFrom: 0 
                   sizeTo: 35
@@ -183,9 +186,64 @@
       moves: [
         {
           type: PartMove
-          rot: -10
+          rot: -19
         }
       ]
+    }
+    {
+      type: HaloPart
+	  progress: warmup
+      y: -28
+      radius: 8
+      tri: true
+      color: FF9162
+	  layer: 110
+      haloRotateSpeed: 1.5
+      haloRadius: 5
+      haloRadiusTo: 8
+      shapes: 3
+      triLengthTo: 3
+      triLength: 0
+    }
+    {
+     type: ShapePart
+     y: -28
+	 progress: warmup
+     hollow: true
+     circle: false 
+     layer: 110
+     color: FF9162
+	 sides: 3
+     stroke: 0
+     strokeTo: 0.9
+	 rotateSpeed: -0.8
+     radius: 8
+    }
+        {
+     type: ShapePart
+     y: -28
+	 progress: warmup
+     hollow: true
+     circle: false 
+     layer: 110
+     color: FF9162
+	 sides: 3
+     stroke: 0
+     strokeTo: 0.9
+	 rotateSpeed: -0.3
+     radius: 8
+    }
+   {
+     type: ShapePart
+     y: -28
+	 progress: warmup
+     hollow: true
+     circle: true
+     layer: 110
+     color: FF9162
+     stroke: 0
+     strokeTo: 1
+     radius: 8
     }
   ]
 }
