@@ -1,0 +1,91 @@
+type: PowerTurret
+outlineColor: 22262b
+name: Spark
+description: Shoots a ball lightning emitting lightning
+size: 4
+shootSound: spark
+range: 180
+moveWhileCharging: false
+health: 1650
+consumes: {
+ power: 3.1666666666666666
+}
+reload: 120
+hasPower: true
+shoot: {
+    firstShotDelay: 60 
+  }
+shootType: {
+ type: BasicBulletType
+ sprite: circle-bullet
+ chargeEffect: [
+   {
+   type: ParticleEffect
+   particles: 12
+   offset: 60
+   sizeFrom: 2
+   sizeTo: 5
+   length: 30
+   baseLength: -30
+   interp: pow3In
+   sizeInterp: pow5Out
+   lifetime: 40
+   colorFrom: e5fdff
+   colorTo: 76a9e3
+   }
+   {
+   type: WaveEffect
+   sizeFrom: 40
+   sizeTo: 0
+   strokeFrom: 4
+   strokeTo: 5
+   colorTo: ffffff3b
+   interp: pow3In
+   }
+  ]
+ backSprite: circle-bullet-back
+ damage: 0
+ collidesAir: false
+ collidesGround: false
+ splashDamage: 15
+ splashDamageRadius: 16
+ width: 16
+ height: 16
+ speed: 4
+ drag: 0.02
+ lifetime: 90
+ shrinkY: 0
+ frontColor: e5fdff
+ backColor: b1dee2
+ lightningDamage: 25
+ lightningLength: 12
+ lightningColor: e5fdff
+ buildingDamageMultiplier: 0.1
+ lightning: 10
+ lightningCone: 360
+ bulletInterval: 5
+ intervalBullets: 7
+ intervalAngle: 180
+ intervalBullet: {
+  type: LightningBulletType
+  buildingDamageMultiplier: 0.1
+  lightningLength: 9
+  damage: 11.5
+  pierceArmor: true
+  }
+ }
+category: turret
+requirements: [
+ whitorite/145
+ irmenite/65
+ magnetite/50
+ kiten/35
+]
+research: {
+ parent: splinter
+ planet: as-asterion
+}
+ drawer: {
+  type: DrawTurret
+  basePrefix: ast-
+}
