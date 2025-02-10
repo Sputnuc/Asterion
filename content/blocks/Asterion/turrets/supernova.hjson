@@ -1,7 +1,7 @@
   type: PowerTurret
   outlineColor: 1c1d1f
   name: Supernova
-  description: a powerfull laser turret
+  description: A powerfull laser turret with big range.
   researchCostMultiplier: 0.5
   size: 4
   health: 2280
@@ -12,7 +12,7 @@
   chargeSound: lasercharge2
   reload: 980
   range: 750
-  coolantMultiplier: 1.5
+  coolantMultiplier: 1.46
   targetAir: false
   moveWhileCharging: false
   targetGround: true
@@ -26,7 +26,7 @@
   consumes: {
     power: 20.833333333333333
 	coolant: { 
-       amount: 0.5
+       amount: 0.74
      }
   }
   hasPower: true
@@ -34,6 +34,7 @@
     type: laserBulletType
     absorbable: true
     chargeEffect: [
+	lancerLaserCharge, lancerLaserShootSmoke,
     {
     type: WaveEffect
     rotWithParent: true
@@ -74,15 +75,85 @@
 	 }
 	]
     lifetime: 90
-    damage: 1250
+    damage: 1750
     length: 750
     width: 30
     status: underclock
     statusDuration: 670
-    hitEffect: hitLaser
+	shootEffect: [titanExplosion, shootSmokeSmite]
+	shootColor: bbfce1
+    hitEffect: shootSmokeSmite
+	hitColor: 82ffa58b
     pierce: true
 	pierceBuilding: false
-    colors: [b2e6e3, ceeeec, ffffff]
+	pirceArmor: true
+    colors: [81e3bfe7, 88ebd4f3, b3fff1f8, ffffff]
+	
+	//Effects made from intervalBullets start here
+	intervalBullets: 1
+	intervalDelay: -1
+	intervalSpread: 0
+	intervalRandomSpread: 0
+	//intervalAngle: 0
+	bulletInterval: 14
+	intervalBullet: {
+		  type: BasicBulletType
+		  backColor: c4ffe305
+		  frontColor: c4ffe305
+		  width: 0.1
+		  height: 0.1
+		  speed: 8
+		  damage: 1
+		  lifetime: 93.75 //range / speed = 750 / 8
+		  hitEffect: [circleColorSpark, lancerLaserShootSmoke]
+		  despawnEffect: [circleColorSpark, lancerLaserShootSmoke]
+		  hitColor: bbfce1
+		  
+		  collidesTiles: false
+		  collidesTeam: false
+		  collidesAir: false
+		  collidesGround: false
+		  collides: false
+		  collideFloor: false
+		  collideTerrain: false
+		  absorbable: true
+		  
+		  intervalBullets: 3
+		  intervalDelay: 0
+		  intervalSpread: 4
+		  intervalRandomSpread: 3
+		  bulletInterval: 7
+		  intervalBullet: {
+			  type: BasicBulletType
+			  drag: -0.07 //Да как эта хуета работает....
+			  backColor: c4ffe305
+			  frontColor: c4ffe305
+			  width: 0.1
+			  height: 0.1
+			  speed: 1.9
+			  damage: 1
+			  status: electrified
+			  statusDuration: 280
+			  lifetime: 6.82 //range / speed = 54 / 3.5
+			  hitEffect: [lancerLaserShootSmoke, lancerLaserShootSmoke]
+			  despawnEffect: [lancerLaserShootSmoke, lancerLaserShootSmoke]
+			  hitColor: b2e6e3
+			  
+			  splashDamage:	2
+			  splashDamageRadius: 14.4
+			  splashDamagePierce: 1
+			  
+			  collidesTiles: false
+			  collidesTeam: false
+			  collidesAir: false
+			  collidesGround: false
+			  collides: false
+			  collideFloor: false
+			  collideTerrain: false
+			  absorbable: true
+		  }
+	  }
+	  //And ends here
   }
   requirements: [
     whitorite/100
@@ -105,22 +176,47 @@
     {
       type: RegionPart
       suffix: -side
-      under: true
+      mirror: true
+      heatProgress: recoil
+      progress: warmup
+	  moveX: 6.5
+	  moves: [
+		{
+			type: PartMove
+			progress: recoil
+			Y: -0.3
+			rot: -3.5
+		}
+	  ]
+      }
+	  {
+      type: RegionPart
+      suffix: -joint
+	  under: true
       mirror: true
       heatProgress: recoil
       progress: warmup
 	  moveX: 6.5
       children: [
             {
-            type: RegionPart
-            color: 5cc47aa0
-            suffix: -side-glow
-            colorTo: 96ffd3a1
-            progress: warmup
-            outline: false
-			under: true
+			  type: RegionPart
+              color: 5cc47aa0
+			  blending: additive
+			  suffix: -joint-glow
+			  colorTo: 96ffd3a1
+			  progress: warmup
+			  outline: false
+			  under: true
             }
-            ]
+	  ]
+	  moves: [
+		{
+			type: PartMove
+			progress: recoil
+			Y: -0.1
+			rot: -2
+		}
+	  ]
       }
 	  {
       type: RegionPart
