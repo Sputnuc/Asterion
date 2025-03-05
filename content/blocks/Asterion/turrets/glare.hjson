@@ -21,7 +21,7 @@ continuous: true
 ammoTypes: {
   zion: {
   type: ContinuousFlameBulletType,
-  colors: [c77392, d171b1, e87dc4, f24e8a, ffffff]
+  colors: [a03ab0c3, d14bc4d4, e55ebfed, ff7ac1, ffffff]
   damage: 10
   knockback: 1.2
   status: melting
@@ -32,13 +32,13 @@ ammoTypes: {
   pierceBuilding: false
   flareWidth: 2.6
   flareLength: 85 
-  flareColor: fa91c4
+  flareColor: ff7ac1
   lifetime: 60
-  hitColor: 71acd1
+  hitColor: d14bc4d4
   hitEffect: {
    type: ParticleEffect
    line: true
-   particles: 4
+   particles: 2
    lifetime: 60
    length: 24
    cone: 360
@@ -46,8 +46,40 @@ ammoTypes: {
    strokeTo: 0
    lenFrom: 8
    lenTo: 0
-   colorFrom: fa73cd
-   colorTo: e543af
+   colorFrom: e55ebfed
+   colorTo: a03ab0c3
+   }
+  }
+  verdyne: {
+  type: ContinuousFlameBulletType,
+  colors: [485bbdcd, 5c93d1db, 84cff0ef, abf9fffe, ffffff]
+  damage: 16
+  knockback: 1.7
+  status: melting
+  statusDuration: 248
+  rangeChange: 57
+  length: 217
+  width: 5.1
+  pierce: true
+  pierceBuilding: false
+  flareWidth: 3.5
+  flareLength: 93 
+  flareColor: abf9fffe
+  lifetime: 60
+  hitColor: 5c93d1db
+  hitEffect: {
+   type: ParticleEffect
+   line: true
+   particles: 4
+   lifetime: 82
+   length: 31
+   cone: 360
+   strokeFrom: 2.7
+   strokeTo: 0
+   lenFrom: 10
+   lenTo: 0
+   colorFrom: 84cff0ef
+   colorTo: 485bbdcd
    }
   }
  }
