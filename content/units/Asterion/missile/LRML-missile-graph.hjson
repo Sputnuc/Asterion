@@ -4,10 +4,10 @@
   "template": "MissileUnitType",
   "playerControllable": false,
   "logicControllable": false,
-  "missileAccelTime": 30,
+  "missileAccelTime": 60,
   "hidden": false,
-  "speed": 14,
-  "lifetime": 80,
+  "speed": 8,
+  "lifetime": 120,
   "rotateSpeed": 6,
   "deathExplosionEffect": {
 	  "type": "MultiEffect",
