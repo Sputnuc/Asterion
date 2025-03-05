@@ -7,7 +7,7 @@
   "missileAccelTime": 60,
   "hidden": false,
   "speed": 8,
-  "lifetime": 120,
+  "lifetime": 110,
   "rotateSpeed": 6,
   "deathExplosionEffect": {
 	  "type": "MultiEffect",
