@@ -115,6 +115,7 @@ weapons: [{
     }
     
     bullet : {
+        lightRadius: 0
         keepVelocity: false
         lifetime: 35
         damage: 2
