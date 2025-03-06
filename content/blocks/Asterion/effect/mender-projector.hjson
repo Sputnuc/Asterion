@@ -10,7 +10,7 @@ requirements: [
  ]
 size: 2
 research: {
-parent: Coreforce
+parent: core-force
 planet: as-asterion
 }
 category: effect

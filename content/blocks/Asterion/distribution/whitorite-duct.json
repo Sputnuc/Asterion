@@ -11,7 +11,7 @@
       ]
 	"research": {
     "planet": "as-asterion",
-	"parent": "Coreforce",
+	"parent": "core-force",
 	"requirements": [
 	  "whitorite/20"
 	]

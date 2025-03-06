@@ -6,7 +6,7 @@ description: Stores items in larger quantities. Fragile.
 itemCapacity: 300
 category: effect
 research: {
-parent: Coreforce
+parent: core-force
 planet: as-asterion
 }
 requirements: [

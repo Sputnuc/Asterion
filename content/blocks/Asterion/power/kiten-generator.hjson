@@ -19,7 +19,7 @@ outputsPower: true,
 powerProduction: 1.25
 research: {
     planet: as-asterion,
-	parent: Coreforce
+	parent: core-force
 	requirements: [
 	  whitorite/200
 	]

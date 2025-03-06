@@ -1,6 +1,6 @@
 //localizedName: Asterion
 generator: SerpuloPlanetGenerator
-defaultCore: Coreforce
+defaultCore: core-force
 
 hiddenItems: [
     "copper"

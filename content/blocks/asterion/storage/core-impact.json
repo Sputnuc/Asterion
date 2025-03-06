@@ -12,7 +12,7 @@
 	"isFirstTier": false,
 	"buildVisibility": "shown",
 	"research": {
-		"parent": "Coreforce",
+		"parent": "core-force",
 		"planet": "as-asterion",
 	}
 	"requirements": [

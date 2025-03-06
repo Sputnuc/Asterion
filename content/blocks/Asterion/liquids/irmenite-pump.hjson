@@ -14,7 +14,7 @@ consumes: {
 squareSprite: false
 category: liquid
 research: {
-  parent: Coreforce
+  parent: core-force
   planet: as-asterion
 }
 researchCostMultiplier: 0.25

@@ -35,7 +35,7 @@ craftEffect: smeltsmoke
 outputItem: irmenite/3
 research: {
     planet: as-asterion
-	parent: Coreforce
+	parent: core-force
 	requirements: [
 	  whitorite/150
 	  kiten/40

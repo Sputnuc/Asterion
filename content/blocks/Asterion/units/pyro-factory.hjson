@@ -5,10 +5,6 @@
   health: 540
   consumes: {
     power: 1.5
-    liquid: {
-    liquid: endomine
-    amount: 0.4
-    }
   }
   plans: [
     {
@@ -22,7 +18,7 @@
   ]
   requirements: [
     whitorite/100
-    ashotite/75
+    kiten/75
     irmenite/50
   ]
   category: units

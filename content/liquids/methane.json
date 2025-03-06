@@ -2,7 +2,7 @@
   "name": "Methane",
   "description": "a highly flammable gas is used to produce other materials",
   "color": "828282",
-  "research": "Coreforce",
+  "research": "core-force",
   "temperature": 0,
   "flammability": 0.6,
   "explosiveness": 0.2,

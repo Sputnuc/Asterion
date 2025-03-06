@@ -20,7 +20,7 @@ requirements: [
 ]
 research: {
     planet: asterion
-	parent: Coreforce
+	parent: core-force
 	planet: as-asterion
 	requirements: [
 	  whitorite/20
