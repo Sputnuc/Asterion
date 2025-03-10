@@ -1,0 +1,157 @@
+name: Differential
+description: Fires dual elemental weapons. Causes thermal shock to targets.
+type: mech
+speed: 0.35
+flying: false
+hitSize: 25
+itemCapacity: 40
+outlineColor: 0F0E0EFF
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.4
+mechStepParticles: true
+stepShake: 2.5
+outlineRadius: 5
+drownTimeMultiplier: 8
+rotateSpeed: 2.1
+health: 12700
+armor: 12
+range: 232
+weapons: [
+{
+name: difference-frost
+shootY: 22.5
+x: 24
+y: 0
+layerOffset: -0.01
+shootSound: shockBlast
+mirror: false
+rotate: true
+rotationLimit: 20
+reload: 60
+shake: 3
+shoot: {
+    type: ShootMulti
+    source: {
+    type: ShootAlternate
+    shots: 2
+    spread: 1
+    }
+    dest: [
+    {
+      type: ShootHelix
+      scl: 2
+      mag: 3
+   }
+  ]
+ }
+bullet: {
+ type: BasicBulletType
+ lifetime: 32
+ speed: 7.25
+ width: 17
+ height: 17
+ frontColor: EFFDFF
+ backColor: 6CE6FF
+ trailLength: 7
+ trailWidth: 2
+ trailColor: 6CE6FF
+ damage: 45
+ status: fast-temperature-shift
+ statusDuration: 60
+ hitEffect: {
+   type: ParticleEffect
+   particles: 5
+   colorFrom: 70ECFF
+   colorTo: 078BE1
+   length: 5
+   baseLength: 7
+   sizeFrom: 2
+   sizeTo: 0
+ }
+  despawnEffect: {
+   type: ParticleEffect
+   particles: 3
+   colorFrom: 70ECFF
+   colorTo: 078BE1
+   length: 3
+   baseLength: 4
+   sizeFrom: 2
+   sizeTo: 0
+   lifetime: 15
+ }
+
+ trailInterval: 1
+ trailRotation: true
+ trailEffect: {
+  type: ParticleEffect
+  particles: 3
+  sizeFrom: 2
+  sizeTo: 0 
+  lifetime: 15
+  colorFrom: 6CE6FF
+  colorTo: 6CE6FF00
+  length: -2
+  baseLength: 2
+  cone: 35
+ }
+}
+}
+{
+name: difference-fire
+shake: 1
+shootY: 22.5
+x: -24
+y: 0
+layerOffset: -0.01
+shootSound: blaster
+mirror: false
+rotate: true
+rotationLimit: 20
+inaccuracy: 3
+reload: 60
+shoot: {
+  shots: 8
+  shotDelay: 3
+ }
+bullet: {
+ type: BasicBulletType
+ lifetime: 64
+ speed: 3.625
+ width: 16
+ height: 16
+ frontColor: EFFDFF
+ backColor: FF6D00
+ trailLength: 7
+ trailWidth: 2
+ trailColor: FF6D00
+ damage: 35
+ status: fast-temperature-shift
+ statusDuration: 60
+ hitEffect: {
+   type: ParticleEffect
+   particles: 5
+   colorFrom: FF7406
+   colorTo: 4D4B4800
+   length: 3
+   baseLength: 8
+   sizeFrom: 3
+   sizeTo: 1
+   lifetime: 35
+ }
+ despawnEffect: {
+   type: ParticleEffect
+   particles: 3
+   colorFrom: FF7406
+   colorTo: 4D4B4800
+   length: 3
+   baseLength: 4
+   sizeFrom: 3
+   sizeTo: 1
+   lifetime: 15
+ }
+ 
+}
+}
+]
