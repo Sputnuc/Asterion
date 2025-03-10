@@ -1,0 +1,5 @@
+speedMultiplier : 0.85
+healthMultiplier: 0.85
+damage: 1
+color : 1C1C37
+name: Fast temperature shift
