@@ -15,8 +15,8 @@ stepShake: 2.5
 outlineRadius: 5
 drownTimeMultiplier: 8
 rotateSpeed: 2.1
-health: 12700
-armor: 12
+health: 18700
+armor: 8
 range: 232
 weapons: [
 {
