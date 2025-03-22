@@ -39,10 +39,10 @@ weapons: [
 
     bullet: {
         type: ArtilleryBulletType
-        splashDamage: 150
+        splashDamage: 280
         splashDamageRadius: 40
         speed: 10
-        lifetime: 30
+        lifetime: 35
         width: 14
         height: 14
         backColor: c75432 
@@ -50,6 +50,24 @@ weapons: [
         trailColor: c75432 
         trailWidth: 2.8
         trailLength: 14
+        trailRotation: true
+        trailInterval: 1
+        trailEffect: [
+        {
+        type: WaveEffect
+        colorFrom: ff9548
+        colorTo: c75432
+        sizeFrom: 0
+        sizeTo: 20
+        lightScl: 3
+        lightOpacity: 1
+        sides: 4
+        lifetime: 20
+        rotation: 0
+        strokeFrom: 3
+        strokeTo: 0
+        }
+        ]
     }
     }
 
@@ -78,13 +96,14 @@ weapons: [
         type: BasicBulletType
         homingRange: 70
         homingPower: 0.25
-        homingDelay: 8
-        damage: 30
+        homingDelay: 10
+        damage: 65
         pierceArmor: true
         drag: -0.002
+        sprite: missile-large
         lifetime: 90
-        width: 6
-        height: 9
+        width: 8
+        height: 12
         speed: 3.5
         incendChance: 1
         incendSpread: 6
@@ -92,7 +111,7 @@ weapons: [
         backColor: c75432 
         frontColor: ff9548
         trailColor: c75432 
-        trailWidth: 2
+        trailWidth: 2.5
         trailLength: 6
 
         shootEffect: {
@@ -161,7 +180,7 @@ name: baby-bomb
 
     bullet: {
 type: ExplosionBulletType
-splashDamage: 4000
+splashDamage: 4500
 splashDamageRadius: 100
 incendChance: 1
 incendSpread: 80
