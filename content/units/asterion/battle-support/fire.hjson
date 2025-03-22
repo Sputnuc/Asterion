@@ -121,25 +121,27 @@ weapons: [
         y: 0
         top: false
         layer: 0
-        inaccuracy: 0
+        inaccuracy: 45
         reload: 40
         mirror: false
         shootCone: 180
         ingnoreRotation: true
         shootSound: none
+        velocityRnd: 0.5
         shoot: {
-            shots: 4
-            shotDelay: 5
+            shots: 6
+            shotDelay: 1
         }
         bullet: {
             type: BombBulletType
             lifetime: 60
-            splashDamage: 100
+            splashDamage: 70
             splashDamageRadius: 35
             incendChance: 1
             incendSpread: 35
             incendAmount: 7
             collidesTiles: false
+            speed: 3
             backColor: c75432 
             frontColor: ff9548
             width: 14

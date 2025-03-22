@@ -52,8 +52,7 @@ abilities : [{
 
 weapons: [
 { 
-name: star-reactor
-    
+    name: star-reactor
     shootY: 0
     shootX: 0
     x: 0
@@ -61,36 +60,50 @@ name: star-reactor
     layerOffset: -0.01
     mirror: false
     rotate: false
-    shootCone: 90
     rotationLimit: 0
     recoil: 0
     reload: 470
     cooldownTime: 110
-    inaccuracy: 2
+    inaccuracy: 4
     parentizeEffects: true
+    velocityRnd: 0.1
     shootStatus: unmoving
     shootStatusDuration: 110
     shoot: {
+        type: ShootMulti
         firstShotDelay: 110
-        shots: 30
-        shotDelay: 5
+        shots: 3
+        shotDelay: 3
+        source: {
+             type: ShootAlternate
+             firstShotDelay: 110
+             shots: 3
+             shotDelay: 45
+        }
+        dest: [
+            {
+             shots: 3
+             shotDelay: 3
+            }
+         ]
     }
-    shootSound: laser
+    shootSound: shockBlast
     bullet: {
         type: BasicBulletType
         sprite: mine-bullet
         backSprite: large-bomb-back
-        velociryRnd: 0.9
-        damage: 160
+        damage: 125
+        splashDamage: 45
+        splashDamageRadius: 32
         speed: 8
-        lifetime: 80
-        width: 14
-        height: 14
+        lifetime: 60
+        width: 20
+        height: 20
         backColor: 8798b9 
         frontColor: a1b1d0
         trailColor: 8798b9 
-        trailWidth: 1.6
-        trailLength: 3
+        trailWidth: 3
+        trailLength: 8
         despawnHit: true
         hitEffect: {
                 type: MultiEffect
