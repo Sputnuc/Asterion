@@ -397,21 +397,6 @@ homingRadius: 24
    type: DrawTurret
    basePrefix: ast-
    parts: [
-     {
-      type: RegionPart
-      suffix: -side
-      under: true
-      mirror: true
-      progress: warmup
-      moves: [
-      {
-      type: PartMove
-      rot: 20
-      moveY: -3
-      moveX: 5
-       }
-      ]
-}
 	 ]
 	}
               
