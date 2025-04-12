@@ -1,4 +1,3 @@
-type: TractorBeamTurret
 name: "infection"
 description: "shoots a laser that attracts enemy units to itself, at the same time imposes a virus effect"
 

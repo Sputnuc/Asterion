@@ -7,17 +7,17 @@
   "hasPower": true,
   "hasLiquids": true,
   "hasItems": true,
-  "warmupSpeed": 0.004,
+  "warmupSpeed": 0.002,
   "explosionShake": 10,
   "lightColor": "000000",
   "itemCapacity": 30,
   "liquidCapacity": 200,
   "itemDuration": 60,
-  "powerProduction": 40,
+  "powerProduction": 115,
   "explosionDamage": 1000,
   "explosionRadius": 30,
   "consumes": {
-    "power": 5,
+    "power": 15,
     "liquid": {
       "liquid": "oxylene",
       "amount": 0.4
@@ -31,9 +31,9 @@
   "requirements": [
     "whitorite/55",
 	"irmenite/135",
+	"zincum/35",
 	"blacktite/75",
 	"magnetite/150"
-	"zincum/35",
   ],
   "category": "power",
   "research": {

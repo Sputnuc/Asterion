@@ -3,6 +3,7 @@ description: "It fires armor-piercing cluster bullets and lasers. The Head, like
 type: mech
 speed: 0.30
 flying: false
+research: raptor
 hitSize: 38
 itemCapacity: 190
 outlineColor: 1f1f26

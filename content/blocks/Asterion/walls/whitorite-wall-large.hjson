@@ -12,3 +12,4 @@ parent: whitorite-wall
 planet: as-asterion
 }
 researchCostMultiplier: 0.20
+buildCostMultiplier: 0.5

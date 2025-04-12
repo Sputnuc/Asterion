@@ -1,5 +1,4 @@
   name: breakthrough
-  type: ItemTurret
   outlineColor: 22262b
   size: 4
   health: 3450
@@ -10,11 +9,11 @@
 	{item: blacktite, amount: 95}
   ]
   research: {
-	parent: trasher
+	parent: splinter
 	planet: as-asterion
   }
   category: turret
-  reload: 120
+  reload: 100
   rotateSpeed: 1.5
   shoot: {
   shots: 3
@@ -39,7 +38,7 @@
           cone: 15
         }]  
 	  smokeEffect: shootBigSmoke
-      damage: 45
+      damage: 75
       speed: 15
 	  width: 8
       height: 8
@@ -93,7 +92,7 @@
 	  reloadMultiplier: 0.5
 	  width: 8
       height: 8
-      damage: 65
+      damage: 85
 	  status: melting
 	  statusDuration: 300
       speed: 15

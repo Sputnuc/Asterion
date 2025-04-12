@@ -22,4 +22,5 @@ research: {
   requiresUnlock: false
   planet: as-asterion
   }
+ researchCostMultiplier: 0.1
   alwaysUnlocked: true

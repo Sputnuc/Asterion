@@ -1,4 +1,3 @@
-type: ItemTurret
 outlineColor: 1c1d1f
 name: "Intermediary"
 description: ""
@@ -98,7 +97,6 @@ requirements: [
 	blacktite/120
 	kiten/160
 	irmenite/200
-	zionitium/135
 ]
 category: turret
 research: glare

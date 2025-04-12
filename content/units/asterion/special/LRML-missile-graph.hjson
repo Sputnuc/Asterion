@@ -6,9 +6,9 @@
   "logicControllable": false,
   "missileAccelTime": 60,
   "hidden": false,
-  "speed": 8,
-  "lifetime": 110,
-  "rotateSpeed": 6,
+  "speed": 7,
+  "lifetime": 150,
+  "rotateSpeed": 1,
   "deathExplosionEffect": {
 	  "type": "MultiEffect",
 	  "effects": [
@@ -48,7 +48,7 @@
       "shake": 5,
       "bullet": {
         "type": "ExplosionBulletType",
-        "splashDamage": 470,
+        "splashDamage": 870,
         "splashDamageRadius": 25,
         "buildingDamageMultiplier": 1,
         "hitShake": 12,
@@ -57,34 +57,3 @@
       }
     }
   ]
-
-parts: [
-	{
-		type: HoverPart
-		x: 0
-		y: 0
-		sides: 60
-		mirror: false
-		radius: 160
-		phase: 360
-		stroke: 3
-		circles: 2
-		minStroke: 0.5
-		layer: 122
-		color: 414369
-	}
-	{
-		type: HoverPart
-		x: 0
-		y: 0
-		sides: 60
-		mirror: false
-		radius: 160
-		phase: 140
-		stroke: 2
-		circles: 1
-		minStroke: 0.5
-		layer: 122
-		color: 414369
-	}
-]

@@ -14,7 +14,7 @@
   "planet": "as-asterion",
 }
 "squareSprite": false,
-"transportTime": 0.05,
+"transportTime": 0.1,
 "range": 6,
 "isDuct": true,
 "hasItems": true,

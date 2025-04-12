@@ -1,5 +1,4 @@
-  type: PowerTurret
-  outlineColor: 1c1d1f
+   outlineColor: 1c1d1f
   name: Supernova
   description: A powerfull laser turret with big range.
   researchCostMultiplier: 0.5
@@ -12,7 +11,7 @@
   chargeSound: lasercharge2
   reload: 980
   range: 750
-  coolantMultiplier: 1.46
+  coolantMultiplier: 1.45
   targetAir: false
   moveWhileCharging: false
   targetGround: true
@@ -26,7 +25,7 @@
   consumes: {
     power: 20.833333333333333
 	coolant: { 
-       amount: 0.74
+       amount: 1
      }
   }
   hasPower: true
@@ -58,7 +57,7 @@
 	   sizeTo: 0
 	   strokeFrom: 0
 	   strokeTo: 3
-   	startDelay: 30
+	   startDelay: 30
 	 }
 	 {
 	   type: WaveEffect
@@ -75,84 +74,72 @@
 	 }
 	]
     lifetime: 90
-    damage: 1750
+    damage: 5750
     length: 750
     width: 30
+    sideAngle: 50
+    sideWidth: 2
+    sideLength: 70
     status: underclock
     statusDuration: 670
-	shootEffect: [titanExplosion, shootSmokeSmite]
-	shootColor: bbfce1
+	shootEffect: [
+	{
+	type: ParticleEffect
+	particles: 30
+	cone: 2
+	length: 750
+	sizeFrom: 4
+	sizeTo: 0
+	lifetime: 70
+	}
+	{
+	type: ParticleEffect
+	particles: 16
+	cone: 3
+	length: 350
+	sizeFrom: 5
+	sizeTo: 0
+	lifetime: 70
+	}
+        {
+          followParent: false
+          particles: 1
+          length: 32
+          baseLength: 30
+          randLength: false
+          lifetime: 60
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 20
+          sizeTo: 40
+          colorFrom: aaf3e7
+          colorTo: aaf3e700
+        }
+                {
+          followParent: false
+          particles: 1
+          length: 45
+          baseLength: 47
+          randLength: false
+          lifetime: 60
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 10
+          sizeTo: 20
+          colorFrom: aaf3e7
+          colorTo: aaf3e700
+        }
+	]
     hitEffect: shootSmokeSmite
 	hitColor: 82ffa58b
     pierce: true
 	pierceBuilding: false
 	pirceArmor: true
-    colors: [81e3bfe7, 88ebd4f3, b3fff1f8, ffffff]
-	
-	//Effects made from intervalBullets start here
-	intervalBullets: 1
-	intervalDelay: -1
-	intervalSpread: 0
-	intervalRandomSpread: 0
-	//intervalAngle: 0
-	bulletInterval: 14
-	intervalBullet: {
-		  type: BasicBulletType
-		  backColor: c4ffe305
-		  frontColor: c4ffe305
-		  width: 0.1
-		  height: 0.1
-		  speed: 8
-		  damage: 1
-		  lifetime: 93.75 //range / speed = 750 / 8
-		  hitEffect: [circleColorSpark, lancerLaserShootSmoke]
-		  despawnEffect: [circleColorSpark, lancerLaserShootSmoke]
-		  hitColor: bbfce1
-		  
-		  collidesTiles: false
-		  collidesTeam: false
-		  collidesAir: false
-		  collidesGround: false
-		  collides: false
-		  collideFloor: false
-		  collideTerrain: false
-		  absorbable: true
-		  
-		  intervalBullets: 3
-		  intervalDelay: 0
-		  intervalSpread: 4
-		  intervalRandomSpread: 3
-		  bulletInterval: 7
-		  intervalBullet: {
-			  type: BasicBulletType
-			  drag: -0.07 //Да как эта хуета работает....
-			  backColor: c4ffe305
-			  frontColor: c4ffe305
-			  width: 0.1
-			  height: 0.1
-			  speed: 1.9
-			  damage: 1
-			  status: electrified
-			  statusDuration: 280
-			  lifetime: 6.82 //range / speed = 54 / 3.5
-			  hitEffect: [lancerLaserShootSmoke, lancerLaserShootSmoke]
-			  despawnEffect: [lancerLaserShootSmoke, lancerLaserShootSmoke]
-			  hitColor: b2e6e3
-			  
-			  splashDamage:	2
-			  splashDamageRadius: 14.4
-			  splashDamagePierce: 1
-			  
-			  collidesTiles: false
-			  collidesTeam: false
-			  collidesAir: false
-			  collidesGround: false
-			  collides: false
-			  collideFloor: false
-			  collideTerrain: false
-			  absorbable: true
-		  }
-	  }
+    colors: [
+    81e3bfe7, 88ebd4f3, b3fff1f8, ffffff
+    ]
 	  //And ends here
   }
   requirements: [
@@ -226,49 +213,99 @@
       heatProgress: recoil
 	  heatColor: 96ffd3a1
       }
-	{
+      //halo
+      {
      type: ShapePart
      y: -10.5
-	 progress: warmup
      hollow: true
-     circle: false
+     circle: true
      layer: 110
      color: aaf3e7
-	 sides: 3
      stroke: 0
-     strokeTo: 0.7
-	 rotateSpeed: 0.8
-     radius: 5
-    }
+     strokeTo: 1.2
+     radius: 1.5
+	 radiusTo: 2.5
+      }
+     {
+     type: ShapePart
+     y: -10.5
+     hollow: true
+     circle: true
+     layer: 110
+     color: aaf3e7
+     stroke: 0
+     strokeTo: 0.6
+     radius: 0
+	 radiusTo: 0.6
+      }
 	{
       type: HaloPart
 	  progress: warmup
       y: -10.5
-      radius: 4
+      radius: 0
+      radiusTo: 3
       tri: true
       color: aaf3e7
 	  layer: 110
-      haloRotateSpeed: -0.5
-      haloRadius: 6.5
+      haloRadius: 4
       haloRadiusTo: 6.5
-      shapes: 4
-      triLengthTo: 3
+      shapes: 3
+      triLengthTo: 7.5
       triLength: 0
+      haloRotateSpeed: 1.2
     }
-	{
+    {
       type: HaloPart
 	  progress: warmup
       y: -10.5
-      radius: 5
+      radius: 0
+      radiusTo: 3
       tri: true
       color: aaf3e7
 	  layer: 110
-      haloRotateSpeed: 0.5
-      haloRadius: 6.5
-      haloRadiusTo: 12
-      shapes: 4
-      triLengthTo: 7
+      haloRadius: 4
+      haloRadiusTo: 6.5
+      shapes: 3
+      triLengthTo: 1
       triLength: 0
+      shapeRotation: 180
+      haloRotateSpeed: 1.2
+    }
+    //60 degrees halo
+    	{
+      type: HaloPart
+	  progress: warmup
+      y: -10.5
+      radius: 0
+      radiusTo: 2.5
+      tri: true
+      color: aaf3e7
+	  layer: 110
+      haloRadius: 5
+      haloRadiusTo: 7
+      shapes: 3
+      triLengthTo: 4
+      triLength: 0
+      haloRotateSpeed: 1.2
+      haloRotation: 60
+    }
+    {
+      type: HaloPart
+	  progress: warmup
+      y: -10.5
+      radius: 0
+      radiusTo: 2.5
+      tri: true
+      color: aaf3e7
+	  layer: 110
+      haloRadius: 6
+      haloRadiusTo: 7
+      shapes: 3
+      triLengthTo: 1
+      triLength: 0
+      shapeRotation: 180
+      haloRotateSpeed: 1.2
+      haloRotation: 60
     }
    ]
   }

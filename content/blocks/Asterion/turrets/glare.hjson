@@ -1,4 +1,3 @@
-type: ContinuousLiquidTurret
 outlineColor: 1c1d1f
 //outline came from grandma
 //outlineRadius: 6
@@ -21,8 +20,10 @@ continuous: true
 ammoTypes: {
   zion: {
   type: ContinuousFlameBulletType,
-  colors: [a03ab0c3, d14bc4d4, e55ebfed, ff7ac1, ffffff]
-  damage: 10
+  colors: [
+  a03ab0c3, d14bc4d4, e55ebfed, ff7ac1, ffffff
+  ]
+  damage: 12
   knockback: 1.2
   status: melting
   statusDuration: 192
@@ -52,8 +53,10 @@ ammoTypes: {
   }
   verdyne: {
   type: ContinuousFlameBulletType,
-  colors: [485bbdcd, 5c93d1db, 84cff0ef, abf9fffe, ffffff]
-  damage: 16
+  colors: [
+  485bbdcd, 5c93d1db, 84cff0ef, abf9fffe, ffffff
+  ]
+  damage: 18
   knockback: 1.7
   status: melting
   statusDuration: 248

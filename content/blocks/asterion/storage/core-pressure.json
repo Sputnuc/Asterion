@@ -11,6 +11,7 @@
 	"outputsPower": true,
 	"isFirstTier": false,
 	"buildVisibility": "shown",
+	"researchCostMultiplier": 0.1,
 	"research": {
 		"parent": "Coreimpact",
 		"planet": "as-asterion",

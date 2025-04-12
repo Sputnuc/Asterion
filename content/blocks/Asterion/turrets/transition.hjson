@@ -1,5 +1,4 @@
-  type: ItemTurret
-  outlineColor: 1c1d1f
+   outlineColor: 22262b
   name: Transition
   description: Fires Cascades of armor piercing shells at enemies
   health: 1250
@@ -27,14 +26,11 @@
     ]
    }
   consumes: { 
-    coolant: { 
-       amount: 0.2
-    } 
    power: 10
 	liquid: {
-		liquid: methane
+		liquid: kryoline
 		amount: 0.15
-}
+  }
   }
   researchCostMultiplier: 0.4
   inaccuracy: 1
@@ -48,7 +44,7 @@
     backColor: bf7622
     hitColor: bf7622
     sprite: as-armored-shell
-    damage: 80
+    damage: 155
     width: 12
     height: 25
     lifetime: 35
@@ -101,7 +97,7 @@
       backColor: bf7622
       hitColor: bf7622
       sprite: as-armored-shell
-      damage: 40
+      damage: 35
       width: 12
       height: 25
       lifetime: 5
@@ -158,7 +154,7 @@ homingRadius: 24
       backColor: bf7622
       hitColor: bf7622
       sprite: as-armored-shell
-      damage: 40
+      damage: 30
       width: 12
       height: 25
       lifetime: 5
@@ -215,7 +211,7 @@ homingRadius: 24
       backColor: bf7622
       hitColor: bf7622
       sprite: as-armored-shell
-      damage: 40
+      damage: 25
       width: 12
       height: 25
       lifetime: 5
@@ -272,7 +268,7 @@ homingRadius: 24
       backColor: bf7622
       hitColor: bf7622
       sprite: as-armored-shell
-      damage: 40
+      damage: 25
       width: 12
       height: 25
       lifetime: 5
@@ -329,7 +325,7 @@ homingRadius: 24
       backColor: bf7622
       hitColor: bf7622
       sprite: as-armored-shell
-      damage: 40
+      damage: 25
       width: 12
       height: 25
       lifetime: 5
@@ -386,8 +382,8 @@ homingRadius: 24
   }
   requirements: [
  	  whitorite/330
+ 	  kiten/170
 	  blacktite/200
-	  kiten/170
 	  magnetite/200
 	  graphene/140
    ]

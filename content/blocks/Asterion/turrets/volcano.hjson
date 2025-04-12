@@ -1,4 +1,4 @@
-  type: ItemTurret
+
   name: Volcano
   description: Shoots a large projectile, which in flight scatters on other smaller ones that explode, when the main projectile hits a unit, it scatters on others that also explode.
   health: 1250
@@ -170,7 +170,7 @@
     graphene/140
   ]
 
-  research: LRML
+  research: typhoon
   category: turret 
 
   drawer: {

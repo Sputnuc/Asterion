@@ -5,10 +5,12 @@ armor: 2
 size: 1
 requirements: [
   whitorite/6
+  graphene/2
 ]
 category: defense
 research: {
-  parent: splinter
+  parent: magnetite-wall-large
   planet: as-asterion
 }
-researchCostMultiplier: 0.20
+researchCostMultiplier: 0.50
+buildCostMultiplier: 0.5

@@ -1,9 +1,10 @@
-  type: ItemTurret
   outlineColor: 1c1d1f
   name: LRML
   description: LRML-Long range missile launcher
   targetAir: false
   category: turret
+  ammoPerShot: 10
+  maxAmmo: 30
   requirements: [
     whitorite/360
     irmenite/200
@@ -39,7 +40,7 @@
       spawnUnit: LRML-missile
     }
      graphene: {
-      ammoMultiplier: 1
+      ammoMultiplier: 3
       instantDisappear: true
       shootEffect: shootBig
       smokeEffect: shootSmokeMissile

@@ -1,0 +1,15 @@
+type: Wall
+name: Silicate wall
+health: 2250
+armor: 5
+size: 1
+requirements: [
+  silicate/10
+  graphene/2
+]
+category: defense
+research: {
+  parent: magnetite-wall-large
+  planet: as-asterion
+}
+researchCostMultiplier: 0.5

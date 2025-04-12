@@ -1,4 +1,4 @@
-name: Orion reassembler
+name: Orion assembler
 description: "Builds Tier 5-6 units of Orion faction."
 type: UnitAssembler
 size: 7
@@ -10,13 +10,7 @@ droneType: "construction-drone-orion" //assembly-drone
 droneConstructTime: 600
 category: units
 consumes: {
-	power: 9.166666666666667
-	items: {
-		items: [
-			magnetite/50
-			irmenite/25
-		]
-	}
+	power: 20
 	liquids: [
       verdyne/1
 	  oxylene/0.5
@@ -26,26 +20,29 @@ plans: [
 	{
 	unit: "raptor" //Tier 1 assembler
 	requirements: [
-	    as-varan/3
-		as-piranha/5
-		as-irmenite-wall-large/5
-		as-whitorite-wall-large/10
+	    as-varan/1
+		as-irmenite-wall-large/2
+		as-whitorite-wall-large/3
 		as-part-orion-core/1
 	]
-	time: 1260
+	time: 2100
 	}
 	{
 	unit: "glava" //Tier 2 assembler
 	requirements: [
-		as-vulture/10
-		as-magnetite-wall-large/10
-		as-irmenite-wall-large/25
+		as-vulture/3
+		as-magnetite-wall-large/3
+		as-irmenite-wall-large/5
 		as-part-orion-core/1
 	]
-	time: 3500
+	time: 3600
 	}
 ]
+research: orion-iteration-reasembler
 requirements: [
-	whitorite/300
-	irmenite/250
+	blacktite/300
+	magnetite/350
+	verdyne-steel/450
+	graphene/320
+	cobalt/290
 ]

@@ -1,0 +1,187 @@
+	type: GenericCrafter
+	name: Silicate fuser
+	description: Creates silicatw
+	size: 5
+	hasPower: true
+	ignoreLiquidFullness: true
+	squareSprite: false
+	hasItems: true
+	hasLiquids: true
+	liquidCapacity: 30
+	researchCostMultiplier: 0.50
+	itemCapacity: 30
+	requirements: [
+		whitorite/125
+		irmenite/125
+		kiten/75
+		zincum/75
+		magnetite/90
+		graphene/75
+	 ]
+	research: {
+		parent: graphene-synthesizer
+		planet: as-asterion
+	}
+	consumes: {
+		power: 7.5
+		items: {
+			items: [
+               cobalt/15
+               irmenite/10
+			 ]
+		 }
+		liquids: [
+		verdyne/0.25
+		]
+	}	
+	outputItem: silicate/10
+	craftTime: 300
+	idleSound: respawning
+	updateEffect: smeltsmoke 
+	category: crafting 
+drawer: {
+  type: DrawMulti
+  drawers: [
+   {
+   type: DrawRegion
+   suffix: -bottom
+   }
+   {
+   type: DrawLiquidTile
+    suffix: -liquid
+	drawLiquid: verdyne
+	padding: 1.5
+   }
+   //rotators
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 0
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 10
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 20
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 30
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 40
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 50
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 60
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 70
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 80
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 90
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 100
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 110
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 120
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 130
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 140
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 150
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 160
+   }
+   {
+   type: DrawRegion
+   suffix: -rotator-segm
+   rotateSpeed: 1
+   spinSprite: true
+   rotation: 170
+   }
+   //DrawDefault
+   {
+   type: DrawDefault
+   }
+  ]
+ }

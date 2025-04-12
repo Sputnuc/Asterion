@@ -3,7 +3,7 @@
 	"name": "Hunter processor reconstructor",
     "health": 1600,
     "size": 5,
-    "constructTime": 2800,
+    "constructTime": 1500,
     "upgrades": [
         ["piranha", "vulture"],
     ],

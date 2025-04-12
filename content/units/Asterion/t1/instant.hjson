@@ -6,9 +6,9 @@ rotateSpeed : 4
 engineSize : 0
 hovering : true
 hitSize : 11
-health : 230
-speed : 1.2
-accel : 0.1
+health : 130
+speed : 1.65
+accel : 0.4
 armor : 5
 name : Instant
 description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
@@ -59,25 +59,43 @@ weapons: [{
     baseRotation: 0
     shootCone: 70
     mirror: false
-    reload: 75
+    reload: 8
     name: instant-weapon
+    shootSound: blaster
     top: true
-    y: 5.5
+    y: -3
+    xRand: 20
     x: 0
-    shoot: {
-        type: ShootSpread
-        shots: 10
-        spread: 1
-    }
-    
     bullet : {
-        lifetime: 15
-        damage: 6
-        height: 4
-        speed: 6
-        width: 9
+        lifetime: 20
+        damage: 8.5
+        height: 10
+        speed: 5
+        width: 10
         type: BasicBulletType
         frontColor: 79eef2
         backColor: 74c1e8
+        homingPower: 0.2
+        homingRange: 32
+        smokeEffect: none
+        shootEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 16
+        colorFrom: 79eef2
+        colorTo: 74c1e800
+        strokeFrom: 2
+        strokeTo: 0
+        }
+        despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 6
+        colorFrom: 79eef2
+        colorTo: 74c1e800
+        strokeFrom: 2
+        strokeTo: 0
+        lifetime: 15
+        }
     }
 }]

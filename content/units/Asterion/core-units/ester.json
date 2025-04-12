@@ -18,32 +18,32 @@
 	"weapons": [
 		{
 			"name": "ester-weapon",
-			"x": 3.5,
-			"y": 1.8,
+			"x": 2.5,
+			"y": 4.5,
 			"recoil": 1,
 			"top": false,
-			"reload": 15,
+			"reload": 11,
 			"minWarmup": 0.9,
-			"inaccuracy": 10,
+			"inaccuracy": 3,
 			"mirror": true,
 			"alternate": true,
 			"shootSound": "lasershoot",
 			"continuous": false,
 			"parts": [
 				{
-					"suffix": "-part",
-					"x": -2,
-					"y": 2.5,
+					"suffix": "-part1",
+					"x": 1,
+					"y": -2.75,
 					"mirror": false,
 					"progress": "warmup",
 					"moveX": 0,
-					"moveY": -1,
+					"moveY": 0,
 					"moveRot": 0
 				}
 			]
 			"bullet": {
 				"type": "BasicBulletType",
-				"damage": 15,
+				"damage": 21,
 				"pierce": true,
 				"pierceCap": 3,
 				"homingPower": 0.2,

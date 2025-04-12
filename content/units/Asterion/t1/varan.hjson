@@ -45,7 +45,7 @@ weapons: [
     rotationLimit: 22
     recoil: 1.5
     reload: 40
-    shootSound: malignShoot
+    shootSound: shockBlast
     bullet: {
       type: BasicBulletType
       damage: 16
