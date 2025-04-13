@@ -185,7 +185,7 @@ weapons: [
             radiusTo: 90
             layer: 110
             followRotation: true
-            rotMove: 360
+            rotMove: 130
             progress: life
         }
         ]
