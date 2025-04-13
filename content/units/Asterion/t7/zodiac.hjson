@@ -204,6 +204,35 @@ weapons: [
             strokeTo: 16
             colorTo: ffffff00
         }
+        {
+            type: WaveEffect
+            sizeFrom: 300
+            sizeTo: 0
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 6
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 300
+            sizeTo: 0
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 6
+            startDelay: 30
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 300
+            sizeTo: 0
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 6
+            startDelay: 60
+            colorTo: ffffff00
+        }
             {
                 type: ParticleEffect
                 length: 60
@@ -370,6 +399,8 @@ weapons: [
             collides: false
             damage: 0
             speed: 0
+            hitShake: 25
+            despawnHit: true
             width: 0
             height: 0
             hitSize: 0
@@ -380,7 +411,68 @@ weapons: [
             lightningLength: 22.5
             lightningDamage: 80
             lightningColor: a1b1d0
-            despawnEffect: none
+            despawnEffect: [
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 150
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 6
+            colorTo: a1b1d0
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 300
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 6
+            colorTo: a1b1d0
+        }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 6
+          sizeTo: 0
+          length: 250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: ffffff
+          colorTo: a1b1d0
+          startDelay: 0
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 6
+          sizeTo: 0
+          length: 250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: ffffff
+          colorTo: a1b1d0
+          startDelay: 5
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 6
+          sizeTo: 0
+          length: 250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: ffffff
+          colorTo: a1b1d0
+          startDelay: 10
+          }
+            ]
             fragBullets: 10
             fragBullet: {
                 type: SapBulletType
