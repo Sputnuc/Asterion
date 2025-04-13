@@ -232,6 +232,7 @@ weapons: [
                 sizeFrom: 40
                 sizeTo: 0
                 interp: swingIn
+                layer: 110.1
                 length: 0
                 lifetime: 180
                 colorFrom: 02051FFF
