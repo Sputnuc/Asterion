@@ -182,9 +182,11 @@ weapons: [
             color2: a1b1d0
             color1: E0EAFF
             radius: 60
-            radiusTo: 60
+            radiusTo: 90
             layer: 110
             followRotation: true
+            rotMove: 360
+            progress: life
         }
         ]
         hitShake: 5
@@ -264,6 +266,96 @@ weapons: [
           lifetime: 180
           colorFrom: a1b1d000
           colorTo: a1b1d0
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 5
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 10
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 15
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 20
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 25
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 30
           }
             ]
         lifetime: 115
