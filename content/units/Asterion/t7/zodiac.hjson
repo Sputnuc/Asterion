@@ -412,65 +412,18 @@ weapons: [
             lightningDamage: 80
             lightningColor: a1b1d0
             despawnEffect: [
-        {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 150
-            lifetime: 30
-            strokeFrom: 0
-            strokeTo: 6
-            colorTo: a1b1d0
-        }
-        {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 300
-            lifetime: 30
-            strokeFrom: 0
-            strokeTo: 6
-            colorTo: a1b1d0
-        }
            {
           type: ParticleEffect
-          particles: 18
+          particles: 6
           offset: 100
-          sizeFrom: 6
+          sizeFrom: 10
           sizeTo: 0
           length: 250
-          interp: pow3In
-          sizeInterp: pow5Out
-          lifetime: 90
+          interp: pow10Out
+          sizeInterp: pow10In
+          lifetime: 120
           colorFrom: ffffff
           colorTo: a1b1d0
-          startDelay: 0
-          }
-           {
-          type: ParticleEffect
-          particles: 18
-          offset: 100
-          sizeFrom: 6
-          sizeTo: 0
-          length: 250
-          interp: pow3In
-          sizeInterp: pow5Out
-          lifetime: 90
-          colorFrom: ffffff
-          colorTo: a1b1d0
-          startDelay: 5
-          }
-           {
-          type: ParticleEffect
-          particles: 18
-          offset: 100
-          sizeFrom: 6
-          sizeTo: 0
-          length: 250
-          interp: pow3In
-          sizeInterp: pow5Out
-          lifetime: 90
-          colorFrom: ffffff
-          colorTo: a1b1d0
-          startDelay: 10
           }
             ]
             fragBullets: 10
