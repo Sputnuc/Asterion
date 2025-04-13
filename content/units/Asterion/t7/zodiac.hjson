@@ -416,11 +416,12 @@ weapons: [
           type: ParticleEffect
           particles: 6
           offset: 100
-          sizeFrom: 10
-          sizeTo: 0
+          sizeFrom: 0
+          sizeTo: 10
           length: 250
-          interp: pow10Out
-          sizeInterp: pow10In
+          baseLength: -250
+          interp: exp10In
+          sizeInterp: pow10Out
           lifetime: 120
           colorFrom: ffffff
           colorTo: a1b1d0
