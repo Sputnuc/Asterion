@@ -414,7 +414,7 @@ weapons: [
             despawnEffect: [
            {
           type: ParticleEffect
-          particles: 6
+          particles: 1
           offset: 100
           sizeFrom: 0
           sizeTo: 10
@@ -423,7 +423,7 @@ weapons: [
           baseLength: -250
           interp: exp10In
           sizeInterp: pow10Out
-          lifetime: 90
+          lifetime: 30
           colorFrom: ffffff
           colorTo: a1b1d0
           }
