@@ -418,11 +418,12 @@ weapons: [
           offset: 100
           sizeFrom: 0
           sizeTo: 10
+          layer: 109
           length: 250
           baseLength: -250
           interp: exp10In
           sizeInterp: pow10Out
-          lifetime: 120
+          lifetime: 90
           colorFrom: ffffff
           colorTo: a1b1d0
           }
