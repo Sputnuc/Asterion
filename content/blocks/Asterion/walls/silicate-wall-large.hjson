@@ -1,0 +1,17 @@
+type: Wall
+name: Silicate wall large
+health: 10000
+armor: 20
+absorbLasers: true
+insulated: true
+size: 2
+requirements: [
+  silicate/40
+  graphene/8
+]
+category: defense
+research: {
+  parent: silicate-wall
+  planet: as-asterion
+}
+researchCostMultiplier: 0.5

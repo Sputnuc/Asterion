@@ -1,0 +1,115 @@
+useEngineElevation : false
+shadowElevation : 0.3
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 4
+engineSize : 0
+hovering : true
+hitSize : 18
+health : 600
+speed : 1.6
+accel : 0.3
+armor : 1
+name : Blink
+description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+type : hover
+drag : 0.1
+outlineColor: 28282d
+outlineRadius: 4
+
+parts: [
+    {
+        type: HoverPart
+        radius: 16
+        stroke: 3
+        phase: 70
+        layerOffset: -0.001
+        color: 79eef2
+    }
+]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2.5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2.5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -0
+        x : 0
+    }
+]
+
+research: instant
+
+weapons: [{
+    
+    baseRotation: 0
+    shootCone: 360
+    mirror: false
+    reload: 90
+    inaccuracy: 3
+    xRand: 25
+    name: blink-weapon
+    shootSound: shockBlast
+    top: true
+    y: -2
+    x: 0
+    shoot: {
+        shots: 3
+    }
+    
+    bullet : {
+        hitEffect: {
+        type: ParticleEffect
+        particles: 5
+        sizeFrom: 2
+        sizeTo: 0
+        length: 15
+        lifetime: 20
+        colorFrom: 79eef2
+        colorTo: 74c1e8
+        }
+        smokeEffect: none
+        shootEffect: {
+         type: WaveEffect
+         sizeFrom: 0
+         sizeTo: 18
+         colorFrom: 79eef2
+         colorTo: 74c1e800
+         strokeFrom: 2
+         strokeTo: 0
+        }
+        keepVelocity: false
+        lifetime: 35
+        drag: -0.08
+        splashDamage: 18
+        splashDamageRadius: 75
+        damage: 27
+        height: 15
+        speed: 1
+        width: 15
+        sprite: "mine-bullet"
+        type: BasicBulletType
+        homingPower: 0.95
+        homingRadius: 24
+        homingDelay: 20
+        frontColor: 79eef2
+        backColor: 74c1e8
+        trailColor: 74c1e8
+        trailWidth: 3.25
+        trailLength: 10
+    }
+}]

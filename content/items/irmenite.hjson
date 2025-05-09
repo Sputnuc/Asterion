@@ -8,7 +8,7 @@
 	"explosiveness": 0,
 	"flammability": 0,
 	"radioactivity": 0,
-	"cost": 3,
+	"cost": 1.75,
 	"hiddenOnPlanets": [
 		serpulo,
 		erekir

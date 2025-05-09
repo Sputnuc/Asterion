@@ -1,3 +1,4 @@
-require("attributes");
-require("units");
-require("blocks");
+require("asAttributes");
+require("asUnits");
+require("asBlocks");
+require("asTurrets");

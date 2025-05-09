@@ -1,0 +1,169 @@
+name: OMG THORIUN REACTOR ALIVE
+description: Dead (good luck :)  )
+
+type: legs
+legCount: 8
+legLength: 120
+legSpeed: 0.5
+legForwardScl: 1.44
+legMoveSpace: 2.73
+
+outlineColor: 3d3d3a
+drownTimeMultiplier: 999
+shake: 8
+drag: 0.5
+fogRadius: 14
+speed: 9
+accel: 0.5
+rotateSpeed: 8.7
+health: 600000
+armor: 10
+hitSize: 26
+weapons: [
+{
+x: 0
+y: 0
+reload: 60
+shootSound: laser
+shoot: {
+shots: 45
+shotDelay: 1
+}
+rotate: true
+rotateSpeed: 999
+top: true
+shootCone: 30
+  bullet: {
+    type: LaserBulletType
+    damage: 150
+	length: 320
+	width: 12
+	lifetime: 30
+  }
+}
+{
+    x: 10
+    y: 0
+    layerOffset: -0.01
+    mirror: true
+	alternate: false
+    reload: 1
+    baseRotation: 90
+    shootSound: shootAlt
+    rotate: true
+    shootCone: 360
+    inaccuracy: 360
+    ignoreRotation: true
+	bullet: {
+type: BasicBulletType
+homingRange: 70
+homingPower: 0.35
+homingDelay: 60
+damage: 80
+lifetime: 150
+reflectable: false
+width: 7
+height: 7
+speed: 6
+trailColor: ff8cec
+trailWidth:  3
+trailLength: 7
+pierceArmor: true
+
+despawnEffect: {
+type: WaveEffect 
+colorFrom: ff8cec
+colorTo: d96cc76d
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: ff8cec
+colorTo: d96cc76d
+sizeFrom: 0 
+sizeTo: 6
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 4
+strokeTo: 0
+} 
+}
+}
+{
+      x: 0,
+      y: 0
+      reload: 180
+	  top: false
+	  layerOffset: 0.001
+	  shake: 30
+	  shootY: 0
+      mirror: false
+      shootSound: laserblast
+      rotate: true
+	  rotateSpeed: 999
+      inaccuracity: 0
+        bullet: {
+        type: laserBulletType
+        width: 90
+        length: 1700
+        damage: 2500
+		pierceBuilding: true
+        lifetime: 50
+		colors: [
+          fcc0f2
+          eb7fd9
+          ffffff
+           ]
+      }
+    }
+	{
+	x: 0
+	y: 0
+	reload: 1200
+	ignoreRotation: true
+	shootOnDeath: true
+	shake: 70
+	rotate: true
+	mirror: false
+	rotateSpeed: 999
+	inaccuracy: 0
+	bullet: {
+	type: BasicBulletType
+	height: 0
+	width: 0
+	collidesTiles: false
+    collides: false
+	despawnEffect: reactorExplosion
+	hitEffect: reactorExplosion
+	splashDamageRadius: 300
+	splashDamage: 7500
+	hittable: false
+	instantDisappear: true
+	  }
+	}
+	{
+	x: 0
+	y: 0
+	shootCone: 360
+	reload: 9999999
+	shoot: {
+	firstShotDelay: 9999999
+	}
+	shootOnDeath: true
+	shootSound: none
+	mirror: false
+	bullet: {
+	   spawnUnit: as-athorium-reactor-ph2
+	   killShooter: true
+	  }
+	}
+]
+loopSound: stanied-brutal-calamity
+loopSoundVolume: 3.5

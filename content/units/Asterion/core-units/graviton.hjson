@@ -1,0 +1,69 @@
+{
+	type: flying
+	outlineColor: 1f1f26
+	name: Attraction
+	description: Guard of the core «Force». Attraction shoots fast healing bullets.
+	flying: true
+	health: 280
+	hitSize: 12.5
+	buildSpeed: 1.05
+	mineTier: 1
+    mineSpeed: 8.0
+    buildRange: 150
+	speed: 3.5
+	range: 120
+	accel: 0.2
+	targetGround: true
+	targetAir: true
+	rotateSpeed: 5.66
+	outlineRadius: 0
+	weapons: [
+		{
+			name: object-finder
+			x: 0
+			y: 0
+			layerOffset: -0.0001
+			recoil: 1
+			top: false
+			layer: 90
+			inaccuracy: 1
+			reload: 4
+			mirror: true
+			alternative: true
+			shootSound: lasershoot
+			bullet: {
+				type: BasicBulletType
+				speed: 6
+				homingPower: 0.15
+				homingRange: 24
+				homingDelay: 5
+				lifetime: 20
+				buildingDamageMultiplier: 0.01
+				damage: 10
+				width: 8
+				height: 8
+				collidesTeam: true
+				healPercent: 2.5
+				hitEffect: 
+				{
+				 type: WaveEffect
+				 sizeFrom: 0
+				 sizeTo: 5
+				 lifetime: 15
+				 strokeFrom: 5
+				 sizeTo: 0
+				 colorFrom: FFC789
+				}
+				despawnEffect: 	{
+				 type: WaveEffect
+				 sizeFrom: 0
+				 sizeTo: 5
+				 lifetime: 15
+				 strokeFrom: 5
+				 sizeTo: 0
+				 colorFrom: FFC789
+				}
+			}
+		}
+	]
+}

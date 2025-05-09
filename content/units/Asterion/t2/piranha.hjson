@@ -1,0 +1,102 @@
+name: piranha
+description: "Slows down enemies with a laser. Capable of taking off. \n[white]Faction: [#d0d8e8]Orion[]."
+type: mech
+outlineColor: 22262b
+research: orion-reconstructor
+speed: 0.50
+flying: false
+hitSize: 12
+itemCapacity: 50
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26 
+mechFrontSway: 0.8
+mechStepParticles: true
+//TODO need step shake?
+//stepShake: 1
+outlineRadius: 4
+canBoost: false
+boostMultiplayer: 1.3
+drownTimeMultiplier: 8
+rotateSpeed: 2.6
+health: 650
+armor: 9
+range: 80
+weapons: [
+  {
+  parts: [
+    {
+      type: RegionPart
+      suffix: -heat
+      progress: warmup
+      blending: additive
+      color: 30fdf3
+      layerOffset: -0.1
+      outline: false
+    }
+  ]  
+  name: piranha-weapon
+  x: -8.5
+  y: 0
+  reload: 30
+  mirror: true
+  recoil: 2
+  layerOffset: -0.01
+  shootSound: sap
+  bullet: {
+    type: SapBulletType
+    sapStrength: 0.4
+    length: 75
+    width: 0.45
+    lifetime: 15
+    damage: 28
+    hitColor: d0d8e8 
+    color: a1b1d0
+    status: slow
+    statusDuration: 20
+    shootEffect: {
+      type: ParticleEffect 
+      colorFrom: d0d8e8
+      colorTo: a1b1d0
+      particles: 5
+      cone: 4
+      length: 12
+      baseLength: 5
+      lightScl: 3
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.5
+      sizeTo: 0 
+      offset: 1
+      lifetime: 20
+    }
+    despawnEffect: {
+      type: WaveEffect 
+       colorFrom: d0d8e8
+       colorTo: a1b1d0
+       sizeFrom: 0 
+       sizeTo: 4
+       lightScl: 4 
+       lightOpacity: 1
+       rotation: 0 
+       strokeFrom: 2
+       strokeTo: 0 
+       lifetime: 15
+     }
+     hitEffect: {
+       type: WaveEffect 
+       colorFrom: d0d8e8
+       colorTo: a1b1d0
+       sizeFrom: 0 
+       sizeTo: 4
+       lightScl: 4 
+       lightOpacity: 1
+       rotation: 0 
+       strokeFrom: 2
+       strokeTo: 0 
+       lifetime: 20
+     }
+   }
+ }
+]

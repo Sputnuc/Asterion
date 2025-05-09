@@ -1,0 +1,37 @@
+type: Pump
+name: Irmenite pump
+description: pump liquid
+pumpAmount: 0.2
+size: 2
+health: 160
+requirements: [
+  irmenite/45
+  whitorite/30
+  ]
+consumes: {
+ power: 1.5
+} 
+squareSprite: false
+category: liquid
+research: {
+  parent: core-force
+  planet: as-asterion
+}
+researchCostMultiplier: 0.25
+
+drawer: {
+    type: DrawMulti
+    drawers: [ 
+    /*
+	{
+    type: DrawPistons
+    sinMag: 4
+    sinScl: 7
+    sides: 4
+    },
+	*/
+    {
+    type: DrawDefault
+    }
+               ]
+}

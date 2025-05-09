@@ -1,0 +1,151 @@
+type: flying
+outlineColor: 1f1f26
+name: Fire
+description: Fires flameable bombs on ground buildings and units.
+flying: true
+health: 8000
+armor: 4
+hitSize: 28
+speed: 4.5
+range: 180
+accel: 0.04
+drag: 0.02
+engineOffset: 7
+engineSize: 4
+trailLength: 10
+circleTarget: true
+targetGround: true
+targetAir: false
+faceTarget: false
+drawCell: false
+rotateSpeed: 8
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -6.75
+        x : 8.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -6.75
+        x : -8.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -8
+        x : -8.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        lifetime: 30
+        particles: 1
+        cone: 0
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0.2
+        interval: 0.000000000000000000000000000001
+        rotateEffect: true
+        y : -8
+        x : 8.25
+    }
+]
+weapons: [
+    {
+        name: flame-bomber
+        minShootVelocity: 0.7
+        x: 0
+        y: 0
+        top: false
+        layer: 0
+        inaccuracy: 45
+        reload: 40
+        mirror: false
+        shootCone: 180
+        ingnoreRotation: true
+        shootSound: none
+        velocityRnd: 0.5
+        shoot: {
+            shots: 6
+            shotDelay: 1
+        }
+        bullet: {
+            type: BombBulletType
+            lifetime: 60
+            splashDamage: 70
+            splashDamageRadius: 35
+            incendChance: 1
+            incendSpread: 35
+            incendAmount: 7
+            collidesTiles: false
+            speed: 3
+            backColor: c75432 
+            frontColor: ff9548
+            width: 14
+            height: 14
+        }
+    }
+]

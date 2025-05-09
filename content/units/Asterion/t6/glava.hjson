@@ -1,0 +1,532 @@
+name: Monarch
+description: "It fires armor-piercing cluster bullets and lasers. The Head, like the Predator, needs to release extra energy, but this time the impulses are much stronger. \n[white]Faction: [#d0d8e8]Orion[]."
+type: mech
+speed: 0.33
+flying: false
+research: raptor
+hitSize: 38
+itemCapacity: 190
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.8
+mechStepParticles: true
+stepShake: 1
+outlineRadius: 6
+drownTimeMultiplier: 8
+rotateSpeed: 1.2
+health: 70000
+armor: 55
+range: 240
+parts: [
+{
+      type: HaloPart
+      y: -15.25
+      radius: 3
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: 1.15
+      haloRadius: 7
+      haloRadiusTo: 14
+      stroke: 7
+      strokeTo: 8
+      shapes: 4
+      triLengthTo: 6
+      triLength: 5
+}
+{
+      type: HaloPart
+      y: -15.25
+      radius: 3
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: 1.15
+      haloRadius: 7
+      haloRadiusTo: 14
+      stroke: 7
+      strokeTo: 8
+      shapes: 4
+      triLengthTo: 3
+      triLength: 2
+      shapeRotation: 180
+}
+{
+      type: HaloPart
+      y: -15.25
+      radius: 5.5
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: -0.70
+      haloRadius: 16
+      haloRadiusTo: 20
+      shapes: 4
+      triLengthTo: 8.5
+      triLength: 7
+}
+{
+      type: HaloPart
+      y: -15.25
+      radius: 5.5
+      tri: true
+	  layer: 110
+      color: a9c5ea
+      haloRotateSpeed: -0.70
+      haloRadius: 16
+      haloRadiusTo: 20
+      shapes: 4
+      triLengthTo: 5
+      triLength: 3
+      shapeRotation: 180
+}
+{
+      type: shapePart
+      y: -15.25
+	  layer: 110
+      hollow: true
+      circle: true
+      color: c7d9f0f
+      stroke: 1.5
+      strokeTo: 2
+      radiusTo: 14
+      radius: 7
+}
+    {
+        type: ShapePart
+        y: -15.25
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 1.2
+        rotateSpeed: 0.8
+        radius: 7
+        radiusTo: 14
+    }
+    {
+        type: ShapePart
+        y: -15.25
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 1.2
+        rotateSpeed: -0.6
+        radius: 7
+        radiusTo: 14
+    }
+{
+      type: shapePart
+      y: -15.25
+	  layer: 110
+      hollow: false
+      circle: false
+	  sides: 60
+      color: c7d9f0f
+      radiusTo: 4
+      radius: 2
+}
+]
+weapons: [
+{
+    name: glava-weapon
+    
+    parts: [
+    {
+        type: RegionPart
+        suffix: -heat
+        progress: warmup
+        blending: additive
+        color: 30fdf3
+        layerOffset: -0.1
+        outline: false
+    }
+    ]
+    
+    shootY: 22.5
+	shake: 15
+	rotationSpeed: 0.6
+	cone: 10
+    shootX: 0
+    x: 35.25
+    y: 4.5
+    layerOffset: -0.01
+    mirror: true
+    rotate: true
+    rotationLimit: 32
+    recoil: 3
+    reload: 45
+    shootSound: mechshoot
+
+    bullet: {
+	type: BasicBulletType
+	backColor: 8798b9
+	trailLength: 16
+	trailWidth: 4
+	trailColor: a1b1d0
+	frontColor: a1b1d0
+    pierceBuilding: true
+	trailInterval: 1
+	trailEffect: [
+	{
+	type: ParticleEffect
+	colorFrom: a1b1d0
+	colorTo: 8798b900
+	particles: 7
+	length: 19
+	baseLength: 9
+	sizeFrom: 2
+	sizeTo: 0
+	lifetime: 60
+	}
+	]
+	shootEffect: {
+          followParent: false
+          particles: 1
+          length: 16
+          baseLength: 20
+          randLength: false
+          lifetime: 60
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 10
+          sizeTo: 25
+          colorFrom: a1b1d0
+          colorTo: a1b1d000
+        }
+    despawnShake: 10
+    pierce: true
+    hitShake: 11
+    height: 60
+    width: 35
+    splashDamageRadius: 32
+    splashDamage: 235
+    lifetime: 22
+    pierceCap: 3
+    damage: 475
+    speed: 21
+	intervalBullets: 2
+    intervalAngle: 0
+    intervalRandomSpread: 0
+    intervalSpread: 10
+	bulletInterval: 1
+	despawnEffect: [
+          {
+           type: ParticleEffect
+           colorFrom: ffffff
+           colorTo: a1b1d0
+           particles: 9
+           cone: 50
+           length: 20
+           baseLength: 30
+           lightScl: 3
+           lightOpacity: 2
+           spin: 0
+           sizeFrom: 3
+           sizeTo: 0
+           offset: 1
+           }
+           {
+           type: ParticleEffect
+           colorFrom: a1b1d0
+           colorTo: 8798b9
+           particles: 12
+           cone: 60
+           length: 30
+           baseLength: 30
+           lightScl: 3
+           lightOpacity: 2
+           spin: 0
+           sizeFrom: 3
+           sizeTo: 0
+           offset: 1
+           }
+           {
+           type: ParticleEffect
+           colorFrom: 8798b9
+           colorTo: 8798b9
+           particles: 9
+           cone: 30
+           length: 35
+           baseLength: 30
+           lightScl: 3
+           lightOpacity: 2
+           spin: 0
+           sizeFrom: 3
+           sizeTo: 0
+           offset: 1
+           }
+           {
+           type: WaveEffect
+           colorFrom: d0d8e8
+           colorTo: a1b1d0
+           sizeFrom: 0
+           sizeTo: 25
+           lightScl: 4
+           lightOpacity: 1
+           rotation: 0
+           strokeFrom: 4
+           strokeTo: 0
+           }
+          ]
+	hitEffect: [
+          {
+           type: ParticleEffect
+           colorFrom: ffffff
+           colorTo: a1b1d0
+           particles: 9
+           cone: 50
+           length: 30
+           baseLength: 5
+           lightScl: 3
+           lightOpacity: 2
+           spin: 0
+           sizeFrom: 3
+           sizeTo: 0
+           offset: 1
+           }
+           {
+           type: ParticleEffect
+           colorFrom: a1b1d0
+           colorTo: 8798b9
+           particles: 12
+           cone: 60
+           length: 40
+           baseLength: 5
+           lightScl: 3
+           lightOpacity: 2
+           spin: 0
+           sizeFrom: 3
+           sizeTo: 0
+           offset: 1
+           }
+           {
+           type: ParticleEffect
+           colorFrom: 8798b9
+           colorTo: 8798b9
+           particles: 9
+           cone: 90
+           length: 50
+           baseLength: 5
+           lightScl: 3
+           lightOpacity: 2
+           spin: 0
+           sizeFrom: 3
+           sizeTo: 0
+           offset: 1
+           }
+           {
+           type: WaveEffect
+           colorFrom: d0d8e8
+           colorTo: a1b1d0
+           sizeFrom: 0
+           sizeTo: 25
+           lightScl: 4
+           lightOpacity: 1
+           rotation: 0
+           strokeFrom: 4
+           strokeTo: 0
+           }
+          ]
+	intervalBullet: {
+
+                type: BasicBulletType
+                homingPower: 0.5
+                backColor: d0d8e8
+                frontColor: a1b1d0
+                trailColor: a1b1d0
+                trailLength: 10
+                trailWidth: 3
+                trailInterval: 46
+                homigRadius: 120
+                damage: 85
+                width: 10
+                height: 10
+                despawnEffect: none
+                hitEffect: none
+                speed: 4
+                drag: 0.09
+                lifetime: 40
+                pierce: true
+                pierceCap: 2
+                pierceBuilding: true 
+                weaveMag: 2
+                weaveScale: 1
+      }
+	 }
+    }
+    {
+        display: false
+        x: 0
+        y: -15
+        mirror: false
+        recoil: 0
+        reload: 5000
+        shootSound: spark
+        shootStatus: high_energy_output
+        shootStatusDuration: 670
+        alwaysShooting: true
+        shoot: {
+            firstShotDelay: 150
+            type: ShootSpread
+            shots: 39
+            shotDelay: 3
+            shotSpread: 360
+        }
+
+        bullet: {
+            type: LightningBulletType
+            knockback: 5
+            damage: 80
+            lifetime: 4
+            hitEffect: hitLancer
+            despawnEffect: none
+            hitEffect: none
+            shootEffect: none
+            lightningColor: ffffff
+            lightningLength: 22
+            inaccuracy: 360
+            lightningLengthRand: 0
+            keepVelocity: false
+            chargeEffect: {
+              type: WaveEffect
+              colorFrom: d0d8e8
+              colorTo: a1b1d0
+              sizeFrom: 90
+              sizeTo: 0
+              lightScl: 4
+              lightOpacity: 1
+              rotation: 0
+              strokeFrom: 0
+              strokeTo: 4
+              lifetime: 150
+                    }
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 1
+                    cone: 360
+                    length: 30
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                    {
+                        type: ParticleEffect
+                        colorFrom: a1b1d0
+                        colorTo: 8798b9
+                        particles: 2
+                        cone: 360
+                        length: 40
+                        baseLength: 5
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0
+                        offset: 1
+                    }
+                    {
+                        type: ParticleEffect
+                        colorFrom: 8798b9
+                        colorTo: 8798b9
+                        particles: 2
+                        cone: 360
+                        length: 50
+                        baseLength: 5
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0
+                        offset: 1
+                    }
+                    ]
+                    }
+                    }
+                    }
+                        {
+    name: glava-weapon-sap
+    x: -20
+    y: -7
+    reload: 15
+    mirror: true
+    top: true
+    rotate: true
+    recoil: 2
+    shootSound: sap
+
+    bullet: {
+        type: SapBulletType
+        sapStrength: 1.6
+        length: 150
+        width: 0.45
+        lifetime: 10
+        damage: 100
+        hitColor: a1b1d0 
+        color: d0d8e8
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: d0d8e8
+colorTo: a1b1d0
+particles: 5
+cone: 4
+length: 8
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1.5
+sizeTo: 0 
+offset: 1
+}
+}
+}
+]
+abilities: [
+	{
+      type: mindustry.entities.abilities.ShieldArcAbility
+	  region: as-glava-shield-l
+      radius: 45
+      angle: 120
+	  angleOffset: 345
+      regen: 2.4
+      cooldown: 190
+	  max: 4700
+	  y: -15
+	  width: 8
+	  whenShooting: true
+    }
+	{
+      type: mindustry.entities.abilities.ShieldArcAbility
+	  region: as-glava-shield-r
+      radius: 45
+      angle: 120
+	  angleOffset: 15
+      regen: 2.4
+      cooldown: 190
+	  max: 4700
+	  y: -15
+	  width: 8
+	  whenShooting: true
+    }
+]

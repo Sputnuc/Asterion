@@ -1,0 +1,215 @@
+  name: Destroyer
+  outlineColor: 22262b
+  size: 9
+  health: 65000
+  maxAmmo: 640
+  canOverdrive: false
+  shake: 95
+  ammoPerShot: 120
+  requirements: [
+    kiten/7450
+    irmenite/5760
+    blacktite/6320
+    magnetite/5200
+    graphene/6170
+    silicate/6520
+  ]
+  research: {
+	parent: terror
+	planet: as-asterion
+  }
+  category: turret
+  reload: 750
+  rotateSpeed: 0.3
+  coolantMultiplier: 0.35
+  shoot: {
+  firstShotDelay: 150
+  }
+  range: 1000
+  ammoTypes: {
+    silicate: {
+      type: BasicBulletType
+	  shootEffect: [
+	  {
+	  type: ParticleEffect
+	  cone: 0
+	  length: 85
+	  baseLength: 20
+	  particles: 12
+	  lifetime: 15
+	  sizeFrom: 3
+	  sizeTo: 0
+	  }
+	    {
+          followParent: false
+          particles: 1
+          length: 34
+          baseLength: 37
+          randLength: false
+          lifetime: 60
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 40
+          sizeTo: 60
+          colorFrom: aaf3e7
+          colorTo: aaf3e700
+        }
+	  ]
+	  smokeEffect: shootBigSmoke
+      damage: 115000
+      ammoMultiplier: 1
+      speed: 40
+      pierceArmor: true
+	  width: 30
+      height: 65
+      color: ffffff
+      backColor: aaf3e7
+      pierce: true
+      trailLength: 35
+	  trailWidth: 8
+	  trailColor: aaf3e7
+      lifetime: 25
+      despawnShake: 45
+      hitEffect: {
+     type: ParticleEffect
+     particles: 12
+     cone: 46
+     length: 36
+     baseLength: 45
+     sizeFrom: 4
+     sizeTo: 0
+     colorFrom: aaf3e7
+     colorTo: aaf3e7
+      }
+     despawnEffect: [
+     {
+     type: ParticleEffect
+     particles: 14
+     cone: 126
+     length: 45
+     baseLength: 50
+     sizeFrom: 16
+     sizeTo: 0
+     colorFrom: aaf3e7
+     colorTo: aaf3e7
+      }
+     {
+     type: ParticleEffect
+     particles: 27
+     cone: 180
+     length: 45
+     baseLength: 80
+     sizeFrom: 8
+     sizeTo: 0
+     colorFrom: aaf3e7
+     colorTo: aaf3e7
+     lifetime: 15
+      }
+      {
+      type: WaveEffect
+      sizeFrom: 30
+      sizeTo: 100
+      colorFrom: ffffff
+      colorTo: aaf3e700
+      strokeFrom: 6
+      strokeTo: 0
+      lifetime: 20
+      }
+      {
+      type: WaveEffect
+      sizeFrom: 33
+      sizeTo: 100
+      colorFrom: ffffff
+      colorTo: aaf3e700
+      strokeFrom: 5
+      strokeTo: 0
+      lifetime: 17
+      }
+      ]
+      intervalBullets: 4
+      bulletInterval: 1
+      intervalBullet: {
+                type: LightningBulletType
+                damage: 75
+                lifetime: 4
+                hitEffect: hitLancer
+                despawnEffect: none
+                hitEffect: none
+                shootEffect: none
+                lightningColor: aaf3e7
+                lightningLength: 11
+                inaccuracy: 360
+                lightningLengthRand: 2
+                keepVelocity: false
+            }
+            trailInterval: 1
+            trailRotation: true
+            trailEffect: [
+            {
+                type: ParticleEffect
+                particles: 17
+                sizeFrom: 3
+                sizeTo: 0
+                colorFrom: aaf3e7
+                colorTo: aaf3e7
+                length: 9
+                baseLength: 12
+            }
+            {
+              type: ParticleEffect
+              particles: 8
+              line: true
+              strokeFrom: 2
+              strokeTo: 0
+              lenFrom: 3
+              lenTo: 6
+              length: 14
+              baseLength: 19
+              colorFrom: aaf3e7
+              colorTo: aaf3e7
+            }
+            	    {
+          followParent: false
+          particles: 1
+          length: 0
+          baseLength: 12
+          randLength: false
+          lifetime: 20
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 10
+          sizeTo: 20 
+          colorFrom: aaf3e7
+          colorTo: aaf3e700
+        }
+            ]
+    }
+  }
+  cooldownTime: 300
+  shootY: 31.5
+  inaccuracy: 0
+  shootSound: rail-shot-1
+  consumes: {
+    power: 566.666666666666666
+	coolant: { 
+       amount: 2
+     }
+  }
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+      {
+        type: RegionPart
+        layer: -1
+        colorTo: 8DFFBF
+        color: 8DFFBF00
+        progress: warmup
+        blending: additive
+        outline: false
+        suffix: -glow
+      }
+   ]
+    }

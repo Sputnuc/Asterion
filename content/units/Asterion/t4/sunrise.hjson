@@ -1,0 +1,171 @@
+Name: Sunrise
+description: "//TODO T7 \n[white]Faction: [#d26e64][Extinguished]."
+type: tank
+hitSize: 28
+flying: false
+omniMovement: false
+health: 11400
+armor: 16
+speed: 0.32
+rotateSpeed: 0.7
+itemCapacity: 0
+outlineColor: 17191f
+outlineRadius: 4
+crushDamage: 1
+treadRects: [
+  {
+  x: -37
+  y: -46
+  width: 30
+  height: 40
+  }
+  {
+  x: -55
+  y: 10
+  width: 56
+  height: 50
+  }
+]
+template: TankUnitType
+treadPullOffset: 4
+research: clearance
+weapons: [
+{
+    name: sunrise-weapon-glav
+    rotate: true
+    x: 0
+    y: 0.5
+    mirror: false
+    shootSound: shockBlast
+    reload: 120
+    recoil: 3
+    rotateSpeed: 4
+    shootStatus: fading-t2
+    shootStatusDuration: 120
+    bullet: {
+        type: BasicBulletType
+        damage: 245
+        splashDamage: 70
+        splashDamageRadius: 30
+        speed: 7
+        lifetime: 40
+        width: 17
+        height: 18
+        backColor: bc5451 
+        frontColor: e98878
+        trailColor: bc5451 
+        trailWidth: 2.55
+        trailLength: 12
+        trailRotation: true
+        trailInterval: 1
+        trailEffect: {
+        type: WaveEffect
+        colorFrom: FFADAB
+        colorTo: FFADAB00
+        sides: 3
+        sizeFrom: 4
+        sizeTo: 5
+        lifetime: 20
+        strokeFrom: 1
+        strokeTo: 0
+        }
+        status: discharge
+        statusDuration: 155
+        shootEffect: none
+        smokeEffect: none
+        hitEffect: none
+        despawnHit: true
+        parts: [
+         {
+         type: HaloPart
+         radius: 4
+         tri: true
+	       layer: 110
+         color: FFADAB 
+         haloRotateSpeed: 2
+         haloRadius: 8
+         haloRadiusTo: 8
+         shapes: 3
+         triLengthTo: 5
+         triLength: 5
+         }
+         {
+         type: HaloPart
+         radius: 4
+         tri: true
+	     layer: 110
+         color: FFADAB 
+         haloRotateSpeed: 2
+         haloRadius: 8
+         haloRadiusTo: 8
+         shapes: 3
+         triLengthTo: 2
+         triLength: 2
+         shapeRotation: 180
+        }
+        ]
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+            {
+                type: ParticleEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                particles: 5
+                length: 24
+                baseLength: 6
+                lightScl: 3
+                lightOpacity: 2
+                spin: 0
+                sizeFrom: 4
+                sizeTo: 0
+                offset: 0
+            }
+            {
+                type: ParticleEffect
+                colorFrom: bc5451
+                colorTo: bc5451
+                particles: 8
+                length: 30
+                lifetime: 20
+                lightScl: 3
+                lightOpacity: 2
+                spin: 0
+                sizeFrom: 3
+                sizeTo: 0
+                offset: 0
+            }
+            {
+                type: WaveEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                sizeFrom: 0
+                sizeTo: 30
+                lightScl: 3
+                lightOpacity: 1
+                sides: 0
+                rotation: 0
+                strokeFrom: 5
+                strokeTo: 0
+            }
+        ]}
+    }
+}
+{
+    name: sunrise-weapon
+    rotate: true
+    x: 13
+    y: -8.5
+    mirror: true
+    shootSound: laser
+    reload: 32
+    recoil: 1
+    bullet: {
+        type: LaserBulletType
+        length: 140
+        colors: ["bc5451", "e98878", "FFFFFF"]
+        damage: 80
+        lifetime: 10
+    }
+}
+]

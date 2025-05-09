@@ -1,0 +1,383 @@
+name: perfect-spider
+type: legs
+hitSize: 17
+speed: 0.7
+rotateSpeed: 2
+hovering: true
+targetGround: true
+targetAir: true
+deathSound: spider-death
+faceTarget: true
+outlineColor: 24232e
+outlineRadius: 0
+outlineLegRadius: 0
+drawCell: false
+hovering: true
+lockLegBase: true
+legCount: 5
+legBaseOffset: 7
+legGroupSize: 3
+legMoveSpace: 1
+legForwardScl: 1
+legLength: 16
+legExtension: -4
+legMinLength: 1
+legMaxLength: 2
+legLengthScl: 1.5
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+shadowElevation: 0.5
+health: 150
+armor: 0
+range: 250
+
+deathExplosionEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: ffba7b
+colorTo: ffba7b
+particles: 6
+clip: 70
+cone: 360
+lifetime: 300
+length: 5
+baseLength: 5
+lightScl: 0
+lifetime: 180
+lightOpacity: 0
+spin: 0
+sizeFrom: 3
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: d88464
+particles: 12
+cone: 360
+length: 6
+clip: 70
+lifetime: 300
+baseLength: 5
+lightScl: 0
+lightOpacity: 0
+spin: 0
+sizeFrom: 5
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: af6052
+lifetime: 300
+particles: 12
+clip: 70
+cone: 360
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+]
+}
+
+weapons: [
+{
+
+display: false
+x: 7.75
+y: -7.75
+shootX: 0
+shootY: 0
+mirror: false
+layerOffset: -0.01
+baseRotation: -190
+shootCone: 360
+inaccuracy: 10
+velocityRnd: 0.2
+ignoreRotation: true
+reload: 40
+recoil: 1
+shootSound: imperfect-shoot
+
+bullet: {
+type: BasicBulletType
+width: 13
+height: 13
+homingRange: 300
+homingPower: 0.5
+homingDelay: 13.5
+speed: 5
+collidesGround: true 
+lifetime: 100
+damage: 34
+backColor: ffba7b 
+frontColor: ffba7b 
+intervalBullets: 2
+bulletInterval: 1
+intervalSpread: 180
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: af6052
+particles: 4
+cone: 4
+drag: 0.3
+length: 8
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+hitEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.7
+particles: 7
+cone: 5
+length: 8
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.7
+particles: 7
+cone: 5
+length: 9
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+
+intervalBullet: {
+type: BasicBulletType
+width: 1
+height: 1
+speed: 1
+collidesGround: true 
+lifetime: 1
+damage: 1
+backColor: d88464 
+frontColor: d88464 
+
+hitEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.4
+particles: 2
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b
+colorTo: af6052
+drag: 0.7
+particles: 2
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1
+sizeTo: 0 
+offset: 1
+}
+}
+}
+}
+{
+
+display: false
+x: 4.5
+y: -9.5
+shootX: 0
+shootY: 0
+mirror: false
+baseRotation: -160
+shootCone: 360
+inaccuracy: 20
+velocityRnd: 0.2
+ignoreRotation: true
+layerOffset: -0.01
+reload: 20
+recoil: 1
+shootSound: imperfect-shoot
+
+bullet: {
+type: BasicBulletType
+width: 8
+height: 8
+homingRange: 300
+homingPower: 0.5
+homingDelay: 13.5
+speed: 4
+collidesGround: true 
+lifetime: 110
+damage: 30
+backColor: d88464 
+frontColor: d88464 
+intervalBullets: 2
+bulletInterval: 1
+intervalSpread: 180
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b
+colorTo: af6052
+particles: 7
+cone: 4
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+hitEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.7
+particles: 8
+cone: 5
+length: 8
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.7
+particles: 8
+cone: 5
+length: 9
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 4
+sizeTo: 0 
+offset: 1
+}
+
+intervalBullet: {
+type: BasicBulletType
+width: 1
+height: 1
+speed: 1
+collidesGround: true 
+lifetime: 1
+damage: 1
+backColor: d88464 
+frontColor: d88464 
+
+hitEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.4
+particles: 2
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1
+sizeTo: 0 
+offset: 1
+}
+despawnEffect: {
+type: ParticleEffect 
+colorFrom: ffba7b 
+colorTo: af6052
+drag: 0.7
+particles: 2
+cone: 360
+length: 6
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1
+sizeTo: 0 
+offset: 1
+}
+}
+}
+}
+{
+
+    minShootVelocity: 0.01
+
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+    reload: 240
+    shootSound: spider-walk
+bullet: {
+    type: BasicBulletType
+    maxRange: 152
+    height: 0
+    width: 0
+
+    lifetime: 10
+    damage: 0
+    speed: 1
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+}
+}
+]

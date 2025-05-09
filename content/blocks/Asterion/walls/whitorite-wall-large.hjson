@@ -1,0 +1,15 @@
+type: Wall
+name: Whitorite large wall
+health: 2560
+armor: 2
+size: 2
+requirements: [
+  whitorite/24
+]
+category: defense
+research: {
+parent: whitorite-wall
+planet: as-asterion
+}
+researchCostMultiplier: 0.20
+buildCostMultiplier: 0.5

@@ -1,0 +1,273 @@
+name: Sizida
+description: "Fires a large amount of stars at enemy targets on a long distance"
+details: "Constellation of DEATH"
+type: legs
+outlineColor: 2b2e3d
+speed: 0.2
+flying: false
+hovering: true
+drawCell: false
+hitSize: 38
+itemCapacity: 0
+targetAir: true
+targetGround: true
+baseLegStraightness: 0.5
+legLength: 45
+legCount: 4
+lockLegBase: true
+legExtension: -4
+legBaseOffset: 14.5
+stepShake: 1.2
+outlineRadius: 4
+drownTimeMultiplier: 8
+rotateSpeed: 1.6
+health: 19850
+armor: 8
+abilities : [{
+        
+        shootSound : none
+        minSpeed : 0
+        maxSpeed : 0
+        damage : 0
+        chance : 1
+        length : 1
+        color : 00000000
+        type : MoveLightningAbility
+        display: false
+        
+        shootEffect : {
+            particles : 1
+            colorFrom : 8798b999
+            sizeFrom : 35
+            lifetime : 15
+            colorTo : ffffff00
+            sizeTo : 35
+            length : 0.01
+            offset: -90
+            region : as-sizida-symbols
+            layer : 99
+            type : ParticleEffect
+        }
+}]
+
+weapons: [
+{ 
+    name: star-reactor
+    shootY: 0
+    shootX: 0
+    x: 0
+    y: -4
+    layerOffset: -0.01
+    mirror: false
+    rotate: false
+    rotationLimit: 0
+    recoil: 0
+    reload: 470
+    cooldownTime: 110
+    inaccuracy: 4
+    parentizeEffects: true
+    velocityRnd: 0.1
+    shootStatus: unmoving
+    shootStatusDuration: 110
+    shoot: {
+        type: ShootMulti
+        firstShotDelay: 110
+        shots: 3
+        shotDelay: 3
+        source: {
+             type: ShootAlternate
+             firstShotDelay: 110
+             shots: 3
+             shotDelay: 45
+        }
+        dest: [
+            {
+             shots: 3
+             shotDelay: 3
+            }
+         ]
+    }
+    shootSound: shockBlast
+    bullet: {
+        type: BasicBulletType
+        sprite: mine-bullet
+        backSprite: large-bomb-back
+        damage: 125
+        splashDamage: 45
+        splashDamageRadius: 32
+        speed: 8
+        lifetime: 60
+        width: 20
+        height: 20
+        backColor: 8798b9 
+        frontColor: a1b1d0
+        trailColor: 8798b9 
+        trailWidth: 3
+        trailLength: 8
+        despawnHit: true
+        hitEffect: {
+                type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 9
+                    cone: 360
+                    length: 30
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                {
+                    type: ParticleEffect
+                    colorFrom: a1b1d0
+                    colorTo: 8798b9
+                    particles: 12
+                    cone: 360
+                    length: 40
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                {
+                    type: ParticleEffect
+                    colorFrom: 8798b9
+                    colorTo: 8798b9
+                    particles: 9
+                    cone: 360
+                    length: 50
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                {
+                    type: WaveEffect
+                    colorFrom: d0d8e8
+                    colorTo: a1b1d0
+                    sizeFrom: 0
+                    sizeTo: 20
+                    lightScl: 4
+                    lightOpacity: 1
+                    rotation: 0
+                    strokeFrom: 4
+                    strokeTo: 0
+                }
+            ]   
+        }
+        shootEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 9
+                    cone: 360
+                    length: 25
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                {
+                    type: ParticleEffect
+                    colorFrom: a1b1d0
+                    colorTo: 8798b9
+                    particles: 12
+                    cone: 360
+                    length: 30
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                {
+                    type: ParticleEffect
+                    colorFrom: 8798b9
+                    colorTo: 8798b9
+                    particles: 9
+                    cone: 360
+                    length: 35
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                {
+                    type: WaveEffect
+                    colorFrom: d0d8e8
+                    colorTo: a1b1d0
+                    sizeFrom: 0
+                    sizeTo: 20
+                    lightScl: 4
+                    lightOpacity: 1
+                    rotation: 0
+                    strokeFrom: 4
+                    strokeTo: 0
+                }
+            ]
+        }
+        despawnEffect: none
+        smokeEffect: none
+        chargeEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: WaveEffect
+                colorFrom: a1b1d0
+                colorTo: a1b1d0
+                sizeFrom: 30
+                sizeTo: 0
+                lightScl: 10
+                lightOpacity: 1
+                sides: 0
+                lifetime: 110
+                rotation: 0
+                strokeFrom: 6
+                strokeTo: 0
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: 8798b9
+                colorTo: a1b1d0
+                region: mine-bullet
+                spin: 5
+                particles: 1
+                cone: 360
+                length: 0
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 110
+                sizeFrom: 0
+                sizeTo: 10
+                offset: 0
+            }
+        ]
+        }
+    }
+    
+}
+]

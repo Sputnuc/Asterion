@@ -1,6 +1,6 @@
 //localizedName: Asterion
 generator: SerpuloPlanetGenerator
-defaultCore: Coreforce
+defaultCore: core-force
 
 hiddenItems: [
     "copper"
@@ -70,19 +70,19 @@ allowLaunchToNumbered: false
 
 mesh: [
  {
- //pinky gray
+ //gray
     type: NoiseMesh
 	bloom: true
     seed: 573
-    color1: c2b4b6
-    color2: ab9599
-    divisions: 5.4
+    color1: 947863
+    color2: 664d3a
+    divisions: 3
     radius: 0.815
-    octaves: 7.8
-    persistence: 0.43
-	coct: 1.5
-    cper: 2.1
-    scl: 0.54
+    octaves: 4
+    persistence: 0.9
+	coct: 1.1
+    cper: 1.1
+    scl: 0.001
     mag: 1.2
  }
  {
@@ -90,8 +90,8 @@ mesh: [
     type: NoiseMesh
 	bloom: false
     seed: 163
-    color1: 827465
-    color2: 7a6a61
+    color1: 473e37
+    color2: 241e1a
     divisions: 5.7
     radius: 0.83
     octaves: 7.3
@@ -106,24 +106,24 @@ mesh: [
     type: NoiseMesh
 	bloom: true
     seed: 821
-    color1: 7275c4
-    color2: 8c72c4
-    divisions: 5.6
-    radius: 0.80
-    octaves: 8.4
-    persistence: 0.85
-	coct: 2.3
-    cper: 2.6
-    scl: 0.83
-    mag: 1.6
+    color1: 70b0db
+    color2: 387196
+    divisions: 1
+    radius: 0.79
+    octaves: 1
+    persistence: 0.8
+	coct: 0.9
+    cper: 0.9
+    scl: 0.8
+    mag: 1
  }
  {
  //red
     type: NoiseMesh
 	bloom: true
     seed: 374
-    color1: ab5e46
-    color2: 9c6343
+    color1: 171717
+    color2: 0a0a09
     divisions: 6.1
     radius: 0.78
     octaves: 9.3

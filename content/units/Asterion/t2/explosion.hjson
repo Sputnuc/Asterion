@@ -1,0 +1,108 @@
+name: Arson
+description: "Shoots from back flammable bullets. \n[white]Faction: [#c75432]Pyro[]."
+type: legs
+outlineColor: 2b2828
+speed: 0.7
+flying: false
+research: spark-u
+hovering: true
+hitSize: 16
+itemCapacity: 0
+targetAir: true
+targetGround: true
+legLength: 16
+legCount: 4
+lockLegBase: true
+legExtension: -2.3
+stepShake: 1
+outlineRadius: 4
+drownTimeMultiplier: 8
+rotateSpeed: 2.2
+health: 780
+armor: 5
+immunities: [
+    burning
+]
+weapons: [
+    {
+    name: explosion-weapon-360
+    x: 0
+    y: 3
+    mirror: false
+    recoil: 1
+    reload: 40
+    baseRotation: 0
+    shootSound: shootAlt
+    rotate: false
+    shootCone: 10
+    inaccuracy: 10
+    xRand: 3
+    shoot: {
+    shots: 4
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 18
+        drag: 0.002
+        lifetime: 17
+        width: 8
+        height: 9
+        speed: 5
+        incendChance: 1
+        incendSpread: 6
+        incendAmount: 3
+        backColor: c75432 
+        frontColor: ff9548
+        trailColor: c75432 
+        trailWidth: 2
+        trailLength: 6
+        shootEffect: {
+            type: ParticleEffect 
+            colorFrom: ff9548
+            colorTo: c75432
+            particles: 7
+            cone: 20
+            length: 7
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 2
+            sizeTo: 0 
+            offset: 1
+        }
+        despawnEffect:{
+            type: ParticleEffect 
+            colorFrom: ff9548
+            colorTo: c75432
+            particles: 15
+            cone: 360
+            length: 15
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            lifetime: 55
+            spin: 0
+            sizeFrom: 2.5
+            sizeTo: 0 
+            offset: 0
+        }
+        hitEffect:{
+            type: ParticleEffect 
+            colorFrom: ff9548
+            colorTo: c75432
+            particles: 15
+            cone: 360
+            length: 15
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            lifetime: 55
+            spin: 0
+            sizeFrom: 2.5
+            sizeTo: 0 
+            offset: 0
+        }
+    }
+    }
+]

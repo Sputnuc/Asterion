@@ -1,0 +1,13 @@
+type: PayloadConveyor
+name: "Mass conveyor"
+description: "Transports payload forward."
+category: units
+research: core-force
+requirements: [
+irmenite/15
+whitorite/4
+
+]
+canOverdrive: false
+payloadLimit: 4
+researchCostMultiplier: 0.5

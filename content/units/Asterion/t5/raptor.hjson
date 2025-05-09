@@ -1,0 +1,270 @@
+name: raptor
+description: "Fires a volley of lasers. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the Orion... (Or not). \n[white]Faction: [#d0d8e8]Orion[]."
+type: mech
+speed: 0.40
+flying: false
+research: orion-assembler
+hitSize: 28
+itemCapacity: 130
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.8
+mechStepParticles: true
+stepShake: 1
+outlineRadius: 5
+drownTimeMultiplier: 8
+rotateSpeed: 2.6
+health: 23000
+armor: 21
+range: 240
+parts: [
+{
+      type: HaloPart
+      y: -11.75
+      radius: 4.5
+      radiusTo: 5
+      tri: true
+      layer: 110
+      color: a9c5ea
+      haloRotateSpeed: 2.1
+      haloRadius: 7
+      haloRadiusTo: 7
+      shapes: 4
+      triLengthTo: 7
+      triLength: 5
+}
+{
+      type: HaloPart
+      y: -11.75
+      radius: 4.5
+      radiusTo: 5
+      tri: true
+      layer: 110
+      color: a9c5ea
+      haloRotateSpeed: 2.1
+      haloRadius: 7
+      haloRadiusTo: 7
+      shapes: 4
+      triLengthTo: 2.5
+      triLength: 2.9
+      shapeRotation: 180
+}
+{
+     type: ShapePart
+     y: -11.75
+     hollow: true
+     circle: true
+     layer: 110
+     color: a9c5ea
+     stroke: 1.2
+     strokeTo: 1.2
+	 rotateSpeed: 0.8
+     radius: 7
+	 radiusTo: 7
+}
+{
+     type: ShapePart
+     y: -11.75
+     hollow: true
+     circle: true
+     layer: 110
+     color: a9c5ea
+     stroke: 1.2
+     strokeTo: 1.2
+	 rotateSpeed: 0.8
+     radius: 1.5
+	 radiusTo: 1.9
+}
+]
+weapons: [
+{
+    name: raptor-weapon
+    cone: 45
+    parts: [
+    {
+        type: RegionPart
+        suffix: -heat
+        progress: warmup
+        blending: additive
+        color: 30fdf3
+        layerOffset: -0.1
+        outline: false
+    }
+    ]
+    
+    shootY: 17.5
+	shake: 8
+    shootX: 0
+    x: -24.5
+    y: 0
+	cone: 50
+    layerOffset: -0.01
+    mirror: true
+    rotate: true
+    rotationLimit: 45
+    cooldownTime: 75
+	parentizeEffects: true
+    recoil: 2
+    reload: 45
+    shootSound: blaster-shot-2
+    bullet: {
+     damage: 195
+     pierce: true
+     pierceCap: 2
+     pierceBuilding: true
+     height: 19
+     width: 16
+     backColor: 4165AB
+     frontColor: 9DBDFA
+     speed: 12
+     lifetime: 30
+     trailLength: 14
+     trailWidth: 3
+     trailColor: 9DBDFA
+     trailInterval: 1
+     trailRotation: true
+     trailEffect: {
+      type: ParticleEffect
+      particles: 8
+      sizeFrom: 1.5
+      sizeTo: 0
+      colorFrom: 9DBDFA
+      colorTo: 4165AB
+      length: 4.5
+      baseLength: 4.8
+    }
+     lightning: 5
+     lightningLength: 10
+     lightningDamage: 67
+     lightningColor: 9DBDFA
+     intervalBullets: 2
+     bulletInterval: 2
+     intervalRandomSpread: 360
+     intervalBullet: {
+        type: LightningBulletType
+        damage: 45
+        lifetime: 4
+        hitEffect: hitLancer
+        despawnEffect: none
+        hitEffect: none
+        shootEffect: none
+        lightningColor: 9DBDFA
+        lightningLength: 5
+        inaccuracy: 360
+        lightningLengthRand: 1
+        keepVelocity: false
+    }
+    }
+   }
+    {
+        display: false
+        x: 0
+        y: -11.75
+        mirror: false
+        recoil: 0
+        reload: 3000
+        shootSound: spark
+        shootStatus: high_energy_output
+        shootStatusDuration: 450
+        alwaysShooting: true
+        shoot: {
+            firstShotDelay: 100
+            type: ShootSpread
+            shots: 30
+            shotDelay: 19
+            shotSpread: 360
+        }
+
+        bullet: {
+            type: LightningBulletType
+            damage: 30
+            lifetime: 1
+            hitEffect: hitLancer
+            despawnEffect: none
+            hitEffect: none
+            shootEffect: none
+            lightningColor: ffffff
+            lightningLength: 20
+            inaccuracy: 360
+            lightningLengthRand: 0
+            keepVelocity: false
+            chargeEffect: {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 45
+                        sizeTo: 0
+                        lightScl: 4
+                        lightOpacity: 1
+                        rotation: 0
+                        strokeFrom: 0
+                        strokeTo: 3
+                        lifetime: 90
+                    }
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 9
+                    cone: 360
+                    length: 25
+                    baseLength: 5
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    offset: 1
+                }
+                    {
+                        type: ParticleEffect
+                        colorFrom: a1b1d0
+                        colorTo: 8798b9
+                        particles: 12
+                        cone: 360
+                        length: 30
+                        baseLength: 5
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0
+                        offset: 1
+                    }
+                    {
+                        type: ParticleEffect
+                        colorFrom: 8798b9
+                        colorTo: 8798b9
+                        particles: 9
+                        cone: 360
+                        length: 35
+                        baseLength: 5
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0
+                        offset: 1
+                    }
+                    {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 0
+                        sizeTo: 12
+                        lightScl: 4
+                        lightOpacity: 1
+                        rotation: 0
+                        strokeFrom: 4
+                        strokeTo: 0
+                    }
+                    ]
+                    }
+                    }
+                    }
+                    ]

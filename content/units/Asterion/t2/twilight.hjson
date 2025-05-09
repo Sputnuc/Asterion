@@ -1,0 +1,88 @@
+type: tank
+name: Twilight
+description: "//TODO T7 \n[white]Faction: [#d26e64][Extinguished]."
+hitSize: 14
+flying: false
+omniMovement: false
+health: 980
+armor: 7
+speed: 0.37
+rotateSpeed: 1.1
+itemCapacity: 0
+outlineColor: 17191f
+outlineRadius: 4
+treadRects: [
+  {
+  x: -19
+  y: -28
+  width: 20
+  height: 24
+  }
+  {
+  x: -16
+  y: 3
+  width: 17
+  height: 24
+  }
+]
+template: TankUnitType
+treadPullOffset: 4
+research: mist
+weapons: [
+{
+    name: twilight-weapon
+    rotate: true
+    x: 0
+    y: -1
+    mirror: false
+    shootSound: laser
+    reload: 55
+    recoil: 1.5
+    predictTarget: false
+    shootStatus: fading-t1
+    shootStatusDuration: 55
+    bullet: {
+        type: BasicBulletType
+        shootEffect: none
+        smokeEffect: none
+        hitEffect: none
+        despawnEffect: none
+        lifetime: 105
+        speed: 1
+        damage: 0
+        width: 0
+        height: 0
+        bulletInterval: 110
+        intervalBullets: 3
+        intervalSpread: 0
+        intervalRandomSpread: 20
+        intervalBullet: {
+        type: BasicBulletType
+        sprite: missile-large
+        damage: 24
+        speed: 7
+        lifetime: 15
+        width: 7
+        height: 11
+        backColor: bc5451 
+        frontColor: e98878
+        trailColor: bc5451 
+        trailWidth: 2
+        trailLength: 4
+        homingPower: 0.4
+        homingDelay: 10
+        shootEffect: none
+        smokeEffect: none
+        }
+        spawnBullets: [
+            {
+            type: LaserBulletType
+            length: 105
+            colors: ["bc5451", "e98878", "FFFFFF"]
+            damage: 50
+            lifetime: 25
+            }
+        ]
+    }
+}
+]
