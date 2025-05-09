@@ -17,7 +17,8 @@ filter: [
  as-whitorite-wall-large,
  as-irmenite-wall-large,
  as-magnetite-wall-large,
- as-part-orion-core
+ as-part-orion-core,
+ as-silicate-wall-large
 ]
 research: mass-conveyor
 squareSprite: true
