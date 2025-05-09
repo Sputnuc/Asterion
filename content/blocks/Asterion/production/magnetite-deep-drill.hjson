@@ -21,8 +21,8 @@
 	consumes: {
          power: 5
 			 liquids: [
-			   methane/0.25
-			   zion/0.25
+			   methane/0.3
+			   zion/0.175
 			 ]
 	}
     outputItem: magnetite/1
