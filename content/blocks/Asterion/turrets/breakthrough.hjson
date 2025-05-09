@@ -12,13 +12,15 @@
 	parent: splinter
 	planet: as-asterion
   }
+  ammoPerShot: 4
+  maxAmmo: 64
   category: turret
-  reload: 40
+  reload: 15
   shake: 2
   rotateSpeed: 1.5
   shoot: {
-  shots: 4
-  shotDelay: 50
+  shots: 5
+  shotDelay: 20
   }
   range: 220
   powerUse: 100
@@ -28,7 +30,7 @@
 	  shootEffect: [shootBigColor,
 	    {
           type: ParticleEffect
-          particles: 14
+          particles: 6
           sizeFrom: 6
           sizeTo: 0
           length: 32
@@ -38,23 +40,24 @@
           colorTo: 85aac7
           cone: 15
         }]  
+      ammoMultiplier: 1
 	  smokeEffect: shootBigSmoke
-      damage: 55
+      damage: 35
       speed: 15
 	  width: 8
       height: 8
       pierce: true
       pierceCap: 9
       trailLength: 16
-	  trailWidth: 5
+	  trailWidth: 3
 	  trailColor: abe0e5
       lifetime: 14.666666666666666666666666666667
       hitEffect: {
      type: ParticleEffect
-     particles: 7
+     particles: 4
      cone: 46
      length: 7
-     baseLength: 8 
+     baseLength: 2
      sizeFrom: 4
      sizeTo: 0
      colorFrom: abe0e5
@@ -62,10 +65,10 @@
       }
      despawnEffect: {
      type: ParticleEffect
-     particles: 9
+     particles: 5
      cone: 126
      length: 7
-     baseLength: 17
+     baseLength: 3
      sizeFrom: 4
      sizeTo: 0
      colorFrom: abe0e5
@@ -78,7 +81,7 @@
            {
 		  type: ParticleEffect
 		  region: circle
-          particles: 14
+          particles: 6
           sizeFrom: 6
           sizeTo: 0
           length: 32
@@ -90,17 +93,17 @@
 		   }
 		  ]  
 	  smokeEffect: shootBigSmoke
-	  reloadMultiplier: 0.5
+	  reloadMultiplier: 0.60
 	  width: 8
       height: 8
-      damage: 75
+      damage: 45
 	  status: melting
 	  statusDuration: 300
       speed: 15
       pierce: true
       pierceCap: 9
       trailLength: 16
-	  trailWidth: 5
+	  trailWidth: 3
 	  trailColor: f3a83f
       lifetime: 14.666666666666666666666666666667
       hitEffect: blastExplosion
@@ -109,8 +112,8 @@
   }
   cooldownTime: 45
   shootY: 2.5
-  inaccuracy: 0
-  shootSound: shootBig
+  inaccuracy: 1.5
+  shootSound: piew
   consumes: {
     power: 2
 	coolant: { 

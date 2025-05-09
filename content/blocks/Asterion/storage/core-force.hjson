@@ -1,5 +1,5 @@
 type: CoreBlock
-name: "Core Force"
+name: "Core «Force»"
 description: "The first core, small capacity of items, nothing special."
 
 squareSprite: false           //Квадратный спрайт? (Ставьте false)

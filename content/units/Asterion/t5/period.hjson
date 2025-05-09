@@ -7,9 +7,9 @@ engineSize : 0
 flying : true
 hitSize : 42
 health : 19700
-speed : 0.86
-accel : 0.1
-armor : 32
+speed : 1.4
+accel : 0.5
+armor : 28
 name : Period
 description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
 type : flying
@@ -141,7 +141,7 @@ weapons: [{
         keepVelocity: false
         lifetime: 80
         damage: 00000000.1
-        splashDamage: 120
+        splashDamage: 330
         splashDamageRadius: 26
         drag: 0.01
         shrinkY: 0
@@ -289,7 +289,7 @@ weapons: [{
             intervalBullet: {
                 type: BasicBulletType
                 speed: 7
-                damage: 25
+                damage: 145
                 shrinkY: 0
                 shrinkX: 0
                 width: 14
@@ -304,7 +304,7 @@ weapons: [{
                 trailColor: 74c1e8
                 trailWidth: 1.5
                 trailLength: 12
-                homingPower: 0.1
+                homingPower: 0.01
                 homingRange: 120
                 homingDelay: 10
                 hitEffect: [

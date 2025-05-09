@@ -69,8 +69,8 @@ weapons: [{
     bullet : {
         hitEffect: blastExplosion
         keepVelocity: false
-        lifetime: 50
-        drag: -0.06
+        lifetime: 30
+        drag: -0.05
         damage: 27
         height: 15
         speed: 1.5

@@ -132,7 +132,7 @@ shootWarmupSpeed: 0.1
 layerOffset: -0.01
 reload: 75
 recoil: 1
-shootSound: spider-shoot
+shootSound: "spider-shoot"
  
 bullet: {
 type: BasicBulletType

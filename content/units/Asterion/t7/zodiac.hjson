@@ -664,7 +664,7 @@ weapons: [
         name: zodiac-bullet-hell
         outlineRadius:
         shake: 2
-        rotateSpeed: 1.7
+        rotateSpeed: 2.7
         parentizeEffects: true
         alternate: false
         cone: 30
@@ -674,7 +674,7 @@ weapons: [
         y: 6
         layerOffset: 0.01
         inaccuracy: 4
-        velocityRnd: 0.2
+        velocityRnd: 0.05
         mirror: true
         shoot: {
             shots: 4
@@ -683,7 +683,7 @@ weapons: [
         rotate: true
         recoil: 1
         reload: 10
-        shootSound: blaster
+        shootSound: piew
         bullet: {
             chargeEffect: {
                 type: WaveEffect
@@ -744,7 +744,7 @@ weapons: [
         name: zodiac-bullet-hell
         outlineRadius:
         shake: 2
-        rotateSpeed: 1.7
+        rotateSpeed: 2.7
         parentizeEffects: true
         alternate: true
         cone: 30
@@ -754,7 +754,7 @@ weapons: [
         y: -12.25
         layerOffset: 0.01
         inaccuracy: 4
-        velocityRnd: 0.2
+        velocityRnd: 0.1
         mirror: true
         shoot: {
             shots: 4
@@ -763,7 +763,7 @@ weapons: [
         rotate: true
         recoil: 1
         reload: 15
-        shootSound: blaster
+        shootSound: piew
         bullet: {
             chargeEffect: {
                 type: WaveEffect

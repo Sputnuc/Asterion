@@ -31,7 +31,7 @@ weapons: [
     mirror: true
     recoil: 1
     reload: 30
-    shootSound: shootAlt
+    shootSound: piew
     rotate: true
     rotationLimit: 75
     rotateSpeed: 1.5

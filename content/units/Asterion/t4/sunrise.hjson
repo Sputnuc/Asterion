@@ -36,7 +36,7 @@ weapons: [
     x: 0
     y: 0.5
     mirror: false
-    shootSound: shockBlast
+    shootSound: shootPierce
     reload: 120
     recoil: 3
     rotateSpeed: 4
@@ -47,6 +47,9 @@ weapons: [
         damage: 245
         splashDamage: 70
         splashDamageRadius: 30
+        pierce: true
+        pierceCap: 3
+        pierceBuilding: true
         speed: 7
         lifetime: 40
         width: 17
