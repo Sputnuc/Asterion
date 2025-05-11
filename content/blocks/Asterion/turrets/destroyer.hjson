@@ -4,8 +4,10 @@
   health: 65000
   maxAmmo: 640
   canOverdrive: false
+  recoil: 7
+  unitSort: strongest
   shake: 95
-  ammoPerShot: 120
+  ammoPerShot: 280
   requirements: [
     kiten/7450
     irmenite/5760
@@ -19,7 +21,7 @@
 	planet: as-asterion
   }
   category: turret
-  reload: 750
+  reload: 450
   rotateSpeed: 0.3
   coolantMultiplier: 0.35
   shoot: {
@@ -29,6 +31,36 @@
   ammoTypes: {
     silicate: {
       type: BasicBulletType
+      scaleLife: true
+      chargeEffect: [
+      {
+       type: ParticleEffect
+       particles: 19
+       length: 140
+       baseLength: -140
+       cone: 360
+       sizeFrom: 0
+       sizeTo: 6
+       lifetime: 130
+       colorFrom: aaf3e700
+       colorTo: ffffff
+      }
+       {
+       type: ParticleEffect
+       particles: 14
+       length: 240
+       baseLength: -240
+       cone: 360
+       line: true
+       lenFrom: 5
+       lenTo: 7
+       strokeFrom: 0
+       strokeTo: 2
+       lifetime: 135
+       colorFrom: aaf3e700
+       colorTo: ffffff
+      }
+      ]
 	  shootEffect: [
 	  {
 	  type: ParticleEffect
@@ -127,6 +159,44 @@
       lifetime: 17
       }
       ]
+      fragBullets: 8
+      fragBullet: {
+       type: BasicBulletType
+       pierce: true
+       speed: 14
+       lifetime: 15
+       damage: 7800
+       trailLength: 7.3
+	   trailWidth: 3
+       width: 10
+       height: 13
+	   trailColor: aaf3e7
+       despawnEffect:
+     {
+     type: ParticleEffect
+     particles: 8
+     cone: 175
+     length: 21
+     baseLength: 10
+     sizeFrom: 7
+     sizeTo: 0
+     colorFrom: aaf3e7
+     colorTo: aaf3e7
+      }
+      hitEffect:
+     {
+     type: ParticleEffect
+     particles: 4
+     cone: 26
+     length: -14
+     baseLength: 10
+     sizeFrom: 4
+     sizeTo: 0
+     colorFrom: aaf3e7
+     colorTo: aaf3e7
+     lifetime: 15
+      }
+      }
       intervalBullets: 4
       bulletInterval: 1
       intervalBullet: {
@@ -188,7 +258,7 @@
     }
   }
   cooldownTime: 300
-  shootY: 31.5
+  shootY: 5
   inaccuracy: 0
   shootSound: rail-shot-1
   consumes: {
@@ -202,6 +272,34 @@
    basePrefix: ast-
    parts: [
       {
+       x: 0
+       y: 5
+       type: ShapePart
+       circle: true
+       hollow: false
+       progress: charge
+       radius: 0
+       radiusTo: 6.5
+       layer: 110
+       color: aaf3e7
+       colorTo: ffffff
+      }
+      {
+       x: 0
+       y: 5
+       type: ShapePart
+       circle: true
+       hollow: true
+       progress: charge
+       radius: 0
+       radiusTo: 12
+       stroke: 0
+       strokeTo: 1.8
+       layer: 110
+       color: aaf3e7
+       colorTo: ffffff
+      }
+      {
         type: RegionPart
         layer: -1
         colorTo: 8DFFBF
@@ -210,6 +308,42 @@
         blending: additive
         outline: false
         suffix: -glow
+      }
+      {
+        type: RegionPart
+        progress: warmup
+        mirror: true
+        suffix: -wing
+        under: true
+        x: 24.5
+        y: -21.5
+        moveRot: -15
+        moveY: -1
+        moveX: -4
+      }
+      {
+        type: RegionPart
+        progress: recoil
+        mirror: false
+        suffix: -barrel
+        under: true
+        x: 0
+        y: 0
+        moveY: -4
+        moveX: 0
+        children: [
+       {
+        type: RegionPart
+        layer: -1
+        colorTo: 8DFFBF
+        color: 8DFFBF00
+        progress: warmup
+        blending: additive
+        outline: false
+        suffix: -barrel-glow
+      }
+
+	  ]
       }
    ]
     }

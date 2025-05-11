@@ -16,8 +16,8 @@ stepShake: 3
 outlineRadius: 5
 drownTimeMultiplier: 999
 rotateSpeed: 0.8
-health: 345000
-armor: 435
+health: 545000
+armor: 985
 range: 240
 parts: [
     // Halo on ring
@@ -601,7 +601,7 @@ weapons: [
           startDelay: 30
           }
             ]
-        lifetime: 94
+        lifetime: 70
         speed: 8
         fragBullets: 120
         fragLifeMin: 0.1
@@ -645,7 +645,7 @@ weapons: [
             fragBullets: 10
             fragBullet: {
                 type: SapBulletType
-                damage: 275
+                damage: 675
                 pierceArmor: true
                 knockback: -5
                 lifetime: 0
@@ -710,9 +710,9 @@ weapons: [
             hitShake: 5
             height: 12
             width: 8
-            lifetime: 95
+            lifetime: 34
             damage: 175
-            speed: 6
+            speed: 15
             despawnEffect: {
                 type: WaveEffect
                 colorFrom: d0d8e8
@@ -791,9 +791,9 @@ weapons: [
             hitShake: 5
             height: 12
             width: 8
-            lifetime: 95
+            lifetime: 34
             damage: 175
-            speed: 6
+            speed: 15
             despawnEffect: {
                 type: WaveEffect
                 colorFrom: d0d8e8
@@ -837,15 +837,15 @@ weapons: [
             shots: 2
         }
         bullet: {
-            damage: 1150
+            damage: 1450
             splashDamage: 515
             splashDamageRadius: 56
             height: 19
             width: 17
             backColor: 4165AB
             frontColor: 9DBDFA
-            speed: 12
-            lifetime: 60
+            speed: 20
+            lifetime: 33
             trailLength: 14
             trailWidth: 3
             trailColor: 9DBDFA
@@ -866,11 +866,11 @@ weapons: [
             lightningDamage: 95
             lightningColor: 9DBDFA
             intervalBullets: 2
-            bulletInterval: 2
+            bulletInterval: 1
             intervalRandomSpread: 360
             intervalBullet: {
                 type: LightningBulletType
-                damage: 75
+                damage: 125
                 lifetime: 4
                 hitEffect: hitLancer
                 despawnEffect: none

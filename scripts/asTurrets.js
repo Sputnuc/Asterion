@@ -26,4 +26,6 @@ const volcano = extend(ItemTurret, "volcano", {});
 
 const terror = extend(ItemTurret, "terror", {});
 
+const robber = extend(PointDefenseTurret, "robber", {});
+
 const destroyer = extend(ItemTurret, "destroyer", {});

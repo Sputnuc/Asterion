@@ -3,7 +3,7 @@
 	"name": "Orion iteration reassembler",
     "health": 2100,
     "size": 7,
-    "constructTime": 1800,
+    "constructTime": 2100,
     "upgrades": [
         ["vulture", "scorpion"],
     ],
