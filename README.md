@@ -1,6 +1,7 @@
 # Welcome to planet Asterion
 Hello! Welcome to Asterion!
 This is collaboration mod.
+
 Authors:
 - Sputnuc
 - Bloody_Ocean
