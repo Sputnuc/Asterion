@@ -55,27 +55,98 @@ abilities: [
 research: blink
 
 weapons: [{
-    
+    shootY: 0
     baseRotation: 0
     shootCone: 90
-    inaccuracy: 60
-    mirror: false
-    reload: 20
+    inaccuracy: 30
+    mirror: true
+    recoil: 0
+    reload: 15
     name: blink-weapon
-    rotate: true
+    shootSound: malignShoot
+    rotate: false
     top: true
     y: -2
-    x: 0
+    x: 13
+    parts: [
+     {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 6
+     rotateSpeed: 1.2
+     radiusTo: 6
+     radius: 6
+     stroke: 0
+     strokeTo: 1
+     color: 74c1e8
+     colorTo: 74c1e8
+     }
+       {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 3
+     rotateSpeed: -0.9
+     radiusTo: 5
+     radius: 5
+     stroke: 0
+     strokeTo: 0.8
+     color: 74c1e8
+     colorTo: 74c1e8
+     }
+    ]
     bullet : {
-        hitEffect: blastExplosion
+        hitEffect: [
+            {
+            type: WaveEffect
+            sizeTo: 16
+            sizeFrom: 9
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: 74c1e8
+            colorTo: 74c1e800
+            lifetime: 10
+            }
+            {
+            type: ParticleEffect
+            particles: 6
+            sizeFrom: 3
+            sizeTo: 0
+            length: 30
+            baseLength: 7
+            colorFrom: 74c1e8
+            colorTo: 74c1e8
+            }
+            {
+            type: ParticleEffect
+            particles: 4
+            sizeFrom: 5
+            sizeTo: 3
+            length: 30
+            baseLength: 3
+            colorFrom: 74c1e8
+            colorTo: 74c1e800
+            lifetime: 35
+            }
+          ]
         keepVelocity: false
         lifetime: 30
-        drag: -0.05
-        damage: 27
+        damage: 14
         height: 15
-        speed: 1.5
+        speed: 6
         width: 13
         type: BasicBulletType
+        shootEffect: {
+        type: WaveEffect
+        sides: 3
+        sizeTo: 10
+        sizeFrom: 3
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e8
+        }
         homingPower: 0.8
         homingDelay: 8
         frontColor: 79eef2
@@ -90,15 +161,58 @@ weapons: [{
             speed: 2
             width: 7
             height: 7
-            splashDamage: 16
+            shrinkY: -1
+            shrinkX: -1
+            splashDamage: 21
             splashDamageRadius: 40
             lifetime: 200
             drag: 0.04
             sprite: "mine-bullet"
             frontColor: 79eef2
             backColor: 74c1e8
-            hitEffect: blastExplosion
-            despawnEffect: blastExplosion
+            hitEffect: {
+              type: WaveEffect
+               sizeTo: 8
+               sizeFrom: 2
+               strokeFrom: 4
+               strokeTo: 0
+               colorFrom: 74c1e8
+               colorTo: 74c1e800
+               lifetime: 10
+              }
+            despawnEffect: [
+                 {
+                 type: WaveEffect
+                 sizeTo: 40
+                 sizeFrom: 2
+                 strokeFrom: 4
+                 strokeTo: 0
+                 colorFrom: 74c1e8
+                 colorTo: 74c1e800
+                 lifetime: 15
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                sizeFrom: 2
+                sizeTo: 0
+                length: 23
+                baseLength: 7
+                colorFrom: 74c1e8
+                colorTo: 74c1e8
+                }
+                {
+                type: ParticleEffect
+                particles: 2
+                sizeFrom: 2
+                sizeTo: 1
+                length: 19
+                baseLength: 2
+                colorFrom: 74c1e8
+                colorTo: 74c1e800
+                lifetime: 25
+                }
+             ]
         }
     }
 }]

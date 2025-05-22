@@ -116,6 +116,51 @@ abilities: [
         orbSinMag: 0
     }
 ]
+parts: [
+{
+       y: -2
+       type: ShapePart
+       radius: 25
+       radiusTo: 27
+       sides: 8
+       stroke: 0
+       strokeTo: 2.5
+       hollow: true
+       rotateSpeed: 1.5
+       color: 79eef2
+       colorTo: 79eef2
+       layer: 110
+    }
+    {
+       y: -2
+       type: ShapePart
+       radius: 22
+       radiusTo: 24
+       sides: 3
+       stroke: 0
+       strokeTo: 2.5
+       hollow: true
+       rotateSpeed: 1
+       color: 79eef2
+       colorTo: 79eef2
+       layer: 110
+    }
+    {
+       y: -2
+       type: ShapePart
+       radius: 22
+       radiusTo: 24
+       sides: 3
+       stroke: 0
+       strokeTo: 2.5
+       hollow: true
+       rotateSpeed: -1
+       color: 79eef2
+       colorTo: 79eef2
+       layer: 110
+    }
+
+]
 
 research: moment
 
@@ -131,6 +176,7 @@ weapons: [{
     top: true
     y: 18
     x: 0
+    shootSound: shockBlast
     shoot: {
         type: ShootSpread
         shots: 5
@@ -191,6 +237,7 @@ weapons: [{
         baseRotation: 180
         y: 0
         x: 0
+        shootSound: laser-large-shot-1
         shoot: {
             type: ShootSpread
             shots: 2

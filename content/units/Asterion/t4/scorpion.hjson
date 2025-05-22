@@ -19,7 +19,7 @@ drownTimeMultiplier: 8
 rotateSpeed: 2.6
 health: 9700
 armor: 19
-range: 190
+range: 225
 
 weapons: [
 {
@@ -54,7 +54,7 @@ type: BasicBulletType
 homingPower: 0.15
 homigRadius: 120
 damage: 120
-lifetime: 7.6
+lifetime: 9
 width: 7
 height: 15
 speed: 25
@@ -223,6 +223,8 @@ despawnEffect: {
     mirror: false
     recoil: 1
     reload: 180
+    range: 180
+    useAttackRange: false
     baseRotation: 180
     shootSound: shootAlt
     rotate: true

@@ -1,8 +1,8 @@
 name: Zodiac
-description: "Orion's monstrous weapon capable of disabling the entire sector. It releases a monstrous projectile which forms a small black hole as a result of the rupture. \n[white]Faction: [#d0d8e8]Orion[]."
+description: "Orion's monstrous weapon, capable of crippling the entire sector. It releases a small star, which, as a result of the rupture, forms a small black hole. A black hole in this case is a wormhole that moves sucked materials straight for processing into the core of the Zodiac, thereby restoring its combat effectiveness. \n[white]Faction: [#d0d8e8]Orion[]."
 type: mech
-speed: 0.25
-mechStepShake: 5
+speed: 0.29
+mechStepShake: 7.5
 flying: false
 hitSize: 60
 itemCapacity: 300
@@ -12,12 +12,12 @@ targetGround: true
 mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
-stepShake: 3
+stepShake: 7.5
 outlineRadius: 5
 drownTimeMultiplier: 999
 rotateSpeed: 0.8
-health: 545000
-armor: 985
+health: 295000
+armor: 115
 range: 240
 parts: [
     // Halo on ring
@@ -268,8 +268,8 @@ weapons: [
         height: 30
         width: 30
         splashDamageRadius: 128
-        splashDamage: 5180
-        damage: 7980
+        splashDamage: 5380
+        damage: 3980
         absorbable: false
         hitEffect: [
         {
@@ -645,7 +645,8 @@ weapons: [
             fragBullets: 10
             fragBullet: {
                 type: SapBulletType
-                damage: 675
+                damage: 70
+                sapStrength: 0.90
                 pierceArmor: true
                 knockback: -5
                 lifetime: 0
@@ -711,7 +712,7 @@ weapons: [
             height: 12
             width: 8
             lifetime: 34
-            damage: 175
+            damage: 95
             speed: 15
             despawnEffect: {
                 type: WaveEffect
@@ -792,7 +793,7 @@ weapons: [
             height: 12
             width: 8
             lifetime: 34
-            damage: 175
+            damage: 95
             speed: 15
             despawnEffect: {
                 type: WaveEffect
@@ -837,8 +838,8 @@ weapons: [
             shots: 2
         }
         bullet: {
-            damage: 1450
-            splashDamage: 515
+            damage: 550
+            splashDamage: 255
             splashDamageRadius: 56
             height: 19
             width: 17

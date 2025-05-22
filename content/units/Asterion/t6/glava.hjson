@@ -164,7 +164,7 @@ weapons: [
     rotate: true
     rotationLimit: 32
     recoil: 3
-    reload: 45
+    reload: 40
     shootSound: mechshoot
 
     bullet: {
@@ -213,7 +213,7 @@ weapons: [
     splashDamage: 235
     lifetime: 22
     pierceCap: 3
-    damage: 475
+    damage: 575
     speed: 21
 	intervalBullets: 2
     intervalAngle: 0

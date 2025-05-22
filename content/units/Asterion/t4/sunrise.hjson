@@ -76,7 +76,16 @@ weapons: [
         statusDuration: 155
         shootEffect: none
         smokeEffect: none
-        hitEffect: none
+        hitEffect: {
+        type: ParticleEffect
+        cone: 45
+        length: -45
+        particles: 12
+        sizeFrom: 3.5
+        sizeTo: 0
+        colorFrom: FFADAB
+        colorTo: FFADAB00
+        }
         despawnHit: true
         parts: [
          {

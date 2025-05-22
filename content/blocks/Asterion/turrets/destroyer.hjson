@@ -1,7 +1,7 @@
   name: Destroyer
   outlineColor: 22262b
   size: 9
-  health: 65000
+  health: 11000
   maxAmmo: 640
   canOverdrive: false
   recoil: 7
@@ -89,7 +89,7 @@
         }
 	  ]
 	  smokeEffect: shootBigSmoke
-      damage: 115000
+      damage: 55000
       ammoMultiplier: 1
       speed: 40
       pierceArmor: true
@@ -165,7 +165,7 @@
        pierce: true
        speed: 14
        lifetime: 15
-       damage: 7800
+       damage: 2800
        trailLength: 7.3
 	   trailWidth: 3
        width: 10

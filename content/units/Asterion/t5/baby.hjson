@@ -11,6 +11,8 @@ itemCapacity: 0
 targetAir: true
 targetGround: true
 legLength: 45
+legMoveSpace: 0.8
+rippleScale: 2.5
 legCount: 6
 lockLegBase: true
 legExtension: -9
@@ -18,8 +20,8 @@ stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 1.3
-health: 21000
-armor: 11
+health: 22500
+armor: 23
 immunities: [
     burning
 ]
@@ -30,6 +32,7 @@ weapons: [
     y: -5.5
     mirror: true
     recoil: 3
+    shake: 6
     reload: 45
     shootSound: artillery
     rotate: true
@@ -43,31 +46,64 @@ weapons: [
     bullet: {
         type: ArtilleryBulletType
         splashDamage: 280
-        splashDamageRadius: 75
+        splashDamageRadius: 55
         speed: 10
         lifetime: 35
-        width: 14
-        height: 14
+        width: 19
+        height: 19
         backColor: c75432 
         frontColor: ff9548
         trailColor: c75432 
-        trailWidth: 2.8
+        trailWidth: 3.5
         trailLength: 14
         trailRotation: true
         trailInterval: 1
+        despawnEffect: [
+        {
+        type: ParticleEffect
+        particles: 9
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: ff9548
+        colorTo: ff9548
+        length: 55
+        baseLength: 25
+        }
+        {
+        type: ParticleEffect
+        particles: 4
+        sizeFrom: 4.5
+        sizeTo: 3
+        colorFrom: ff9548
+        colorTo: ff954800
+        length: 55
+        baseLength: 15
+        lifetime: 65
+        }
+        {
+        type: WaveEffect
+        sizeFrom: 30
+        sizeTo: 55
+        strokeFrom: 2.5
+        strokeTo: 0
+        colorFrom: ff9548
+        colorTo: ff9548
+        lifetime: 10
+        }
+        ]
         trailEffect: [
         {
         type: WaveEffect
         colorFrom: ff9548
         colorTo: c75432
-        sizeFrom: 0
-        sizeTo: 11
+        sizeFrom: 6
+        sizeTo: 3
         lightScl: 3
         lightOpacity: 1
         sides: 4
         lifetime: 20
         rotation: 0
-        strokeFrom: 3
+        strokeFrom: 2
         strokeTo: 0
         }
         ]
@@ -81,18 +117,19 @@ weapons: [
     layerOffset: -0.001
     mirror: true
     recoil: 1
-    reload: 50
+    reload: 40
+    shake: 1.5
     baseRotation: -45
     shootSound: missile
     rotate: true
     rotationLimit: 40
     rotateSpeed: 0.7
     shootCone: 270
-    inaccuracy: 6
+    inaccuracy: 13
     ignoreRotation:true
     shoot: {
         shots: 8
-        shotDelay: 2
+        shotDelay: 3
     }
 
     bullet: {

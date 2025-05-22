@@ -26,6 +26,18 @@ parts: [
         layerOffset: -0.001
         color: 79eef2
     }
+    {
+       type: ShapePart
+       radius: 10
+       radiusTo: 13
+       sides: 6
+       stroke: 1
+       strokeTo: 1.5
+       hollow: true
+       rotateSpeed: 1.5
+       color: 79eef2
+       colorTo: 79eef2
+    }
 ]
 abilities: [
         {
@@ -61,7 +73,7 @@ weapons: [{
     mirror: false
     reload: 90
     inaccuracy: 3
-    xRand: 25
+    xRand: 35
     name: blink-weapon
     shootSound: shockBlast
     top: true
@@ -74,28 +86,54 @@ weapons: [{
     bullet : {
         hitEffect: {
         type: ParticleEffect
-        particles: 5
-        sizeFrom: 2
+        cone: 35
+        particles: 7
+        sizeFrom: 3
         sizeTo: 0
-        length: 15
+        length: -15
+        lifetime: 20
+        colorFrom: 79eef2
+        colorTo: 74c1e8
+        }
+        despawnEffect: {
+        type: ParticleEffect
+        particles: 4
+        sizeFrom: 4
+        sizeTo: 0
+        length: 20
         lifetime: 20
         colorFrom: 79eef2
         colorTo: 74c1e8
         }
         smokeEffect: none
-        shootEffect: {
+        shootEffect: [
+        {
          type: WaveEffect
-         sizeFrom: 0
-         sizeTo: 18
+         sides: 4
+         sizeFrom: 10
+         sizeTo: 12
          colorFrom: 79eef2
          colorTo: 74c1e800
-         strokeFrom: 2
+         strokeFrom: 3
          strokeTo: 0
+         lifetime: 35
         }
+           {
+         type: WaveEffect
+         sides: 3
+         sizeFrom: 5
+         sizeTo: 12
+         colorFrom: 79eef2
+         colorTo: 74c1e800
+         strokeFrom: 3
+         strokeTo: 0
+         lifetime: 20
+        }
+        ]
         keepVelocity: false
         lifetime: 35
         drag: -0.08
-        splashDamage: 18
+        splashDamage: 14
         splashDamageRadius: 75
         damage: 27
         height: 15
@@ -103,13 +141,26 @@ weapons: [{
         width: 15
         sprite: "mine-bullet"
         type: BasicBulletType
-        homingPower: 0.95
-        homingRadius: 24
+        homingPower: 1
+        homingRadius: 45
         homingDelay: 20
         frontColor: 79eef2
         backColor: 74c1e8
         trailColor: 74c1e8
         trailWidth: 3.25
         trailLength: 10
+        trailInterval: 2
+        trailRotation: true
+        trailEffect: {
+        type: ParticleEffect
+        particles: 1
+        sizeFrom: 3.5
+        sizeTo:0
+        cone: 0
+        length: 0
+        baseLength: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e8
+        }
     }
 }]

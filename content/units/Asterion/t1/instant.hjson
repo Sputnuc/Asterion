@@ -54,18 +54,47 @@ abilities: [
 
 research: orion-factory
 
-weapons: [{
-    
+weapons: [
+{
     baseRotation: 0
     shootCone: 70
-    mirror: false
+    mirror: true
+    recoil: 0
     reload: 5
     name: instant-weapon
     shootSound: blaster
     top: true
     y: -3
-    xRand: 20
-    x: 0
+    x: 8
+    parts: [
+    {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 3
+     rotateSpeed: 0.9
+     radiusTo: 3.5
+     radius: 3.5
+     stroke: 0
+     strokeTo: 0.5
+     color: 74c1e8
+     colorTo: 74c1e8
+     }
+     {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 3
+     rotateSpeed: 0.9
+     radiusTo: 3.5
+     radius: 3.5
+     stroke: 0
+     strokeTo: 0.5
+     color: 74c1e8
+     colorTo: 74c1e8
+     rotation: 60
+     }
+    ]
     bullet : {
         lifetime: 20
         damage: 9
@@ -82,6 +111,7 @@ weapons: [{
         smokeEffect: none
         shootEffect: {
         type: WaveEffect
+        sides: 5
         sizeFrom: 0
         sizeTo: 16
         colorFrom: 79eef2
@@ -89,10 +119,21 @@ weapons: [{
         strokeFrom: 2
         strokeTo: 0
         }
-        despawnEffect: {
+        hitEffect: {
         type: WaveEffect
+        sides: 4
         sizeFrom: 0
         sizeTo: 6
+        colorFrom: 79eef2
+        colorTo: 74c1e800
+        strokeFrom: 2
+        strokeTo: 0
+        lifetime: 15
+        }
+        despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 9
         colorFrom: 79eef2
         colorTo: 74c1e800
         strokeFrom: 2

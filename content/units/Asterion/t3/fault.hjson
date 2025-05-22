@@ -29,6 +29,7 @@ weapons: [
     x: -9.5
     y: -1.25
     layerOffset: 0.001
+    velocityRnd: 0.1
     mirror: true
     recoil: 1
     reload: 10
@@ -38,7 +39,7 @@ weapons: [
     rotationLimit: 20
     rotateSpeed: 1
     shootCone: 30
-    inaccuracy: 9
+    inaccuracy: 12
     ignoreRotation:true
     shoot: {
     shots: 3
@@ -46,7 +47,7 @@ weapons: [
     bullet: {
          type: BulletType
          damage: 21
-         speed: 4
+         speed: 7
          lifetime: 25
          trailInterval: 1
          incendChance: 1
@@ -54,13 +55,13 @@ weapons: [
          incendAmount: 4
          hitEffect: none
          despawnEffect: none
-         drag: 0.015
+         drag: 0.1
          pierce: true
          pierceCap: 2
          pierceBuilding: true
          trailEffect: {
-         length: 14
-         baseLength: 6
+         length: 5
+         baseLength: 3
          type: ParticleEffect
          particles: 3
          colorFrom: f58e40

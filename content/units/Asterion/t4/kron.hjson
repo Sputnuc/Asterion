@@ -103,7 +103,8 @@ weapons: [
     baseRotation: 0
     shootCone: 95
     mirror: false
-    reload: 145
+    reload: 120
+    recoil: 0
     name: kron-weapon
     rotate: false
     shake: 0.8
@@ -117,12 +118,28 @@ weapons: [
         shots: 15
         shotDelay: 1
     }
-    
+    parts: [
+    {
+    type: ShapePart
+     y: 0
+     hollow: true
+     progress: reload
+     circle: false
+     sides: 6
+     layer: 110
+     color: a9c5ea
+     stroke: 1.6
+     strokeTo: 0.3
+	 rotateSpeed: 0.8
+     radius: 20
+	 radiusTo: 23
+    }
+    ]
     bullet : {
         lightRadius: 0
         keepVelocity: false
         lifetime: 40
-        damage: 60
+        damage: 32
         pierce: true
         height: 10
         speed: 1
@@ -148,7 +165,7 @@ weapons: [
     baseRotation: 0
     shootCone: 75
     mirror: false
-    reload: 270
+    reload: 45
     name: kron-weapon
     rotate: false
     top: true
@@ -157,18 +174,13 @@ weapons: [
     inaccuracy: 55
     shootSound: shockBlast
     shake: 4
-    shoot: {
-        type: ShootSpread
-        shots: 4
-        shotDelay: 30
-    }
     
     bullet : {
         lightRadius: 0
         keepVelocity: false
         lifetime: 40
-        damage: 155
-        splashDamage: 55
+        damage: 145
+        splashDamage: 65
         splashDamageRadius: 28
         height: 19
         speed: 8
