@@ -82,3 +82,6 @@ kron.constructor = () => extend(UnitEntity, {});
 
 const period = extend(UnitType, "period", {});
 period.constructor = () => extend(UnitEntity, {});
+
+const sentry = extend(UnitType, "sentry", {});
+sentry.constructor = () => extend(UnitEntity, {});
