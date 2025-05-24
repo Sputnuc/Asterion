@@ -5,6 +5,7 @@ itemCapacity : 0
 rotateSpeed : 4
 engineSize : 0
 hovering : true
+canDrown: false
 hitSize : 11
 health : 130
 speed : 1.95
