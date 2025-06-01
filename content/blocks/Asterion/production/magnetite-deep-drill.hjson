@@ -26,7 +26,7 @@
 			 ]
 	}
     outputItem: magnetite/1
-    craftTime: 90
+    craftTime: 30
 	updateEffect: mine
 	research: {
 		parent: whitorite-drill
