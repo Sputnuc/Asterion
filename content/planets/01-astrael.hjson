@@ -1,0 +1,34 @@
+//localizedName: Astrael
+description:
+'''
+Star.
+'''
+mesh: [
+ {
+    type: SunMesh
+	divisions: 5
+	octaves: 6
+	persistence: 0.6
+	scl: 2
+	pow: 1.07
+	mag: 1.21
+	colorScale: 1.1
+    colors: [
+	  fca986
+	  f5856c
+	  e86351
+	  d93232
+	  bd2653
+	]
+  }
+]
+lightColor: fff1ab
+bloom: true
+accessible: false
+parent: sun
+radius: 2.4
+
+drawOrbit: false
+orbitRadius: 3000
+orbitSpacing: 16
+solarSystem: 01-astrael
