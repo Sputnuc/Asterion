@@ -49,18 +49,18 @@ allowLaunchLoadout: false
 
 allowWaveSimulation: true
 prebuildBase: true
-parent: sun
-solarSystem: sun
+parent: 01-astrael
+solarSystem: 01-astrael
 radius: 0.9
 minZoom: 0.6
 sectorSize: 2.3
 startSector: 10
-atmosphereRadIn: 0.02
-atmosphereRadOut: 0.4
+atmosphereRadIn: 0
+atmosphereRadOut: 0.31
 atmosphereColor: 69453095  
 iconColor: 9c7057     
 icon: planet
-orbitRadius: 26.7    
+orbitRadius: 25
 orbitTime: 176
 bloom: false
 alwaysUnlocked: true
@@ -95,7 +95,7 @@ mesh: [
     divisions: 6
     radius: 0.80
     octaves: 4
-    persistence: 0.5
+    persistence: 0.53
 	coct: 1.8
     cper: 2.2
     scale: 0.4
@@ -116,6 +116,22 @@ mesh: [
     cper: 0.2
     scale: 0.6
     mag: 1.43
+ }
+ {
+ // puzzle biome? (2)
+    type: NoiseMesh
+	bloom: true
+    seed: 821
+    color1: 5d5bba
+    color2: a689f5
+    divisions: 6
+    radius: 0.737
+    octaves: 5
+    persistence: 1.16
+	coct: 0.3
+    cper: 0.2
+    scale: 0.6
+    mag: 1.98
  }
  {
  // brown mesh
@@ -144,8 +160,8 @@ cloudMesh: [
     type: HexSkyMesh
     bloom: true
     speed: 3.8
-    divisions: 6.2
-    radius: 0.18
+    divisions: 7
+    radius: 0.11
     color: dec5cd6b
     octaves: 3
     persistence: 0.7
@@ -156,10 +172,10 @@ cloudMesh: [
     type: HexSkyMesh
     bloom: true
     speed: 3.4
-    divisions: 4.6
-    radius: 0.25
+    divisions: 5
+    radius: 0.18
     color: 9e876a79
-    octaves: 3.8
+    octaves: 3
     persistence: 0.82
     scl: 0.8
     thresh: 0.5
@@ -168,10 +184,10 @@ cloudMesh: [
     type: HexSkyMesh
     bloom: true
     speed: 4.1
-    divisions: 5.3
-    radius: 0.29
+    divisions: 6
+    radius: 0.22
     color: 7670827f
-    octaves: 4.1
+    octaves: 4
     persistence: 0.58
     scl: 0.6
     thresh: 0.3
