@@ -1,4 +1,4 @@
-//localizedName: Astrael
+//localizedName: Ascetion
 description:
 '''
 Star.
@@ -31,4 +31,4 @@ radius: 3.8
 drawOrbit: false
 orbitRadius: 3000
 orbitSpacing: 16
-solarSystem: 01-astrael
+solarSystem: 01-ascetion
