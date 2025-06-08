@@ -53,14 +53,14 @@ parent: 01-astrael
 solarSystem: 01-astrael
 radius: 0.9
 minZoom: 0.6
-sectorSize: 2.3
+sectorSize: 2
 startSector: 10
 atmosphereRadIn: 0
 atmosphereRadOut: 0.31
 atmosphereColor: 69453095  
 iconColor: 9c7057     
 icon: planet
-orbitRadius: 25
+orbitRadius: 26
 orbitTime: 176
 bloom: false
 alwaysUnlocked: true
@@ -125,13 +125,13 @@ mesh: [
     color1: 5d5bba
     color2: a689f5
     divisions: 6
-    radius: 0.737
+    radius: 0.709
     octaves: 5
     persistence: 1.16
 	coct: 0.3
     cper: 0.2
     scale: 0.6
-    mag: 1.98
+    mag: 2.3
  }
  {
  // brown mesh
@@ -161,7 +161,7 @@ cloudMesh: [
     bloom: true
     speed: 3.8
     divisions: 7
-    radius: 0.11
+    radius: 0.08
     color: dec5cd6b
     octaves: 3
     persistence: 0.7
@@ -173,7 +173,7 @@ cloudMesh: [
     bloom: true
     speed: 3.4
     divisions: 5
-    radius: 0.18
+    radius: 0.15
     color: 9e876a79
     octaves: 3
     persistence: 0.82
@@ -185,7 +185,7 @@ cloudMesh: [
     bloom: true
     speed: 4.1
     divisions: 6
-    radius: 0.22
+    radius: 0.19
     color: 7670827f
     octaves: 4
     persistence: 0.58
