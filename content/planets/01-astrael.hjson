@@ -22,11 +22,11 @@ mesh: [
 	]
   }
 ]
-lightColor: fff1ab
+lightColor: f7b48d
 bloom: true
 accessible: false
 parent: sun
-radius: 2.4
+radius: 3.8
 
 drawOrbit: false
 orbitRadius: 3000
