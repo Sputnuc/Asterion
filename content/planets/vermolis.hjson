@@ -1,0 +1,128 @@
+//localizedName: Asterion
+generator: SerpuloPlanetGenerator
+defaultCore: core-force
+
+hiddenItems: [
+]
+itemWhitelist: [
+]
+
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+
+allowWaveSimulation: true
+prebuildBase: true
+parent: 01-astrael
+solarSystem: 01-astrael
+radius: 0.9
+minZoom: 0.6
+sectorSize: 2
+startSector: 10
+atmosphereRadIn: 0
+atmosphereRadOut: 0.31
+atmosphereColor: 69453095  
+iconColor: 9c7057     
+icon: planet
+orbitRadius: 49
+orbitTime: -176
+bloom: false
+alwaysUnlocked: true
+accessible: true
+visible: true
+allowLaunchToNumbered: false    
+
+mesh: [
+ {
+ // cryoline oceans/seas
+	type: SunMesh 
+	divisions: 6
+	octaves: 1
+	radius: 1.3
+	persistence: 0.5
+	scl: 2
+	pow: 1
+	mag: 1
+	colorScale: 1
+	colors: [
+	  7e98f2,
+	  8fc1ff,
+	  8fc1ff
+	]
+  }
+ {
+ //mesh1
+    type: NoiseMesh
+	bloom: false
+    seed: 374
+    color1: 54504c
+    color2: 73645e
+    divisions: 6
+    radius: 0.80
+    octaves: 4
+    persistence: 0.53
+	coct: 1.8
+    cper: 2.2
+    scale: 0.4
+    mag: 1.2
+ }
+ {
+ // mountains
+    type: NoiseMesh
+	bloom: true
+    seed: 821
+    color1: baabcc
+    color2: b99fbd
+    divisions: 6
+    radius: 1.241
+    octaves: 8
+    persistence: 0.85
+	coct: 3.2
+    cper: 2.6
+    scale: 0.82
+    mag: 2.37
+ }
+]
+
+//bloom: false
+alwaysUnlocked: true
+
+
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    bloom: true
+    speed: 3.8
+    divisions: 7
+    radius: 0.11
+    color: dec5cd6b
+    octaves: 3
+    persistence: 0.7
+    scl: 1.1
+    thresh: 0.6
+  }
+  {
+    type: HexSkyMesh
+    bloom: true
+    speed: 3.4
+    divisions: 5
+    radius: 0.18
+    color: 9e876a79
+    octaves: 3
+    persistence: 0.82
+    scl: 0.8
+    thresh: 0.5
+  }
+  {
+    type: HexSkyMesh
+    bloom: true
+    speed: 4.1
+    divisions: 6
+    radius: 0.22
+    color: 7670827f
+    octaves: 4
+    persistence: 0.58
+    scl: 0.6
+    thresh: 0.3
+  }
+]
