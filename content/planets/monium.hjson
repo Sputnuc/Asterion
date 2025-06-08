@@ -1,6 +1,6 @@
 //localizedName: Monium
 generator: SerpuloPlanetGenerator
-defaultCore: core-force
+defaultCore: core-bastion
 
 hiddenItems: [
 ]
@@ -11,12 +11,12 @@ clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchLoadout: false
 
-allowWaveSimulation: true
-prebuildBase: true
+allowWaveSimulation: false
+prebuildBase: false
 parent: 01-ascetion
 solarSystem: 01-ascetion
 radius: 1.25
-minZoom: 0.3
+minZoom: 0.45
 sectorSize: 3
 startSector: 142
 atmosphereRadIn: 0
@@ -27,8 +27,8 @@ icon: planet
 orbitRadius: 67
 orbitTime: 36
 bloom: false
-alwaysUnlocked: true
-accessible: true
+alwaysUnlocked: false
+accessible: false
 visible: true
 allowLaunchToNumbered: false    
 
@@ -39,6 +39,7 @@ mesh: [
 	divisions: 7
 	octaves: 1
 	//seed: 267
+	bloom: false
 	radius: 1.2
 	persistence: 0.6
 	scl: 1.4
