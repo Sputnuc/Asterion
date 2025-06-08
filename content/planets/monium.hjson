@@ -1,4 +1,4 @@
-//localizedName: Asterion
+//localizedName: Monium
 generator: SerpuloPlanetGenerator
 defaultCore: core-force
 
@@ -13,8 +13,8 @@ allowLaunchLoadout: false
 
 allowWaveSimulation: true
 prebuildBase: true
-parent: 01-astrael
-solarSystem: 01-astrael
+parent: 01-ascetion
+solarSystem: 01-ascetion
 radius: 1.25
 minZoom: 0.3
 sectorSize: 3
