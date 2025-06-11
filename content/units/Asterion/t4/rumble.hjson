@@ -88,6 +88,27 @@ weapons: [
         speed: 3
         backColor: c75432 
         frontColor: ff9548
+        spin: 3
+        trailChance: 0.5
+        trailEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: ff9548
+                colorTo: c75432
+                particles: 5
+                cone: 360
+                length: 35
+                baseLength: 0
+                lightScl: 2.5
+                lightOpacity: 2
+                spin: 0
+                sizeFrom: 2.5
+                sizeTo: 0 
+                offset: 0
+                lifetime: 20
+                layer: 99
+            }
+        ]
         despawnEffect: {
             type: MultiEffect
             effects: [{
