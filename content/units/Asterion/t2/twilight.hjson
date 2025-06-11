@@ -9,7 +9,7 @@ armor: 7
 speed: 0.37
 rotateSpeed: 1.1
 itemCapacity: 0
-outlineColor: 17191f
+outlineColor: 0b0812
 outlineRadius: 4
 treadRects: [
   {

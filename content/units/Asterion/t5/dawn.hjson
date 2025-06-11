@@ -9,7 +9,7 @@ armor: 26
 speed: 0.25
 rotateSpeed: 0.5
 itemCapacity: 0
-outlineColor: 17191f
+outlineColor: 0b0812
 outlineRadius: 4
 crushDamage: 2.5
 treadRects: [
