@@ -38,46 +38,121 @@ weapons: [
     shootY: -3
     mirror: false
     shootSound: largeCannon
-    reload: 230
+    reload: 90
+    shake: 3
+    shoot: {
+     shots: 5
+     shotDelay: 10
+    }
     recoil: 3
     rotateSpeed: 1
     shootStatus: fading-t2
-    shootStatusDuration: 230
+    shootStatusDuration: 90
     bullet: {
         type: BasicBulletType
-        damage: 800
-        splashDamage: 150
+        damage: 150
+        splashDamage: 80
         splashDamageRadius: 50
-        pierceCap: 5
+        pierceCap: 3
+        pierce: true
         pierceBuilding: true
-        speed: 7
-        lifetime: 150
-        drag: 0.018
-        width: 16
-        height: 16
-        shrinkX: 1
-        shrinkY: 1
+        speed: 11
+        lifetime: 45
+        drag: 0.01
+        width: 19
+        height: 20
+        shrinkX: 0
+        shrinkY: 0
+        homingPower: 0.3
+        homingRange: 45
+        homingDelay: 15
+        weaveScale: 5.5
+        weaveMag: 1.8
         backColor: bc5451 
         frontColor: e98878
         trailColor: bc5451 
-        trailWidth: 4
-        trailLength: 9
-        bulletInterval: 5
-		intervalBullets: 4
-		intervalRandomSpread: 0
-		intervalAngle: 0
-		intervalSpread: 90
-		intervalBullet: {
-			type: LaserBulletType
-			colors: ["bc5451", "e98878", "FFFFFF"]
-			lifetime: 10
-			pierceCap: 4
-			damage: 100
-			length: 45
-		}
+        trailWidth: 4.5
+        trailLength: 17
+        trailInterval: 2
+        trailRotation: true
+        trailEffect: [
+          {
+           type: ParticleEffect
+           particles: 5
+           sizeFrom: 3
+           sizeTo: 0
+           colorFrom: e98878
+           colorTo: bc545100
+           lifetime: 15
+           length: 18
+           baseLength: 4
+          }
+          {
+           type: WaveEffect
+           sizeFrom: 13
+           sizeTo: 0
+           strokeFrom: 2
+           strokeTo: 3
+           sides: 5
+           colorFrom: bc545100
+           colorTo: e98878
+           lifetime: 20
+          }
+          {
+           type: ParticleEffect
+           cone: 55
+           particles: 8
+           line: true
+           lenFrom: 4
+           lenTo: 0
+           strokeFrom: 2
+           strokeTo: 0
+           colorFrom: e98878
+           colorTo: e9887800
+           lifetime: 20
+           length: -38
+           baseLength: 0
+          }
+        ]
         shootEffect: none
         smokeEffect: none
-        hitEffect: none
+        hitEffect: [
+        {
+         type: ParticleEffect
+         particles: 8
+         line: true
+         lenFrom: 3
+         lenTo: 6
+         strokeFrom: 2
+         strokeTo: 0
+         colorFrom: e98878
+         colorTo: bc5451
+         lifetime: 25
+         length: 25
+        }
+        {
+         type: ParticleEffect
+         particles: 6
+         line: true
+         sizeFrom: 3
+         sizeTo: 0
+         colorFrom: e98878
+         colorTo: bc5451
+         lifetime: 30
+         length: 25
+        }
+        {
+         type: ParticleEffect
+         particles: 4
+         line: true
+         sizeFrom: 5
+         sizeTo: 3
+         colorFrom: e98878
+         colorTo: bc545100
+         lifetime: 35
+         length: 25
+        }
+        ]
         despawnHit: true
         despawnEffect: {
             type: MultiEffect
@@ -124,7 +199,72 @@ weapons: [
                 strokeFrom: 6
                 strokeTo: 0
             }
-        ]}
+        ]
+       }
+     fragBullets: 4
+     fragBullet: {
+      type: BasicBulletType
+      damage: 55
+      speed: 8
+      lifetime: 20
+      weaveScale: 5
+      weaveMag: 3
+      pierce: true
+      pierceCap: 2
+      pierceBuilding: true
+      backColor: bc5451 
+      frontColor: e98878
+      trailColor: bc5451 
+      trailLength: 5
+      trailWidth: 2
+      width: 10
+      height: 10
+      despawnEffect: [
+       {
+        type: ParticleEffect
+        particles: 9
+        length: 15
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: e98878
+        colorTo: e98878
+        lifetime: 25
+       }
+       {
+        type: ParticleEffect
+        particles: 3
+        length: 10
+        sizeFrom: 3
+        sizeTo: 2
+        colorFrom: e98878
+        colorTo: e9887800
+        lifetime: 45
+       }
+       {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 30
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: e98878
+        colorTo: e98878
+       }
+      ]
+      hitEffect: 
+       {
+         type: ParticleEffect
+         particles: 4
+         line: true
+         lenFrom: 2
+         lenTo: 5
+         strokeFrom: 2.5
+         strokeTo: 0
+         colorFrom: e98878
+         colorTo: bc5451
+         lifetime: 25
+         length: 30
+      }
+     }
     }
 }
 ]

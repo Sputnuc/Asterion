@@ -24,6 +24,7 @@
   reload: 450
   rotateSpeed: 0.3
   coolantMultiplier: 0.35
+  moveWhileCharging: false
   shoot: {
   firstShotDelay: 150
   }
@@ -60,6 +61,40 @@
        colorFrom: aaf3e700
        colorTo: ffffff
       }
+      {
+       type: ParticleEffect
+       particles: 1
+       length: 0
+       baseLength: 0
+       cone: 0
+       sizeFrom: 0
+       sizeTo: 12
+       lifetime: 150
+       colorFrom: aaf3e700
+       colorTo: ffffff
+      }
+      {
+       type: WaveEffect
+       startDelay: 130
+       sizeFrom: 0
+       sizeTo: 35
+       lifetime: 20
+       strokeFrom: 0
+       strokeTo: 5
+       colorFrom: aaf3e700
+       colorTo: ffffff
+      }
+      {
+       type: WaveEffect
+       startDelay: 130
+       sizeFrom: 45
+       sizeTo: 35
+       lifetime: 20
+       strokeFrom: 0
+       strokeTo: 3
+       colorFrom: aaf3e700
+       colorTo: ffffff
+      }
       ]
 	  shootEffect: [
 	  {
@@ -72,6 +107,21 @@
 	  sizeFrom: 3
 	  sizeTo: 0
 	  }
+      {
+          followParent: false
+          particles: 1
+          length: 5
+          baseLength: 0
+          randLength: false
+          lifetime: 60
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 80
+          sizeTo: 95
+          colorFrom: aaf3e7
+          colorTo: aaf3e700
+        }
 	    {
           followParent: false
           particles: 1
@@ -87,9 +137,26 @@
           colorFrom: aaf3e7
           colorTo: aaf3e700
         }
+        {
+          followParent: false
+          particles: 1
+          length: 70
+          baseLength: 83
+          randLength: false
+          lifetime: 60
+          cone: 0
+          offset: 90
+          region: as-inclined-wave
+          sizeFrom: 30
+          sizeTo: 40
+          colorFrom: aaf3e7
+          colorTo: aaf3e700
+        }
 	  ]
 	  smokeEffect: shootBigSmoke
-      damage: 55000
+      damage: 35000
+      splashDamage: 15000
+      splashDamageRadius: 54
       ammoMultiplier: 1
       speed: 40
       pierceArmor: true
@@ -258,7 +325,6 @@
     }
   }
   cooldownTime: 300
-  shootY: 5
   inaccuracy: 0
   shootSound: rail-shot-1
   consumes: {
@@ -272,78 +338,14 @@
    basePrefix: ast-
    parts: [
       {
-       x: 0
-       y: 5
-       type: ShapePart
-       circle: true
-       hollow: false
-       progress: charge
-       radius: 0
-       radiusTo: 6.5
-       layer: 110
-       color: aaf3e7
-       colorTo: ffffff
-      }
-      {
-       x: 0
-       y: 5
-       type: ShapePart
-       circle: true
-       hollow: true
-       progress: charge
-       radius: 0
-       radiusTo: 12
-       stroke: 0
-       strokeTo: 1.8
-       layer: 110
-       color: aaf3e7
-       colorTo: ffffff
-      }
-      {
         type: RegionPart
         layer: -1
-        colorTo: 8DFFBF
-        color: 8DFFBF00
+        colorTo: b6fcff40
+        color: b6fcff00
         progress: warmup
         blending: additive
         outline: false
         suffix: -glow
-      }
-      {
-        type: RegionPart
-        progress: warmup
-        mirror: true
-        suffix: -wing
-        under: true
-        x: 24.5
-        y: -21.5
-        moveRot: -15
-        moveY: -1
-        moveX: -4
-      }
-      {
-        type: RegionPart
-        progress: recoil
-        mirror: false
-        suffix: -barrel
-        under: true
-        x: 0
-        y: 0
-        moveY: -4
-        moveX: 0
-        children: [
-       {
-        type: RegionPart
-        layer: -1
-        colorTo: 8DFFBF
-        color: 8DFFBF00
-        progress: warmup
-        blending: additive
-        outline: false
-        suffix: -barrel-glow
-      }
-
-	  ]
       }
    ]
     }

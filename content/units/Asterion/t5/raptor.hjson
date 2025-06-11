@@ -125,6 +125,19 @@ weapons: [
      trailColor: 9DBDFA
      trailInterval: 1
      trailRotation: true
+     shootEffect: [
+     {
+      type: ParticleEffect
+      particles: 13
+      sizeFrom: 3.5
+      sizeTo: 0
+      colorFrom: 9DBDFA
+      colorTo: 9DBDFA00
+      length: 29
+      cone: 25
+      lifetime: 20
+     }
+     ]
      trailEffect: {
       type: ParticleEffect
       particles: 8
@@ -144,7 +157,7 @@ weapons: [
      intervalRandomSpread: 360
      intervalBullet: {
         type: LightningBulletType
-        damage: 45
+        damage: 25
         lifetime: 4
         hitEffect: hitLancer
         despawnEffect: none
