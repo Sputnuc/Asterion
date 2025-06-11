@@ -1,4 +1,3 @@
-type: mendProjector
 name: Silicate wall
 health: 2500
 armor: 20
@@ -8,6 +7,7 @@ phaseBoost: 0
 phaseRangeBoost: 0
 healPercent: 2
 range: 2.75
+update: true
 consumes: {
  power: 0.25
 }

@@ -1,4 +1,3 @@
-type: Wall
 name: Magnetite large wall
 health: 6980
 absorbLasers: false

@@ -1,4 +1,3 @@
-type: mendProjector
 name: Silicate wall large
 conductivePower: true
 phaseBoost: 0
@@ -9,6 +8,7 @@ consumes:
 {
  power: 1
 }
+update: true
 health: 10000
 armor: 20
 absorbLasers: true

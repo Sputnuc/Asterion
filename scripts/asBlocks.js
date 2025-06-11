@@ -20,3 +20,43 @@ const whitoriteInvertedGateway = extend(OverflowGate, "whitorite-inverted-gatewa
 
 const magnetiteConveyor = extend(StackConveyor,"magnetite-conveyor", {});
 
+// Walls, Стены (НУ А ХУЛЕ)
+const whitoriteWall = extend(Wall, "whitorite-wall", {});
+
+const whitoriteWallLarge = extend(Wall, "whitorite-wall-large", {});
+
+const irmeniteWall = extend(Wall, "irmenite-wall", {});
+
+const irmeniteWallLarge = extend(Wall, "irmenite-wall-large", {});
+
+const magnetiteWall = extend(Wall, "magnetite-wall", {});
+
+const magnetiteWallLarge = extend(Wall, "magnetite-wall-large", {});
+
+const silicateWall = extend(Wall, "silicate-wall", {});
+silicateWall.buildType = () => extend(Wall.WallBuild, silicateWall, {
+        time: 0,
+    updateTile(){
+        this.super$updateTile();
+        this.time += 1;
+        if (this.damaged() && this.time >= 250 && this.canConsume()) {
+        this.time = 0;
+        this.heal(this.maxHealth * 0.02);
+        Fx.healBlockFull.at(this.x, this.y, this.block.size, Color.valueOf("ef9ef5"), this.block);
+    }
+  }
+})
+
+const silicateWallLarge = extend(Wall, "silicate-wall-large", {});
+silicateWallLarge.buildType = () => extend(Wall.WallBuild, silicateWallLarge, {
+        time: 0,
+    updateTile(){
+        this.super$updateTile();
+        this.time += 1;
+        if (this.damaged() && this.time >= 250 && this.canConsume()) {
+        this.time = 0;
+        this.heal(this.maxHealth * 0.02);
+        Fx.healBlockFull.at(this.x, this.y, this.block.size, Color.valueOf("ef9ef5"), this.block);
+    }
+  }
+})

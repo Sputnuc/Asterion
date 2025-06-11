@@ -1,5 +1,5 @@
 {
-	"name": "Methane mine",
+	"name": "Methane Mine",
 	"description": "drilling methane in underground wells",
     "type": "GenericCrafter",
     "category": "production",
