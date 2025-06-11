@@ -41,7 +41,7 @@ mesh: [
     color1: 393945
     color2: 3a3341
     divisions: 7
-    radius: 0.5
+    radius: 0.9
     octaves: 4
     persistence: 0.25
 	coct: 2.3
@@ -57,7 +57,7 @@ mesh: [
     color1: 3b3846
     color2: 3b3846
     divisions: 7
-    radius: 0.47
+    radius: 0.87
     octaves: 4
     persistence: 0.50
 	coct: 2.3
