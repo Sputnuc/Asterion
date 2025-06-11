@@ -33,7 +33,12 @@ const magnetiteWall = extend(Wall, "magnetite-wall", {});
 
 const magnetiteWallLarge = extend(Wall, "magnetite-wall-large", {});
 
-const silicateWall = extend(Wall, "silicate-wall", {});
+const silicateWall = extend(Wall, "silicate-wall", {
+    setStats() {
+        this.super$setStats();
+        this.stats.add(Stat.repairTime, 100 / 2 * 250 / 60, StatUnit.seconds);
+    }
+});
 silicateWall.buildType = () => extend(Wall.WallBuild, silicateWall, {
         time: 0,
     updateTile(){
@@ -47,7 +52,12 @@ silicateWall.buildType = () => extend(Wall.WallBuild, silicateWall, {
   }
 })
 
-const silicateWallLarge = extend(Wall, "silicate-wall-large", {});
+const silicateWallLarge = extend(Wall, "silicate-wall-large", {
+    setStats() {
+        this.super$setStats();
+        this.stats.add(Stat.repairTime, 100 / 2 * 250 / 60, StatUnit.seconds);
+    }
+});
 silicateWallLarge.buildType = () => extend(Wall.WallBuild, silicateWallLarge, {
         time: 0,
     updateTile(){
