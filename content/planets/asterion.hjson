@@ -106,8 +106,8 @@ mesh: [
     type: NoiseMesh
 	bloom: true
     seed: 821
-    color1: 9e70db
-    color2: 403896
+    color1: 9e70db83
+    color2: 40389683
     divisions: 6
     radius: 0.773
     octaves: 5
@@ -122,8 +122,8 @@ mesh: [
     type: NoiseMesh
 	bloom: true
     seed: 821
-    color1: 5d5bba
-    color2: a689f5
+    color1: 5d5bba83
+    color2: a689f583
     divisions: 6
     radius: 0.709
     octaves: 5
