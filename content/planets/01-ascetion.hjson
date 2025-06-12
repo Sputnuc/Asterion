@@ -26,7 +26,7 @@ lightColor: f7b48d
 bloom: true
 accessible: false
 parent: sun
-radius: 4.2
+radius: 4.7
 
 drawOrbit: false
 orbitRadius: 3000
