@@ -20,7 +20,7 @@ minZoom: 0.45
 sectorSize: 3
 startSector: 142
 atmosphereRadIn: 0
-atmosphereRadOut: 0.24
+atmosphereRadOut: 0.19
 atmosphereColor: "79d1d1" //79a5e8  
 iconColor: 79a5e8     
 icon: planet
@@ -96,8 +96,8 @@ cloudMesh: [
     type: HexSkyMesh
     bloom: true
     speed: 1.8
-    divisions: 7
-    radius: 0.06
+    divisions: 6
+    radius: 0.05
     color: e3f9fc7f
     octaves: 5
     persistence: 0.5
@@ -109,10 +109,10 @@ cloudMesh: [
     bloom: true
     speed: 1.1
     divisions: 6
-    radius: 0.09
+    radius: 0.07
     color: c4daf25e
-    octaves: 4
-    persistence: 0.7
+    octaves: 3
+    persistence: 0.9
     scl: 0.8
     thresh: 0.6
   }
