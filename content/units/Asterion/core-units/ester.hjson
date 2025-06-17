@@ -6,14 +6,17 @@ flying: true
 health: 570
 hitSize: 12
 buildSpeed: 2.5
+engineSize: 0
 mineSpeed: 19
 mineTier: 2
-speed: 4.5
+speed: 9
+
+strafePenalty: 0.01
 range: 240
 accel: 0.25
 targetGround: true
 targetAir: true
-rotateSpeed: 4
+rotateSpeed: 6
 weapons: [
     {
       name: ester-weapon
@@ -69,6 +72,7 @@ weapons: [
           colorTo: deb65f00
           length: 12
           baseLength: 5
+          lifetime: 25
         }
         despawnEffect: {
           type: WaveEffect
@@ -82,4 +86,73 @@ weapons: [
         buildingDamageMultiplier: 0.25
       }
     }
+    //Engines
+	{
+	 x: 0
+	 y: -3
+	 baseRotation: 180
+	 rotate: false
+	 mirror: false
+	 display: false
+	 shootCone: 360
+	 alwaysShooting: true
+	 alwaysContinuous: false
+	 reload: 1
+	 alternate: false
+	 continuous: true
+	 shootSound: none
+	 minShootVelocity: 0
+	 shootY: 0
+	  bullet: {
+      type: ContinuousFlameBulletType
+      lifetime: 10
+      collidesGround: false
+      collidesAir: false
+      length: 5
+      width: 2
+      colors: [c9904fa9, db8330cb, f5c0a2aa, edd3bbdd, ffffff]
+      drawFlare: false
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightStroke: 9
+      lightOpacity: 0.4
+    }
+	}
+	{
+	 x: 0
+	 y: -3
+	 baseRotation: 180
+	 rotate: false
+	 mirror: false
+	 display: false
+	 shootCone: 360
+	 alwaysShooting: true
+	 alwaysContinuous: false
+	 reload: 1
+	 alternate: false
+	 continuous: true
+	 shootSound: none
+	 minShootVelocity: 5
+	 shootY: 0
+	  bullet: {
+      type: ContinuousFlameBulletType
+      lifetime: 10
+      collidesGround: false
+      collidesAir: false
+      length: 9
+      width: 2
+      colors: [c9904fa9, db8330cb, f5c0a2aa, edd3bbdd, ffffff]
+      drawFlare: false
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightStroke: 9
+      lightOpacity: 0.4
+    }
+	}
   ]

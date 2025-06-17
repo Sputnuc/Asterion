@@ -50,7 +50,7 @@ weapons: [
     shootStatusDuration: 90
     bullet: {
         type: BasicBulletType
-        damage: 150
+        damage: 195
         splashDamage: 80
         splashDamageRadius: 50
         pierceCap: 3

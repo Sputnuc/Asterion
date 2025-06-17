@@ -5,8 +5,8 @@
 "underBullets": true,
 "size": 1,
 "requirements": [
-  "whitorite/4",
-  "irmenite/2"
+  "whitorite/6",
+  "kiten/8"
 ] 
 "category": "distribution",
 "research": {

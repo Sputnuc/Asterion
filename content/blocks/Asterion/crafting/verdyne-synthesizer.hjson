@@ -11,7 +11,7 @@
 	 blacktite/75
 	 magnetite/65
     ]	
-    outputLiquid: verdyne/0.1
+    outputLiquid: verdyne/0.4
     craftTime: 30
 	consumes: {
 		power: 1

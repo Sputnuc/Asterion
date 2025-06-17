@@ -5,12 +5,13 @@ pumpAmount: 0.2
 size: 2
 health: 160
 requirements: [
-  irmenite/45
   whitorite/30
+  irmenite/45
   ]
 consumes: {
- power: 1.5
+ power: 1
 } 
+liquidCapacity: 65
 squareSprite: false
 category: liquid
 research: {
@@ -18,20 +19,3 @@ research: {
   planet: as-asterion
 }
 researchCostMultiplier: 0.25
-
-drawer: {
-    type: DrawMulti
-    drawers: [ 
-    /*
-	{
-    type: DrawPistons
-    sinMag: 4
-    sinScl: 7
-    sides: 4
-    },
-	*/
-    {
-    type: DrawDefault
-    }
-               ]
-}

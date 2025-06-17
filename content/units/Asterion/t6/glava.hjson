@@ -476,6 +476,7 @@ weapons: [
 
     bullet: {
         type: SapBulletType
+        status: none
         sapStrength: 1.6
         length: 150
         width: 0.45

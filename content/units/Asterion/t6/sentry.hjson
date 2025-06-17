@@ -50,20 +50,6 @@ parts: [
         color: 79eef2
         colorTo: 79eef2
     }
-    {
-        type: HaloPart
-        layer: 110
-        shapes: 5
-        y: -13.75
-        triLength: 0
-        triLengthTo: 0
-        haloRadius: 14
-        haloRadiusTo: 14
-        haloRotateSpeed: 1.15
-        radius: 4
-        color: 79eef2
-        colorTo: 79eef2
-    }
 ]
 weapons: [
  {
@@ -73,14 +59,9 @@ weapons: [
   rotate: true
   rotateSpeed: 0.8
   mirror: true
-  reload: 180
-  shake: 7
+  reload: 150
+  shake: 11
   shootSound: laser-large-shot-1
-  shoot: {
-   shootType: ShootHelix
-   scl: 3
-   mag: 2
-  }
   bullet: {
    type: BasicBulletType
    damage: 1250
@@ -94,6 +75,35 @@ weapons: [
    trailColor: 79eef2
    trailLength: 16
    trailWidth: 4
+   trailInterval: 1
+   trailRotation: true
+   trailEffect: [
+    {
+     type: ParticleEffect
+     particles: 7
+     line: true
+     lenFrom: 6
+     lenTo: 0
+     strokeTo: 0
+     strokeFrom: 2
+     lifetime: 45
+     cone: 45
+     length: -30
+     colorFrom: 79eef2
+     colorTo: 79eef2
+    }
+    {
+     type: WaveEffect
+     sides: 3
+     sizeFrom: 12
+     sizeTo: 9
+     strokeFrom: 3
+     strokeTo: 0
+     lifetime: 35
+     colorFrom: 79eef2
+     colorTo: 79eef200
+    }
+   ]
    width: 23
    height: 25
    hitEffect: none
@@ -288,7 +298,7 @@ weapons: [
   shake: 2
   shootSound: machine-blaster
   rotationLimit: 45
-  reload: 20
+  reload: 15
   inaccuracy: 3
   shoot: {
    shots: 4
@@ -328,6 +338,7 @@ weapons: [
     sizeTo: 0
     colorFrom: 79eef2
     colorTo: 79eef2
+    lifetime: 20
    }
    smokeEffect: none
    despawnEffect: [
@@ -382,7 +393,7 @@ weapons: [
   shake: 2
   shootSound: machine-blaster
   rotationLimit: 75
-  reload: 20
+  reload: 15
   inaccuracy: 3
   shoot: {
    shots: 4
@@ -422,6 +433,7 @@ weapons: [
     sizeTo: 0
     colorFrom: 79eef2
     colorTo: 79eef2
+    lifetime: 20
    }
    smokeEffect: none
    despawnEffect: [
@@ -518,4 +530,20 @@ weapons: [
  }
 ]
 abilities: [
+ {
+      type: EnergyFieldAbility
+      maxTargets: 12
+      damage: 95
+      color: 79eef2
+      status: as-underclock
+      statusDuration: 150
+      range: 195
+      sectors: 3
+      rotateSpeed: 2
+      hitBuildings: true
+      sectorRad: 1
+      effectRadius: 3
+      reload: 300
+      y: -13.75
+    }
 ]

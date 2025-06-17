@@ -54,12 +54,12 @@
       ]
     },
 	"research": {
-		"parent": "methane-extractor",
+		"parent": "whitorite-drill",
 		"planet": "as-asterion",
 		"objectives": [
          {
           "type": "SectorComplete",
-          "preset": "plain"
+          "preset": "zinc-mining-outpost"
          }
         ]
 	}

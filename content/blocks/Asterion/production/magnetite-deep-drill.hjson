@@ -34,7 +34,7 @@
 		objectives: [
         {
          type: SectorComplete
-         preset: plain
+         preset: transshipment-point
         }
    ]
 	}

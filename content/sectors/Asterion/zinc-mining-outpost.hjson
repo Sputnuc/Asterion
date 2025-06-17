@@ -1,6 +1,6 @@
 //localizedName: Zinc mining outpost
 planet: asterion
-sector: 14
+sector: 26
 difficulty: 3
 alwaysUnlocked: false
 research: {

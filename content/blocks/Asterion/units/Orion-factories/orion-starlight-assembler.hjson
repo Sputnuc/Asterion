@@ -12,21 +12,17 @@ category: units
 consumes: {
 	power: 100
 	liquids: [
-      verdyne/2.5
-	  oxylene/2.5
+      verdyne/2
+	  oxylene/2
 	]
 }
 plans: [
 	{
 	unit: "zodiac" //Final weapon
 	requirements: [
-	    as-varan/3
-	    as-piranha/3
-	    as-vulture/3
-		as-scorpion/1
-		as-silicate-wall-large/15
-		as-magnetite-wall-large/10
-		as-part-orion-core/1
+		as-scorpion/4
+		as-silicate-wall-large/10
+		as-part-orion-core/3 //one for core and two another to black hole weapons
 	]
 	time: 30000
 	}

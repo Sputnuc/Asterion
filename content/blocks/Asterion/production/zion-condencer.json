@@ -2,7 +2,7 @@
 	"type": "AttributeCrafter",
 	"name": "Zion condencer",
 	"description": "condenses heavy methane particles to zion",
-	"category": "crafting",
+	"category": "production",
 	"attribute": "steam",
 	"boostScale": 0.111111111111,
     "baseEfficiency": 0,
@@ -21,7 +21,7 @@
 		"power": 0.25
 	}
 	"research": {
-		"parent": "methane-extractor",
+		"parent": "whitorite-drill",
 		"planet": "as-asterion",
 	}
 	"drawer": {

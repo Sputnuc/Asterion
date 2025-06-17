@@ -22,92 +22,74 @@
   shots: 5
   shotDelay: 20
   }
-  range: 220
+  range: 224
   powerUse: 100
   ammoTypes: {
     irmenite: {
       type: BasicBulletType
-	  shootEffect: [shootBigColor,
-	    {
+	  shootEffect :{
           type: ParticleEffect
-          particles: 6
+          particles: 4
           sizeFrom: 6
           sizeTo: 0
-          length: 32
-          lifetime: 35
+          length: 45
+          lifetime: 25
           interp: circleOut
           colorFrom: abe0e5
-          colorTo: 85aac7
+          colorTo: 6ac4cc
           cone: 15
-        }]  
+        }
       ammoMultiplier: 1
-	  smokeEffect: shootBigSmoke
       damage: 35
-      speed: 15
-	  width: 8
-      height: 8
+      speed: 16
+      frontColor: abe0e5
+      backColor: 6ac4cc
+	  width: 11
+      height: 14
       pierce: true
-      pierceCap: 9
-      trailLength: 16
-	  trailWidth: 3
+      pierceCap: 5
+      weaveScale: 1
+      weaveMag: 4
+      trailLength: 8
+	  trailWidth: 2
 	  trailColor: abe0e5
-      lifetime: 14.666666666666666666666666666667
-      hitEffect: {
+      lifetime: 14
+      hitEffect: [
+      {
      type: ParticleEffect
-     particles: 4
-     cone: 46
-     length: 7
+     particles: 11
+     cone: 75
+     length: 65
      baseLength: 2
-     sizeFrom: 4
+     sizeFrom: 3
      sizeTo: 0
      colorFrom: abe0e5
-     colorTo: abe0e500
+     colorTo: abe0e5
+     lifetime: 30
       }
+      {
+       type: WaveEffect
+       sizeFrom: 4
+       sizeTo: 11
+       lifetime: 15
+       strokeFrom: 2
+       strokeTo: 0
+       colorFrom: abe0e5
+       colorTo: abe0e5
+      }
+      ]
      despawnEffect: {
      type: ParticleEffect
-     particles: 5
-     cone: 126
-     length: 7
-     baseLength: 3
-     sizeFrom: 4
+     particles: 9
+     cone: 35
+     length: 75
+     baseLength: 0
+     sizeFrom: 3.5
      sizeTo: 0
      colorFrom: abe0e5
-     colorTo: abe0e500
+     colorTo: abe0e5
+     lifetime: 20
       }
-    }
-	ashotite: {
-      type: BasicBulletType
-	  shootEffect: [shootBigColor,
-           {
-		  type: ParticleEffect
-		  region: circle
-          particles: 6
-          sizeFrom: 6
-          sizeTo: 0
-          length: 32
-          lifetime: 30
-          interp: circleOut
-          colorFrom: f3a83f
-          colorTo: cc8624
-          cone: 15
-		   }
-		  ]  
-	  smokeEffect: shootBigSmoke
-	  reloadMultiplier: 0.60
-	  width: 8
-      height: 8
-      damage: 45
-	  status: melting
-	  statusDuration: 300
-      speed: 15
-      pierce: true
-      pierceCap: 9
-      trailLength: 16
-	  trailWidth: 3
-	  trailColor: f3a83f
-      lifetime: 14.666666666666666666666666666667
-      hitEffect: blastExplosion
-      despawnEffect: blastExplosion
     }
   }
   cooldownTime: 45
