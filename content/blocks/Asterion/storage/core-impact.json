@@ -1,0 +1,23 @@
+{
+	"name": "Core «Impact»",
+	"description": "Second interation of core on Asterion. Not so special, to have a big description.",
+	"type": "CoreBlock",
+	"health": 3800,
+	"category": "effect",
+	"size": 4,
+	"itemCapacity": 5000,
+	"unitCapModifier": 16,
+	"unitType": "ester",
+	"outputsPower": true,
+	"isFirstTier": false,
+	"buildVisibility": "shown",
+	"researchCostMultiplier": 0.1,
+	"research": {
+		"parent": "core-force",
+		"planet": "as-asterion",
+	}
+	"requirements": [
+	 "whitorite/1700"
+	 "irmenite/1250"
+	  ],
+}

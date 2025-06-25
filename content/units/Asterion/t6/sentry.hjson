@@ -1,0 +1,549 @@
+name: Sentry
+description: "A flying frigate equipped with advanced weapons using pure plasma.. \n[white]Faction: [[#74c1e8]Techno[]."
+engineSize: 0
+speed: 1.4
+flying: true
+type: flying
+research: period
+lowAltitude: true
+hitSize: 52
+accel: 0.01
+drag: 0.01
+itemCapacity: 390
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+outlineRadius: 6
+rotateSpeed: 0.6
+health: 68000
+armor: 50
+faceTarget: true
+fallSpeed: 0.01
+crashDamageMultiplier: 13
+parts: [
+     {
+        type: ShapePart
+        layer: 110
+        y: -13.75
+        circle: true
+        progress: warmup
+        radius: 9
+        radiusTo: 9
+        hollow: true
+        stroke: 2
+        strokeTo: 2
+        color: 79eef2
+        colorTo: 79eef2
+    }
+    {
+        type: ShapePart
+        layer: 110
+        y: -13.75
+        circle: true
+        progress: warmup
+        radius: 6.5
+        radiusTo: 6.5
+        rotateSpeed: 0.5
+        hollow: false
+        stroke: 2
+        strokeTo: 2
+        color: 79eef2
+        colorTo: 79eef2
+    }
+]
+weapons: [
+ {
+  name: sentry-weapon
+  y: -29
+  x: -26
+  rotate: true
+  rotateSpeed: 0.8
+  mirror: true
+  reload: 150
+  shake: 11
+  shootSound: laser-large-shot-1
+  bullet: {
+   type: BasicBulletType
+   damage: 1250
+   splashDamage: 175
+   splashDamageRadius: 36
+   speed: 10
+   frontColor: 79eef2
+   scaleLife: true
+   backColor: 79eef2
+   lifetime: 60
+   trailColor: 79eef2
+   trailLength: 16
+   trailWidth: 4
+   trailInterval: 1
+   trailRotation: true
+   trailEffect: [
+    {
+     type: ParticleEffect
+     particles: 7
+     line: true
+     lenFrom: 6
+     lenTo: 0
+     strokeTo: 0
+     strokeFrom: 2
+     lifetime: 45
+     cone: 45
+     length: -30
+     colorFrom: 79eef2
+     colorTo: 79eef2
+    }
+    {
+     type: WaveEffect
+     sides: 3
+     sizeFrom: 12
+     sizeTo: 9
+     strokeFrom: 3
+     strokeTo: 0
+     lifetime: 35
+     colorFrom: 79eef2
+     colorTo: 79eef200
+    }
+   ]
+   width: 23
+   height: 25
+   hitEffect: none
+   despawnEffect: [
+   {
+     type: WaveEffect
+     sides: 6
+     sizeFrom: 14
+     sizeTo: 40
+     colorFrom: 79eef2
+     colorTo: 79eef200
+     strokeFrom: 6
+     strokeTo: 0
+     lifetime: 25
+    }
+    {
+     type: WaveEffect
+     sides: 6
+     sizeFrom: 19
+     sizeTo: 40
+     colorFrom: 79eef2
+     colorTo: 79eef200
+     strokeFrom: 4
+     strokeTo: 0
+     lifetime: 25
+    }
+    {
+     type: ParticleEffect
+     length: 72
+     particles: 16
+     sizeFrom: 4.5
+     sizeTo: 0
+     colorFrom: 79eef2
+     colorTo: 79eef2
+    }
+    {
+     type: ParticleEffect
+     length: 72
+     particles: 6
+     sizeFrom: 7
+     sizeTo: 6
+     colorFrom: 79eef2
+     colorTo: 79eef200
+    }
+   ]
+   shootEffect: [
+    {
+     type: WaveEffect
+     sizeFrom: 3
+     sizeTo: 15
+     colorFrom: 42bfdb
+     colorTo: 42bfdb00
+     strokeFrom: 2
+     strokeTo: 0
+     lifetime: 25
+    }
+    {
+     type: WaveEffect
+     sizeFrom: 7
+     sizeTo: 19
+     colorFrom: 42bfdb
+     colorTo: 42bfdb00
+     strokeFrom: 1
+     strokeTo: 0
+     lifetime: 25
+    }
+    {
+     type: ParticleEffect
+     cone: 2
+     length: 23
+     particles: 13
+     sizeFrom: 2.3
+     sizeTo: 0
+     colorFrom: 42bfdb
+     colorTo: 42bfdb
+    }
+   ]
+   parts: [
+    {
+    type: ShapePart
+    progress: life
+    radius: 9
+    radiusTo: 15
+    rotateSpeed: 2
+    sides: 6
+    hollow: true
+    layer: 110
+    stroke: 2
+    strokeTo: 1.5
+    color: 79eef2
+    colorTo: 79eef2
+    }
+   ]
+   fragBullets: 12
+   fragBullet: {
+    type: BasicBulletType
+    speed: 8
+    width: 0
+    height: 0
+    hitSize: 12
+    lifetime: 60
+    drag: 0.06
+    trailLength: 5
+    trailWidth: 0.5
+    splashDamage: 175
+    splashDamageRadius: 32
+    parts: [
+    {
+     type: FlarePart
+     color2: 79eef2
+     color1: ace5f2
+     radius: 9
+     radiusTo: 14
+     layer: 110
+     followRotation: true
+     progress: life
+    }
+    ]
+    despawnEffect: [
+     {
+     type: WaveEffect
+     sizeFrom: 4
+     sizeTo: 24
+     colorFrom: 79eef2
+     colorTo: 79eef2
+     strokeFrom: 2
+     strokeTo: 0
+     lifetime: 25
+    }
+    {
+     type: ParticleEffect
+     length: 27
+     particles: 7
+     sizeFrom: 3
+     sizeTo: 0
+     colorFrom: 79eef2
+     colorTo: 79eef2
+    }
+   ]
+   hitEffect: none
+   fragBullets: 4
+   fragBullet: {
+    type: BasicBulletType
+    speed: 8
+    lifetime: 20
+    damage: 65
+    homingPower: 0.5
+    homingRadius: 32
+    width: 9
+    height: 9
+    trailColor: 79eef2
+    trailLength: 3
+    trailWidth: 1
+    frontColor: ffffff
+    backColor: 79eef2
+    hitEffect: {
+     type: WaveEffect
+     sides: 3
+     sizeFrom: 2
+     sizeTo: 9
+     lifetime: 25
+     strokeFrom: 1
+     strokeTo: 0
+     colorFrom: 79eef2
+     colorTo: 79eef2
+    }
+    despawnEffect: {
+     type: WaveEffect
+     sizeFrom: 3
+     sizeTo: 8
+     lifetime: 30
+     strokeFrom: 0.6
+     strokeTo: 0
+     colorFrom: 79eef2
+     colorTo: 79eef2
+    }
+    }
+   }
+  }
+ }
+ {
+  name: sentry-weapon-bullet
+  x: 32.5
+  y: 9.5
+  shootCone: 45
+  mirror: true
+  rotate: true
+  rotateSpeed: 0.7
+  baseRotation: -35
+  alternate: false
+  layerOffset: -0.0001
+  shake: 2
+  shootSound: machine-blaster
+  rotationLimit: 45
+  reload: 15
+  inaccuracy: 3
+  shoot: {
+   shots: 4
+   shotDelay: 3
+  }
+  bullet: {
+   type: BasicBulletType
+   homingPower: 0.3
+   homingRadius: 48
+   damage: 75
+   width: 10
+   height: 12
+   trailLength: 7
+   trailWidth: 1.5
+   trailColor: 79eef2
+   backColor: 79eef2
+   frontColor: 79eef2
+   parts: [
+    {
+     type: FlarePart
+     color2: 79eef2
+     color1: ace5f2
+     radius: 4
+     radiusTo: 6
+     layer: 110
+     followRotation: true
+     progress: life
+    }
+   ]
+   speed: 10
+   lifetime: 32
+   shootEffect: {
+   type: ParticleEffect
+    cone: 5
+    particles: 8
+    sizeFrom: 2.5
+    sizeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+    lifetime: 20
+   }
+   smokeEffect: none
+   despawnEffect: [
+   {
+    type: WaveEffect
+    sides: 3
+    sizeFrom: 10
+    sizeTo: 15
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+   }
+   {
+    type: WaveEffect
+    sides: 3
+    sizeFrom: 13
+    sizeTo: 17
+    strokeFrom: 1
+    strokeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+   }
+   ]
+   hitEffect: [
+    {
+    type: ParticleEffect
+    line: true
+    lenFrom: 4
+    lenTo: 6
+    cone: 75
+    particles: 6
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+    }
+   ]
+  }
+ }
+ {
+  name: sentry-weapon-bullet
+  shootCone: 65
+  x: 37.5
+  y: -14.5
+  mirror: true
+  rotate: true
+  rotateSpeed: 0.7
+  baseRotation: -90
+  alternate: false
+  layerOffset: -0.0001
+  shake: 2
+  shootSound: machine-blaster
+  rotationLimit: 75
+  reload: 15
+  inaccuracy: 3
+  shoot: {
+   shots: 4
+   shotDelay: 3
+  }
+  bullet: {
+   type: BasicBulletType
+   homingPower: 0.35
+   homingRadius: 50
+   damage: 75
+   width: 10
+   height: 12
+   trailLength: 7
+   trailWidth: 1.5
+   trailColor: 79eef2
+   backColor: 79eef2
+   frontColor: 79eef2
+   speed: 10
+   lifetime: 32
+   parts: [
+    {
+     type: FlarePart
+     color2: 79eef2
+     color1: ace5f2
+     radius: 4
+     radiusTo: 6
+     layer: 110
+     followRotation: true
+     progress: life
+    }
+   ]
+   shootEffect: {
+   type: ParticleEffect
+    cone: 5
+    particles: 8
+    sizeFrom: 2.5
+    sizeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+    lifetime: 20
+   }
+   smokeEffect: none
+   despawnEffect: [
+   {
+    type: WaveEffect
+    sides: 3
+    sizeFrom: 10
+    sizeTo: 15
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+   }
+   {
+    type: WaveEffect
+    sides: 3
+    sizeFrom: 13
+    sizeTo: 17
+    strokeFrom: 1
+    strokeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+   }
+   ]
+   hitEffect: [
+    {
+    type: ParticleEffect
+    line: true
+    lenFrom: 4
+    lenTo: 6
+    cone: 75
+    particles: 6
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: 79eef2
+    colorTo: 79eef2
+    }
+   ]
+  }
+ }
+ {
+  type: PointDefenseWeapon
+  x: 0
+  y: -13.75
+  shake: 2
+  rotate: true
+  rotateSpeed: 999
+  targetSwitchInterval: 1
+  targetInterval: 1
+  reload: 7
+  shootSound: laserShoot
+  bullet: {
+    maxRange: 440
+    damage: 250
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+  }
+ }
+ {
+  type: PointDefenseWeapon
+  x: -1
+  y: -13.75
+  shake: 2
+  rotate: true
+  rotateSpeed: 999
+  targetSwitchInterval: 1
+  targetInterval: 1
+  reload: 5
+  shootSound: laserShoot
+  bullet: {
+    maxRange: 440
+    damage: 100
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+  }
+ }
+ {
+  type: PointDefenseWeapon
+  x: 1
+  y: -13.75
+  shake: 2
+  rotate: true
+  rotateSpeed: 999
+  targetSwitchInterval: 1
+  targetInterval: 1
+  reload: 5
+  shootSound: laserShoot
+  bullet: {
+    maxRange: 440
+    damage: 100
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+  }
+ }
+]
+abilities: [
+ {
+      type: EnergyFieldAbility
+      maxTargets: 12
+      damage: 95
+      color: 79eef2
+      status: as-underclock
+      statusDuration: 150
+      range: 195
+      sectors: 3
+      rotateSpeed: 2
+      hitBuildings: true
+      sectorRad: 1
+      effectRadius: 3
+      reload: 300
+      y: -13.75
+    }
+]

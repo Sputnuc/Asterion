@@ -1,0 +1,16 @@
+//localizedName: Kryoline lakes
+captureWave: 20
+planet: asterion
+sector: 20
+difficulty: 4
+alwaysUnlocked: false
+research: {
+parent: plain
+requiresUnlock: false
+objectives: [
+{
+type: SectorComplete
+preset: plain
+  }
+ ]
+}

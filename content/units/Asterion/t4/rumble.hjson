@@ -1,0 +1,295 @@
+name: Rumble
+description: "//TODO T7 \n[white]Faction: [#c75432]Pyro[]."
+type: legs
+outlineColor: 2b2828
+speed: 0.48
+flying: false
+research: fault
+hovering: true
+hitSize: 30
+itemCapacity: 0
+targetAir: true
+targetGround: true
+legLength: 38
+legCount: 6
+lockLegBase: true
+legExtension: -9
+stepShake: 1
+outlineRadius: 4
+drownTimeMultiplier: 8
+rotateSpeed: 1.65
+health: 8420
+armor: 9
+immunities: [
+    burning
+]
+weapons: [
+    {
+    name: rumble-weapon
+    x: 9.5
+    y: -3.25
+    mirror: true
+    recoil: 1
+    reload: 30
+    shootSound: piew
+    rotate: true
+    rotationLimit: 75
+    rotateSpeed: 1.5
+    shootCone: 80
+    inaccuracy: 5
+    shootY: 0.5
+    shoot: {
+		type: ShootAlternate
+		shots: 5
+        shotDelay: 5
+		spread: 2.5
+	}
+
+    bullet: {
+        type: BasicBulletType
+        damage: 71
+        lifetime: 35
+        width: 6
+        height: 15
+        speed: 7
+        backColor: c75432 
+        frontColor: ff9548
+        trailColor: c75432 
+        trailWidth: 2
+        trailLength: 10
+        hitEffect: [
+         {
+          type: WaveEffect
+          sizeFrom: 0.3
+          sizeTo: 5
+          strokeFrom: 2.5
+          strokeTo: 0
+          colorFrom: ff9548
+          colorTo: c75432
+          lifetime: 15  
+         }
+         {
+          type: ParticleEffect
+          particles: 4
+          sizeFrom: 2.5
+          sizeTo: 0
+          lifetime: 15
+          length: 16
+          colorFrom: ff9548
+          colorTo: c75432
+         }
+         {
+          type: ParticleEffect
+          cone: 35
+          particles: 7
+          sizeFrom: 3.5
+          sizeTo: 0
+          lifetime: 25
+          length: 24
+          colorFrom: ff9548
+          colorTo: c75432
+         }
+        ]
+        despawnEffect: [
+         {
+          type: WaveEffect
+          sizeFrom: 0.3
+          sizeTo: 5
+          strokeFrom: 2.5
+          strokeTo: 0
+          colorFrom: ff9548
+          colorTo: c75432
+          lifetime: 15  
+         }
+         {
+          type: ParticleEffect
+          particles: 4
+          sizeFrom: 2.5
+          sizeTo: 0
+          lifetime: 15
+          length: 16
+          colorFrom: ff9548
+          colorTo: c75432
+         }
+        ]
+        incendChance: 0.6
+        incendSpread: 13
+        incendAmount: 1
+    }
+    }
+    {
+      name: rumble-main-weapon
+    x: 0
+    y: 8.5
+    mirror: false
+    rotate: false
+    recoil: 1
+    reload: 100
+    shootSound: flame
+    rotate: false
+    shootCone: 60
+    inaccuracy: 0
+
+    bullet: {
+        type: BasicBulletType
+        damage: 150
+        colldes: false
+        splashDamage: 230
+        splashDamageRadius: 66
+        shrinkY: -1
+        shrinkX: -1
+        sprite: as-sphere
+        lifetime: 150
+        width: 12
+        height: 12
+        drag: 0.015
+        speed: 3
+        backColor: c75432 
+        frontColor: ff9548
+        spin: 3
+        trailChance: 0.5
+        trailEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: ff9548
+                colorTo: c75432
+                particles: 5
+                cone: 360
+                length: 35
+                baseLength: 0
+                lightScl: 2.5
+                lightOpacity: 2
+                spin: 0
+                sizeFrom: 2.5
+                sizeTo: 0 
+                offset: 0
+                lifetime: 20
+                layer: 99
+            }
+        ]
+        despawnEffect: {
+            type: MultiEffect
+            effects: [{
+                    type: ParticleEffect 
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    particles: 20
+                    cone: 360
+                    length: 0
+                    baseLength: 66
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0 
+                    offset: 1
+                }
+                {
+                    type: WaveEffect
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    sizeFrom: 66
+                    sizeTo: 66
+                    lightScl: 3
+                    lightOpacity: 1
+                    sides: 0
+                    lifetime: 40
+                    rotation: 0
+                    strokeFrom: 5
+                    strokeTo: 0
+            }]
+        }
+        hitEffect: {
+            type: MultiEffect
+            effects: [{
+                    type: ParticleEffect 
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    particles: 20
+                    cone: 360
+                    length: 0
+                    baseLength: 66
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0 
+                    offset: 1
+                }
+                {
+                    type: WaveEffect
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    sizeFrom: 66
+                    sizeTo: 66
+                    lightScl: 3
+                    lightOpacity: 1
+                    sides: 0
+                    lifetime: 40
+                    rotation: 0
+                    strokeFrom: 5
+                    strokeTo: 0
+            }]
+        }  
+    }
+    }
+{ 
+name: rumble-bomb
+    
+    layerOffset: -0.01
+    mirror: false
+    rotate: false
+    shootCone: 180
+    rotationLimit: 0
+    controllable: false
+    alwaysShooting: false
+    recoil: 0
+    reload: 60
+    shootSound: explosion
+    shootOnDeath: true
+    noAttack: true
+
+    bullet: {
+type: ExplosionBulletType
+splashDamage: 640
+splashDamageRadius: 70
+incendChance: 1
+incendSpread: 40
+incendAmount: 20
+
+shootEffect: {
+    type: MultiEffect
+    effects: [{
+        type: ParticleEffect 
+        colorFrom: ff9548
+        colorTo: c75432
+        particles: 16
+        cone: 360
+        length: 0
+        baseLength: 60
+        lightScl: 3
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 3
+        sizeTo: 0 
+        offset: 1
+        }
+        {
+        type: WaveEffect
+        colorFrom: ff9548
+        colorTo: c75432
+        sizeFrom: 0
+        sizeTo: 70
+        lightScl: 3
+        lightOpacity: 1
+        sides: 0
+        lifetime: 40
+        rotation: 0
+        strokeFrom: 5
+        strokeTo: 0
+        }
+]
+}
+}
+}
+]

@@ -1,0 +1,167 @@
+useEngineElevation : false
+shadowElevation : 0.3
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 4
+engineSize : 0
+hovering : true
+canDrown: false
+hitSize : 18
+health : 600
+speed : 1.6
+accel : 0.3
+armor : 8
+name : Blink
+description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+type : hover
+drag : 0.1
+outlineColor: 28282d
+outlineRadius: 4
+
+parts: [
+    {
+        type: HoverPart
+        radius: 16
+        stroke: 3
+        phase: 70
+        layerOffset: -0.001
+        color: 79eef2
+    }
+    {
+       type: ShapePart
+       radius: 10
+       radiusTo: 13
+       sides: 6
+       stroke: 1
+       strokeTo: 1.5
+       hollow: true
+       rotateSpeed: 1.5
+       color: 79eef2
+       colorTo: 79eef2
+    }
+]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2.5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2.5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -0
+        x : 0
+    }
+]
+
+research: instant
+
+weapons: [{
+    
+    baseRotation: 0
+    shootCone: 360
+    mirror: false
+    reload: 90
+    inaccuracy: 3
+    xRand: 35
+    name: blink-weapon
+    shootSound: shockBlast
+    top: true
+    y: -2
+    x: 0
+    shoot: {
+        shots: 3
+    }
+    
+    bullet : {
+        hitEffect: {
+        type: ParticleEffect
+        cone: 35
+        particles: 7
+        sizeFrom: 3
+        sizeTo: 0
+        length: -15
+        lifetime: 20
+        colorFrom: 79eef2
+        colorTo: 74c1e8
+        }
+        despawnEffect: {
+        type: ParticleEffect
+        particles: 4
+        sizeFrom: 4
+        sizeTo: 0
+        length: 20
+        lifetime: 20
+        colorFrom: 79eef2
+        colorTo: 74c1e8
+        }
+        smokeEffect: none
+        shootEffect: [
+        {
+         type: WaveEffect
+         sides: 4
+         sizeFrom: 10
+         sizeTo: 12
+         colorFrom: 79eef2
+         colorTo: 74c1e800
+         strokeFrom: 3
+         strokeTo: 0
+         lifetime: 35
+        }
+           {
+         type: WaveEffect
+         sides: 3
+         sizeFrom: 5
+         sizeTo: 12
+         colorFrom: 79eef2
+         colorTo: 74c1e800
+         strokeFrom: 3
+         strokeTo: 0
+         lifetime: 20
+        }
+        ]
+        keepVelocity: false
+        lifetime: 35
+        drag: -0.08
+        splashDamage: 14
+        splashDamageRadius: 75
+        damage: 27
+        height: 15
+        speed: 1
+        width: 15
+        sprite: "mine-bullet"
+        type: BasicBulletType
+        homingPower: 1
+        homingRadius: 45
+        homingDelay: 20
+        frontColor: 79eef2
+        backColor: 74c1e8
+        trailColor: 74c1e8
+        trailWidth: 3.25
+        trailLength: 10
+        trailInterval: 2
+        trailRotation: true
+        trailEffect: {
+        type: ParticleEffect
+        particles: 1
+        sizeFrom: 3.5
+        sizeTo:0
+        cone: 0
+        length: 0
+        baseLength: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e8
+        }
+    }
+}]

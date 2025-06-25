@@ -5,7 +5,7 @@
   "research": "methane",
   "temperature": 0.1,
   "flammability": 0.15,
-  "explosiveness": 0.4,
+  "explosiveness": 0.9,
   "gas": true,
   "explosive": false,
   "effect": "burning",

@@ -1,0 +1,421 @@
+useEngineElevation : false
+shadowElevation : 0.4
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 3
+engineSize : 0
+flying : true
+hitSize : 42
+health : 19700
+speed : 1.4
+accel : 0.5
+armor : 28
+name : Period
+description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+type : flying
+drag : 0.1
+outlineColor: 28282d
+outlineRadius: 4
+
+abilities: [
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : 7.5
+        x : 8.75
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : 7.5
+        x : -8.75
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 4
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 4
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -8.75
+        x : 10.25
+    }
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 4
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 4
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -8.75
+        x : -10.25
+    }
+    {
+        type: SuppressionFieldAbility
+        range: 170
+        orbRadius: 0
+        particles: 0
+        orbMidScl: 0
+        orbSinScl: 0
+        orbSinMag: 0
+    }
+]
+parts: [
+{
+       y: -2
+       type: ShapePart
+       radius: 25
+       radiusTo: 27
+       sides: 8
+       stroke: 0
+       strokeTo: 2.5
+       hollow: true
+       rotateSpeed: 1.5
+       color: 79eef2
+       colorTo: 79eef2
+       layer: 110
+    }
+    {
+       y: -2
+       type: ShapePart
+       radius: 22
+       radiusTo: 24
+       sides: 3
+       stroke: 0
+       strokeTo: 2.5
+       hollow: true
+       rotateSpeed: 1
+       color: 79eef2
+       colorTo: 79eef2
+       layer: 110
+    }
+    {
+       y: -2
+       type: ShapePart
+       radius: 22
+       radiusTo: 24
+       sides: 3
+       stroke: 0
+       strokeTo: 2.5
+       hollow: true
+       rotateSpeed: -1
+       color: 79eef2
+       colorTo: 79eef2
+       layer: 110
+    }
+
+]
+
+research: moment
+
+weapons: [{
+    
+    baseRotation: 0
+    shootCone: 60
+    mirror: false
+    inaccuracy: 0
+    reload: 165
+    name: period-weapon
+    rotate: false
+    top: true
+    y: 18
+    x: 0
+    shootSound: shockBlast
+    shoot: {
+        type: ShootSpread
+        shots: 5
+        spread: 10
+    }
+    
+    bullet : {
+        keepVelocity: false
+        lifetime: 80
+        damage: 00000000.1
+        splashDamage: 330
+        splashDamageRadius: 26
+        drag: 0.01
+        shrinkY: 0
+        shrinkX: 0
+        width: 26
+        height: 26
+        speed: 3
+        hitSize: 10
+        type: BasicBulletType
+        sprite: as-web-star
+        backSprite: none
+        frontColor: 9adafb
+        backColor: 9adafb
+        trailColor: 9adafb
+        trailWidth: 2
+        trailLength: 10
+        status: webbed
+        statusDuration: 100
+        hitEffect: {
+                type: ParticleEffect
+                colorFrom: 9adafb
+                colorTo: 00000000
+                region: as-web-star
+                particles: 1
+                length: 0
+                baseLength: 0
+                lightScl: 2
+                lightOpacity: 2
+                lifetime: 130
+                spin: 2
+                sizeFrom: 26
+                sizeTo: 0
+                offset: 0
+        }
+        despawnEffect: none
+    }
+}
+    {
+        baseRotation: 0
+        shootCone: 360
+        mirror: false
+        inaccuracy: 0
+        reload: 270
+        name: period-back-weapon
+        rotate: false
+        top: true
+        baseRotation: 180
+        y: 0
+        x: 0
+        shootSound: laser-large-shot-1
+        shoot: {
+            type: ShootSpread
+            shots: 2
+            spread: 20
+        }
+        bullet : {
+            type: BasicBulletType
+            collides: false
+            damage: 0
+            speed: 4
+            drag: 0.03
+            shrinkY: 0
+            shrinkX: 0
+            width: 25
+            height: 25
+            lifetime: 180
+            sprite: as-none
+            frontColor: 9adafb
+            backColor: 74c1e8
+            trailColor: 74c1e8
+            trailWidth: 6
+            trailLength: 5
+            trailChance: 0.35
+            trailEffect: [
+                {
+                    type: RadialEffect
+                    rotationSpacing: 90
+                    effect: {
+                        type: ParticleEffect 
+                        colorFrom: 9adafb
+                        colorTo: 6a96d9
+                        particles: 5
+                        cone: 360
+                        length: 25
+                        baseLength: 0
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 3
+                        sizeTo: 0 
+                        layer: 99
+                    }
+                }
+            ]
+            parts: [
+                {
+                type: HaloPart
+                radius: 9
+                tri: true
+                layer: 110
+                color: 9adafb 
+                haloRotateSpeed: 2
+                haloRadius: 3
+                haloRadiusTo: 3
+                stroke: 10
+                strokeTo: 10
+                shapes: 4
+                triLengthTo: 17
+                triLength: 17
+                }
+            ]
+            parts: [
+                {
+                type: FlarePart
+                color2: F9ECFF
+                color1: 9adafb
+                radius: 18
+                radiusTo: 18
+                stroke: 8
+                layer: 110
+                spinSpeed: 5
+                }
+            ]
+            despawnEffect: [
+                {
+                    type: WaveEffect
+                    colorFrom: 9adafb
+                    colorTo: 42679d
+                    sizeFrom: 0
+                    sizeTo: 40
+                    lightScl: 3
+                    lightOpacity: 1
+                    sides: 0
+                    lifetime: 70
+                    rotation: 0
+                    strokeFrom: 6
+                    strokeTo: 0
+                }
+            ]
+            intervalDelay: 40
+            bulletInterval: 4
+            intervalRandomSpread: 0
+            intervalBullets: 1
+            intervalAngle: 180
+            intervalSpread: 0
+            intervalBullet: {
+                type: BasicBulletType
+                speed: 7
+                damage: 145
+                shrinkY: 0
+                shrinkX: 0
+                width: 14
+                height: 22
+                lifetime: 65
+                sprite: as-spear
+                weaveRandom: true
+                weaveScale: 5
+                weaveMag: 0.8
+                frontColor: 9adafb
+                backColor: 74c1e8
+                trailColor: 74c1e8
+                trailWidth: 1.5
+                trailLength: 12
+                homingPower: 0.01
+                homingRange: 120
+                homingDelay: 10
+                hitEffect: [
+                    {
+                        type: WaveEffect
+                        colorFrom: 9adafb
+                        colorTo: 42679d
+                        sizeFrom: 0
+                        sizeTo: 8
+                        lightScl: 3
+                        lightOpacity: 1
+                        sides: 0
+                        lifetime: 20
+                        rotation: 0
+                        strokeFrom: 6
+                        strokeTo: 0
+                    }
+                    {
+                        type: ParticleEffect 
+                        colorFrom: 9adafb
+                        colorTo: 6a96d9
+                        particles: 3
+                        cone: 120
+                        length: 6
+                        baseLength: 0
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 2
+                        sizeTo: 0 
+                    }
+                ]
+                despawnEffect: [
+                    {
+                        type: WaveEffect
+                        colorFrom: 9adafb
+                        colorTo: 42679d
+                        sizeFrom: 0
+                        sizeTo: 8
+                        lightScl: 3
+                        lightOpacity: 1
+                        sides: 0
+                        lifetime: 20
+                        rotation: 0
+                        strokeFrom: 6
+                        strokeTo: 0
+                    }
+                    {
+                        type: ParticleEffect 
+                        colorFrom: 9adafb
+                        colorTo: 6a96d9
+                        particles: 3
+                        cone: 120
+                        length: 10
+                        lifetime: 30
+                        baseLength: 0
+                        lightScl: 3
+                        lightOpacity: 2
+                        spin: 0
+                        sizeFrom: 2
+                        sizeTo: 0 
+                    }
+                ]
+            }
+        }
+    }
+]

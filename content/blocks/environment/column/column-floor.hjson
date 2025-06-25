@@ -1,0 +1,10 @@
+{
+  "type": "Floor",
+  "name": "Column floor",
+  "attributes": {
+	"water": -0.45
+  },
+  "variants": 4
+  "wall": "column-wall"
+  "decoration": "column-boulder"
+}

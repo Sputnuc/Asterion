@@ -1,0 +1,219 @@
+useEngineElevation : false
+shadowElevation : 0.38
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 3.35
+engineSize : 0
+hovering : true
+canDrown: false
+hitSize : 28
+health : 2360
+speed : 1.6
+accel : 0.25
+armor : 11
+name : Moment
+description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+type : hover
+drag : 0.1
+outlineColor: 28282d
+outlineRadius: 4
+
+parts: [
+    {
+        type: HoverPart
+        radius: 20
+        stroke: 4
+        phase: 85
+        layerOffset: -0.001
+        color: 79eef2
+    }
+]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2.5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 3
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : 0.5
+        x : 0
+    }
+]
+
+research: blink
+
+weapons: [{
+    shootY: 0
+    baseRotation: 0
+    shootCone: 90
+    inaccuracy: 30
+    mirror: true
+    recoil: 0
+    reload: 15
+    name: blink-weapon
+    shootSound: malignShoot
+    rotate: false
+    top: true
+    y: -2
+    x: 13
+    parts: [
+     {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 6
+     rotateSpeed: 1.2
+     radiusTo: 6
+     radius: 6
+     stroke: 0
+     strokeTo: 1
+     color: 74c1e8
+     colorTo: 74c1e8
+     }
+       {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 3
+     rotateSpeed: -0.9
+     radiusTo: 5
+     radius: 5
+     stroke: 0
+     strokeTo: 0.8
+     color: 74c1e8
+     colorTo: 74c1e8
+     }
+    ]
+    bullet : {
+        hitEffect: [
+            {
+            type: WaveEffect
+            sizeTo: 16
+            sizeFrom: 9
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: 74c1e8
+            colorTo: 74c1e800
+            lifetime: 10
+            }
+            {
+            type: ParticleEffect
+            particles: 6
+            sizeFrom: 3
+            sizeTo: 0
+            length: 30
+            baseLength: 7
+            colorFrom: 74c1e8
+            colorTo: 74c1e8
+            }
+            {
+            type: ParticleEffect
+            particles: 4
+            sizeFrom: 5
+            sizeTo: 3
+            length: 30
+            baseLength: 3
+            colorFrom: 74c1e8
+            colorTo: 74c1e800
+            lifetime: 35
+            }
+          ]
+        keepVelocity: false
+        lifetime: 30
+        damage: 14
+        height: 15
+        speed: 6
+        width: 13
+        type: BasicBulletType
+        shootEffect: {
+        type: WaveEffect
+        sides: 3
+        sizeTo: 10
+        sizeFrom: 3
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e8
+        }
+        homingPower: 0.8
+        homingDelay: 8
+        frontColor: 79eef2
+        backColor: 74c1e8
+        trailColor: 74c1e8
+        trailWidth: 2.8
+        trailLength: 14
+        fragMinLife: 1
+        fragBullets: 3
+        fragBullet: {
+            type: BasicBulletType
+            speed: 2
+            width: 7
+            height: 7
+            shrinkY: -1
+            shrinkX: -1
+            splashDamage: 21
+            splashDamageRadius: 40
+            lifetime: 200
+            drag: 0.04
+            sprite: "mine-bullet"
+            frontColor: 79eef2
+            backColor: 74c1e8
+            hitEffect: {
+              type: WaveEffect
+               sizeTo: 8
+               sizeFrom: 2
+               strokeFrom: 4
+               strokeTo: 0
+               colorFrom: 74c1e8
+               colorTo: 74c1e800
+               lifetime: 10
+              }
+            despawnEffect: [
+                 {
+                 type: WaveEffect
+                 sizeTo: 40
+                 sizeFrom: 2
+                 strokeFrom: 4
+                 strokeTo: 0
+                 colorFrom: 74c1e8
+                 colorTo: 74c1e800
+                 lifetime: 15
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                sizeFrom: 2
+                sizeTo: 0
+                length: 23
+                baseLength: 7
+                colorFrom: 74c1e8
+                colorTo: 74c1e8
+                }
+                {
+                type: ParticleEffect
+                particles: 2
+                sizeFrom: 2
+                sizeTo: 1
+                length: 19
+                baseLength: 2
+                colorFrom: 74c1e8
+                colorTo: 74c1e800
+                lifetime: 25
+                }
+             ]
+        }
+    }
+}]

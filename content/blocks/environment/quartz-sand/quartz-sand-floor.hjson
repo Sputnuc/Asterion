@@ -1,0 +1,11 @@
+{
+  "type": "Floor",
+  "name": "Quartz sand",
+  "variants": 5,
+  "attributes": {
+	"water": 0.50
+  },
+  "itemDrop": "quartz-sand"
+  "wall": "quartz-sand-wall"
+  "decoration": "quartz-sand-boulder"
+}

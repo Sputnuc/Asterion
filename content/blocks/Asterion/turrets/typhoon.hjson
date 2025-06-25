@@ -1,0 +1,138 @@
+  outlineColor: 22262b
+  name: Typhoon
+  description: Fires Cascades of armor piercing shells at enemies
+  health: 1250
+  shootSound: artillery
+  buildCostMultiplier: 1.2
+  reload: 60
+  recoil: 0.6
+  range: 300
+  size: 5
+  inaccuracy: 8
+  shoot: {
+     type: ShootMulti
+     source: {
+     type: ShootAlternate
+     spread: 18
+     barrels: 2
+     shots: 1
+     }
+     dest: [
+     {
+     shots: 3
+     }
+     ]
+  }
+  recoils: 2
+  consumes: { 
+    coolant: { 
+       amount: 0.5 
+    } 
+  }
+  researchCostMultiplier: 0.4
+  targetAir: true
+  targetGround: true
+  ammoTypes: {
+    ashotite: {
+    type: BasicBulletType
+    scaleLife: true
+	pierce: true
+	pierceCap: 2
+    frontColor: ffffff
+    backColor: ed9679
+    hitColor: ed9679
+	sprite: as-armored-shell
+    damage: 365
+	width: 10
+	height: 18
+    lifetime: 30
+    speed: 10
+    hitSize: 8
+    ammoMultiplier: 2
+	trailWidth: 4
+    trailLength: 17
+	trailColor: ed9679
+    fragBullets: 4
+    fragSpreadRandom: 8
+    despawnEffect: [
+    {
+    type: ParticleEffect
+    particles: 6
+    length: 16
+    baseLength: 8
+    sizeFrom: 5
+    sizeTo: 0
+    colorFrom: ed9679
+    colorTo: ed967900
+    }
+    {
+    type: ParticleEffect
+    particles: 4
+    length: 12
+    baseLength: 17
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: ed9679
+    colorTo: 97979700
+    }
+    {
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 60
+    strokeTo: 0
+    colorFrom: EBC6AB
+    colorTo: EBC6AB
+    lifetime: 10
+    }
+]
+    fragBullet: {
+      type: BasicBulletType
+	  pierce: true
+	  pierceCap: 2
+      frontColor: ffffff
+      backColor: ed9679
+      hitColor: ed9679
+  	  sprite: as-armored-shell
+      damage: 185
+	  width: 8
+	  height: 13
+      lifetime: 10
+      speed: 5
+      drag: -0.2
+      hitSize: 8
+	  trailWidth: 2
+      trailLength: 9
+	  trailColor: ed9679
+      }
+    }
+  }
+  requirements: [
+ 	 whitorite/330
+	  blacktite/200
+	  kiten/170
+	  magnetite/200
+	  graphene/140
+	  cobalt/70
+   ]
+  research: LRML
+  category: turret 
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+   {
+      type: RegionPart
+      suffix: -barrel-r
+      progress: recoil
+      recoilIndex: 1
+      moveY: -2
+      }
+	  {
+      type: RegionPart
+      suffix: -barrel-l
+      progress: recoil
+      recoilIndex: 0
+      moveY: -2
+      }
+	 ]
+	}

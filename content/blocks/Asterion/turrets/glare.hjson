@@ -1,0 +1,103 @@
+outlineColor: 1c1d1f
+//outline came from grandma
+//outlineRadius: 6
+cooldownTime: 120
+heatColor: f70a51
+name: Glare
+hasLiquids: true
+size: 3
+health: 1550
+range: 160
+liquidConsumed: 0.25
+targetAir: true
+targetGround: true
+shootCone: 3
+shootSound: torch
+loopSound: torch
+loopSoundVolume: 1.2
+alwaysContinuous: true
+continuous: true
+ammoTypes: {
+  zion: {
+  type: ContinuousFlameBulletType,
+  colors: [
+  a03ab0c3, d14bc4d4, e55ebfed, ff7ac1, ffffff
+  ]
+  damage: 12
+  knockback: 1.2
+  status: melting
+  statusDuration: 192
+  length: 160
+  width: 4.5
+  pierce: true
+  pierceBuilding: false
+  flareWidth: 2.6
+  flareLength: 85 
+  flareColor: ff7ac1
+  lifetime: 60
+  hitColor: d14bc4d4
+  hitEffect: {
+   type: ParticleEffect
+   line: true
+   particles: 2
+   lifetime: 60
+   length: 24
+   cone: 360
+   strokeFrom: 2.5
+   strokeTo: 0
+   lenFrom: 8
+   lenTo: 0
+   colorFrom: e55ebfed
+   colorTo: a03ab0c3
+   }
+  }
+  verdyne: {
+  type: ContinuousFlameBulletType,
+  colors: [
+  485bbdcd, 5c93d1db, 84cff0ef, abf9fffe, ffffff
+  ]
+  damage: 18
+  knockback: 1.7
+  status: melting
+  statusDuration: 248
+  rangeChange: 57
+  length: 217
+  width: 5.1
+  pierce: true
+  pierceBuilding: false
+  flareWidth: 3.5
+  flareLength: 93 
+  flareColor: abf9fffe
+  lifetime: 60
+  hitColor: 5c93d1db
+  hitEffect: {
+   type: ParticleEffect
+   line: true
+   particles: 4
+   lifetime: 82
+   length: 31
+   cone: 360
+   strokeFrom: 2.7
+   strokeTo: 0
+   lenFrom: 10
+   lenTo: 0
+   colorFrom: 84cff0ef
+   colorTo: 485bbdcd
+   }
+  }
+ }
+requirements: [
+  whitorite/100
+  irmenite/45
+  kiten/75
+  blacktite/35
+]
+category: turret
+research: {
+  parent: splinter
+  planet: as-asterion
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: ast-
+}

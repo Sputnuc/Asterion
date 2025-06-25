@@ -1,24 +1,18 @@
 {
   "name": "Kryoline",
   "description": "An aggressive cryolitic acid used in advanced cooling systems.",
-  "color": "6cc3ff",
+  "color": "4686F1",
   "research": "zion",
-  "barColor": "6cc3ff",
-  "gasColor": "87d9ff92",
-  "lightColor": "87d9ff92",
+  "barColor": "6BA2FFFF",
+  "gasColor": "B4D0FF",
+  "lightColor": "6BA2FFFF",
   "temperature": -0.05,
   "flammability": 0,
-  "explosiveness": 0.3,
+  "explosiveness": 0,
   "liquid": true,
   "explosive": false,
   "coolant": true,
-  "liquid": {
-    "cap": 4,
-    "heatCapacity": 0.3,
-    "explosive": true,
-    "flammable": false,
-    "viscosity": 0.1
-  },
+  "heatCapacity": 0.85,
   "hiddenOnPlanets": [
     "serpulo",
     "erekir"

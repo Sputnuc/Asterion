@@ -1,0 +1,156 @@
+type: flying
+name: unit-swarm
+flying: true
+lowAltitude: false
+hitSize: 6
+singleTarget: true
+faceTarget: false
+circleTarget: true
+health: 120
+speed: 2.8
+accel: 0.03
+drag: 0.03
+rotateSpeed: 6
+itemCapacity: 0
+outlineColor: 302121FF
+outlineRadius: 0
+engineSize: 0
+drawCell: false
+
+weapons: [
+  {
+    x: 0
+    y: 0
+    display: false
+    ignoreRotation: true
+    shootCone: 180
+    reload: 60
+    shootY: 0
+    inaccuracy: 0
+    shootSound: none
+    bullet: {
+      type: BasicBulletType
+      width: 0
+      lifetime: 1
+      height: 0
+      shootEffect: none
+      smokeEffect: none
+      damage: 0
+      splashDamage: 45
+      splashDamageRadius: 40
+      frontColor: 526B44FF
+      backColor: 2D382CFF
+      
+  hitEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: ffba7b
+colorTo: ffba7b
+particles: 6
+clip: 70
+cone: 360
+lifetime: 300
+length: 5
+baseLength: 5
+lightScl: 0
+lifetime: 180
+lightOpacity: 0
+spin: 0
+sizeFrom: 3
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: d88464
+particles: 12
+cone: 360
+length: 6
+clip: 70
+lifetime: 300
+baseLength: 5
+lightScl: 0
+lightOpacity: 0
+spin: 0
+sizeFrom: 5
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: d88464
+colorTo: af6052
+lifetime: 300
+particles: 12
+clip: 70
+cone: 360
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+]
+}
+}
+}
+]
+
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 5.9
+    rotateEffect: true
+    parentizeEffects: true
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: SeqEffect
+          layer: 115.1
+          rotWithParent: true
+          effects: [
+             {
+               type: ParticleEffect
+               casingFlip: true
+               lifetime: 3
+               clip: 9999
+               particles: 1
+               cone: 0
+               length: 0
+               interp: sine
+               sizeFrom: 3
+               sizeTo: 3
+               offset: 16
+               region: ecu-unit-swarm-fly
+               spin: 10
+            }
+            {
+               type: ParticleEffect
+               casingFlip: true
+               lifetime: 3
+               clip: 9999
+               particles: 1
+               cone: 0
+               length: 0
+               interp: sine
+               sizeFrom: 3
+               sizeTo: 3
+               offset: -16
+               region: ecu-unit-swarm-fly
+               spin: -10
+            }
+          ]
+          }
+       ]
+       }
+       }
+       ]
+       

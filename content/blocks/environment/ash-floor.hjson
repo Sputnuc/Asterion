@@ -1,6 +1,0 @@
-name: Ash
-variants: 3
-type: floor
-attributes: {
-	water: -0.65
-}

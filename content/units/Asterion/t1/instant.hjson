@@ -1,0 +1,145 @@
+useEngineElevation : false
+shadowElevation : 0.2
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 4
+engineSize : 0
+hovering : true
+canDrown: false
+hitSize : 11
+health : 130
+speed : 1.95
+accel : 0.4
+armor : 5
+name : Instant
+description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+type : hover
+drag : 0.07
+outlineColor: 28282d
+outlineRadius: 4
+
+parts: [
+    {
+        type: HoverPart
+        radius: 10
+        stroke: 2
+        phase: 85
+        layerOffset: -0.001
+        color: 79eef2
+    }
+]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -3
+        x : 0
+    }
+]
+
+research: orion-factory
+
+weapons: [
+{
+    baseRotation: 0
+    shootCone: 70
+    mirror: true
+    recoil: 0
+    reload: 5
+    name: instant-weapon
+    shootSound: blaster
+    top: true
+    y: -3
+    x: 8
+    parts: [
+    {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 3
+     rotateSpeed: 0.9
+     radiusTo: 3.5
+     radius: 3.5
+     stroke: 0
+     strokeTo: 0.5
+     color: 74c1e8
+     colorTo: 74c1e8
+     }
+     {
+     type: ShapePart
+     hollow: true
+     layer: 110
+     sides: 3
+     rotateSpeed: 0.9
+     radiusTo: 3.5
+     radius: 3.5
+     stroke: 0
+     strokeTo: 0.5
+     color: 74c1e8
+     colorTo: 74c1e8
+     rotation: 60
+     }
+    ]
+    bullet : {
+        lifetime: 20
+        damage: 9
+        height: 10
+        speed: 5
+        width: 10
+        shrinkX: 0
+        shrinkY: 0
+        type: BasicBulletType
+        frontColor: 79eef2
+        backColor: 74c1e8
+        homingPower: 0.2
+        homingRange: 32
+        smokeEffect: none
+        shootEffect: {
+        type: WaveEffect
+        sides: 5
+        sizeFrom: 0
+        sizeTo: 16
+        colorFrom: 79eef2
+        colorTo: 74c1e800
+        strokeFrom: 2
+        strokeTo: 0
+        }
+        hitEffect: {
+        type: WaveEffect
+        sides: 4
+        sizeFrom: 0
+        sizeTo: 6
+        colorFrom: 79eef2
+        colorTo: 74c1e800
+        strokeFrom: 2
+        strokeTo: 0
+        lifetime: 15
+        }
+        despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 9
+        colorFrom: 79eef2
+        colorTo: 74c1e800
+        strokeFrom: 2
+        strokeTo: 0
+        lifetime: 15
+        }
+    }
+}]

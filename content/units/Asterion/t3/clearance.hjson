@@ -1,0 +1,113 @@
+name: Clearance
+description: "//TODO T7 \n[white]Faction: [#d26e64][Extinguished]."
+type: tank
+hitSize: 22
+flying: false
+omniMovement: false
+targetAir: false
+health: 3600
+armor: 10
+speed: 0.35
+rotateSpeed: 0.85
+itemCapacity: 0
+outlineColor: 0b0812
+outlineRadius: 4
+treadRects: [
+  {
+  x: -33
+  y: -41
+  width: 24
+  height: 36
+  }
+  {
+  x: -32
+  y: 7
+  width: 24
+  height: 36
+  }
+]
+template: TankUnitType
+treadPullOffset: 4
+research: twilight
+weapons: [
+{
+    name: clearance-weapon
+    rotate: true
+    x: 0
+    y: 0
+    mirror: false
+    shootSound: shockBlast
+    reload: 90
+    recoil: 2
+    shake: 2
+    shootStatus: fading-t1
+    shootStatusDuration: 90
+    velocityRnd: 0.14
+    inaccuracy: 5
+    shoot: {
+    shots: 6
+    shotDelay: 3
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 15
+        splashDamage: 53
+        splashDamageRadius: 25
+        speed: 8
+        lifetime: 22
+        width: 12
+        height: 12
+        backColor: bc5451 
+        frontColor: e98878
+        trailColor: bc5451 
+        trailWidth: 2.6
+        trailLength: 6
+        shootEffect: none
+        smokeEffect: none
+        hitEffect:  {
+                type: WaveEffect
+                colorFrom: e98878
+                colorTo: bc545100
+                sizeFrom: 4
+                sizeTo: 7
+                lightScl: 3
+                lightOpacity: 1
+                sides: 3
+                strokeFrom: 2
+                strokeTo: 0
+            }
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+            {
+                type: ParticleEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                particles: 6
+                length: 20
+                baseLength: 6
+                lightScl: 3
+                lightOpacity: 2
+                spin: 0
+                sizeFrom: 3
+                sizeTo: 0
+                lifetime: 25
+            }
+            {
+                type: WaveEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                sizeFrom: 0
+                sizeTo: 11
+                lightScl: 3
+                lightOpacity: 1
+                sides: 4
+                rotation: 0
+                strokeFrom: 3
+                strokeTo: 0
+                lifetime: 25
+            }
+        ]}
+    }
+}
+]

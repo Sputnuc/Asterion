@@ -1,0 +1,1025 @@
+name: Zodiac
+description: "Orion's monstrous weapon, capable of crippling the entire sector. It releases a small star, which, as a result of the rupture, forms a small black hole. A black hole in this case is a wormhole that moves sucked materials straight for processing into the core of the Zodiac, thereby restoring its combat effectiveness. \n[white]Faction: [#d0d8e8]Orion[]."
+type: mech
+speed: 0.29
+mechStepShake: 7.5
+flying: false
+hitSize: 60
+itemCapacity: 300
+outlineColor: 1f1f26
+targetAir: true
+targetGround: true
+mechLegColor: 1f1f26
+mechFrontSway: 0.8
+mechStepParticles: true
+stepShake: 7.5
+outlineRadius: 5
+drownTimeMultiplier: 999
+rotateSpeed: 0.8
+health: 295000
+armor: 115
+range: 240
+parts: [
+    // Halo on ring
+    {
+        type: HaloPart
+        y: -20.5
+        radius: 3
+        tri: true
+        layer: 110
+        color: a9c5ea
+        haloRotateSpeed: 1.15
+        haloRadius: 8
+        haloRadiusTo: 14
+        stroke: 7
+        strokeTo: 8
+        shapes: 4
+        triLengthTo: 5.5
+        triLength: 4
+    }
+    {
+        type: HaloPart
+        y: -20.5
+        radius: 5
+        tri: true
+        layer: 110
+        color: a9c5ea
+        rotation: 180
+        haloRotateSpeed: 0.9
+        haloRadius: 8
+        haloRadiusTo: 14
+        shapes: 3
+        triLengthTo: 6
+        triLength: 0
+    }
+    {
+        type: ShapePart
+        y: -20.5
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 1.2
+        rotateSpeed: 0.8
+        radius: 8
+        radiusTo: 12
+    }
+    {
+        type: ShapePart
+        y: -20.5
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 1.2
+        rotateSpeed: -1.1
+        radius: 8
+        radiusTo: 12
+    }
+        {
+        type: ShapePart
+        y: -20.5
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 0.5
+        rotateSpeed: 1.3
+        radius: 8
+        radiusTo: 12
+    }
+    {
+        type: ShapePart
+        y: -20.5
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 0.5
+        rotateSpeed: -1.3
+        radius: 8
+        radiusTo: 12
+    }
+        {
+        type: ShapePart
+        y: -20.5
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 0.4
+        rotateSpeed: 1.5
+        radius: 8
+        radiusTo: 12
+    }
+    {
+        type: ShapePart
+        y: -20.5
+        progress: warmup
+        hollow: true
+        circle: false
+        layer: 110
+        color: a9c5ea
+        sides: 3
+        stroke: 0
+        strokeTo: 0.4
+        rotateSpeed: -1.5
+        radius: 8
+        radiusTo: 12
+    }
+    //addition tri
+    {
+        type: HaloPart
+        y: -20.5
+        radius: 5
+        tri: true
+        layer: 110
+        color: a9c5ea
+        haloRotateSpeed: -0.70
+        haloRadius: 14
+        haloRadiusTo: 20
+        shapes: 4
+        triLengthTo: 9.5
+        triLength: 7
+    }
+    {
+        type: HaloPart
+        y: -20.5
+        radius: 5
+        tri: true
+        layer: 110
+        color: a9c5ea
+        haloRotateSpeed: -0.70
+        haloRadius: 14
+        haloRadiusTo: 20
+        shapes: 4
+        triLengthTo: 6
+        triLength: 4
+        shapeRotation: 180
+    }
+    {
+        type: HaloPart
+        y: -20.5
+        radius: 4
+        tri: true
+        layer: 110
+        color: a9c5ea
+        haloRotateSpeed: -0.9
+        haloRadius: 14
+        haloRadiusTo: 18
+        shapes: 3
+        triLengthTo: 5
+        triLength: 0
+    }
+    //circles?
+    {
+        type: shapePart
+        y: -20.5
+        layer: 110
+        hollow: true
+        circle: true
+        color: c7d9f0f
+        stroke: 1.5
+        strokeTo: 2
+        radiusTo: 14
+        radius: 8
+    }
+    {
+        type: shapePart
+        y: -20.5
+        layer: 110
+        hollow: false
+        circle: true
+        color: c7d9f0f
+        radiusTo: 5
+        radius: 4
+    }]
+weapons: [
+{
+    name: zodiac-weapon
+
+    parts: [
+    {
+        type: RegionPart
+        suffix: -heat
+        progress: warmup
+        blending: additive
+        color: 30fdf3
+        layerOffset: -0.1
+        outline: false
+    }
+    ]
+    shake: 15
+    rotateSpeed: 1.1
+    cone: 45
+    shootX: 0
+    shootY: 25
+    x: -61.5
+    y: 1
+    layerOffset: -0.01
+    cooldownTime: 250
+    mirror: true
+    rotate: true
+    rotationLimit: 34
+    recoil: 8
+    reload: 300
+    shootSound: mechshoot
+
+    bullet: {
+        type: BasicBulletType
+        backColor: 8798b9
+        trailLength: 24
+        pierceArmor: true
+        trailWidth: 8
+        scaleLife: true
+        trailColor: a1b1d0
+        frontColor: a1b1d0
+        colideTiles: false
+        despawnShake: 40
+        parts: [
+        {
+            type: FlarePart
+            color2: a1b1d0
+            color1: E0EAFF
+            radius: 60
+            radiusTo: 110
+            layer: 110
+            followRotation: true
+            rotMove: 160
+            progress: life
+        }
+        ]
+        hitShake: 5
+        height: 30
+        width: 30
+        splashDamageRadius: 128
+        splashDamage: 5380
+        damage: 3980
+        absorbable: false
+        hitEffect: [
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 300
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 16
+            colorTo: ffffff00
+        }
+            {
+                type: ParticleEffect
+                length: 60
+                baseLength: 80
+                sizeFrom: 12
+                sizeTo: 1
+                colorTo: ffffff00
+                particles: 20
+                lifetime: 45
+            }
+            {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 55
+                sizeTo: 0
+                length: 0
+                interp: swingIn
+                lifetime: 180
+                layer: 109
+                colorFrom: a1b1d0
+                colorTo: a1b1d0
+            }
+            {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 40
+                sizeTo: 0
+                interp: swingIn
+                layer: 110.1
+                length: 0
+                lifetime: 180
+                colorFrom: 02051FFF
+                colorTo: 02051FFF
+                lightScl: 0
+                lightOpacity: 0
+            }
+            {
+          type: ParticleEffect
+          particles: 14
+          offset: 100
+          sizeFrom: 0
+          sizeTo: 8
+          length: 200
+          baseLength: -200
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+           }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 180
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 5
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 10
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 15
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 20
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 25
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 30
+          }
+            ]
+        despawnEffect: [
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 300
+            lifetime: 30
+            strokeFrom: 0
+            strokeTo: 16
+            colorTo: ffffff00
+        }
+            {
+                type: ParticleEffect
+                length: 60
+                baseLength: 80
+                sizeFrom: 12
+                sizeTo: 1
+                colorTo: ffffff00
+                particles: 20
+                lifetime: 45
+            }
+            {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 55
+                sizeTo: 0
+                length: 0
+                interp: swingIn
+                lifetime: 180
+                layer: 109
+                colorFrom: a1b1d0
+                colorTo: a1b1d0
+            }
+            {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 40
+                sizeTo: 0
+                interp: swingIn
+                layer: 110.1
+                length: 0
+                lifetime: 180
+                colorFrom: 02051FFF
+                colorTo: 02051FFF
+                lightScl: 0
+                lightOpacity: 0
+            }
+            {
+          type: ParticleEffect
+          particles: 14
+          offset: 100
+          sizeFrom: 0
+          sizeTo: 8
+          length: 200
+          baseLength: -200
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+           }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 180
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 5
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 10
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 15
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 20
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 25
+          }
+           {
+          type: ParticleEffect
+          particles: 18
+          offset: 100
+          sizeFrom: 1
+          sizeTo: 3
+          length: 250
+          baseLength: -250
+          interp: pow3In
+          sizeInterp: pow5Out
+          lifetime: 90
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          startDelay: 30
+          }
+            ]
+        lifetime: 70
+        speed: 8
+        fragBullets: 120
+        fragLifeMin: 0.1
+        fragRandomSpread: 0
+        fragBullet: {
+            type: BasicBulletType
+            absorbable: false
+            lifetime: 180
+            collides: false
+            damage: 0
+            speed: 0
+            hitShake: 25
+            despawnHit: true
+            width: 0
+            height: 0
+            hitSize: 0
+            knockback: -1
+            hitEffect: none
+            keepVelocity: false
+            lightning: 3
+            lightningLength: 22.5
+            lightningDamage: 110
+            lightningColor: a1b1d0
+            despawnEffect: [
+           {
+          type: ParticleEffect
+          particles: 1
+          offset: 100
+          sizeFrom: 0
+          sizeTo: 10
+          layer: 109
+          length: 250
+          baseLength: -250
+          interp: exp10In
+          sizeInterp: pow10Out
+          lifetime: 30
+          colorFrom: a1b1d000
+          colorTo: a1b1d0
+          }
+            ]
+            fragBullets: 10
+            fragBullet: {
+                type: SapBulletType
+                damage: 70
+                sapStrength: 0.90
+                pierceArmor: true
+                knockback: -5
+                lifetime: 0
+                pierce: true
+                length: 180
+                width: 0
+                lightColor: 00000000
+                hitEffect: none
+                status: none
+                statusDuration: 0
+            }
+        }
+    }
+}
+    {
+        name: zodiac-bullet-hell
+        outlineRadius:
+        shake: 2
+        rotateSpeed: 2.7
+        parentizeEffects: true
+        alternate: false
+        cone: 30
+        shootX: 0
+        shootY: 5
+        x: -31.5
+        y: 6
+        layerOffset: 0.01
+        inaccuracy: 4
+        velocityRnd: 0.05
+        mirror: true
+        shoot: {
+            shots: 4
+            shotDelay: 2
+        }
+        rotate: true
+        recoil: 1
+        reload: 10
+        shootSound: piew
+        bullet: {
+            chargeEffect: {
+                type: WaveEffect
+                rotWithParent: true
+                followParent: true
+                offsetX: 1.25
+
+                lifetime: 120
+                sizeFrom: 16
+                sizeTo: 0
+
+                colorFrom: FFFFFF00
+                colorTo: e0fffd
+            }
+            type: BasicBulletType
+            backColor: 8798b9
+            trailLength: 6
+            trailWidth: 2
+            scaleLife: true
+            trailColor: a1b1d0
+            frontColor: a1b1d0
+            despawnShake: 2
+            interp: expIn
+            hitShake: 5
+            height: 12
+            width: 8
+            lifetime: 34
+            damage: 95
+            speed: 15
+            despawnEffect: {
+                type: WaveEffect
+                colorFrom: d0d8e8
+                colorTo: a1b1d0
+                sizeFrom: 0
+                sizeTo: 6
+                lightScl: 4
+                lightOpacity: 1
+                rotation: 0
+                strokeFrom: 4
+                strokeTo: 0
+            }
+            hitEffect: {
+                type: WaveEffect
+                colorFrom: d0d8e8
+                colorTo: a1b1d0
+                sizeFrom: 0
+                sizeTo: 6
+                lightScl: 4
+                lightOpacity: 1
+                rotation: 0
+                strokeFrom: 4
+                strokeTo: 0
+            }
+        }
+    }
+
+    {
+        name: zodiac-bullet-hell
+        outlineRadius:
+        shake: 2
+        rotateSpeed: 2.7
+        parentizeEffects: true
+        alternate: true
+        cone: 30
+        shootX: 0
+        shootY: 5
+        x: -39
+        y: -12.25
+        layerOffset: 0.01
+        inaccuracy: 4
+        velocityRnd: 0.1
+        mirror: true
+        shoot: {
+            shots: 4
+            shotDelay: 2
+        }
+        rotate: true
+        recoil: 1
+        reload: 15
+        shootSound: piew
+        bullet: {
+            chargeEffect: {
+                type: WaveEffect
+                rotWithParent: true
+                followParent: true
+                offsetX: 1.25
+
+                lifetime: 120
+                sizeFrom: 16
+                sizeTo: 0
+
+                colorFrom: FFFFFF00
+                colorTo: e0fffd
+            }
+            type: BasicBulletType
+            backColor: 8798b9
+            trailLength: 6
+            trailWidth: 2
+            scaleLife: true
+            trailColor: a1b1d0
+            frontColor: a1b1d0
+            backColor: 7B9FE4
+            despawnShake: 2
+            interp: expIn
+            hitShake: 5
+            height: 12
+            width: 8
+            lifetime: 34
+            damage: 95
+            speed: 15
+            despawnEffect: {
+                type: WaveEffect
+                colorFrom: d0d8e8
+                colorTo: a1b1d0
+                sizeFrom: 0
+                sizeTo: 6
+                lightScl: 4
+                lightOpacity: 1
+                rotation: 0
+                strokeFrom: 4
+                strokeTo: 0
+            }
+            hitEffect: {
+                type: WaveEffect
+                colorFrom: d0d8e8
+                colorTo: a1b1d0
+                sizeFrom: 0
+                sizeTo: 6
+                lightScl: 4
+                lightOpacity: 1
+                rotation: 0
+                strokeFrom: 4
+                strokeTo: 0
+            }
+        }
+    }
+    {
+        name: zodiac-impulsegun
+        x: -20.5
+        y: -29.5
+        reload: 60
+        shake: 8
+        shootY: 10
+        rotate: true
+        rotateSpeed: 1.4
+        shootSound: blaster-shot-2
+        shoot: {
+            type: ShootAlternate
+            spread: 12
+            barrels: 2
+            shots: 2
+        }
+        bullet: {
+            damage: 550
+            splashDamage: 255
+            splashDamageRadius: 56
+            height: 19
+            width: 17
+            backColor: 4165AB
+            frontColor: 9DBDFA
+            speed: 20
+            lifetime: 33
+            trailLength: 14
+            trailWidth: 3
+            trailColor: 9DBDFA
+            trailInterval: 1
+            trailRotation: true
+            trailEffect: {
+                type: ParticleEffect
+                particles: 8
+                sizeFrom: 1.5
+                sizeTo: 0
+                colorFrom: 9DBDFA
+                colorTo: 4165AB
+                length: 4.5
+                baseLength: 4.8
+            }
+            lightning: 9
+            lightningLength: 17
+            lightningDamage: 95
+            lightningColor: 9DBDFA
+            intervalBullets: 2
+            bulletInterval: 1
+            intervalRandomSpread: 360
+            intervalBullet: {
+                type: LightningBulletType
+                damage: 125
+                lifetime: 4
+                hitEffect: hitLancer
+                despawnEffect: none
+                hitEffect: none
+                shootEffect: none
+                lightningColor: 9DBDFA
+                lightningLength: 7
+                inaccuracy: 360
+                lightningLengthRand: 2
+                keepVelocity: false
+            }
+        }
+    }
+    {
+        //core attack
+        display: false
+        x: 0
+        y: -20.5
+        mirror: false
+        recoil: 0
+        reload: 9650
+        shootSound: spark
+        shootStatus: high_energy_output
+        shootStatusDuration: 670
+        alwaysShooting: true
+        shoot: {
+            type: ShootSpread
+            shots: 125
+            shotDelay: 1.5
+            shotSpread: 360
+        }
+
+        bullet: {
+            type: LightningBulletType
+            knockback: 7
+            damage: 295
+            lifetime: 2.7
+            hitEffect: hitLancer
+            despawnEffect: none
+            hitEffect: none
+            shootEffect: none
+            lightningColor: ffffff
+            lightningLength: 27
+            inaccuracy: 360
+            lightningLengthRand: 0
+            keepVelocity: false
+
+            shootEffect: {
+                type: MultiEffect
+                effects: [{
+                    type: ParticleEffect
+                    colorFrom: ffffff
+                    colorTo: a1b1d0
+                    particles: 10
+                    cone: 360
+                    length: 40
+                    baseLength: 13
+                    lightScl: 4
+                    lightOpacity: 4
+                    spin: 0
+                    sizeFrom: 4
+                    sizeTo: 0
+                    offset: 1
+                }
+                    {
+                        type: ParticleEffect
+                        colorFrom: a1b1d0
+                        colorTo: 8798b9
+                        particles: 15
+                        cone: 360
+                        length: 50
+                        baseLength: 6
+                        lightScl: 5
+                        lightOpacity: 4
+                        spin: 0
+                        sizeFrom: 4
+                        sizeTo: 0
+                        offset: 1.5
+                    }
+                    {
+                        type: ParticleEffect
+                        colorFrom: 8798b9
+                        colorTo: 8798b9
+                        particles: 11
+                        cone: 360
+                        length: 35
+                        baseLength: 8
+                        lightScl: 5
+                        lightOpacity: 4
+                        spin: 0
+                        sizeFrom: 4
+                        sizeTo: 0
+                        offset: 1.5
+                    }
+                    {
+                        type: WaveEffect
+                        colorFrom: d0d8e8
+                        colorTo: a1b1d0
+                        sizeFrom: 0
+                        sizeTo: 17
+                        lightScl: 6
+                        lightOpacity: 3
+                        rotation: 0
+                        strokeFrom: 6
+                        strokeTo: 0
+                    }]
+            }
+        }
+    }]
+immunities: [
+burning
+wet
+slow
+sapped
+shocked
+freezing
+spore-slowed
+blasted
+electrified
+melting
+unmoving
+as-virus
+as-discharge
+as-in-ash
+disarmed
+]
+
+abilities: [{
+    type: MoveLightningAbility
+    minSpeed: -1
+    maxSpeed: 0
+    damage: 0
+    chance: 1
+    length: 1
+    color: 00000000
+    shootSound: none
+    shootEffect: {
+        type: ParticleEffect
+        particles: 1
+        sizeFrom: 82
+        sizeTo: 82
+        length: 0.01
+        lifetime: 12
+        region: as-zodiac-glow
+        colorFrom: 90afd1cc
+        colorTo: 7d89a8aa
+        lightOpacity: 0.25
+        layer: 105
+    }
+}
+]

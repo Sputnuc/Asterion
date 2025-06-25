@@ -1,0 +1,237 @@
+useEngineElevation : false
+shadowElevation : 0.38
+engineOffset : -1.75
+itemCapacity : 0
+rotateSpeed : 3
+engineSize : 0
+flying : true
+hitSize : 28
+health : 7280
+speed : 1.6
+accel : 0.3
+armor : 14
+name : Kron
+description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+type : flying
+drag : 0.1
+outlineColor: 28282d
+outlineRadius: 4
+
+abilities: [
+    {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 3.5
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 3.5
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : 7.25
+        x : 0
+    }
+    {
+        effect: {
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 3
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 3
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -5.25
+        x : 7.5
+    }
+    {
+        effect: {
+        type: ParticleEffect 
+        colorFrom: 79eef2
+        colorTo: 42679d
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 3
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 3
+        sizeTo: 0 
+        offset: 0
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.00000001
+        y : -5.25
+        x : -7.5
+    }
+    {
+        type: SuppressionFieldAbility
+        range: 130
+        orbRadius: 0
+        particles: 0
+        orbMidScl: 0
+        orbSinScl: 0
+        orbSinMag: 0
+    }
+]
+
+research: moment
+
+weapons: [
+{
+    
+    baseRotation: 0
+    shootCone: 95
+    mirror: false
+    reload: 120
+    recoil: 0
+    name: kron-weapon
+    rotate: false
+    shake: 0.8
+    top: true
+    y: 0
+    x: 0
+    inaccuracy: 70
+    shootSound: blaster
+    shoot: {
+        type: ShootSpread
+        shots: 15
+        shotDelay: 1
+    }
+    parts: [
+    {
+    type: ShapePart
+     y: 0
+     hollow: true
+     progress: reload
+     circle: false
+     sides: 6
+     layer: 110
+     color: a9c5ea
+     stroke: 1.6
+     strokeTo: 0.3
+	 rotateSpeed: 0.8
+     radius: 20
+	 radiusTo: 23
+    }
+    ]
+    bullet : {
+        lightRadius: 0
+        keepVelocity: false
+        lifetime: 40
+        damage: 32
+        pierce: true
+        height: 10
+        speed: 1
+        drag: -0.07
+        width: 10
+        homingPower: 0.3
+        homingDelay: 10
+        homingRange: 32
+        trailColor: 74c1e8
+        trailWidth: 2
+        trailLength: 9
+        type: BasicBulletType
+        status: underclock
+        statusDuration: 150
+        hitEffect: none
+        despawnEffect: none
+        frontColor: 79eef2
+        backColor: 74c1e8
+    }
+  }
+  {
+    
+    baseRotation: 0
+    shootCone: 75
+    mirror: false
+    reload: 45
+    name: kron-weapon
+    rotate: false
+    top: true
+    y: 0
+    x: 0
+    inaccuracy: 55
+    shootSound: shockBlast
+    shake: 4
+    
+    bullet : {
+        lightRadius: 0
+        keepVelocity: false
+        lifetime: 40
+        damage: 145
+        splashDamage: 65
+        splashDamageRadius: 28
+        height: 19
+        speed: 8
+        width: 19
+        homingPower: 0.4
+        homingDelay: 4
+        homingRange: 64
+        trailColor: 74c1e8
+        trailWidth: 4
+        trailLength: 6.5
+        type: BasicBulletType
+        status: underclock
+        statusDuration: 250
+        hitEffect: {
+        type: WaveEffect
+        sides: 3
+        sizeFrom: 13
+        sizeTo: 32
+        strokeFrom: 7
+        strokeTo: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e800
+        lifetime: 35
+        }
+        frontColor: 79eef2
+        backColor: 74c1e8
+        trailRotation: true
+        trailInterval: 1
+        shake: 2
+        despawnEffect: {
+        type: WaveEffect
+        sides: 3
+        sizeFrom: 7
+        sizeTo: 26
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e800
+        lifetime: 35
+        }
+        trailEffect: {
+        type: WaveEffect
+        sides: 5
+        sizeFrom: 5
+        sizeTo: 14
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: 74c1e8
+        colorTo: 74c1e800
+        lifetime: 10
+        }
+    }
+  }
+]

@@ -4,11 +4,22 @@
 "description":
   '''
 This is collaboration mod.
-Mod server: https://discord.gg/PcTnJ96mwf
+
+[white] [purple]|Asterion [yellow]Team|[white] 
+Developers/Helpers:
+  Sputnuc - Creator,coder, spriter, mapper
+  bloody_ocean1846_66553 - Spriter
+  sundered8134 - Spriter
+  R.O.T - coder, spriter
+  andashik - coder, spriter, mapper
+  scrap1020spawn/ace1020spawn - composer,mapper
+  los_sasikos - balancer
+  gg_word - WTF man!? Where is russian translate!?
+  itz.craft_ - funny man
+  lehanchic25 - funny man
   '''
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "0.6.5",
-"minGameVersion": 146,
-"subtitle": "0.6.5",
-"dependencies": ["black-hole-renderer"]
+"version": "pre 0.96",
+"minGameVersion": 147,
+"subtitle": "Beta V0.96"
 }

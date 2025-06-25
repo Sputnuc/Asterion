@@ -1,0 +1,249 @@
+
+  name: Volcano
+  description: Shoots a large projectile, which in flight scatters on other smaller ones that explode, when the main projectile hits a unit, it scatters on others that also explode.
+  health: 1250
+  shootSound: mediumCannon
+  buildCostMultiplier: 1.2
+  reload: 360
+  recoil: 1.4
+  shake: 10
+  range: 400
+  rotateSpeed: 1.1
+  size: 6
+  outlineColor: 1c1d1f
+  innacuracy: 3
+  velocityRnd: 0.4
+  researchCostMultiplier: 0.4
+  inaccuracy: 1
+  targetAir: true
+  targetGround: true
+
+  consumes: { 
+    coolant: { 
+       amount: 0.5
+    } 
+    power: 30 
+  }
+
+  ammoTypes: {
+    ashotite: {
+      type: BasicBulletType
+      pierce: false
+      frontColor: ffffff
+      backColor: bf7622
+      hitColor: bf7622
+      sprite: as-volcano-stone
+      damage: 280
+      width: 12
+      height: 25
+      lifetime: 20
+      speed: 25
+      hitSize: 8
+      ammoMultiplier: 2
+      trailWidth: 6
+      trailLength: 9
+      trailColor: ff754f
+      trailRotation: true
+      trailEffect: {
+       type: ParticleEffect
+       particles: 5
+       colorFrom: FFD8C6  
+       colorTo: FF7C4700
+       sizeFrom: 9
+       sizeTo: 3
+       cone: 45
+       length: -10
+       lifetime: 45
+      }
+      bulletInterval: 5
+      intervalRandomSpread: 0
+      intervalBullets: 2
+      intervalAngle: 180
+      intervalSpread: 300
+        intervalBullet: {
+          type: BasicBulletType
+          pierce: false
+          frontColor: ffffff
+          backColor: bf7622
+          hitColor: bf7622
+          sprite: as-volcano-stone-small
+          damage: 180
+          splashDamage: 90
+          splashDamageRadius: 35
+          width: 5
+          height: 25
+          lifetime: 15
+          speed: 3
+          trailWidth: 3
+          trailLength: 9
+          trailColor: ff754f
+          hitEffect: { 
+            type: MultiEffect 
+            effects: [ 
+              { 
+                type: WaveEffect 
+                sizeFrom: 0 
+                sizeTo: 35
+                strokeFrom: 4 
+                strokeTo: 0 
+                lifetime: 40 
+                colorFrom: ff754f
+                colorTo: f0724f00
+              } 
+            ] 
+          } 
+          despawnEffect: { 
+            type: MultiEffect
+              effects: [ 
+                { 
+                  type: WaveEffect
+                  sides: 0 
+                  sizeFrom: 0 
+                  sizeTo: 35
+                  strokeFrom: 4 
+                  strokeTo: 0 
+                  lifetime: 20 
+                  colorFrom: ff754f
+                  colorTo: f0724f00
+              } 
+            ] 
+          }
+        }
+        fragBullet: {
+          type: BasicBulletType
+          pierce: false
+          frontColor: ffffff
+          backColor: bf7622
+          hitColor: bf7622
+          sprite: as-volcano-stone-small
+          damage: 240
+          splashDamage: 120
+          splashDamageRadius: 50
+          width: 5
+          height: 25
+          lifetime: 10
+          speed: 5
+          trailWidth: 3
+          trailLength: 9
+          trailColor: ff754f
+          hitEffect: { 
+            type: MultiEffect 
+            effects: [ 
+              { 
+                type: WaveEffect 
+                sides: 0 
+                sizeFrom: 0 
+                sizeTo: 50 
+                strokeFrom: 4 
+                strokeTo: 0 
+                lifetime: 40 
+                colorFrom: ff754f
+                colorTo: f0724f00
+              } 
+            ] 
+          } 
+        despawnEffect: { 
+         type: MultiEffect
+            effects: [ 
+            { 
+              type: WaveEffect"
+              sides: 0 
+              sizeFrom: 0 
+              sizeTo: 50
+              strokeFrom: 4 
+              strokeTo: 0 
+              lifetime: 20 
+              colorFrom: ff754f
+              colorTo: f0724f00
+            } 
+          ] 
+        }
+      }
+    }
+  }
+
+  requirements: [
+    whitorite/330
+    blacktite/200
+    kiten/170
+    magnetite/200
+    graphene/140
+  ]
+
+  research: typhoon
+  category: turret 
+
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+    {
+      type: RegionPart
+      suffix: -barrel-side
+      under: false
+      mirror: true
+      progress: warmup
+      moves: [
+        {
+          type: PartMove
+          rot: -19
+        }
+      ]
+    }
+    {
+      type: HaloPart
+	  progress: warmup
+      y: -28
+      radius: 8
+      tri: true
+      color: FF9162
+	  layer: 110
+      haloRotateSpeed: 1.5
+      haloRadius: 5
+      haloRadiusTo: 8
+      shapes: 3
+      triLengthTo: 3
+      triLength: 0
+    }
+    {
+     type: ShapePart
+     y: -28
+	 progress: warmup
+     hollow: true
+     circle: false 
+     layer: 110
+     color: FF9162
+	 sides: 3
+     stroke: 0
+     strokeTo: 0.9
+	 rotateSpeed: -0.8
+     radius: 8
+    }
+        {
+     type: ShapePart
+     y: -28
+	 progress: warmup
+     hollow: true
+     circle: false 
+     layer: 110
+     color: FF9162
+	 sides: 3
+     stroke: 0
+     strokeTo: 0.9
+	 rotateSpeed: -0.3
+     radius: 8
+    }
+   {
+     type: ShapePart
+     y: -28
+	 progress: warmup
+     hollow: true
+     circle: true
+     layer: 110
+     color: FF9162
+     stroke: 0
+     strokeTo: 1
+     radius: 8
+    }
+  ]
+}

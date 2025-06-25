@@ -1,0 +1,115 @@
+type: tank
+name: Mist
+description: "//TODO T7 \n[white]Faction: [#d26e64]Extinguished[]."
+hitSize: 11
+flying: false
+omniMovement: false
+health: 450
+armor: 6
+speed: 0.42
+rotateSpeed: 1.45
+itemCapacity: 0
+outlineColor: 0b0812
+outlineRadius: 4
+treadRects: [
+  {
+  x: -18
+  y: -21
+  width: 19
+  height: 46
+  }
+]
+template: TankUnitType
+treadPullOffset: 4
+research: orion-factory
+weapons: [
+ {
+    name: mist-weapon
+    rotate: true
+    x: 0
+    y: -1.25
+    mirror: false
+    shootSound: shootAlt
+    reload: 70
+    recoil: 1.5
+    shootStatus: fading-t1
+    shootStatusDuration: 30
+    shoot: {
+    type: ShootMulti
+    source: {
+     type: ShootSpread
+     shots: 3
+     spread: 5
+    }
+    dest:[
+    {
+     type: ShootPattern
+     shots: 4
+     shotDelay: 10
+     }
+    ]
+}
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      damage: 15
+      speed: 6.5
+      lifetime: 20
+      width: 6
+      height: 8
+      backColor: bc5451 
+      frontColor: e98878
+      trailColor: bc5451 
+      trailWidth: 1.6
+      trailLength: 3
+      homingPower: 0.3
+      homingDelay: 10
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+       {
+        type: ParticleEffect
+        particles: 5
+        sizeFrom: 2.25
+        sizeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        length: 11
+        lifetime: 15
+       }
+       {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 6.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        lifetime: 15
+       }
+      ]
+      despawnEffect: [
+       {
+        type: ParticleEffect
+        particles: 5
+        sizeFrom: 2.25
+        sizeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        length: 11
+        lifetime: 15
+       }
+       {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 6.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        lifetime: 15
+       }
+      ]
+    }
+  }
+]

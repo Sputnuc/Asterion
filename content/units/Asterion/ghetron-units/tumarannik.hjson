@@ -1,0 +1,160 @@
+name: tumarannik
+type: mech
+speed: 1.5
+flying: false
+hitSize: 13
+itemCapacity: 25
+outlineColor: 24232e
+targetAir: false
+targetGround: true
+mechLegColor: 24232e 
+outlineRadius: 0
+mechFrontSway: 0.9
+mechStepParticles: true
+stepShake: 1
+drawCell: false
+drownTimeMultiplier: 8
+rotateSpeed: 3
+health: 240
+armor: 1
+range: 40
+
+deathExplosionEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: 8a73c6
+particles: 6
+clip: 70
+cone: 360
+lifetime: 300
+length: 5
+baseLength: 5
+lightScl: 0
+lifetime: 180
+lightOpacity: 0
+spin: 0
+sizeFrom: 3
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: bf92f9
+colorTo: bf92f9
+particles: 12
+cone: 360
+length: 6
+clip: 70
+lifetime: 300
+baseLength: 5
+lightScl: 0
+lightOpacity: 0
+spin: 0
+sizeFrom: 5
+sizeTo: 0
+offset: 0
+}
+{
+type: ParticleEffect 
+colorFrom: bf92f9
+colorTo: 665c9f
+lifetime: 300
+particles: 12
+clip: 70
+cone: 360
+length: 7
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 2
+sizeTo: 0 
+offset: 1
+}
+]
+}
+
+weapons: [
+    {
+    display: false
+    ignoreRotation:true
+    reload: 100
+    recoil: 0.8
+x: 0
+y: 0
+mirror: false
+shootSound: smoke-tumarannik
+
+bullet: {
+type: BasicBulletType
+damage: 0
+lifetime: 1
+killShooter: true
+buildingDamageMultiplier: 1.2
+width: 0
+height: 0
+speed: 0
+backColor: ff6e6e 
+frontColor: ff6e6e 
+splashDamage: 50
+splashDamageRadius: 32
+
+shootEffect:{
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect 
+colorFrom: bf92f9
+colorTo: bf92f9
+particles: 27
+cone: 360
+length: 35
+baseLength: 1
+lightScl: 3
+lifetime: 180
+lightOpacity: 2
+spin: 0
+sizeFrom: 5
+sizeTo: 0 
+offset: 1
+}
+{
+type: ParticleEffect 
+colorFrom: 8a73c6
+colorTo: 8a73c6
+particles: 27
+cone: 360
+length: 35
+lifetime: 180
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 9
+sizeTo: 0 
+offset: 1
+}
+{
+type: ParticleEffect 
+colorFrom: 665c9f
+colorTo: 665c9f
+lifetime: 180
+particles: 27
+cone: 360
+length: 35
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 8
+sizeTo: 0 
+offset: 1
+}
+]
+}
+}
+}
+]
