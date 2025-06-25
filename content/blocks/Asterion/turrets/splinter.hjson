@@ -348,6 +348,7 @@ research: {
   parent: core-force
   requirements: [
     whitorite/55
+    kiten/35
   ]
 }
 category: turret 

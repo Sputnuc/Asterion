@@ -80,6 +80,12 @@ category: turret
 research: {
   parent: splinter
   planet: as-asterion
+  objectives: [
+    {
+     type: SectorComplete
+     preset: impact-point
+    }
+   ]
 }
 drawer: {
   type: DrawTurret

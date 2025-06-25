@@ -53,8 +53,8 @@ parent: 01-ascetion
 solarSystem: 01-ascetion
 radius: 0.9
 minZoom: 0.6
-sectorSize: 2
-startSector: 10
+sectorSize: 3.5
+startSector: 16
 atmosphereRadIn: 0
 atmosphereRadOut: 0.21
 atmosphereColor: 69453095  

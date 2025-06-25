@@ -42,6 +42,7 @@ weapons: [
     shake: 2
     shootStatus: fading-t1
     shootStatusDuration: 90
+    velocityRnd: 0.14
     inaccuracy: 5
     shoot: {
     shots: 6
@@ -90,20 +91,21 @@ weapons: [
                 spin: 0
                 sizeFrom: 3
                 sizeTo: 0
-                offset: 1
+                lifetime: 25
             }
             {
                 type: WaveEffect
                 colorFrom: e98878
                 colorTo: bc5451
                 sizeFrom: 0
-                sizeTo: 18
+                sizeTo: 11
                 lightScl: 3
                 lightOpacity: 1
-                sides: 8
+                sides: 4
                 rotation: 0
                 strokeFrom: 3
                 strokeTo: 0
+                lifetime: 25
             }
         ]}
     }

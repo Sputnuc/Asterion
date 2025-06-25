@@ -30,7 +30,7 @@ weapons: [
     y: -1.25
     mirror: false
     shootSound: shootAlt
-    reload: 60
+    reload: 70
     recoil: 1.5
     shootStatus: fading-t1
     shootStatusDuration: 30
@@ -44,7 +44,7 @@ weapons: [
     dest:[
     {
      type: ShootPattern
-     shots: 3
+     shots: 4
      shotDelay: 10
      }
     ]
@@ -66,6 +66,50 @@ weapons: [
       homingDelay: 10
       shootEffect: none
       smokeEffect: none
+      hitEffect: [
+       {
+        type: ParticleEffect
+        particles: 5
+        sizeFrom: 2.25
+        sizeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        length: 11
+        lifetime: 15
+       }
+       {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 6.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        lifetime: 15
+       }
+      ]
+      despawnEffect: [
+       {
+        type: ParticleEffect
+        particles: 5
+        sizeFrom: 2.25
+        sizeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        length: 11
+        lifetime: 15
+       }
+       {
+        type: WaveEffect
+        sizeFrom: 2
+        sizeTo: 6.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: bc5451
+        colorTo: bc5451
+        lifetime: 15
+       }
+      ]
     }
   }
 ]

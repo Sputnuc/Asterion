@@ -8,7 +8,7 @@
   "lightColor": "6BA2FFFF",
   "temperature": -0.05,
   "flammability": 0,
-  "explosiveness": 0.3,
+  "explosiveness": 0,
   "liquid": true,
   "explosive": false,
   "coolant": true,

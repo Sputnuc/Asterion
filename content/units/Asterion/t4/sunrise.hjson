@@ -36,22 +36,24 @@ weapons: [
     x: 0
     y: 0.5
     mirror: false
-    shootSound: shootPierce
+    shootSound: mediumCannon
     reload: 120
     recoil: 3
+    shake: 3
     rotateSpeed: 4
     shootStatus: fading-t2
     shootStatusDuration: 120
     bullet: {
         type: BasicBulletType
-        damage: 245
-        splashDamage: 70
+        damage: 185
+        splashDamage: 120
         splashDamageRadius: 30
         pierce: true
         pierceCap: 3
         pierceBuilding: true
         speed: 7
-        lifetime: 40
+        scaleLife: true
+        lifetime: 30
         width: 17
         height: 18
         backColor: bc5451 
@@ -61,69 +63,79 @@ weapons: [
         trailLength: 12
         trailRotation: true
         trailInterval: 1
-        trailEffect: {
-        type: WaveEffect
-        colorFrom: FFADAB
-        colorTo: FFADAB00
-        sides: 3
-        sizeFrom: 4
-        sizeTo: 5
-        lifetime: 20
-        strokeFrom: 1
-        strokeTo: 0
+        weaveScale: 6
+        weaveMag: 2
+        homingPower: 0.2
+        homingDelay: 10
+        trailEffect: [
+        {
+         type: WaveEffect
+         colorFrom: FFADAB
+         colorTo: FFADAB00
+         sides: 3
+         sizeFrom: 4
+         sizeTo: 5
+         lifetime: 20
+         strokeFrom: 1
+         strokeTo: 0
         }
+        {
+         type: ParticleEffect
+         region: as-star-bullet
+         particles: 2
+         sizeFrom: 4.5
+         sizeTo: 0
+         length: 15
+         baseLength: 3
+         lifetime: 35
+         colorFrom: e98878
+         colorTo: bc5451
+        }
+        ]
         status: discharge
         statusDuration: 155
         shootEffect: none
         smokeEffect: none
-        hitEffect: {
-        type: ParticleEffect
-        cone: 45
-        length: -45
-        particles: 12
-        sizeFrom: 3.5
-        sizeTo: 0
-        colorFrom: FFADAB
-        colorTo: FFADAB00
+        hitEffect: [
+        {
+         type: ParticleEffect
+         length: 14
+         particles: 9
+         sizeFrom: 3.5
+         sizeTo: 0
+         colorFrom: FFADAB
+         colorTo: FFADAB00
+         lifetime: 25
         }
-        despawnHit: true
-        parts: [
-         {
-         type: HaloPart
-         radius: 4
-         tri: true
-	       layer: 110
-         color: FFADAB 
-         haloRotateSpeed: 2
-         haloRadius: 8
-         haloRadiusTo: 8
-         shapes: 3
-         triLengthTo: 5
-         triLength: 5
-         }
-         {
-         type: HaloPart
-         radius: 4
-         tri: true
-	     layer: 110
-         color: FFADAB 
-         haloRotateSpeed: 2
-         haloRadius: 8
-         haloRadiusTo: 8
-         shapes: 3
-         triLengthTo: 2
-         triLength: 2
-         shapeRotation: 180
+        {
+         type: ParticleEffect
+         cone: 35
+         length: 41
+         particles: 12
+         sizeFrom: 2.5
+         sizeTo: 0
+         colorFrom: FFADAB
+         colorTo: FFADAB00
+         lifetime: 25
         }
         ]
-        despawnEffect: {
-            type: MultiEffect
-            effects: [
+        despawnHit: true
+        parts: [
+           {
+            type: FlarePart
+            color2: e98878
+            color1: fccac2
+            radius: 14
+            radiusTo: 14
+            layer: 110
+          }
+        ]
+        despawnEffect: [
             {
                 type: ParticleEffect
                 colorFrom: e98878
                 colorTo: bc5451
-                particles: 5
+                particles: 14
                 length: 24
                 baseLength: 6
                 lightScl: 3
@@ -137,7 +149,7 @@ weapons: [
                 type: ParticleEffect
                 colorFrom: bc5451
                 colorTo: bc5451
-                particles: 8
+                particles: 12
                 length: 30
                 lifetime: 20
                 lightScl: 3
@@ -159,8 +171,9 @@ weapons: [
                 rotation: 0
                 strokeFrom: 5
                 strokeTo: 0
+                lifetime: 25
             }
-        ]}
+        ]
     }
 }
 {
@@ -174,7 +187,7 @@ weapons: [
     recoil: 1
     bullet: {
         type: LaserBulletType
-        length: 140
+        length: 180
         colors: ["bc5451", "e98878", "FFFFFF"]
         damage: 80
         lifetime: 10

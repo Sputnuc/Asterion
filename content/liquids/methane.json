@@ -4,7 +4,7 @@
   "color": "828282",
   "research": "core-force",
   "temperature": 0,
-  "flammability": 0.6,
+  "flammability": 0.9,
   "explosiveness": 0.2,
   "gas": true,
   "explosive": true,

@@ -8,7 +8,7 @@
   "lightColor": "a436bf3f",
   "temperature": 0.17,
   "flammability": 0.12,
-  "explosiveness": 0.0,
+  "explosiveness": 0.4,
   "liquid": true,
   "explosive": false,
   "liquid": {
