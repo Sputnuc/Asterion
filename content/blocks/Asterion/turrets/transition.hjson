@@ -7,24 +7,24 @@
   reload: 80
   recoil: 1.2
   range: 300
-  rotateSpeed: 1.3
+  rotateSpeed: 1.23
   size: 5
   innacuracy: 3
-  shoot: {
-    type: ShootMulti
-    source: {
-    type: ShootAlternate
-    shots: 2
-    spread: 8
-    }
-    dest: [
-    {
-      type: ShootHelix
-      scl: 3
-      mag: 5
-    }
-    ]
-   }
+shoot: {
+	type: ShootMulti
+	source: {
+	type: ShootAlternate
+	shots: 1
+	spread: 14
+	}
+	dest: [
+		{
+		type: ShootHelix
+		scl: 3
+		mag: 4
+		}
+	]
+}
   consumes: { 
    power: 10
 	liquid: {
@@ -40,13 +40,13 @@
     zionitium: {
     type: BasicBulletType
     pierce: false
-    frontColor: ffffff
-    backColor: bf7622
-    hitColor: bf7622
+    frontColor: ffb0c2
+    backColor: bb6e7b
+    hitColor: bb6e7b
     sprite: as-armored-shell
     damage: 155
     width: 12
-    height: 25
+    height: 18
     lifetime: 35
     speed: 10
     hitSize: 8
@@ -54,6 +54,50 @@
     trailWidth: 2
     trailLength: 15
     trailColor: bb6e7b
+	shootEffect: [ 
+	{
+	type: ParticleEffect
+	particles: 5
+	cone: 2
+	length: 36
+	baseLength: 27
+	sizeFrom: 2.5
+	sizeTo: 0
+	interp: pow3In
+	colorFrom: e593a6d2
+	colorTo: b05a5a00
+    }
+	{
+	type: ParticleEffect
+	particles: 4
+	length: 35
+	baseLength: 18
+	cone: 21
+	line: true
+	lenFrom: 0.5
+	lenTo: 4
+	strokeFrom: 7
+	strokeTo: 1
+	lifetime: 38
+	colorFrom: f09cafe9
+	colorTo: 9e7f5100
+	}
+	{
+	type: ParticleEffect
+	particles: 3
+	length: -16
+	baseLength: -8
+	cone: 15
+	line: true
+	lenFrom: 0.7
+	lenTo: 3
+	strokeFrom: 5
+	strokeTo: 0.3
+	lifetime: 38
+	colorFrom: d18492c2
+	colorTo: 875f4200
+	}
+	]
     hitEffect: { 
             type: MultiEffect 
             effects: [ 
@@ -93,13 +137,13 @@
     fragBullet: {
       type: BasicBulletType
       pierce: false
-      frontColor: ffffff
-      backColor: bf7622
-      hitColor: bf7622
+      frontColor: ffb0c2
+      backColor: bb6e7b
+      hitColor: bb6e7b
       sprite: as-armored-shell
       damage: 35
-      width: 12
-      height: 25
+      width: 11
+      height: 17
       lifetime: 5
       speed: 10
       hitSize: 8
@@ -150,13 +194,13 @@ homingRadius: 24
     fragBullet: {
       type: BasicBulletType
       pierce: false
-      frontColor: ffffff
-      backColor: bf7622
-      hitColor: bf7622
+      frontColor: ffb0c2
+      backColor: bb6e7b
+      hitColor: bb6e7b
       sprite: as-armored-shell
       damage: 30
-      width: 12
-      height: 25
+      width: 11
+      height: 17
       lifetime: 5
       speed: 10
       hitSize: 8
@@ -207,13 +251,70 @@ homingRadius: 24
     fragBullet: {
       type: BasicBulletType
       pierce: false
-      frontColor: ffffff
-      backColor: bf7622
-      hitColor: bf7622
+      frontColor: ffb0c2
+      backColor: bb6e7b
+      hitColor: bb6e7b
       sprite: as-armored-shell
       damage: 25
-      width: 12
-      height: 25
+      width: 10
+      height: 15
+      lifetime: 5
+      speed: 11
+      hitSize: 8
+      ammoMultiplier: 2
+      trailWidth: 2
+      trailLength: 15
+      trailColor: bb6e7b
+      weaveMag: 5
+      weaveScale: 3
+      hitEffect: { 
+            type: MultiEffect 
+            effects: [ 
+              { 
+                type: WaveEffect 
+                sides: 0 
+                sizeFrom: 0 
+                sizeTo: 20
+                strokeFrom: 4 
+                strokeTo: 0 
+                lifetime: 40 
+                colorFrom: bb6e7b
+                colorTo: bb6e7b00
+              } 
+            ] 
+          } 
+          despawnEffect: { 
+            type: MultiEffect
+              effects: [ 
+                { 
+                  type: WaveEffect"
+                  sides: 0 
+                  sizeFrom: 0 
+                  sizeTo: 40
+                  strokeFrom: 4 
+                  strokeTo: 0 
+                  lifetime: 5
+                  colorFrom: bb6e7b
+                  colorTo: bb6e7b00
+              } 
+            ] 
+          }
+          splashDamage: 40
+          splashDamageRadius: 50
+homingPower: 0.2
+homingRadius: 24
+    fragBullets: 1
+    fragSpreadRandom: 32
+    fragBullet: {
+      type: BasicBulletType
+      pierce: false
+      frontColor: ffb0c2
+      backColor: bb6e7b
+      hitColor: bb6e7b
+      sprite: as-armored-shell
+      damage: 25
+      width: 10
+      height: 15
       lifetime: 5
       speed: 10
       hitSize: 8
@@ -264,70 +365,13 @@ homingRadius: 24
     fragBullet: {
       type: BasicBulletType
       pierce: false
-      frontColor: ffffff
-      backColor: bf7622
-      hitColor: bf7622
+      frontColor: ffb0c2
+      backColor: bb6e7b
+      hitColor: bb6e7b
       sprite: as-armored-shell
       damage: 25
-      width: 12
-      height: 25
-      lifetime: 5
-      speed: 10
-      hitSize: 8
-      ammoMultiplier: 2
-      trailWidth: 2
-      trailLength: 15
-      trailColor: bb6e7b
-      weaveMag: 5
-      weaveScale: 3
-      hitEffect: { 
-            type: MultiEffect 
-            effects: [ 
-              { 
-                type: WaveEffect 
-                sides: 0 
-                sizeFrom: 0 
-                sizeTo: 20
-                strokeFrom: 4 
-                strokeTo: 0 
-                lifetime: 40 
-                colorFrom: bb6e7b
-                colorTo: bb6e7b00
-              } 
-            ] 
-          } 
-          despawnEffect: { 
-            type: MultiEffect
-              effects: [ 
-                { 
-                  type: WaveEffect"
-                  sides: 0 
-                  sizeFrom: 0 
-                  sizeTo: 40
-                  strokeFrom: 4 
-                  strokeTo: 0 
-                  lifetime: 5
-                  colorFrom: bb6e7b
-                  colorTo: bb6e7b00
-              } 
-            ] 
-          }
-          splashDamage: 40
-          splashDamageRadius: 50
-homingPower: 0.2
-homingRadius: 24
-    fragBullets: 1
-    fragSpreadRandom: 32
-    fragBullet: {
-      type: BasicBulletType
-      pierce: false
-      frontColor: ffffff
-      backColor: bf7622
-      hitColor: bf7622
-      sprite: as-armored-shell
-      damage: 25
-      width: 12
-      height: 25
+      width: 9
+      height: 14
       lifetime: 5
       speed: 10
       hitSize: 8
@@ -389,10 +433,64 @@ homingRadius: 24
    ]
   research: storm
   category: turret 
-  drawer: {
-   type: DrawTurret
-   basePrefix: ast-
-   parts: [
-	 ]
-	}
+drawer: {
+	type: DrawTurret
+	basePrefix: ast-
+	parts: [
+		{
+		type: RegionPart
+		suffix: -barrels
+		under: true
+		progress: recoil
+		heatProgress: recoil
+		moveY: -2
+		}
+		{
+		type: RegionPart
+		suffix: -sides
+		progress: warmup
+		heatProgress: recoil
+		top: true
+		moveY: -6.25
+		moves: [
+			{
+			type: PartMove
+			progress: recoil
+			X: 0
+			Y: 3
+			rot: 0
+			}
+		]
+		}
+		{
+		type: EffectSpawnerPart
+		mirror: true
+		progress: recoil
+		effectChance: 0.07
+		rotation: 180
+		effectRot: 45
+		effecrRandRot: 15
+		effect: [
+			{
+			type: ParticleEffect
+			particles: 4
+			sizeFrom: 3
+			sizeTo: 5.5
+			layer: 70
+			length: 40
+			lifetime: 52
+			interp: circleOut
+			colorFrom: bab5b87b
+			colorTo: 403b3d00
+			cone: 15
+			}
+		]
+		//Color: d9a0ab
+		x: 9
+		y: -12.25
+		width: 2
+		height: 2
+		}
+	]
+}
               
