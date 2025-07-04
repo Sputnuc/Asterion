@@ -10,6 +10,7 @@
   range: 300
   size: 5
   inaccuracy: 8
+  shake: 4.5
   shoot: {
      type: ShootMulti
      source: {
@@ -31,6 +32,7 @@
     } 
   }
   researchCostMultiplier: 0.4
+  coolantMultiplier: 0.95
   targetAir: true
   targetGround: true
   ammoTypes: {
@@ -70,6 +72,7 @@
 	interp: pow4Out
 	colorFrom: ed9679
 	colorTo: ed967900
+    lifetime: 35
     }
 	{
 	type: ParticleEffect
@@ -82,6 +85,7 @@
 	interp: pow3Out
 	colorFrom: ed9679
 	colorTo: ed967900
+    lifetime: 35
     }
 	{
 	type: ParticleEffect
@@ -97,6 +101,7 @@
 	lifetime: 75
 	colorFrom: ed9679
 	colorTo: ed967900
+    lifetime: 35
 	}
 	]
     despawnEffect: [
@@ -109,6 +114,7 @@
     sizeTo: 0
     colorFrom: ed9679
     colorTo: ed967900
+    lifetime: 35
     }
     {
     type: ParticleEffect
@@ -119,6 +125,7 @@
     sizeTo: 0
     colorFrom: ed9679
     colorTo: 97979700
+    lifetime: 35
     }
     {
     type: WaveEffect
@@ -144,6 +151,7 @@
 	lifetime: 75
 	colorFrom: ed9679
 	colorTo: ed967900
+    lifetime: 35
 	}
 ]
     fragBullet: {
@@ -186,14 +194,14 @@
       suffix: -barrel-r
       progress: recoil
       recoilIndex: 1
-      moveY: -2.3
+      moveY: -7
       }
 	  {
       type: RegionPart
       suffix: -barrel-l
       progress: recoil
       recoilIndex: 0
-      moveY: -2.3
+      moveY: -7
       }
 	 ]
 	}

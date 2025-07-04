@@ -37,21 +37,22 @@ weapons: [
     y: 0
     mirror: false
     shootSound: shockBlast
-    reload: 90
+    reload: 180
     recoil: 2
     shake: 2
     shootStatus: fading-t1
     shootStatusDuration: 90
     velocityRnd: 0.14
     inaccuracy: 5
+    rotateSpeed: 1.1
     shoot: {
-    shots: 6
+    shots: 18
     shotDelay: 3
     }
     bullet: {
         type: BasicBulletType
         damage: 15
-        splashDamage: 53
+        splashDamage: 22
         splashDamageRadius: 25
         speed: 8
         lifetime: 22

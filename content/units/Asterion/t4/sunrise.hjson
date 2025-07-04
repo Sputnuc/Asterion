@@ -53,7 +53,7 @@ weapons: [
         pierceBuilding: true
         speed: 7
         scaleLife: true
-        lifetime: 30
+        lifetime: 35
         width: 17
         height: 18
         backColor: bc5451 
@@ -67,6 +67,7 @@ weapons: [
         weaveMag: 2
         homingPower: 0.2
         homingDelay: 10
+        despawnShake: 2
         trailEffect: [
         {
          type: WaveEffect
@@ -124,13 +125,26 @@ weapons: [
            {
             type: FlarePart
             color2: e98878
-            color1: fccac2
-            radius: 14
-            radiusTo: 14
+            color1: e3cacf
+            radius: 6
+            radiusTo: 25
             layer: 110
+            followRotation: true
+            progress: life
           }
         ]
         despawnEffect: [
+            {
+                type: ParticleEffect
+                colorFrom: e98878
+                colorTo: bc5451
+                particles: 8
+                length: 85
+                baseLength: 6
+                sizeFrom: 4.5
+                sizeTo: 0
+                lifetime: 25
+            }
             {
                 type: ParticleEffect
                 colorFrom: e98878
@@ -144,6 +158,7 @@ weapons: [
                 sizeFrom: 4
                 sizeTo: 0
                 offset: 0
+                lifetime: 35
             }
             {
                 type: ParticleEffect

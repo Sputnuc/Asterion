@@ -121,31 +121,98 @@ weapons: [
         y: 0
         top: false
         layer: 0
-        inaccuracy: 45
-        reload: 40
+        inaccuracy: 10
+        reload: 120
         mirror: false
         shootCone: 180
         ingnoreRotation: true
         shootSound: none
         velocityRnd: 0.5
         shoot: {
-            shots: 6
-            shotDelay: 1
+            type: ShootSpread
+            shots: 12
+            shotDelay: 3
+            spread: 3
         }
         bullet: {
             type: BombBulletType
-            lifetime: 60
+            lifetime: 90
             splashDamage: 70
             splashDamageRadius: 35
             incendChance: 1
             incendSpread: 35
             incendAmount: 7
             collidesTiles: false
-            speed: 3
+            speed: 14
+            drag: 0.05
             backColor: c75432 
             frontColor: ff9548
-            width: 14
-            height: 14
+            shrinkX: 0.25
+            shrinkY: 0.25
+            width: 15
+            height: 13
+            despawnEffect: [
+                {
+                    particles: 8
+                    sizeFrom: 3
+                    sizeTo: 0
+                    colorFrom: ff9548
+                    colorTo: ff9548
+                    length: 45
+                    lifetime: 25
+                }
+                {
+                    particles: 4
+                    line: true
+                    strokeFrom: 1.4
+                    strokeTo: 0
+                    lenFrom: 5
+                    lenTo: 8
+                    colorFrom: c75432
+                    colorTo: c75432
+                    length: 35
+                    lifetime: 25
+                }
+                {
+                    type: WaveEffect
+                    sizeFrom: 4
+                    sizeTo: 45
+                    strokeFrom: 1.5
+                    strokeTo: 0
+                    lifetime: 25
+                    colorFrom: ff9548
+                    colorTo: ff9548
+                }
+                {
+                    particles: 6
+                    sizeFrom: 3
+                    sizeTo: 0
+                    cone: 45
+                    colorFrom: ff9548
+                    colorTo: ff9548
+                    length: 75
+                    lifetime: 25
+                }
+            ]
+            fragBullets: 3
+            fragBullet: {
+                type: BombBulletType
+                lifetime: 50
+                splashDamage: 45
+                splashDamageRadius: 25
+                incendChance: 1
+                incendSpread: 25
+                incendAmount: 7
+                collidesTiles: false
+                speed: 8
+                drag: 0.05
+                backColor: c75432 
+                frontColor: ff9548
+                shrinkX: 0.25
+                shrinkY: 0.25
+                width: 9
+                height: 9
+            }
         }
     }
 ]

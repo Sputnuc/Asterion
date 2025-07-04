@@ -10,11 +10,12 @@
   rotateSpeed: 1.23
   size: 5
   innacuracy: 3
+  shake: 4
 shoot: {
 	type: ShootMulti
 	source: {
 	type: ShootAlternate
-	shots: 1
+	shots: 2
 	spread: 14
 	}
 	dest: [
@@ -54,6 +55,34 @@ shoot: {
     trailWidth: 2
     trailLength: 15
     trailColor: bb6e7b
+    trailInterval: 1
+    trailRotation: true
+
+    trailEffect: [
+     {
+      particles: 2
+      line: true
+      lenFrom: 3
+      lenTo: 6
+      cone: 11
+      length: -10
+      strokeFrom: 2
+      strokeTo: 0
+      colorFrom: ffb0c2
+      colorTo: ffb0c2
+      lifetime: 15
+     }
+     {
+      type: WaveEffect
+      sizeFrom: 3
+      sizeTo: 0
+      strokeFrom: 2
+      strokeTo: 0
+      colorFrom: ffb0c2
+      colorTo: ffb0c2
+      lifetime: 15
+     }
+    ]
 	shootEffect: [ 
 	{
 	type: ParticleEffect
@@ -114,22 +143,39 @@ shoot: {
               } 
             ] 
           } 
-          despawnEffect: { 
-            type: MultiEffect
-              effects: [ 
+          despawnEffect: [ 
                 { 
-                  type: WaveEffect"
+                  type: WaveEffect
                   sides: 0 
-                  sizeFrom: 0 
-                  sizeTo: 40
+                  sizeFrom: 5
+                  sizeTo: 21
                   strokeFrom: 4 
                   strokeTo: 0 
-                  lifetime: 5
+                  lifetime: 15
                   colorFrom: bb6e7b
                   colorTo: bb6e7b00
-              } 
-            ] 
-          }
+              }
+              {
+               cone: 25
+               particles: 15
+               length: 65
+               lifetime: 25
+               sizeFrom: 5
+               sizeTo: 0
+               colorFrom: bb6e7b
+               colorTo: bb6e7b00
+              }
+               {
+               cone: 45
+               particles: 18
+               length: -35
+               lifetime: 25
+               sizeFrom: 5
+               sizeTo: 0
+               colorFrom: bb6e7b
+               colorTo: bb6e7b00
+              }
+           ] 
           splashDamage: 40
           splashDamageRadius: 50
     fragBullets: 1
@@ -448,7 +494,7 @@ drawer: {
 		{
 		type: RegionPart
 		suffix: -sides
-		progress: warmup
+		progress: recoil
 		heatProgress: recoil
 		top: true
 		moveY: -6.25
