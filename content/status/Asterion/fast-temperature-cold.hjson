@@ -1,0 +1,7 @@
+speedMultiplier : 0.75
+reloadMultiplier: 0.75
+color : 595999
+name: Fast temperature shift cold
+affinities: [
+    as-fast-temperature-hot
+]
