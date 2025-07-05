@@ -15,8 +15,8 @@ stepShake: 2.5
 outlineRadius: 5
 drownTimeMultiplier: 8
 rotateSpeed: 2.1
-health: 18700
-armor: 8
+health: 21000
+armor: 12
 range: 232
 weapons: [
 {
@@ -25,77 +25,44 @@ shootY: 22.5
 x: 24
 y: 0
 layerOffset: -0.01
-shootSound: shockBlast
+shootSound: torch
 mirror: false
 rotate: true
-rotationLimit: 20
-reload: 60
-shake: 3
-shoot: {
-    type: ShootMulti
-    source: {
-    type: ShootAlternate
-    shots: 2
-    spread: 1
-    }
-    dest: [
-    {
-      type: ShootHelix
-      scl: 2
-      mag: 3
-   }
-  ]
- }
+rotationLimit: 35
+continuous: true
+alwaysContinuous: true
 bullet: {
- type: BasicBulletType
- lifetime: 32
- speed: 7.25
- width: 17
- height: 17
- frontColor: EFFDFF
- backColor: 6CE6FF
- trailLength: 7
- trailWidth: 2
- trailColor: 6CE6FF
- damage: 45
- status: fast-temperature-shift
- statusDuration: 60
- hitEffect: {
+  type: ContinuousFlameBulletType,
+  colors: [
+   606cd6ca, 7a92ebd8, 92b8f0f4, a2c3f5, b8d4ff
+  ]
+  damage: 27
+  status: fast-temperature-cold
+  statusDuration: 30
+  length: 150
+  width: 2.5
+  pierce: true
+  pierceBuilding: true
+  pierceCap: 3
+  flareWidth: 5
+  flareLength: 17  
+  flareColor: a2c3f5
+  lifetime: 60
+  hitColor: b8d4ff
+  hitEffect: {
    type: ParticleEffect
-   particles: 5
-   colorFrom: 70ECFF
-   colorTo: 078BE1
-   length: 5
-   baseLength: 7
-   sizeFrom: 2
-   sizeTo: 0
- }
-  despawnEffect: {
-   type: ParticleEffect
-   particles: 3
-   colorFrom: 70ECFF
-   colorTo: 078BE1
-   length: 3
-   baseLength: 4
-   sizeFrom: 2
-   sizeTo: 0
-   lifetime: 15
- }
-
- trailInterval: 1
- trailRotation: true
- trailEffect: {
-  type: ParticleEffect
-  particles: 3
-  sizeFrom: 2
-  sizeTo: 0 
-  lifetime: 15
-  colorFrom: 6CE6FF
-  colorTo: 6CE6FF00
-  length: -2
-  baseLength: 2
-  cone: 35
- }
+   line: true
+   particles: 1
+   lifetime: 25
+   length: 45
+   cone: 360
+   strokeFrom: 1.6
+   strokeTo: 0
+   lenFrom: 4
+   lenTo: 6
+   colorFrom: b8d4ff
+   colorTo: 647cd1
+   }
 }
 }
 {
@@ -105,53 +72,44 @@ shootY: 22.5
 x: -24
 y: 0
 layerOffset: -0.01
-shootSound: blaster
+shootSound: torch
 mirror: false
 rotate: true
-rotationLimit: 20
-inaccuracy: 3
-reload: 60
-shoot: {
-  shots: 8
-  shotDelay: 3
- }
-bullet: {
- type: BasicBulletType
- lifetime: 64
- speed: 3.625
- width: 16
- height: 16
- frontColor: EFFDFF
- backColor: FF6D00
- trailLength: 7
- trailWidth: 2
- trailColor: FF6D00
- damage: 35
- status: fast-temperature-shift
- statusDuration: 60
- hitEffect: {
+rotationLimit: 35
+continuous: true
+alwaysContinuous: true
+bullet:{
+  type: ContinuousFlameBulletType,
+  colors: [
+   ffb340ae, ffa857c7, f59064ee, f78b6a, ffffff
+  ]
+  damage: 27
+  status: fast-temperature-hot
+  statusDuration: 30
+  length: 150
+  width: 2.5
+  pierce: true
+  pierceBuilding: true
+  pierceCap: 3
+  flareWidth: 5
+  flareLength: 17
+  flareColor: f78b6a
+  lifetime: 60
+  hitColor: f78b6a
+  hitEffect: {
    type: ParticleEffect
-   particles: 5
-   colorFrom: FF7406
-   colorTo: 4D4B4800
-   length: 3
-   baseLength: 8
-   sizeFrom: 3
-   sizeTo: 1
-   lifetime: 35
- }
- despawnEffect: {
-   type: ParticleEffect
-   particles: 3
-   colorFrom: FF7406
-   colorTo: 4D4B4800
-   length: 3
-   baseLength: 4
-   sizeFrom: 3
-   sizeTo: 1
-   lifetime: 15
- }
- 
+   line: true
+   particles: 1
+   lifetime: 25
+   length: 45
+   cone: 360
+   strokeFrom: 1.6
+   strokeTo: 0
+   lenFrom: 4
+   lenTo: 6
+   colorFrom: f78b6a
+   colorTo: ff0f0f
+   }
 }
 }
 ]
