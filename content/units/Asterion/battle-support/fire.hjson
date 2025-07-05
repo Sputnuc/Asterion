@@ -1,5 +1,6 @@
 type: flying
-outlineColor: 1f1f26
+outlineColor: "1c1a1b" //Old -> 2b2828 2b2828 or 1f1f26
+outlineRadius: 4
 name: Fire
 description: Fires flameable bombs on ground buildings and units.
 flying: true
@@ -17,7 +18,6 @@ circleTarget: true
 targetGround: true
 targetAir: false
 faceTarget: false
-drawCell: false
 rotateSpeed: 8
 abilities: [
         {

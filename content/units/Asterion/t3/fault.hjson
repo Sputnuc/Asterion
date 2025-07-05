@@ -1,7 +1,7 @@
 name: Fault
 description: "Shoots homing napalm missiles. \n[white]Faction: [#c75432]Pyro[]."
 type: legs
-outlineColor: 2b2828
+outlineColor: "1c1a1b" //Old -> 2b2828
 speed: 0.55
 flying: false
 research: explosion

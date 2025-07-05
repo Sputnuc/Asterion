@@ -1,7 +1,7 @@
 name: Spark
 description: "Explodes itself and incends ground. \n[white]Faction: [#c75432]Pyro[]."
 type: mech
-outlineColor: 2b2828
+outlineColor: "1c1a1b" //Old -> 2b2828
 speed: 0.8
 flying: false
 research: orion-factory
