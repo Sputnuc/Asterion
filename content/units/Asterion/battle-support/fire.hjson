@@ -121,7 +121,7 @@ weapons: [
         y: 0
         top: false
         layer: 0
-        inaccuracy: 10
+        inaccuracy: 75
         reload: 120
         mirror: false
         shootCone: 180
@@ -129,10 +129,8 @@ weapons: [
         shootSound: none
         velocityRnd: 0.5
         shoot: {
-            type: ShootSpread
             shots: 12
             shotDelay: 3
-            spread: 3
         }
         bullet: {
             type: BombBulletType

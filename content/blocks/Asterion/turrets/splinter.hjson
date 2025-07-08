@@ -342,6 +342,7 @@ ammoTypes: {
 }
 requirements: [
   whitorite/45
+  kiten/15
 ]
 research: {
   planet: as-asterion
