@@ -9,20 +9,20 @@ armor: 7
 speed: 0.37
 rotateSpeed: 1.1
 itemCapacity: 0
-outlineColor: 0b0812
+outlineColor: 141119
 outlineRadius: 4
 treadRects: [
   {
-  x: -19
-  y: -28
-  width: 20
-  height: 24
+  x: -26
+  y: -29
+  width: 18
+  height: 20
   }
   {
-  x: -16
-  y: 3
-  width: 17
-  height: 24
+  x: -26
+  y: 12
+  width: 18
+  height: 20
   }
 ]
 template: TankUnitType
