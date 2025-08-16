@@ -24,7 +24,7 @@ plans: [
 		as-whitorite-wall-large/3
 		as-part-orion-core/1
 	]
-	time: 3000
+	time: 8100
 	}
 	{
 	unit: "glava" //Tier 2 assembler
@@ -33,10 +33,10 @@ plans: [
 		as-magnetite-wall-large/3
 		as-part-orion-core/1
 	]
-	time: 6000
+	time: 10800
 	}
 ]
-research: orion-iteration-reasembler
+research: iteration-reasembler
 requirements: [
 	blacktite/300
 	magnetite/350

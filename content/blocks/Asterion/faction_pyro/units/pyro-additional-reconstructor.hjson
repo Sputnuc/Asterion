@@ -1,7 +1,7 @@
 type: Reconstructor
 name: Pyro additional reconstructor
 health: 1200
-size: 4
+size: 5
 constructTime: 1200
 upgrades: [
     [

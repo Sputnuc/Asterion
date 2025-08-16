@@ -1,11 +1,13 @@
 {
     "type": "Reconstructor",
-	"name": "Orion iteration reassembler",
+	  "name": "Iteration reassembler",
     "health": 2100,
     "size": 7,
-    "constructTime": 2100,
+    "constructTime": 6000,
     "upgrades": [
         ["vulture", "scorpion"],
+        ["fault", "rumble"],
+        ["clearance", "sunrise"]
     ],
     "consumes": {
         "power": 10,
@@ -13,10 +15,10 @@
             "items": [
               "irmenite/450", 
               "blacktite/330",
-			  "magnetite/250",
-			  "verdyne-steel/125"
+			        "magnetite/250",
+			        "verdyne-steel/125"
             ]
-        }
+        },
 		"liquids": {
 			"liquids": [
 			  "kryoline/0.5" 
@@ -24,7 +26,7 @@
 		}
     },
     "requirements": [
-      "irmenite/170",
+    "irmenite/170",
 	  "blacktite/150",
 	  "magnetite/130",
 	  "graphene/210"

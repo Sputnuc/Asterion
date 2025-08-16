@@ -6,7 +6,7 @@ speed: 0.50
 flying: false
 hitSize: 20
 itemCapacity: 190
-research: orion-iteration-reasembler
+research: iteration-reasembler
 outlineColor: 1f1f26
 targetAir: true
 targetGround: true
