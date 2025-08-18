@@ -16,16 +16,6 @@
            ]
       time: 900
     }
-        {
-      unit: fire
-      requirements: [
-       kiten/45
-       ashotite/65
-       irmenite/95
-       graphene/60
-           ]
-      time: 1800
-    }
   ]
   requirements: [
     whitorite/75

@@ -50,7 +50,7 @@
         "type": "ExplosionBulletType",
         "splashDamage": 670,
         "splashDamageRadius": 65,
-        "buildingDamageMultiplier": 1,
+        "buildingDamageMultiplier": 0.15,
         "hitShake": 12,
         "reflectable": false,
         "hitSoundVolume": 6,
