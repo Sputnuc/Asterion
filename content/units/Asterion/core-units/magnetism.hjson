@@ -18,74 +18,65 @@ targetGround: true
 targetAir: true
 rotateSpeed: 6
 weapons: [
-    {
-      name: ester-weapon
-      x: 2.5
-      y: 4.5
-      recoil: 1
-      top: false
-      reload: 10
-      minWarmup: 0.9
-      inaccuracy: 3
-      mirror: true
-      alternate: true
-      shootSound: lasershoot
-      continuous: false
-      parts: [
-        {
-          suffix: -part1
-          x: 1
-          y: -2.75
-          mirror: false
-          progress: warmup
-          moveX: 0
-          moveY: 0
-          moveRot: 0
-        }
-      ]
-      bullet: {
-        type: BasicBulletType
-        damage: 30
-        pierce: true
-        pierceCap: 3
-        homingPower: 0.2
-        homingDelay: 15
-        homingRange: 32
-        lifetime: 30
-        trailLength: 5
-        trailColor: deb65f
-        trailWidth: 1
-        speed: 8
-        width: 8
-        height: 16
-        sprite: as-spear
-        hitsize: 6
-        hitEffect: {
-          type: ParticleEffect
-          particles: 3
-          line: true
-          lenFrom: 3
-          lenTo: 6
-          strokeFrom: 2.5
-          strokeTo: 0
-          colorFrom: deb65f
-          colorTo: deb65f00
-          length: 12
-          baseLength: 5
-          lifetime: 25
-        }
-        despawnEffect: {
-          type: WaveEffect
-          sizeFrom: 0
-          sizeTo: 12
-          colorFrom: deb65f
-          colorTo: deb65f00
-          strokeFrom: 3
-          strokeTo: 0
-        }
-        buildingDamageMultiplier: 0.25
-      }
-    }
+	{
+	name: magnetism-weapon
+	x: 2.5
+	y: 4.5
+	recoil: 1.15
+	top: false
+	//layerOffset: -0.001
+	reload: 10
+	minWarmup: 0.9
+	inaccuracy: 3
+	mirror: true
+	alternate: true
+	shootSound: lasershoot
+	continuous: false
+	bullet: {
+		type: BasicBulletType
+		damage: 30
+		pierce: true
+		pierceCap: 3
+		homingPower: 0.2
+		homingDelay: 15
+		homingRange: 32
+		lifetime: 30
+		frontColor: fff2b3
+		backColor: deb65f
+		trailLength: 5
+		trailColor: deb65f
+		trailWidth: 1
+		speed: 8
+		width: 7
+		height: 10
+		sprite: as-star-bullet
+		hitsize: 6
+		hitEffect: {
+			type: ParticleEffect
+			particles: 3
+			line: true
+			lenFrom: 3
+			lenTo: 6
+			strokeFrom: 2.5
+			strokeTo: 0
+			colorFrom: deb65f
+			colorTo: deb65f00
+			length: 12
+			baseLength: 5
+			lifetime: 25
+		}
+		despawnEffect: {
+			type: WaveEffect
+			sizeFrom: 0
+			sizeTo: 12
+			colorFrom: deb65f
+			colorTo: deb65f00
+			strokeFrom: 3
+		strokeTo: 0
+		}
+		buildingDamageMultiplier: 0.01
+		}
+	}
     //Engines
 	{
 	 x: 0
