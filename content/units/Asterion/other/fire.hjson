@@ -141,7 +141,7 @@ weapons: [
             incendSpread: 35
             incendAmount: 7
             collidesTiles: false
-            speed: 14
+            speed: 5
             drag: 0.05
             backColor: c75432 
             frontColor: ff9548

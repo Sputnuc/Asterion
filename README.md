@@ -3,10 +3,10 @@ Hello! Welcome to Asterion!
 This is collaboration mod.
 
 Authors:
-- Sputnuc - Creator 
+- Sputnuc - Main Creator 
 - Bloody_Ocean - Units spriter
 - Router Of Time (R.O.T) - Coder
-- AnDashik - Coder, spriter
+- AnDashik - Second main creator
 - Reactor - Coder
 - ACE - Composer
 - CY4NIDE - Coder, spriter

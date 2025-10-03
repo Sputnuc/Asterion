@@ -11,9 +11,9 @@
     {
       "unit": "mist",
       "requirements": [
-       "whitorite/35",
-       "zionitium/25",
-       "irmenite/45"
+       "kiten/35",
+       "irmenite/45",
+       "ashotite/15"
            ],
       "time": 1200
     }
