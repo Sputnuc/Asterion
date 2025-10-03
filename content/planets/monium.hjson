@@ -15,7 +15,7 @@ allowWaveSimulation: false
 prebuildBase: false
 parent: 01-ascetion
 solarSystem: 01-ascetion
-radius: 1.25
+radius: 1.19
 minZoom: 0.45
 sectorSize: 3
 startSector: 142
@@ -61,13 +61,13 @@ mesh: [
 	color1: abccc4
 	color2: 95c8cf
 	divisions: 7
-	radius: 0.963
+	radius: 0.954
 	octaves: 4
-	persistence: 0.64
+	persistence: 0.56
 	coct: 3.2
 	cper: 2.6
 	scale: 0.82
-	mag: 2.27
+	mag: 2.22
  }
  {
  // mountains
@@ -77,19 +77,15 @@ mesh: [
 	color1: afd2fa
 	color2: b1fcd8
 	divisions: 7
-	radius: 0.937
+	radius: 0.928
 	octaves: 4
-	persistence: 1.16
+	persistence: 1.08
 	coct: 3.2
 	cper: 2.6
 	scale: 0.82
-	mag: 2.72
+	mag: 2.68
  }
 ]
-
-//bloom: false
-alwaysUnlocked: true
-
 
 cloudMesh: [
   {

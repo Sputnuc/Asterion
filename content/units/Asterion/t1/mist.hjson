@@ -9,14 +9,14 @@ armor: 6
 speed: 0.42
 rotateSpeed: 1.45
 itemCapacity: 0
-outlineColor: 0b0812
+outlineColor: 141119
 outlineRadius: 4
 treadRects: [
   {
-  x: -18
-  y: -21
-  width: 19
-  height: 46
+  x: -19
+  y: -25
+  width: 14
+  height: 50
   }
 ]
 template: TankUnitType
@@ -27,7 +27,8 @@ weapons: [
     name: mist-weapon
     rotate: true
     x: 0
-    y: -1.25
+	// Old y:-1.25
+    y: 0
     mirror: false
     shootSound: shootAlt
     reload: 70
