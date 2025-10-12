@@ -15,7 +15,6 @@ stepShake: 2.5
 outlineRadius: 5
 drownTimeMultiplier: 8
 rotateSpeed: 2.1
-drawCell: false
 health: 21000
 armor: 12
 range: 232
