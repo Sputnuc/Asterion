@@ -6,7 +6,6 @@ outlineColor: 2b2e3d
 speed: 0.2
 flying: false
 hovering: true
-drawCell: false
 hitSize: 38
 itemCapacity: 0
 targetAir: true
