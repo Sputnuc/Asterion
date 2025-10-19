@@ -37,8 +37,8 @@ outputLiquid: endomine/0.1333333333333333
 craftTime: 120
 updateEffect: none
 craftEffect: plasticExplosion
-ambientSound: respawning
-ambientSoundVolume: 1.3
+ambientSound: smelter
+ambientSoundVolume: 0.75
 research: {
 	parent: irmenite-oven
 	planet: as-asterion
