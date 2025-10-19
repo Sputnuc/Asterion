@@ -1,0 +1,10 @@
+name: "Methane"
+description: "A highly flammable gas is used to produce other materials."
+color: "828282"
+research: core-force
+temperature: 0
+flammability: 0.9
+explosiveness: 0.2
+gas: true
+explosive: true
+viscosity: 0.3

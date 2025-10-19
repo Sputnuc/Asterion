@@ -1,17 +1,11 @@
-{
-	"name": "Quartz sand",
-	"description": "Sharp and hardened sand",
-	"color": "#dacadd",
-	"research": "whitorite",
-	"hardness": 0.5,
-        "lowPriority": "true",
-	"charge": 0.0,
-	"explosiveness": 0,
-	"flammability": 0,
-	"radioactivity": 0,
-	"cost": 0.2,
-	"hiddenOnPlanets": [
-		serpulo,
-		erekir
-	]
-}
+name: "Quartz Sand"
+description: "Sharp and hardened sand."
+color: "dacadd"
+research: whitorite
+hardness: 0.5
+lowPriority: true
+charge: 0.0
+explosiveness: 0
+flammability: 0
+radioactivity: 0
+cost: 0.2

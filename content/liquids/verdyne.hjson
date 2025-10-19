@@ -1,0 +1,10 @@
+name: "Verdyne"
+description: ""
+color: "6e99f0"
+research: zion
+temperature: 0.3
+flammability: 0.3
+explosiveness: 0.3
+gas: true
+explosive: false
+viscosity: 0.05

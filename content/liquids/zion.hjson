@@ -1,0 +1,12 @@
+name: "Zion"
+description: "It is used to accelerate drills and in some turrets, it can get very hot under pressure."
+color: "dd5b73"
+research: methane
+temperature: 0.1
+flammability: 0.15
+explosiveness: 0.9
+gas: true
+explosive: false
+effect: burning
+heatCapacity: 0.5
+viscosity: 0.3

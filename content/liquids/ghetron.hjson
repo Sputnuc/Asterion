@@ -1,16 +1,18 @@
 type: CellLiquid
 name: "Ghetron"
-description: "Living substance. Can be called as <<virus>>"
-details: "How and why was the virus created in the form of a liquid? - Unknown.
+description: "Living substance. Can be called as «virus»..."
+details: '''
+How and why was the virus created in the form of a liquid? - Unknown.
 RXJyb3I6Ly8gW1Vua25vd24gZGF0YV0gW0RhdGEgbG9zZV0=
 How does it work? - Presumably the liquid is filled with fissile nanomachines.
 RXJyb3I6Ly8gW1Vua25vd24gZGF0YV0gW0RhdGEgbG9zZV0=
-Where did it come from? - The only theory, unsuccessful development of the <<Orion>> faction"
+Where did it come from? - The only theory, unsuccessful development of the «Orion» faction
+'''
 effect: sapped
 boilPoint: 1.53
-color: cc67e5
-colorFrom: cc67e5
-colorTo: 643c8d
+color: "cc67e5"
+colorFrom: "cc67e5"
+colorTo: "643c8d"
 maxSpread: 1.9
 spreadDamage: 0.009
 moveThroughBlocks: true
@@ -19,9 +21,5 @@ temperature: 0.17
 heatCapacity: 0.085
 explosiveness: 1.35
 flammability: 0.07
-gasColor: cc8f96
+gasColor: "cc8f96"
 viscosity: 0.82
-hiddenOnPlanets: [
-	"serpulo",
-	"erekir"
-]
