@@ -18,3 +18,8 @@ underBullets: true
 replaceable: false
 buildCostMultiplier: 2.25
 variants: 3
+requirements: [
+	whitorite/36
+	irmenite/19
+	blacktite/6
+]
