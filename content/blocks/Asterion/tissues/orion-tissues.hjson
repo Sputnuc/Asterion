@@ -17,3 +17,7 @@ allowDerelictRepair: false
 underBullets: true
 replaceable: false
 buildCostMultiplier: 3
+requirements: [
+	kiten/17
+	irmenite/8
+]
