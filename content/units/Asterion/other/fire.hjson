@@ -1,8 +1,8 @@
 type: flying
 outlineColor: "1c1a1b" //Old -> 2b2828 2b2828 or 1f1f26
 outlineRadius: 4
-name: Fire
-description: Fires flameable bombs on ground buildings and units.
+name: "Fire"
+description: "Fires flameable bombs on ground buildings and units."
 flying: true
 health: 8000
 armor: 4
@@ -19,198 +19,206 @@ targetGround: true
 targetAir: false
 faceTarget: false
 rotateSpeed: 8
-abilities: [
-        {
-        effect:{
-        type: ParticleEffect 
-        colorFrom: ff9548
-        colorTo: c75432
-        lifetime: 30
-        particles: 1
-        cone: 0
-        length: 0
-        baseLength: 0
-        lightScl: 2
-        lightOpacity: 2
-        spin: 0
-        sizeFrom: 2
-        sizeTo: 0 
-        }
-        type : MoveEffectAbility
-        minVelocity: 0.2
-        interval: 0.000000000000000000000000000001
-        rotateEffect: true
-        y : -6.75
-        x : 8.25
-    }
-    {
-        effect:{
-        type: ParticleEffect 
-        colorFrom: ff9548
-        colorTo: c75432
-        lifetime: 30
-        particles: 1
-        cone: 0
-        length: 0
-        baseLength: 0
-        lightScl: 2
-        lightOpacity: 2
-        spin: 0
-        sizeFrom: 2
-        sizeTo: 0
-        }
-        type : MoveEffectAbility
-        minVelocity: 0.2
-        interval: 0.000000000000000000000000000001
-        rotateEffect: true
-        y : -6.75
-        x : -8.25
-    }
-    {
-        effect:{
-        type: ParticleEffect 
-        colorFrom: ff9548
-        colorTo: c75432
-        lifetime: 30
-        particles: 1
-        cone: 0
-        length: 0
-        baseLength: 0
-        lightScl: 2
-        lightOpacity: 2
-        spin: 0
-        sizeFrom: 2
-        sizeTo: 0
-        }
-        type : MoveEffectAbility
-        minVelocity: 0.2
-        interval: 0.000000000000000000000000000001
-        rotateEffect: true
-        y : -8
-        x : -8.25
-    }
-    {
-        effect:{
-        type: ParticleEffect 
-        colorFrom: ff9548
-        colorTo: c75432
-        lifetime: 30
-        particles: 1
-        cone: 0
-        length: 0
-        baseLength: 0
-        lightScl: 2
-        lightOpacity: 2
-        spin: 0
-        sizeFrom: 2
-        sizeTo: 0
-        }
-        type : MoveEffectAbility
-        minVelocity: 0.2
-        interval: 0.000000000000000000000000000001
-        rotateEffect: true
-        y : -8
-        x : 8.25
-    }
-]
+
 weapons: [
-    {
-        name: flame-bomber
-        minShootVelocity: 0.7
-        x: 0
-        y: 0
-        top: false
-        layer: 0
-        inaccuracy: 75
-        reload: 120
-        mirror: false
-        shootCone: 180
-        ingnoreRotation: true
-        shootSound: none
-        velocityRnd: 0.5
-        shoot: {
-            shots: 12
-            shotDelay: 3
-        }
-        bullet: {
-            type: BombBulletType
-            lifetime: 90
-            splashDamage: 70
-            splashDamageRadius: 35
-            incendChance: 1
-            incendSpread: 35
-            incendAmount: 7
-            collidesTiles: false
-            speed: 14
-            drag: 0.05
-            backColor: c75432 
-            frontColor: ff9548
-            shrinkX: 0.25
-            shrinkY: 0.25
-            width: 15
-            height: 13
-            despawnEffect: [
-                {
-                    particles: 8
-                    sizeFrom: 3
-                    sizeTo: 0
-                    colorFrom: ff9548
-                    colorTo: ff9548
-                    length: 45
-                    lifetime: 25
-                }
-                {
-                    particles: 4
-                    line: true
-                    strokeFrom: 1.4
-                    strokeTo: 0
-                    lenFrom: 5
-                    lenTo: 8
-                    colorFrom: c75432
-                    colorTo: c75432
-                    length: 35
-                    lifetime: 25
-                }
-                {
-                    type: WaveEffect
-                    sizeFrom: 4
-                    sizeTo: 45
-                    strokeFrom: 1.5
-                    strokeTo: 0
-                    lifetime: 25
-                    colorFrom: ff9548
-                    colorTo: ff9548
-                }
-                {
-                    particles: 6
-                    sizeFrom: 3
-                    sizeTo: 0
-                    cone: 45
-                    colorFrom: ff9548
-                    colorTo: ff9548
-                    length: 75
-                    lifetime: 25
-                }
-            ]
-            fragBullets: 3
-            fragBullet: {
-                type: BombBulletType
-                lifetime: 50
-                splashDamage: 45
-                splashDamageRadius: 25
-                incendChance: 1
-                incendSpread: 25
-                incendAmount: 7
-                collidesTiles: false
-                speed: 8
-                drag: 0.05
-                backColor: c75432 
-                frontColor: ff9548
-                shrinkX: 0.25
-                shrinkY: 0.25
-                width: 9
-                height: 9
-            }
-        }
-    }
+	{
+		name: flame-bomber
+		minShootVelocity: 0.7
+		x: 0
+		y: 0
+		top: false
+		layer: 0
+		inaccuracy: 75
+		reload: 120
+		mirror: false
+		shootCone: 180
+		ingnoreRotation: true
+		shootSound: missile
+		velocityRnd: 0.5
+		shoot: {
+			shots: 12
+			shotDelay: 3
+		}
+		bullet: {
+			type: BombBulletType
+			lifetime: 90
+			splashDamage: 70
+			splashDamageRadius: 35
+			incendChance: 1
+			incendSpread: 35
+			incendAmount: 7
+			collidesTiles: false
+			speed: 14
+			drag: 0.05
+			backColor: "c75432"
+			frontColor: "ff9548"
+			shrinkX: 0.25
+			shrinkY: 0.25
+			width: 15
+			height: 13
+			trailColor: "c75432"
+			trailLength: 8.4
+			trailWidth: 3.15
+			despawnEffect: [
+				{
+					particles: 8
+					sizeFrom: 3
+					sizeTo: 0
+					colorFrom: "ff9548"
+					colorTo: "ff9548"
+					length: 45
+					lifetime: 25
+				}
+				{
+					particles: 4
+					line: true
+					strokeFrom: 1.4
+					strokeTo: 0
+					lenFrom: 5
+					lenTo: 8
+					colorFrom: "c75432"
+					colorTo: "c75432"
+					length: 35
+					lifetime: 25
+				}
+				{
+					type: WaveEffect
+					sizeFrom: 4
+					sizeTo: 45
+					strokeFrom: 1.5
+					strokeTo: 0
+					lifetime: 25
+					colorFrom: "ff9548"
+					colorTo: "ff9548"
+				}
+				{
+					particles: 6
+					sizeFrom: 3
+					sizeTo: 0
+					cone: 45
+					colorFrom: "ff9548"
+					colorTo: "ff9548"
+					length: 75
+					lifetime: 25
+				}
+			]
+			fragBullets: 3
+			fragBullet: {
+				type: BombBulletType
+				lifetime: 50
+				splashDamage: 45
+				splashDamageRadius: 25
+				incendChance: 1
+				incendSpread: 25
+				incendAmount: 7
+				collidesTiles: false
+				speed: 8
+				drag: 0.05
+				backColor: "c75432"
+				frontColor: "ff9548"
+				shrinkX: 0.25
+				shrinkY: 0.25
+				width: 9
+				height: 9
+				trailColor: "c75432"
+				trailLength: 6.3
+				trailWidth: 1.9
+			}
+		}
+	}
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 8.25
+		y: -6.75
+		minVelocity: 0.2
+		interval: 0.000000000000000000000000000001
+		rotateEffect: true
+		effect: {
+			type: ParticleEffect 
+			colorFrom: "ff9548"
+			colorTo: "c75432"
+			lifetime: 30
+			particles: 1
+			cone: 0
+			length: 0
+			baseLength: 0
+			lightScl: 2
+			lightOpacity: 2
+			spin: 0
+			sizeFrom: 2
+			sizeTo: 0 
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: -8.25
+		y: -6.75
+		minVelocity: 0.2
+		interval: 0.000000000000000000000000000001
+		rotateEffect: true
+		effect: {
+			type: ParticleEffect
+			colorFrom: "ff9548"
+			colorTo: "c75432"
+			lifetime: 30
+			particles: 1
+			cone: 0
+			length: 0
+			baseLength: 0
+			lightScl: 2
+			lightOpacity: 2
+			spin: 0
+			sizeFrom: 2
+			sizeTo: 0
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: -8.25
+		y: -8
+		minVelocity: 0.2
+		interval: 0.000000000000000000000000000001
+		rotateEffect: true
+		effect: {
+			type: ParticleEffect 
+			colorFrom: "ff9548"
+			colorTo: "c75432"
+			lifetime: 30
+			particles: 1
+			cone: 0
+			length: 0
+			baseLength: 0
+			lightScl: 2
+			lightOpacity: 2
+			spin: 0
+			sizeFrom: 2
+			sizeTo: 0
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: 8.25
+		y: -8
+		minVelocity: 0.2
+		interval: 0.000000000000000000000000000001
+        rotateEffect: true
+		effect: {
+			type: ParticleEffect 
+			colorFrom: ff9548
+			colorTo: c75432
+			lifetime: 30
+			particles: 1
+			cone: 0
+			length: 0
+			baseLength: 0
+			lightScl: 2
+			lightOpacity: 2
+			spin: 0
+			sizeFrom: 2
+			sizeTo: 0
+		}
+	}
 ]
