@@ -17,3 +17,9 @@ allowDerelictRepair: false
 underBullets: true
 replaceable: false
 buildCostMultiplier: 4
+requirements: [
+	irmenite/105
+	blacktite/47
+	magnetite/38
+	verdyne-steel/12
+]
