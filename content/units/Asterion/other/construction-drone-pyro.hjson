@@ -1,0 +1,49 @@
+name: "Construction drone (Orion)"
+type: tether
+outlineColor: 22262b
+lowAltitude: false
+controller: AssemblerAI
+playerControllable: false
+logicControllable: false
+hidden: true
+useUnitCap: false
+allowedInPayloads: false
+createWreck: false
+speed: 2.8
+targetable: false
+bounded: false
+accel: 0.5
+drag: 0.5
+trailLength: 10
+engineColor: d0d8e8
+trailColor: a1b1d0
+flying: true
+health: 230
+hitSize: 8
+armor: 10
+itemCapacity: 0
+engineOffset: 9
+abilities: [
+	{
+	  type: "SuppressionFieldAbility"
+	  reload: 100
+	  range: 384
+	  orbRadius: 3.2
+	  orbMidScl: 0.4
+	  orbSinScl: 0.8
+	  orbSinMag: 0.5
+	  color: c9e2ff
+	  layer: 110
+	  x: 0
+	  y: 0
+	  particleColor: adbfff
+	  particles: 7
+	  particleSize: 1.4
+	  particleLen: 16.2
+	  particleLife: 120
+	  rotateScl: 1.8
+	  active: true
+	  effectColor: a09eff
+	  applyParticleChance: 16
+	}
+]
