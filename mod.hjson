@@ -21,5 +21,7 @@ Developers/Helpers:
 "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
 "version": "pre 0.96.5",
 "minGameVersion": 147,
-"subtitle": "Beta V0.96.5"
+"subtitle": "Beta V0.96.5",
+"hideBrowser": "true"
 }
+
